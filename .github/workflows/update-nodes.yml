@@ -1,1 +1,52 @@
+name: Update Free Nodes Every Monday
 
+on:
+  schedule:
+    # 每周一 UTC 02:00（北京时间 10:00）
+    - cron: '0 2 * * 1'
+  workflow_dispatch:  # 允许手动触发
+    inputs:
+      reason:
+        description: '手动触发原因'
+        required: false
+        default: '手动更新'
+
+jobs:
+  update-nodes:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        pip install requests pyyaml
+        
+    - name: Create output directory
+      run: mkdir -p output
+      
+    - name: Fetch and process nodes
+      run: python scripts/fetch_nodes.py
+      
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # 检查是否有变更
+        if git diff --quiet && git diff --staged --quiet; then
+          echo "✅ 没有变更，跳过提交"
+          exit 0
+        fi
+        
+        git add output/
+        git commit -m "🔄 Auto update nodes: $(date +'%Y-%m-%d %H:%M') [skip ci]"
+        git push
