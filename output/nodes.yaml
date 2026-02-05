@@ -26,65 +26,541 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: AU²_174MBsGPTXHistory
+- country: 🇮🇷IR
+  name: AE²_134MBs10GPTDX
+  password: 3ace63c8-08e1-47bc-a1c7-b65f2dfc7d4a
+  port: 38834
+  server: v3fr2.stablep.top
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- country: 🇩🇪DE
+  name: DE²_135MBs6GPTDX
+  password: cd3603df-3a01-4a16-8987-3a4cc000583b
+  port: 38846
+  server: vde4.stablep.top
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- name: IN²_105MBsGPTXHistory
   password: ''
   port: 1080
-  server: 134.199.159.23
+  server: 64.227.131.240
   skip-cert-verify: true
   type: socks5
   username: ''
-- name: SG²_108MBsX
-  password: ''
-  port: 10807
-  server: 213.35.110.67
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: KR²_117MBsGPTXHistory
-  port: 1090
-  server: 121.169.46.116
-  type: socks5
-  username: Og%3D%3D
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: HK²_110MBs0GPTGMYTNFX
+  country: 🇮🇷IR
+  h2-opts: {}
+  http-opts: {}
+  name: FI²_113MBs10GPTDX
   network: ws
-  port: 52511
-  server: aflzzul.meiquankongjian.com
-  skip-cert-verify: false
-  tls: false
+  port: 38825
+  server: v3fi2.stablep.top
+  servername: v3fi2.stablep.top
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  udp: true
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
+  uuid: a2f34326-dc35-45c9-8391-53606ee23b0c
   ws-opts:
     headers:
-      Host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
+      HOST: v3fi2.stablep.top
+    path: /fi2-5
+- cipher: aes-256-cfb
+  country: 🇺🇸 US
+  name: US²_145MBsGPTGMYTNFXHistory
+  password: amazonskr05
+  port: 443
+  server: 13.217.198.211
+  type: ss
+- name: _1_419323325491080-0125MBs24MBsXHistory
+  password: ''
+  port: 1080
+  server: 193.233.254.9
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- encryption: none
+  name: NL²_162MBsGPTXHistory
+  network: ws
+  port: 80
+  server: 104.18.32.47
+  type: vless
+  udp: true
+  uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
+  ws-opts:
+    headers:
+      Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed
   xudp: true
 - cipher: aes-256-cfb
-  name: KR²_208MBs0GPTXHistory
+  country: 🇷🇺RU
+  name: RU²_146MBs25XHistory
+  password: gYCYXfkUQEs2TaJQ
+  port: 9038
+  server: 194.116.173.21
+  type: ss
+- country: 🇬🇧GB
+  name: GB²_136MBs6GPTNFDX广播机房
+  password: 73cd406b-1bec-4302-81ad-2809f2c55990
+  port: 38844
+  server: uk1.stablenode.top
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- country: 🇫🇷FR
+  name: FR²_158MBs1GPTX
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.181.255.155
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: HK²_143MBs6GPTGMYTDX
+  network: ws
+  port: 38801
+  server: hk33.stablep.top
+  servername: hk33.stablep.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 73cd406b-1bec-4302-81ad-2809f2c55990
+  ws-opts:
+    headers:
+      HOST: hk33.stablep.top
+    path: /hk33-1
+- name: HK²_243MBs0YT-CNXHistory
+  password: BxceQaOe
+  port: 443
+  server: 219.76.135.98
+  skip-cert-verify: true
+  sni: 219.76.135.98
+  tls: true
+  type: trojan
+- country: 🇪🇸ES
+  name: US²_213MBs10GPTX
+  password: 3efa5fe6-488a-47d4-8139-78d2e032cc68
+  port: 38813
+  server: us9.stablep.top
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: NL²_225MBs44GPTYT-USX
+  network: ws
+  port: 2053
+  server: nextmi.hajmyab.ir
+  servername: app.hajmyab.ir
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 9585636a-54bc-419a-90a1-76c5c6ec74df
+  ws-opts:
+    headers:
+      HOST: app.hajmyab.ir
+    path: /
+- client-fingerprint: chrome
+  name: DE¹-US⁰_155MBsDX
+  network: ws
+  port: 443
+  server: 89.169.13.12
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: HK²_347MBs1YTDX
+  network: ws
+  port: 80
+  server: 17b4b220-t8pj40-t9uin7-19ord.hkt.gotochinatown.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      HOST: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: chrome
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: RU²_216MBs7GPTTKNFX
+  network: http
+  port: 10468
+  server: 185.113.10.198
+  servername: Join---i10VPN---Join---i10VPN---Join---i10VPN---Join---i10VPN
+  tls: false
+  type: vless
+  udp: true
+  uuid: 3b12e953-96f0-40da-ac32-3038dadf20f7
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: NL²_312MBs42GPTX
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  server: nld14.freednet.org
+  servername: www.cybo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6fd9f786-d974-49d0-b5c4-397678de69a2
+- name: SG²_179MBs44GPTGMYTX
+  password: 5edb4d21-6cc1-4d46-8823-9a0e14d83455
+  port: 4449
+  server: 4-ndsrzkgg.mix.dexiansheng.com
+  tls: true
+  type: http
+  username: walless
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: CH²_140MBs0GPTDXHistory
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 138.124.79.9
+  servername: sun6-21.userapi.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+- country: 🇮🇷IR
+  name: AE²_334MBs10GPTDX
+  password: 8bb14fbc-db35-41d9-9c46-a99590511f69
+  port: 38833
+  server: v3fr2.stablep.top
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: US¹_163MBsGPTGMYTNFDX
+  network: ws
+  port: 2096
+  server: 25.129.198.238
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- cipher: aes-256-cfb
+  name: KR²_107MBs0GPTGMYTXHistory
   password: qwerREWQ@@
   port: 19203
   server: 121.170.203.147
   type: ss
   udp: true
-- name: TW²_109MBsGPTGMYTDXHistory原生住宅
-  password: mrwdfNTD8M79LCukCieldrqZWqs=
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
+- cipher: chacha20-ietf-poly1305
+  name: DE²_507MBs42GPTYT-RUX
+  password: i9lip2dJ8kV4wJQ0pJuRr6
+  port: 443
+  server: 185.100.159.79
+  type: ss
+  udp: true
+- name: _2_119323325471080-0131MBs34MBsXHistory
+  password: ''
+  port: 1080
+  server: 193.233.254.7
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- cipher: chacha20-ietf-poly1305
+  name: US²_342MBs54GPTNFXHistory
+  password: 5d8680180abdb564
+  port: 45234
+  server: 154.53.34.27
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: US¹-SG⁰_136MBsGPTGMYTTKNFDX
+  network: ws
+  port: 2053
+  server: china.embassy.gov.au
+  servername: snippet.danfeng.gleeze.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.gleeze.com
+    path: /danfeng?ed=2560
+- name: US²_439MBsGPTXHistory
+  password: ''
+  port: 1080
+  server: 192.241.156.17
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  name: HK¹-US⁰_141MBsDX
+  network: ws
+  port: 2096
+  server: v2.dabache.top
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- name: KR²_208MBsGPTXHistory
+  port: 1090
+  server: 121.169.46.116
+  tls: false
+  type: socks5
+  username: T2clM0QlM0Q6
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: HK²_743MBs6GPTYTDX
+  network: ws
+  port: 38802
+  server: hk33.stablep.top
+  servername: hk33.stablep.top
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 19677066-9cd1-448d-b3e4-7f98d0d608e5
+  ws-opts:
+    headers:
+      HOST: hk33.stablep.top
+    path: /hk33-2
+- country: 🇪🇸ES
+  name: US²_507MBs10GPTX
+  password: 8bb14fbc-db35-41d9-9c46-a99590511f69
+  port: 38821
+  server: us9.stablep.top
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: US¹_266MBsGMYTDX
+  network: ws
+  port: 2096
+  server: 103.116.7.138
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: NL²_457MBs0GPTX
+  port: 443
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 8453e5fd9af927
+  server: 94.228.215.12
+  servername: hls-svod.itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
+- client-fingerprint: chrome
+  name: HK¹-SG⁰_111MBsGPTYTDX
+  network: ws
+  port: 2053
+  server: 1357900.xyz
+  servername: snippet.danfeng.gleeze.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.gleeze.com
+    path: /danfeng?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: US²_634MBs7GPTX
+  network: tcp
+  port: 5443
+  reality-opts:
+    public-key: fN0jSTqScsS-N3lRjtdgMoKsm3y2IJB9-z84Ewg_p2M
+    short-id: 7c41e6ab7c162a95
+  server: 185.247.185.6
+  servername: sun6-22.userapi.com:443
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd0aba07-3b28-48a2-8cbb-49be72420089
+  xudp: true
+- client-fingerprint: chrome
+  name: US¹_365MBsGMYTNFDX
+  network: ws
+  port: 2096
+  server: 92.53.191.238
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- name: KR²_334MBs10GPTXHistory
+  password: test.+
+  port: 30446
+  server: testkr3.ssv.vc
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+  username: test
+- name: _3DE23原生疑似家宽高风险 黑名单24MBsX
+  port: 1080
+  server: 193.233.254.8
+  tls: false
+  type: socks5
+  username: T2dAMTkzLjIzMy4yNTQuODpPZ0AxOTMuMjMzLjI1NC44
+- client-fingerprint: chrome
+  name: JP²_121MBs0X
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  server: 154.31.114.125
+  servername: navi.bankrate.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5bd2e197-30a5-4684-9778-5bdb9ec764fe
+- client-fingerprint: chrome
+  encryption: none
+  name: US¹-SG⁰_317MBsGPTDX
+  network: ws
+  port: 2053
+  server: 104.17.73.206
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.de5.net
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /danfeng?ed=
+  xudp: true
+- client-fingerprint: chrome
+  name: US¹-SG⁰_412MBsGPTNFDX
+  network: ws
+  port: 2053
+  server: go2.lenovo.com
+  servername: snippet.danfeng21.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng21.ndjp.net
+    path: /danfeng?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: TestChatGRPC
+  name: DE²_906MBs0GPTYT-RUDX广播机房
+  network: grpc
+  port: 2443
+  reality-opts:
+    public-key: cVF_4NlqDOmx4hBXNH58IIRxyP1boRxV-AZ34-9VmXc
+    short-id: a1b2c3d4
+  server: 193.23.219.163
+  servername: www.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 911678d4-3ccf-4d87-8abe-89efb7cbd2f3
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: JNIR
+  name: SE²_131MBsYT-USNFX
+  network: grpc
+  port: 504
+  reality-opts:
+    public-key: aNLPNNyjIC7QYLe7MpF4nxxHhO421dBSZaQgsDd1szs
+    short-id: 1d64e9805b4f9ae3
+  server: dd.openaccessnode.com
+  servername: nobitex.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 31701b5d-ca95-92f9-d684-dae3706161ea
+  xudp: true
+- name: DE¹-US⁰_265MBsDX
+  network: ws
+  port: 2053
+  server: 5.178.110.39
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
 - alterId: 0
   cipher: auto
   country: 🇭🇰HK
   h2-opts: {}
   http-opts: {}
-  name: JP²_1124MBsNFDXHistory广播商宽
+  name: HK²_1015MBs0GPTYTDX
   network: ws
-  port: 52512
+  port: 52513
   server: aflzzul.meiquankongjian.com
   servername: aflzzul.meiquankongjian.com
   skip-cert-verify: true
@@ -94,121 +570,278 @@ proxies:
     headers:
       HOST: aflzzul.meiquankongjian.com
     path: /564dfa20/
-- cipher: aes-256-cfb
-  name: kr850fpuddincat07Telegram
-  password: qwerREWQ@@
-  port: 29707
-  server: 221.139.79.20
-  type: ss
-- name: xx8034puddincat07Telegram
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: NO²_152MBs49GPTDX
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 3y_BXj6smo8Fc8hrdw94yucA0_V-f8Q-1-WvgNZpsik
+    short-id: 0a77acf80000e11f
+  server: no-most.asbndx.com
+  servername: no-most.asbndx.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3209ec50-2909-4972-83cb-93349f9d94fd
+  xudp: true
+- name: VN²_126MBsXHistory
+  password: ''
+  port: 1080
+  server: 183.80.54.224
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- country: 🇪🇸ES
+  name: US²_711MBsGPTDX
+  password: 19677066-9cd1-448d-b3e4-7f98d0d608e5
+  port: 38822
+  server: us9.stablep.top
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- encryption: none
+  name: NL²_679MBs0GPTDX
+  network: ws
+  port: 8080
+  server: digitalocean.com
+  type: vless
+  udp: true
+  uuid: a460ed1b-e063-496c-9057-784547c0c81c
+  ws-opts:
+    headers:
+      Host: dildodod.decoreland.ir.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/34.0.1847.131 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: US¹-SG⁰_566MBsGPTGMYTTKNFDX
+  network: ws
+  port: 2053
+  server: singapore.com
+  servername: snippet.danfeng21.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng21.ndjp.net
+    path: /danfeng?ed=2560
+- name: NL²_755MBsXHistory
+  password: ''
+  port: 1080
+  server: 104.248.203.234
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: TW²_157MBsGPTGMYTNFDXHistory
+  password: mrwdfNTD8M79LCukCieldrqZWqs=
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: HK²_1318MBs1YTDX
+  network: ws
+  port: 80
+  server: 203a83c0-t70f40-t9uin7-19ord.hkt.gotochinatown.net
+  skip-cert-verify: true
+  type: vmess
+  uuid: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
+  ws-opts:
+    path: /
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: HK²_1451MBs1YTDX
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
+  server: 2.hk.1.cdn-bilibili.cn
+  servername: www.icloud.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
+- client-fingerprint: chrome
+  name: DE¹-US⁰_347MBsDX
+  network: ws
+  port: 443
+  server: 217.154.213.217
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- name: SG²_229MBsGPTX
+  password: 5edb4d21-6cc1-4d46-8823-9a0e14d83455
+  port: 4446
+  server: 4-nqvrfftt.mix.dexiansheng.com
+  tls: true
+  type: http
+  username: walless
+- alterId: '0'
+  cipher: auto
+  name: SG²_365MBsXHistory
+  network: ws
+  port: 8080
+  server: tgju.org
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: nasnet
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: nasnet-571296497.iranpress.co
+    max-early-data: 2560
+    path: /nasnet/cdn
+  xudp: true
+- country: 🇫🇷FR
+  name: FR²_257MBs1GPTX
+  password: telegram-id-directvpn
+  port: 22223
+  server: 35.181.255.155
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: US¹_463MBsGMYTTKNFDX
+  network: ws
+  port: 2096
+  server: 162.251.82.238
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- name: xx295epuddincat07Telegram
   password: 63b21d86-a49c-4936-a634-0b5af3e30433
   port: 443
   server: tuntro006.instconn.com
   skip-cert-verify: true
   sni: torontorm1.686911.xyz
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: xxa574puddincat07Telegram
-  password: nKohne07VrxB-nq43cxzs7Vu9Nnp4JXY
-  port: 504
-  server: ru1.clear-vpn.org
+- cipher: aes-256-cfb
+  name: krd89epuddincat07Telegram
+  password: qwerREWQ@@
+  port: 29707
+  server: 221.139.79.20
+  type: ss
+- cipher: aes-256-cfb
+  name: kr8d8apuddincat07Telegram
+  password: qwerREWQ@@
+  port: 51537
+  server: 211.201.169.70
   type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: tre7c0puddincat07Telegram
+  name: trf6e1puddincat07Telegram
   password: Ul0rGyAAed5HRDpvFqr2C0
   port: 37096
   server: 62.133.63.169
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: xxffcepuddincat07Telegram
-  password: kaQH3hGdcP80XEDI
-  port: 443
-  server: admin.c2.havij.co
-  type: ss
-- name: xx6d8fpuddincat07Telegram
+- name: xxbd7cpuddincat07Telegram
   password: 63b21d86-a49c-4936-a634-0b5af3e30433
   port: 443
   server: tuntro010.instconn.com
   skip-cert-verify: true
   sni: frankfurtrm2.686911.xyz
   type: trojan
-- alterId: 0
-  name: twe4fbpuddincat07Telegram
+- cipher: chacha20-ietf-poly1305
+  name: xxc730puddincat07Telegram
+  password: nKohne07VrxB-nq43cxzs7Vu9Nnp4JXY
+  port: 504
+  server: ru1.clear-vpn.org
+  type: ss
+- name: tw6e70puddincat07Telegram
   password: 223c2f69-6b95-4555-9f68-14b14d72b7ea
   port: 35501
   server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-  udp: true
-- name: CH_76d34_0001
-  server: 138.124.79.9
-  port: 443
-  type: vless
-  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-  flow: xtls-rprx-vision
-  tls: true
   skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sun6-21.userapi.com
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
+  sni: green2.cdntencentmusic.com
+  type: trojan
+- cipher: aes-256-cfb
+  name: mk4217puddincat07Telegram
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.185.37
+  type: ss
   udp: true
-- name: CN_76d34_0002
+- name: CN_ddb15_0002
   server: 183.240.138.163
   port: 19812
   type: ss
   cipher: chacha20-ietf-poly1305
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
   udp: true
-- name: CN_76d34_0003
+- name: CN_ddb15_0003
   server: 36.141.116.174
   port: 39204
   type: ss
   cipher: 2022-blake3-aes-128-gcm
   password: MDhhMTdjZDI0MjI2ZWRlNg==:MGY0MDExNDQtODJlMS00OA==
   udp: true
-- name: CN_76d34_0004
+- name: CN_ddb15_0004
   server: 36.141.116.174
   port: 40023
   type: ss
   cipher: 2022-blake3-aes-128-gcm
   password: MDhhMTdjZDI0MjI2ZWRlNg==:MGY0MDExNDQtODJlMS00OA==
   udp: true
-- name: CN_76d34_0005
+- name: CN_ddb15_0005
   server: 183.240.138.163
   port: 19842
   type: ss
   cipher: chacha20-ietf-poly1305
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
   udp: true
-- name: CN_76d34_0006
+- name: CN_ddb15_0006
   server: 183.240.138.163
   port: 19862
   type: ss
   cipher: chacha20-ietf-poly1305
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
   udp: true
-- name: CN_76d34_0007
+- name: CN_ddb15_0007
   server: 36.141.116.174
   port: 39209
   type: ss
   cipher: 2022-blake3-aes-128-gcm
   password: MDhhMTdjZDI0MjI2ZWRlNg==:MGY0MDExNDQtODJlMS00OA==
   udp: true
-- name: CN_76d34_0008
+- name: CN_ddb15_0008
   server: 36.141.116.174
   port: 45691
   type: ss
   cipher: 2022-blake3-aes-128-gcm
   password: NjVhMWE2YmVmNzg4MTcwMA==:MGY0MDExNDQtODJlMS00OA==
   udp: true
-- name: DE_76d34_0009
+- name: DE_ddb15_0009
   server: dlc-nl1.persianpinggame.ir
   port: 8881
   type: vless
@@ -222,7 +855,7 @@ proxies:
     headers:
       Host: divarcdn.com
   udp: true
-- name: DE_76d34_0010
+- name: DE_ddb15_0010
   server: iar.blackhoster.com
   port: 350
   type: vless
@@ -236,7 +869,7 @@ proxies:
     public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
     short-id: fd1dff03520d8f56
   udp: true
-- name: DK_76d34_0011
+- name: DK_ddb15_0011
   server: 185.9.25.99
   port: 25174
   type: vless
@@ -244,7 +877,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: FR_76d34_0012
+- name: FR_ddb15_0012
   server: srv16.outlinekeys.com
   port: 443
   type: vless
@@ -257,7 +890,7 @@ proxies:
   reality-opts:
     public-key: WvNaAxI0W__qfUKbtysH4IwF155YENlv3PG6crCmPkA
   udp: true
-- name: GB_76d34_0013
+- name: GB_ddb15_0013
   server: 82.198.246.97
   port: 180
   type: vmess
@@ -267,7 +900,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_76d34_0014
+- name: GB_ddb15_0014
   server: mskhost.outlinekeys.net
   port: 443
   type: vless
@@ -280,7 +913,7 @@ proxies:
   reality-opts:
     public-key: 3zn513ilYXOJngXLRP0MUnK23HuB9TKLjQ7YG20dzTQ
   udp: true
-- name: GB_76d34_0015
+- name: GB_ddb15_0015
   server: 185.21.14.199
   port: 443
   type: vless
@@ -294,7 +927,7 @@ proxies:
     public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
     short-id: 8bcfe256cf216fd8
   udp: true
-- name: GB_76d34_0016
+- name: GB_ddb15_0016
   server: g4vpnx.online
   port: 443
   type: vless
@@ -308,7 +941,7 @@ proxies:
     public-key: QxhDed0WtuJv9Gv5ilv4QdvaLDnCXJs_Q40O0DdBF20
     short-id: 7f76d724ba84
   udp: true
-- name: GB_76d34_0017
+- name: GB_ddb15_0017
   server: 91.84.112.93
   port: 443
   type: vless
@@ -322,7 +955,7 @@ proxies:
     public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
     short-id: 8bcfe256cf216fd8
   udp: true
-- name: GB_76d34_0018
+- name: GB_ddb15_0018
   server: 77.239.124.88
   port: 443
   type: vless
@@ -335,7 +968,7 @@ proxies:
   reality-opts:
     public-key: 3zn513ilYXOJngXLRP0MUnK23HuB9TKLjQ7YG20dzTQ
   udp: true
-- name: HK_76d34_0019
+- name: HK_ddb15_0019
   server: 8.217.13.74
   port: 54732
   type: vmess
@@ -350,7 +983,7 @@ proxies:
     path:
     - /
   udp: true
-- name: HK_76d34_0020
+- name: HK_ddb15_0020
   server: 47.242.225.0
   port: 32975
   type: vmess
@@ -365,7 +998,7 @@ proxies:
     path:
     - /
   udp: true
-- name: HK_76d34_0021
+- name: HK_ddb15_0021
   server: 8.218.1.23
   port: 25351
   type: vmess
@@ -380,7 +1013,7 @@ proxies:
     path:
     - /
   udp: true
-- name: IN_76d34_0022
+- name: IN_ddb15_0022
   server: amanm.wsone.icu
   port: 443
   type: trojan
@@ -388,7 +1021,7 @@ proxies:
   sni: amanm.wsone.icu
   skip-cert-verify: true
   udp: true
-- name: KR_76d34_0023
+- name: KR_ddb15_0023
   server: 49.128.219.21
   port: 52850
   type: vmess
@@ -403,28 +1036,7 @@ proxies:
     path:
     - /x
   udp: true
-- name: MK_76d34_0024
-  server: 46.183.185.37
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: NL_76d34_0025
-  server: 94.228.215.12
-  port: 443
-  type: vless
-  uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: hls-svod.itunes.apple.com
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 8453e5fd9af927
-  udp: true
-- name: RU_76d34_0026
+- name: RU_ddb15_0026
   server: 158.160.105.121
   port: 443
   type: vless
@@ -438,7 +1050,7 @@ proxies:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 1929ef620e9b34f5
   udp: true
-- name: RU_76d34_0027
+- name: RU_ddb15_0027
   server: 5.188.35.49
   port: 50652
   type: vless
@@ -452,7 +1064,7 @@ proxies:
     public-key: NXo5uRsVEmNtYWahGbEjr-y2IloJTgBc3WQmq60F2T8
     short-id: 78781cd4b7f0
   udp: true
-- name: RU_76d34_0028
+- name: RU_ddb15_0028
   server: 37.139.34.145
   port: 8443
   type: vless
@@ -466,7 +1078,7 @@ proxies:
     public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
     short-id: 48fccabc158a4c22
   udp: true
-- name: RU_76d34_0029
+- name: RU_ddb15_0029
   server: 158.160.223.36
   port: 8443
   type: vless
@@ -480,7 +1092,7 @@ proxies:
     public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
     short-id: 48fccabc158a4c22
   udp: true
-- name: RU_76d34_0030
+- name: RU_ddb15_0030
   server: 158.160.105.121
   port: 8443
   type: vless
@@ -494,7 +1106,7 @@ proxies:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 887c0d72e771a934
   udp: true
-- name: RU_76d34_0031
+- name: RU_ddb15_0031
   server: 158.160.105.121
   port: 51102
   type: vless
@@ -508,7 +1120,7 @@ proxies:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 887c0d72e771a934
   udp: true
-- name: RU_76d34_0032
+- name: RU_ddb15_0032
   server: 89.169.162.214
   port: 8443
   type: vless
@@ -522,7 +1134,7 @@ proxies:
     public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
     short-id: 205748bc0f24a747
   udp: true
-- name: RU_76d34_0033
+- name: RU_ddb15_0033
   server: russia7.yourbot.me
   port: 443
   type: vless
@@ -536,7 +1148,7 @@ proxies:
     public-key: 6EHTqOektSiQ8OMDU-5I1RWpFWw22N_N1aJCJdymXCA
     short-id: 199939d7
   udp: true
-- name: RU_76d34_0034
+- name: RU_ddb15_0034
   server: 89.169.162.214
   port: 443
   type: vless
@@ -550,7 +1162,7 @@ proxies:
     public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
     short-id: 205748bc0f24a747
   udp: true
-- name: SG_76d34_0035
+- name: SG_ddb15_0035
   server: 8.222.196.37
   port: 443
   type: vless
@@ -563,264 +1175,6 @@ proxies:
     public-key: DNdTBHyztOVJOBJQX91YXEhNkWbSAntqUoTFBHc6Clw
     short-id: 6ba85179e30d4fc2
   udp: true
-- name: US_76d34_0036
-  server: cf.090227.xyz
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  udp: true
-- name: US_76d34_0037
-  server: 37.19.198.236
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
-- name: US_76d34_0038
-  server: cdnjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  udp: true
-- name: US_76d34_0039
-  server: developers.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  udp: true
-- name: US_76d34_0040
-  server: afrcloud4.c01.kr
-  port: 443
-  type: vless
-  uuid: 2275e858-8aff-44fe-b816-d85c2ab372e5
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: afrcloud4.c01.kr
-  network: ws
-  ws-opts:
-    path: /47.254.255.125=443
-    headers:
-      Host: afrcloud4.c01.kr
-  udp: true
-- name: US_76d34_0041
-  server: 104.26.12.27
-  port: 2053
-  type: vless
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: snippet.danfeng21.ndjp.net
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.danfeng21.ndjp.net
-  udp: true
-- name: US_76d34_0042
-  server: www.epicgames.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cnm-fangbinxing-nmsl.cnm-fangbinxing-nmsl-wcnm.workers.dev
-  udp: true
-- name: VN_76d34_0043
-  server: 103.186.155.209
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0044
-  server: 103.186.154.180
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0045
-  server: 103.186.155.44
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0046
-  server: 103.186.154.57
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0047
-  server: 103.186.155.8
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0048
-  server: 103.186.155.127
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0049
-  server: 103.186.155.119
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0050
-  server: 103.186.155.76
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0051
-  server: 103.186.155.144
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0052
-  server: 103.186.154.237
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0053
-  server: 103.186.154.247
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0054
-  server: 103.186.155.27
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0055
-  server: 103.186.155.203
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0056
-  server: 103.186.154.194
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0057
-  server: 103.186.154.181
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0058
-  server: 103.186.154.254
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0059
-  server: 103.186.155.47
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0060
-  server: 103.186.155.49
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0061
-  server: 103.186.155.28
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0062
-  server: 103.186.155.60
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0063
-  server: 103.186.155.85
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0064
-  server: 103.186.155.17
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_76d34_0065
-  server: 103.186.154.79
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -828,170 +1182,212 @@ proxy-groups:
   - ♻️ 自动选择
   - ♻️ 负载均衡
   - 🌍 全球直连
-  - AU²_174MBsGPTXHistory
-  - SG²_108MBsX
-  - KR²_117MBsGPTXHistory
-  - HK²_110MBs0GPTGMYTNFX
-  - KR²_208MBs0GPTXHistory
-  - TW²_109MBsGPTGMYTDXHistory原生住宅
-  - JP²_1124MBsNFDXHistory广播商宽
-  - kr850fpuddincat07Telegram
-  - xx8034puddincat07Telegram
-  - xxa574puddincat07Telegram
-  - tre7c0puddincat07Telegram
-  - xxffcepuddincat07Telegram
-  - xx6d8fpuddincat07Telegram
-  - twe4fbpuddincat07Telegram
-  - CH_76d34_0001
-  - CN_76d34_0002
-  - CN_76d34_0003
-  - CN_76d34_0004
-  - CN_76d34_0005
-  - CN_76d34_0006
-  - CN_76d34_0007
-  - CN_76d34_0008
-  - DE_76d34_0009
-  - DE_76d34_0010
-  - DK_76d34_0011
-  - FR_76d34_0012
-  - GB_76d34_0013
-  - GB_76d34_0014
-  - GB_76d34_0015
-  - GB_76d34_0016
-  - GB_76d34_0017
-  - GB_76d34_0018
-  - HK_76d34_0019
-  - HK_76d34_0020
-  - HK_76d34_0021
-  - IN_76d34_0022
-  - KR_76d34_0023
-  - MK_76d34_0024
-  - NL_76d34_0025
-  - RU_76d34_0026
-  - RU_76d34_0027
-  - RU_76d34_0028
-  - RU_76d34_0029
-  - RU_76d34_0030
-  - RU_76d34_0031
-  - RU_76d34_0032
-  - RU_76d34_0033
-  - RU_76d34_0034
-  - SG_76d34_0035
-  - US_76d34_0036
-  - US_76d34_0037
-  - US_76d34_0038
-  - US_76d34_0039
-  - US_76d34_0040
-  - US_76d34_0041
-  - US_76d34_0042
-  - VN_76d34_0043
-  - VN_76d34_0044
-  - VN_76d34_0045
-  - VN_76d34_0046
-  - VN_76d34_0047
-  - VN_76d34_0048
-  - VN_76d34_0049
-  - VN_76d34_0050
-  - VN_76d34_0051
-  - VN_76d34_0052
-  - VN_76d34_0053
-  - VN_76d34_0054
-  - VN_76d34_0055
-  - VN_76d34_0056
-  - VN_76d34_0057
-  - VN_76d34_0058
-  - VN_76d34_0059
-  - VN_76d34_0060
-  - VN_76d34_0061
-  - VN_76d34_0062
-  - VN_76d34_0063
-  - VN_76d34_0064
-  - VN_76d34_0065
+  - AE²_134MBs10GPTDX
+  - DE²_135MBs6GPTDX
+  - IN²_105MBsGPTXHistory
+  - FI²_113MBs10GPTDX
+  - US²_145MBsGPTGMYTNFXHistory
+  - _1_419323325491080-0125MBs24MBsXHistory
+  - NL²_162MBsGPTXHistory
+  - RU²_146MBs25XHistory
+  - GB²_136MBs6GPTNFDX广播机房
+  - FR²_158MBs1GPTX
+  - HK²_143MBs6GPTGMYTDX
+  - HK²_243MBs0YT-CNXHistory
+  - US²_213MBs10GPTX
+  - NL²_225MBs44GPTYT-USX
+  - DE¹-US⁰_155MBsDX
+  - HK²_347MBs1YTDX
+  - RU²_216MBs7GPTTKNFX
+  - NL²_312MBs42GPTX
+  - SG²_179MBs44GPTGMYTX
+  - CH²_140MBs0GPTDXHistory
+  - AE²_334MBs10GPTDX
+  - US¹_163MBsGPTGMYTNFDX
+  - KR²_107MBs0GPTGMYTXHistory
+  - DE²_507MBs42GPTYT-RUX
+  - _2_119323325471080-0131MBs34MBsXHistory
+  - US²_342MBs54GPTNFXHistory
+  - US¹-SG⁰_136MBsGPTGMYTTKNFDX
+  - US²_439MBsGPTXHistory
+  - HK¹-US⁰_141MBsDX
+  - KR²_208MBsGPTXHistory
+  - HK²_743MBs6GPTYTDX
+  - US²_507MBs10GPTX
+  - US¹_266MBsGMYTDX
+  - NL²_457MBs0GPTX
+  - HK¹-SG⁰_111MBsGPTYTDX
+  - US²_634MBs7GPTX
+  - US¹_365MBsGMYTNFDX
+  - KR²_334MBs10GPTXHistory
+  - _3DE23原生疑似家宽高风险 黑名单24MBsX
+  - JP²_121MBs0X
+  - US¹-SG⁰_317MBsGPTDX
+  - US¹-SG⁰_412MBsGPTNFDX
+  - DE²_906MBs0GPTYT-RUDX广播机房
+  - SE²_131MBsYT-USNFX
+  - DE¹-US⁰_265MBsDX
+  - HK²_1015MBs0GPTYTDX
+  - NO²_152MBs49GPTDX
+  - VN²_126MBsXHistory
+  - US²_711MBsGPTDX
+  - NL²_679MBs0GPTDX
+  - US¹-SG⁰_566MBsGPTGMYTTKNFDX
+  - NL²_755MBsXHistory
+  - TW²_157MBsGPTGMYTNFDXHistory
+  - HK²_1318MBs1YTDX
+  - HK²_1451MBs1YTDX
+  - DE¹-US⁰_347MBsDX
+  - SG²_229MBsGPTX
+  - SG²_365MBsXHistory
+  - FR²_257MBs1GPTX
+  - US¹_463MBsGMYTTKNFDX
+  - xx295epuddincat07Telegram
+  - krd89epuddincat07Telegram
+  - kr8d8apuddincat07Telegram
+  - trf6e1puddincat07Telegram
+  - xxbd7cpuddincat07Telegram
+  - xxc730puddincat07Telegram
+  - tw6e70puddincat07Telegram
+  - mk4217puddincat07Telegram
+  - CN_ddb15_0002
+  - CN_ddb15_0003
+  - CN_ddb15_0004
+  - CN_ddb15_0005
+  - CN_ddb15_0006
+  - CN_ddb15_0007
+  - CN_ddb15_0008
+  - DE_ddb15_0009
+  - DE_ddb15_0010
+  - DK_ddb15_0011
+  - FR_ddb15_0012
+  - GB_ddb15_0013
+  - GB_ddb15_0014
+  - GB_ddb15_0015
+  - GB_ddb15_0016
+  - GB_ddb15_0017
+  - GB_ddb15_0018
+  - HK_ddb15_0019
+  - HK_ddb15_0020
+  - HK_ddb15_0021
+  - IN_ddb15_0022
+  - KR_ddb15_0023
+  - RU_ddb15_0026
+  - RU_ddb15_0027
+  - RU_ddb15_0028
+  - RU_ddb15_0029
+  - RU_ddb15_0030
+  - RU_ddb15_0031
+  - RU_ddb15_0032
+  - RU_ddb15_0033
+  - RU_ddb15_0034
+  - SG_ddb15_0035
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - AU²_174MBsGPTXHistory
-  - SG²_108MBsX
-  - KR²_117MBsGPTXHistory
-  - HK²_110MBs0GPTGMYTNFX
-  - KR²_208MBs0GPTXHistory
-  - TW²_109MBsGPTGMYTDXHistory原生住宅
-  - JP²_1124MBsNFDXHistory广播商宽
-  - kr850fpuddincat07Telegram
-  - xx8034puddincat07Telegram
-  - xxa574puddincat07Telegram
-  - tre7c0puddincat07Telegram
-  - xxffcepuddincat07Telegram
-  - xx6d8fpuddincat07Telegram
-  - twe4fbpuddincat07Telegram
-  - CH_76d34_0001
-  - CN_76d34_0002
-  - CN_76d34_0003
-  - CN_76d34_0004
-  - CN_76d34_0005
-  - CN_76d34_0006
-  - CN_76d34_0007
-  - CN_76d34_0008
-  - DE_76d34_0009
-  - DE_76d34_0010
-  - DK_76d34_0011
-  - FR_76d34_0012
-  - GB_76d34_0013
-  - GB_76d34_0014
-  - GB_76d34_0015
-  - GB_76d34_0016
-  - GB_76d34_0017
-  - GB_76d34_0018
-  - HK_76d34_0019
-  - HK_76d34_0020
-  - HK_76d34_0021
-  - IN_76d34_0022
-  - KR_76d34_0023
-  - MK_76d34_0024
-  - NL_76d34_0025
-  - RU_76d34_0026
-  - RU_76d34_0027
-  - RU_76d34_0028
-  - RU_76d34_0029
-  - RU_76d34_0030
-  - RU_76d34_0031
-  - RU_76d34_0032
-  - RU_76d34_0033
-  - RU_76d34_0034
-  - SG_76d34_0035
-  - US_76d34_0036
-  - US_76d34_0037
-  - US_76d34_0038
-  - US_76d34_0039
-  - US_76d34_0040
-  - US_76d34_0041
-  - US_76d34_0042
-  - VN_76d34_0043
-  - VN_76d34_0044
-  - VN_76d34_0045
-  - VN_76d34_0046
-  - VN_76d34_0047
-  - VN_76d34_0048
-  - VN_76d34_0049
-  - VN_76d34_0050
-  - VN_76d34_0051
-  - VN_76d34_0052
-  - VN_76d34_0053
-  - VN_76d34_0054
-  - VN_76d34_0055
-  - VN_76d34_0056
-  - VN_76d34_0057
-  - VN_76d34_0058
-  - VN_76d34_0059
-  - VN_76d34_0060
-  - VN_76d34_0061
-  - VN_76d34_0062
-  - VN_76d34_0063
-  - VN_76d34_0064
-  - VN_76d34_0065
+  - AE²_134MBs10GPTDX
+  - DE²_135MBs6GPTDX
+  - IN²_105MBsGPTXHistory
+  - FI²_113MBs10GPTDX
+  - US²_145MBsGPTGMYTNFXHistory
+  - _1_419323325491080-0125MBs24MBsXHistory
+  - NL²_162MBsGPTXHistory
+  - RU²_146MBs25XHistory
+  - GB²_136MBs6GPTNFDX广播机房
+  - FR²_158MBs1GPTX
+  - HK²_143MBs6GPTGMYTDX
+  - HK²_243MBs0YT-CNXHistory
+  - US²_213MBs10GPTX
+  - NL²_225MBs44GPTYT-USX
+  - DE¹-US⁰_155MBsDX
+  - HK²_347MBs1YTDX
+  - RU²_216MBs7GPTTKNFX
+  - NL²_312MBs42GPTX
+  - SG²_179MBs44GPTGMYTX
+  - CH²_140MBs0GPTDXHistory
+  - AE²_334MBs10GPTDX
+  - US¹_163MBsGPTGMYTNFDX
+  - KR²_107MBs0GPTGMYTXHistory
+  - DE²_507MBs42GPTYT-RUX
+  - _2_119323325471080-0131MBs34MBsXHistory
+  - US²_342MBs54GPTNFXHistory
+  - US¹-SG⁰_136MBsGPTGMYTTKNFDX
+  - US²_439MBsGPTXHistory
+  - HK¹-US⁰_141MBsDX
+  - KR²_208MBsGPTXHistory
+  - HK²_743MBs6GPTYTDX
+  - US²_507MBs10GPTX
+  - US¹_266MBsGMYTDX
+  - NL²_457MBs0GPTX
+  - HK¹-SG⁰_111MBsGPTYTDX
+  - US²_634MBs7GPTX
+  - US¹_365MBsGMYTNFDX
+  - KR²_334MBs10GPTXHistory
+  - _3DE23原生疑似家宽高风险 黑名单24MBsX
+  - JP²_121MBs0X
+  - US¹-SG⁰_317MBsGPTDX
+  - US¹-SG⁰_412MBsGPTNFDX
+  - DE²_906MBs0GPTYT-RUDX广播机房
+  - SE²_131MBsYT-USNFX
+  - DE¹-US⁰_265MBsDX
+  - HK²_1015MBs0GPTYTDX
+  - NO²_152MBs49GPTDX
+  - VN²_126MBsXHistory
+  - US²_711MBsGPTDX
+  - NL²_679MBs0GPTDX
+  - US¹-SG⁰_566MBsGPTGMYTTKNFDX
+  - NL²_755MBsXHistory
+  - TW²_157MBsGPTGMYTNFDXHistory
+  - HK²_1318MBs1YTDX
+  - HK²_1451MBs1YTDX
+  - DE¹-US⁰_347MBsDX
+  - SG²_229MBsGPTX
+  - SG²_365MBsXHistory
+  - FR²_257MBs1GPTX
+  - US¹_463MBsGMYTTKNFDX
+  - xx295epuddincat07Telegram
+  - krd89epuddincat07Telegram
+  - kr8d8apuddincat07Telegram
+  - trf6e1puddincat07Telegram
+  - xxbd7cpuddincat07Telegram
+  - xxc730puddincat07Telegram
+  - tw6e70puddincat07Telegram
+  - mk4217puddincat07Telegram
+  - CN_ddb15_0002
+  - CN_ddb15_0003
+  - CN_ddb15_0004
+  - CN_ddb15_0005
+  - CN_ddb15_0006
+  - CN_ddb15_0007
+  - CN_ddb15_0008
+  - DE_ddb15_0009
+  - DE_ddb15_0010
+  - DK_ddb15_0011
+  - FR_ddb15_0012
+  - GB_ddb15_0013
+  - GB_ddb15_0014
+  - GB_ddb15_0015
+  - GB_ddb15_0016
+  - GB_ddb15_0017
+  - GB_ddb15_0018
+  - HK_ddb15_0019
+  - HK_ddb15_0020
+  - HK_ddb15_0021
+  - IN_ddb15_0022
+  - KR_ddb15_0023
+  - RU_ddb15_0026
+  - RU_ddb15_0027
+  - RU_ddb15_0028
+  - RU_ddb15_0029
+  - RU_ddb15_0030
+  - RU_ddb15_0031
+  - RU_ddb15_0032
+  - RU_ddb15_0033
+  - RU_ddb15_0034
+  - SG_ddb15_0035
 - name: ♻️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -1008,46 +1404,46 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - AU²_174MBsGPTXHistory
-  - SG²_108MBsX
-  - KR²_117MBsGPTXHistory
-  - HK²_110MBs0GPTGMYTNFX
-  - KR²_208MBs0GPTXHistory
-  - TW²_109MBsGPTGMYTDXHistory原生住宅
-  - JP²_1124MBsNFDXHistory广播商宽
-  - kr850fpuddincat07Telegram
-  - xx8034puddincat07Telegram
-  - xxa574puddincat07Telegram
+  - AE²_134MBs10GPTDX
+  - DE²_135MBs6GPTDX
+  - IN²_105MBsGPTXHistory
+  - FI²_113MBs10GPTDX
+  - US²_145MBsGPTGMYTNFXHistory
+  - _1_419323325491080-0125MBs24MBsXHistory
+  - NL²_162MBsGPTXHistory
+  - RU²_146MBs25XHistory
+  - GB²_136MBs6GPTNFDX广播机房
+  - FR²_158MBs1GPTX
 - name: 🎥 Netflix
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - AU²_174MBsGPTXHistory
-  - SG²_108MBsX
-  - KR²_117MBsGPTXHistory
-  - HK²_110MBs0GPTGMYTNFX
-  - KR²_208MBs0GPTXHistory
-  - TW²_109MBsGPTGMYTDXHistory原生住宅
-  - JP²_1124MBsNFDXHistory广播商宽
-  - kr850fpuddincat07Telegram
-  - xx8034puddincat07Telegram
-  - xxa574puddincat07Telegram
+  - AE²_134MBs10GPTDX
+  - DE²_135MBs6GPTDX
+  - IN²_105MBsGPTXHistory
+  - FI²_113MBs10GPTDX
+  - US²_145MBsGPTGMYTNFXHistory
+  - _1_419323325491080-0125MBs24MBsXHistory
+  - NL²_162MBsGPTXHistory
+  - RU²_146MBs25XHistory
+  - GB²_136MBs6GPTNFDX广播机房
+  - FR²_158MBs1GPTX
 - name: 📱 Telegram
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - AU²_174MBsGPTXHistory
-  - SG²_108MBsX
-  - KR²_117MBsGPTXHistory
-  - HK²_110MBs0GPTGMYTNFX
-  - KR²_208MBs0GPTXHistory
-  - TW²_109MBsGPTGMYTDXHistory原生住宅
-  - JP²_1124MBsNFDXHistory广播商宽
-  - kr850fpuddincat07Telegram
-  - xx8034puddincat07Telegram
-  - xxa574puddincat07Telegram
+  - AE²_134MBs10GPTDX
+  - DE²_135MBs6GPTDX
+  - IN²_105MBsGPTXHistory
+  - FI²_113MBs10GPTDX
+  - US²_145MBsGPTGMYTNFXHistory
+  - _1_419323325491080-0125MBs24MBsXHistory
+  - NL²_162MBsGPTXHistory
+  - RU²_146MBs25XHistory
+  - GB²_136MBs6GPTNFDX广播机房
+  - FR²_158MBs1GPTX
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
