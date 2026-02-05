@@ -3,7 +3,9 @@ name: Update Free Nodes Every Monday
 on:
   schedule:
     # 每周一 UTC 02:00（北京时间 10:00）
-    - cron: '0 2 * * 1'
+    #- cron: '0 2 * * 1'
+    #更改未每周一，周四运行
+    - cron: '0 2 * * 1,4'
   workflow_dispatch:  # 允许手动触发
     inputs:
       reason:
