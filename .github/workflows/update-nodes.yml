@@ -36,8 +36,11 @@ jobs:
       run: |
         git config --local user.email "way-fu@github.com"
         git config --local user.name "way-fu"
+        git config --local user.name "github-actions[bot]"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git add output/
-        
+        git add .
+        git commit -m "🔄 Auto update nodes: $(date +'%Y-%m-%d %H:%M')"
         if git diff --staged --quiet; then
           echo "✅ No changes to commit"
           exit 0
@@ -45,3 +48,5 @@ jobs:
         
         git commit -m "🔄 Auto update nodes: $(date +'%Y-%m-%d %H:%M')"
         git push https://way-fu:${PAT}@github.com/way-fu/free-nodes-auto.git HEAD:main
+        git pull --rebase origin main || git pull --no-edit origin main
+        git push origin HEAD:main
