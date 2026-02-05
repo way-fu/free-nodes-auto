@@ -8,16 +8,12 @@ on:
 jobs:
   update-nodes:
     runs-on: ubuntu-latest
-    # 添加权限配置
-    permissions:
-      contents: write
-      
+    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        # 使用内置的 GITHUB_TOKEN
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.PAT_TOKEN }}
         fetch-depth: 0
       
     - name: Set up Python
@@ -35,18 +31,17 @@ jobs:
       run: python scripts/fetch_nodes.py
       
     - name: Commit and push
+      env:
+        PAT: ${{ secrets.PAT_TOKEN }}
       run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
+        git config --local user.email "way-fu@users.noreply.github.com"
+        git config --local user.name "way-fu"
         git add output/
         
-        # 检查是否有变更
         if git diff --staged --quiet; then
           echo "✅ No changes to commit"
           exit 0
         fi
         
         git commit -m "🔄 Auto update nodes: $(date +'%Y-%m-%d %H:%M')"
-        
-        # 使用 GITHUB_TOKEN 推送
-        git push https://${{ github.token }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+        git push https://way-fu:${PAT}@github.com/way-fu/free-nodes-auto.git HEAD:main
