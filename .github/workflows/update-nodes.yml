@@ -41,7 +41,7 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-
+        git pull origin main --rebase --autostash
         git add output/
 
         # 如果暂存区没有改动则退出
