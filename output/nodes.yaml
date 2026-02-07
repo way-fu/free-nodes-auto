@@ -26,39 +26,147 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- encryption: none
-  name: NL²_174MBsGPTX广播住宅拨号
-  network: ws
-  port: 2052
-  server: nodejs.org
-  type: vless
-  udp: true
-  uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
-  ws-opts:
-    headers:
-      Host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /?ed
-  xudp: true
 - client-fingerprint: chrome
-  name: JP²_108MBs0GPTX
+  encryption: none
+  flow: xtls-rprx-vision
+  name: PL²_139MBs20GPTX广播机房
   network: tcp
-  port: 443
+  port: 51102
   reality-opts:
-    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
-    short-id: 2da72ce6
-  server: 154.31.114.125
-  servername: navi.bankrate.com
+    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+    short-id: 1929ef620e9b34f5
+  server: 158.160.105.121
+  servername: yandex.ru
   tls: true
   type: vless
   udp: true
-  uuid: 35f2f529-968d-4727-b57a-bcc39a3fd2ae
+  uuid: 4603e54d-b023-4947-83e7-70025416f306
+  xudp: true
 - client-fingerprint: chrome
-  name: US¹_175MBsGMYTNFDX原生机房
+  name: US¹-SG⁰_131MBs5GPTYTTKNFDXSucceed原生机房
+  network: ws
+  port: 2053
+  server: 1357900.xyz
+  servername: snippet.danfeng.gleeze.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.gleeze.com
+    path: /danfeng?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: FI²_117MBs9GPTXSucceed广播机房
+  network: tcp
+  port: 4443
+  reality-opts:
+    public-key: DLqBw8458S7vERpm_w4NMGz1kNp7b7uIjwCgStZERyo
+    short-id: ''
+  server: fin.pryanik.net.ru
+  servername: sun6-21.userapi.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c580e6f8-96d5-4b81-a958-d309cda653ff
+  xudp: true
+- client-fingerprint: chrome
+  name: HK¹-SG⁰_126MBs5GPTYTDXSucceed
+  network: ws
+  port: 2053
+  server: v1.dabache.top
+  servername: snippet.danfeng21.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng21.ndjp.net
+    path: /danfeng
+- name: DE¹-US⁰_168MBsGPTTKNFDXSucceed广播机房
+  network: ws
+  port: 2053
+  server: 5.178.110.39
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- client-fingerprint: chrome
+  encryption: none
+  name: NL¹-US⁰_159MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 5.34.180.231
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: US¹_131MBsGPTGMYTNFDXHistory原生机房
   network: ws
   port: 2096
-  server: 25.26.27.238
+  server: 92.53.191.238
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- name: FR¹-US⁰_141MBsGPTDX广播机房
+  network: ws
+  port: 2053
+  server: 217.60.37.196
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: US¹_244MBs5GPTGMYTTKNFDXHistory原生机房
+  network: ws
+  port: 2096
+  server: 185.170.166.138
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- name: US¹_339MBsGPTGMYTTKNFDX
+  network: ws
+  port: 2096
+  server: 14.102.228.238
   servername: sni.jpmj.dev
   skip-cert-verify: false
   tls: true
@@ -69,157 +177,12 @@ proxies:
     headers:
       Host: sni.jpmj.dev
     path: /?ed=2560
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: JP²_2152MBs0GPTGMYTNFDX
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50010
-  server: lh2.cac.cab
-  type: ss
-- name: US²_153MBsGPTXSucceed
-  password: ''
-  port: 1080
-  server: 174.138.61.184
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- client-fingerprint: chrome
-  name: GB¹-SG⁰_153MBsGPTDXSucceed广播机房
-  network: ws
-  port: 2053
-  server: quick-edit.devprod.cloudflare.dev
-  servername: snippet.danfeng21.ndjp.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
-  ws-opts:
-    headers:
-      Host: snippet.danfeng21.ndjp.net
-    path: /danfeng
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: CH²_136MBs0GPTYT-RUDXSucceed广播机房
-  port: 443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  server: 138.124.79.9
-  servername: sun6-21.userapi.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: US²_295MBs0GPTGMYTTKNFDX广播机房
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50019
-  server: lh2.cac.cab
-  type: ss
-- name: SG²_1126MBsX
-  password: ''
-  port: 10807
-  server: 146.235.19.84
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: NL²_245MBs17GPTXHistory
-  password: ''
-  port: 1080
-  server: 5.255.117.127
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  alterId: '0'
-  cipher: auto
-  name: FR²_114MBsGPTDXHistory原生机房
-  network: ws
-  port: 8443
-  server: 162.159.152.4
-  servername: frsys.fl-dl.com
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
-  ws-opts:
-    headers:
-      Host: frsys.fl-dl.com
-    path: /gbt
-  xudp: true
-- country: 🇧🇩BD
-  name: SG²_279MBsGPTYTDX
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 49899
-  server: 14e297c343de34f9a70f81ab7d4f6b76.lh.gtm.cac.cab
-  skip-cert-verify: true
-  sni: tcsg1.bilibili.com
-  tls: true
-  type: trojan
-  udp: true
-- client-fingerprint: edge
-  encryption: none
-  flow: xtls-rprx-vision
-  name: RU²_156MBsYTXSucceed原生机房
-  network: tcp
-  port: 2777
-  reality-opts:
-    public-key: HyxhIAJ1VbVX77n76vXAps81yWRVbKCr8AC_71sM5Ao
-    short-id: 0f4dacf08722a29f
-  server: ya.asbndx.com
-  servername: ads.x5.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: e804e80a-e413-436e-8e3c-8cce9ef657b9
-  xudp: true
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: HK²_180MBs1YTNFDXHistory
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: 4cfuj5otn8-uhPUe23OhB6KY8I42AxxJNt4lWIpg_AU
-  server: 2.hk.1.cdn-bilibili.cn
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
 - client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: JP²_393MBs0GPTYT-RUXHistory
-  network: tcp
-  port: 27724
-  reality-opts:
-    public-key: rYH4wPTVzSwtpXgI3U7YxppIP6oudD-425vT7pyhj1w
-    short-id: ''
-  server: 116.80.44.144
-  servername: www.yahoo.co.jp
-  tls: true
-  type: vless
-  udp: true
-  uuid: ebd8539d-e249-4a39-8f90-e8585e8cc35e
-  xudp: true
-- cipher: aes-256-cfb
-  country: 🇭🇰 HK
-  name: HK²_206MBs0YTNFXHistory
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 203.23.128.33
-  type: ss
-- client-fingerprint: chrome
-  name: DE¹-US⁰_139MBsDXHistory广播机房
+  name: GB¹-US⁰_161MBs0GPTTKDX广播机房
   network: ws
   port: 443
-  server: 217.154.213.217
+  server: 57.128.176.149
   servername: sni.111000.indevs.in
   tls: true
   type: vless
@@ -228,221 +191,12 @@ proxies:
   ws-opts:
     headers:
       Host: sni.111000.indevs.in
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-- name: _1_419323325491080-0125MBs30MBsXHistory
-  password: ''
-  port: 1080
-  server: 193.233.254.9
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- encryption: none
-  name: VN²_166MBsGPTGMYTX
-  network: ws
-  port: 58202
-  server: 103.245.237.124
-  type: vless
-  udp: true
-  uuid: cca053d5-7123-4a87-83d6-babe4e9c8115
-  ws-opts:
-    headers:
-      Host: ''
       User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: DE²_164MBs0GPTDX原生商宽
-  network: ws
-  port: 2053
-  server: wi.buzzmuzzpanel.online
-  servername: ds2-mx-hel22-protection.iranlease.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ec77b9ff-ba31-4b1d-8a81-ee9de133bcf0
-  ws-opts:
-    headers:
-      Host: ds2-mx-hel22-protection.iranlease.com
-      User-Agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /?ed=2560
-  xudp: true
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: JP²_4130MBs0GPTGMYTNFDXSucceed
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50012
-  server: lh2.cac.cab
-  type: ss
-- name: NL²_356MBs17GPTX
-  password: ''
-  port: 1080
-  server: 5.255.117.250
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: TW²_1154MBs0GPTGMYTNFDXSucceed
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50014
-  server: lh2.cac.cab
-  type: ss
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: TW²_245MBsGPTGMYTNFDXSucceed
-  network: tcp
-  port: 23921
-  server: vm1.as7akp.cn
-  servername: vm1.as7akp.cn
-  skip-cert-verify: true
-  type: vmess
-  uuid: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
-- client-fingerprint: chrome
-  name: US¹-KR⁰_119MBsGPTGMYTTKNFDXSucceed原生机房
-  network: ws
-  port: 443
-  server: 104.17.76.224
-  servername: 5465765525.ccfly.tech
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4c642cae-1a6d-4e51-a1c3-fa5892437aa3
-  ws-opts:
-    headers:
-      Host: 5465765525.ccfly.tech
-    path: /?ed=2048
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: SG²_3154MBs0GPTGMYTNFDXSucceed
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50008
-  server: lh2.cac.cab
-  type: ss
-- name: KR²_111MBs4GPTGMXHistory
-  port: 1090
-  server: 121.169.46.116
-  tls: false
-  type: socks5
-  username: T2clM0QlM0Q6
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: US²_381MBs0GPTGMYTTKNFDXSucceed广播机房
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50020
-  server: lh2.cac.cab
-  type: ss
-- name: SG²_4128MBsX
-  password: ''
-  port: 1080
-  server: 165.22.110.253
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: SG²_5132MBs0GPTGMYTNFDX
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50006
-  server: lh2.cac.cab
-  type: ss
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: TW²_3151MBs0GPTGMYTNFDXSucceed
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50015
-  server: lh2.cac.cab
-  type: ss
-- client-fingerprint: chrome
-  name: US¹_3150MBsGPTYT-HKDX
-  network: ws
-  port: 2096
-  server: 190.93.244.138
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: NL²_461MBs0GPTXHistory原生商宽
-  port: 443
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 8453e5fd9af927
-  server: 94.228.215.12
-  servername: hls-svod.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: e108f3eb-4d3a-4e20-a09b-7008e333bc23
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: DE²_264MBs0GPTDXHistory原生商宽
-  network: ws
-  port: 2053
-  server: 162.159.152.4
-  servername: ds2-mx-hel22-protection.iranlease.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ec77b9ff-ba31-4b1d-8a81-ee9de133bcf0
-  ws-opts:
-    headers:
-      Host: ds2-mx-hel22-protection.iranlease.com
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
-  name: US¹-SG⁰_163MBsGPTGMYTTKNFDXHistory原生机房
-  network: ws
-  port: 2053
-  server: singapore.com
-  servername: snippet.danfeng21.ndjp.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
-  ws-opts:
-    headers:
-      Host: snippet.danfeng21.ndjp.net
-    path: /danfeng?ed=2560
-- alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: AE²_150MBsGPTX广播机房
-  network: ws
-  port: 443
-  server: ::ffff:ac40:9bd1
-  servername: bedrid.denizhosting.me
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: ffece2a9-0296-46a9-8db8-742d29d240ff
-  ws-opts:
-    headers:
-      HOST: bedrid.denizhosting.me
-    path: ISwpYVR8SjxXcUZEUzVfNURTUC8lV29DXSgsKH1SN0g1JVpDHU1cWigKAC8QRltMCi86ABw4JV14HVMn
-- client-fingerprint: chrome
-  name: DE¹-US⁰_243MBsDXHistory广播机房
+  name: DE¹-US⁰_249MBs5GPTDXHistory广播机房
   network: ws
   port: 443
   server: 89.169.13.12
@@ -457,60 +211,345 @@ proxies:
     path: /?ed=2560&Telegram🇨🇳@WangCai2
 - client-fingerprint: chrome
   encryption: none
+  name: HK¹-US⁰_145MBsGPTYTDXSucceed广播机房
+  network: ws
+  port: 2096
+  server: v2.dabache.top
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto G (5) Build/NPPS25.137-93-14)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: JP²_164MBs32GPTXSucceed
+  network: ws
+  port: 443
+  server: 69.84.182.13
+  servername: jp1-jp1.aiopen.sbs
+  tls: true
+  type: vless
+  udp: true
+  uuid: 271ad593-3c8d-4bea-a785-350ddad205c9
+  ws-opts:
+    headers:
+      Host: jp1-jp1.aiopen.sbs
+    path: /kbjc/jp1
+- cipher: chacha20-ietf-poly1305
+  country: 🇬🇧GB
+  name: NL²_155MBs57GPTYTTKNFXHistory原生机房
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.191
+  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  name: GB¹-US⁰_246MBs5GPTDX广播机房
+  network: ws
+  port: 443
+  server: 159.65.60.61
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: DE¹-US⁰_369MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 37.27.243.248
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- cipher: rc4-md5
+  country: 🇬🇧GB
+  name: GB²_158MBsGPTNFXHistory广播机房
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.37
+  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  name: US¹-SG⁰_235MBs5GPTYTTKNFDXSucceed原生机房
+  network: ws
+  port: 2053
+  server: vip2.kaixincloud.top
+  servername: snippet.fgfw.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.ccwu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/55.0.2883.87 Safari/537.36
+    path: /danfeng?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
   http-opts:
     headers: {}
     path:
     - /
-  name: LT²_159MBs42GPTX广播商宽
+  name: GB²_245MBs10GPTXHistory广播机房
   network: tcp
   port: 443
   reality-opts:
-    public-key: eH6HWGKJUtp4VmC9KxtdcyxtLI0O52vhAmZx1ybOtUs
-    short-id: ffffffffff
-  server: 2.59.162.100
-  servername: apple.com
+    public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
+    short-id: d923
+  server: uk1.miyazono-kaori.com
+  servername: www.bp.com
   tls: true
   type: vless
   udp: true
-  uuid: 1004c163-26ea-5662-b5b2-40df01176f8b
+  uuid: 2e82cda5-e020-4c63-8271-e58a00831447
   xudp: true
-- name: DE¹-US⁰_369MBsTKDX广播机房
+- client-fingerprint: chrome
+  name: US¹_440MBsGPTGMYTTKNFDX原生机房
   network: ws
-  port: 2053
-  server: 188.241.241.33
-  servername: sni.111000.indevs.in
+  port: 2096
+  server: 185.251.81.238
+  servername: sni.jpmj.dev
   tls: true
   type: vless
   udp: true
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: sni.111000.indevs.in
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-- name: FR¹-US⁰_164MBs5GPTDX广播机房
-  network: ws
-  port: 2053
-  server: 31.59.121.155
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
+      Host: sni.jpmj.dev
     path: /?ed=2560&Telegram🇨🇳 @WangCai2
-- name: DE²_332MBsGPTX
+- name: DE¹-US⁰_446MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 45.153.230.220
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- name: DE¹-US⁰_514MBs5GPTDX广播机房
+  network: ws
+  port: 443
+  server: 92.246.136.62
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- name: DE¹-US⁰_657MBs5GPTDX广播机房
+  network: ws
+  port: 8443
+  server: 185.170.153.186
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- name: _1_2_3DE144原生疑似家宽高风险 黑名单23MBs32MBsHistory30MBsXSuc
+  port: 1080
+  server: 193.233.254.7
+  tls: false
+  type: socks5
+  username: T2dAMTkzLjIzMy4yNTQuNzpAMTkzLjIzMy4yNTQuNw%3D%3D
+- encryption: none
+  name: CA²_138MBs32GPTYT-USXSucceed广播机房
+  network: ws
+  port: 80
+  server: 172.66.128.70
+  type: vless
+  udp: true
+  uuid: 6abc2840-25fd-4dd7-b1aa-0892fe98f2d9
+  ws-opts:
+    headers:
+      Host: MySterIOUS-chECk94Bl5oXQ6C.eCoTOUriSs.cO.uK.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?ed
+  xudp: true
+- name: HK²_1110MBs1YTDXSucceed原生住宅
+  password: BxceQaOe
+  port: 443
+  server: 112.120.31.36
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- encryption: none
+  name: NL²_205MBsGPTXHistory广播住宅拨号
+  network: ws
+  port: 2052
+  server: nodejs.org
+  type: vless
+  udp: true
+  uuid: f8ae018b-b84d-4c9b-b03b-4642c3a25977
+  ws-opts:
+    headers:
+      Host: ExEMplAry-MILkytsxQiQYso.sPortlaNd.CoMPANy.
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /?ed
+  xudp: true
+- name: DE¹-US⁰_750MBs5GPTDX广播机房
+  network: ws
+  port: 443
+  server: 185.170.153.53
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- name: NL¹-US⁰_239MBsGPTDX广播机房
+  network: ws
+  port: 8443
+  server: 143.20.236.203
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- name: NL²_354MBs6GPTX广播机房
+  network: ws
+  port: 80
+  server: nl-90w-c.southnetworks.cloud
+  servername: nl-90w-c.southnetworks.cloud
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e08f1ad7-0c60-446d-baec-08b3b69bb3d0
+  ws-opts:
+    headers:
+      Host: nl-90w-c.southnetworks.cloud
+    path: /getWorkerUpdates
+- name: NL¹-US⁰_333MBs5GPTDX广播机房
+  network: ws
+  port: 2053
+  server: 103.90.75.41
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  name: HK¹-SG⁰_363MBsGPTYTNFDX广播机房
+  network: ws
+  port: 2053
+  server: vip3.kaixincloud.top
+  servername: snippet.sh21.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.sh21.eu.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+    path: /danfeng?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  name: GB¹-SG⁰_159MBsGPTDXHistory广播机房
+  network: ws
+  port: 2053
+  server: quick-edit.devprod.cloudflare.dev
+  servername: snippet.danfeng21.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng21.ndjp.net
+    path: /danfeng
+- name: _2_419323325491080-0125MBs30MBsXHistory
   password: ''
   port: 1080
-  server: 217.154.207.198
+  server: 193.233.254.9
   skip-cert-verify: true
   type: socks5
   username: ''
-- alterId: '0'
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_252MBs7GPTXHistory广播商宽
+  network: tcp
+  port: 843
+  reality-opts:
+    public-key: 7Jm9DCACq0CcHAqEJD0aReVMUc2l6mFQdYex3owLMVk
+    short-id: '825867'
+  server: 144.31.2.154
+  servername: hls-svod.itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 32465a00-e9c1-4b2c-a57f-42f9ccaf64eb
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: FR²_274MBs42GPTXHistory原生机房
+  name: _3FR²_367MBs-USHistory原生机房67MBsXSucceed
   network: ws
   port: 8080
   server: 188.114.98.0
@@ -520,146 +559,33 @@ proxies:
   udp: true
   uuid: nasnet
   ws-opts:
-    headers:
-      Host: nasnet-162191099.sharghdaily.co
-    path: /nasnet/cdn?ed=2560/?TELEGRAM--KANAL--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN--JKVPN
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: US²_437MBs0GPTXSucceed原生机房
-  network: ws
-  port: 443
-  server: v1.dabache.top
-  tls: true
-  type: vmess
-  udp: true
-  uuid: e83b705e-4541-4ea3-9c2d-e7e9eb1f29c8
-  ws-opts:
-    headers:
-      Host: blog.dezh.store
-    path: /
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: FI²_117MBs0GPTDX原生机房
-  network: tcp
-  port: 32061
-  reality-opts:
-    public-key: e2yc3QjJ1spCe1eLR9cMd_2-TieGJKs2sLKlfW2L-xo
-    short-id: ''
-  server: 5.61.89.225
-  servername: eh.vk.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0df23c07-b289-4d65-822a-228478ca73bd
-  xudp: true
-- client-fingerprint: chrome
-  name: US¹_466MBsGMYTTKNFDX原生机房
-  network: ws
-  port: 2096
-  server: 162.120.94.138
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: TW²_495MBsGPTGMYTX
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ev0T0oHwKzoTLJJ-enihK36_fOhb6Wdt5XMMj9QtCh0
-  server: 2.tw.1.cdn-bilibili.cn
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: fcfc091d-81a4-40b7-cbdc-8eb7683617a4
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: SG²_6160MBs0GPTGMYTNFDX
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50005
-  server: lh2.cac.cab
-  type: ss
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: FR²_356MBs42GPTYT-RUX广播商宽
-  network: tcp
-  port: 47030
-  reality-opts:
-    public-key: cZsRvk8pr8wfYiX1CNxdDjR38tow3HuL6IpBj8P82l8
-    short-id: e18eda8458cab0d7
-  server: 62.133.62.85
-  servername: api-maps.yandex.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8edffcc8-c437-4c49-a4b6-43d256b15e14
-  xudp: true
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: SG²_793MBs0GPTGMYTNFDX
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50007
-  server: lh2.cac.cab
-  type: ss
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: HK²_390MBs0YT-CNNFDX
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50002
-  server: lh.cac.cab
-  type: ss
-- name: _2_3DE13原生疑似家宽高风险 黑名单08MBs30MBsXHistory
-  port: 1080
-  server: 193.233.254.8
-  tls: false
-  type: socks5
-  username: T2dAMTkzLjIzMy4yNTQuODo%3D
-- name: JP²_598MBs33GPTGMX
-  password: ''
-  port: 18791
-  server: 141.98.197.133
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- alterId: '0'
-  cipher: auto
-  name: DE²_444MBs49GPTXHistory广播机房
-  network: ws
-  port: 8080
-  server: tgju.org
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: nasnet
-  ws-opts:
     early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: nasnet-571296497.iranpress.co
+      Host: nasnet-162191099.sharghdaily.co
     max-early-data: 2560
     path: /nasnet/cdn
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  name: US¹-SG⁰_239MBsGPTYTTKNFDXHistory原生机房
+  name: HK¹-SG⁰_437MBs5GPTYTDXSucceed
+  network: ws
+  port: 2053
+  server: v2.dabache.top
+  servername: snippet.fgfw.de5.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.fgfw.de5.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /danfeng?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: US¹-SG⁰_376MBs5GPTYTTKNFDXSucceed原生机房
   network: ws
   port: 2053
   server: 104.17.73.206
@@ -675,93 +601,11 @@ proxies:
         like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /danfeng?ed=2560
   xudp: true
-- alterId: 0
-  cipher: auto
-  country: 🇬🇧GB
-  h2-opts: {}
-  http-opts: {}
-  name: JP²_691MBs0GPTGMYTNFDXSucceed
-  network: ws
-  port: 12883
-  server: gtm1.ktmwan.net
-  servername: baidu.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: 3ac9d436-f213-421d-9644-a94686ee9fba
-  ws-opts:
-    headers:
-      HOST: baidu.com
-    path: /
 - client-fingerprint: chrome
-  name: HK¹-SG⁰_1161MBs5GPTYTNFDX
-  network: ws
-  port: 2053
-  server: v1.dabache.top
-  servername: snippet.danfeng21.ndjp.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
-  ws-opts:
-    headers:
-      Host: snippet.danfeng21.ndjp.net
-    path: /danfeng
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: _3JoinTelegramFarah_VPN-63264MBsX
+  name: DE¹-US⁰_855MBsGPTDXHistory广播机房
   network: ws
   port: 443
-  server: 162.159.7.198
-  servername: germany.pahlevancompani.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e7a9fe3b-c10f-4a67-8f7b-e22c9c246d8d
-  ws-opts:
-    headers:
-      Host: germany.pahlevancompani.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /?ed
-  xudp: true
-- cipher: aes-256-cfb
-  name: ES²_115MBs26GPTXHistory广播机房
-  password: KnJGad3FqTvjqbaX
-  port: 9014
-  server: 5.188.181.201
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: US²_567MBs41GPTYTNFXHistory原生机房
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: '0'
-  cipher: auto
-  name: _4HK²_110MBs13MBsXHistory
-  network: ws
-  port: 52511
-  server: aflzzul.meiquankongjian.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 342bacfd-2b8f-3f49-a16e-439db5b0b9d5
-  ws-opts:
-    headers:
-      Host: aflzzul.meiquankongjian.com
-    path: /564dfa20/
-  xudp: true
-- client-fingerprint: chrome
-  name: DE¹-US⁰_456MBsGPTDX广播机房
-  network: ws
-  port: 8443
-  server: 45.132.1.208
+  server: 217.154.213.217
   servername: sni.111000.indevs.in
   tls: true
   type: vless
@@ -771,69 +615,684 @@ proxies:
     headers:
       Host: sni.111000.indevs.in
     path: /?ed=2560&Telegram🇨🇳@WangCai2
-- client-fingerprint: chrome
-  name: US¹-SG⁰_408MBsGPTGMYTNFDXSucceed原生机房
+- name: NL¹-US⁰_461MBs5GPTDX广播机房
   network: ws
   port: 2053
-  server: china.embassy.gov.au
-  servername: snippet.danfeng.gleeze.com
+  server: 85.234.107.140
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  name: GB¹-US⁰_365MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 57.128.181.89
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.116 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: NL²_468MBs0GPTXHistory
+  password: ''
+  port: 1080
+  server: 93.183.124.28
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: DE¹-US⁰_949MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 195.245.239.195
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- name: DE¹-US⁰_1017MBsGPTDX广播机房
+  network: ws
+  port: 2053
+  server: 45.144.233.205
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: TR²_133MBsGPTXHistory广播机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+    short-id: e57932a42872a362
+  server: 89.169.162.214
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e2b2894-3b5c-4b65-acc5-e1784f4047f2
+  xudp: true
+- name: KR²_110MBs4GPTGMXHistory
+  port: 1090
+  server: 121.169.46.116
+  tls: false
+  type: socks5
+  username: T2clM0QlM0Q6
+- client-fingerprint: chrome
+  name: DE¹-US⁰_1155MBsGPTDX广播机房
+  network: ws
+  port: 8443
+  server: 85.192.60.51
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: HK¹-US⁰_267MBs5GPTYTNFDXSucceed原生机房
+  network: ws
+  port: 2096
+  server: 190.93.244.138
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: US¹-SG⁰_440MBsGPTGMYTNFDXHistory原生机房
+  network: ws
+  port: 2053
+  server: 104.19.73.126
+  servername: snippet.danfeng21.ndjp.net
   tls: true
   type: vless
   udp: true
   uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
   ws-opts:
     headers:
-      Host: snippet.danfeng.gleeze.com
+      Host: snippet.danfeng21.ndjp.net
     path: /danfeng?ed=2560
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: US²_697MBs0GPTGMYTTKNFDXSucceed广播机房
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50018
-  server: lh2.cac.cab
-  type: ss
-- country: 🇫🇷FR
-  name: FR²_454MBs1GPTNFX广播机房
-  password: telegram-id-directvpn
-  port: 22223
-  server: 15.188.21.75
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
+- client-fingerprint: chrome
+  encryption: none
+  name: DE¹-US⁰_1253MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 88.218.76.21
+  servername: sni.111000.indevs.in
   tls: true
-  type: trojan
+  type: vless
   udp: true
-- name: FR²_526MBs0GPTXSucceed
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.101 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- encryption: none
+  name: NL²_538MBsGPTXHistory广播住宅拨号
+  network: ws
+  port: 80
+  server: 104.18.32.47
+  type: vless
+  udp: true
+  uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
+  ws-opts:
+    headers:
+      Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: US¹_571MBs5GPTYTDXSucceed原生机房
+  network: ws
+  port: 443
+  server: 104.17.73.206
+  servername: o00o.snip.qzz.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3321a819-889d-40b3-b8fa-f34208827ef1
+  ws-opts:
+    headers:
+      Host: o00o.snip.qzz.io
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/37.0.2062.120 Safari/537.36
+    path: /Tel-@V2rayAlpha
+  xudp: true
+- alterId: 0.0
+  cipher: auto
+  name: US²_141MBs0GPTX
+  network: ws
+  port: 2083
+  server: hgtrojan.zabc.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  ws-opts:
+    headers:
+      Host: hgtrojan.zabc.net
+    path: /e6395c20
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: GB²_349MBs10GPTXSucceed广播机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
+    short-id: '20'
+  server: uk2.miyazono-kaori.com
+  servername: www.bp.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2e82cda5-e020-4c63-8271-e58a00831447
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: GB¹-US⁰_463MBs0GPTTKDX广播机房
+  network: ws
+  port: 443
+  server: 57.128.178.122
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: GB¹-US⁰_553MBsDX广播机房
+  network: ws
+  port: 443
+  server: 34.39.62.53
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Slackware/Chrome/12.0.742.100 Safari/534.30
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: GB¹-US⁰_666MBs5GPTTKNFDX广播机房
+  network: ws
+  port: 443
+  server: 185.16.110.1
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: US²_241MBs0GPTXHistory广播机房
   password: ''
-  port: 1080
-  server: 185.194.217.97
+  port: 4781
+  server: 210.75.240.178
   skip-cert-verify: true
   type: socks5
   username: ''
-- encryption: none
-  name: CA²_179MBs32GPTYTX
+- client-fingerprint: chrome
+  encryption: none
+  name: DE¹-US⁰_1306MBsGPTDX广播机房
   network: ws
-  port: 80
-  server: 104.20.1.252
+  port: 443
+  server: 194.146.12.230
+  servername: sni.111000.indevs.in
+  tls: true
   type: vless
   udp: true
-  uuid: 3775d133-dc3a-4a02-8095-5c70c328ae9f
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: HUge-ActOR48bf36fHJV.ecOTouriSS.co.uK.
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
-    path: /?ed
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.167 Safari/537.36
+    path: /?ed=2560
   xudp: true
-- name: HK²_443MBs0DXHistory
-  password: BxceQaOe
+- client-fingerprint: chrome
+  name: FR²_165MBs42GPTTKX原生机房
+  port: 3032
+  reality-opts:
+    public-key: 21V_VkMUD2XRbyRDg7hjpblUAwxHvlLmbarATdhhJQI
+  server: fr.locations-service.com
+  servername: refersion.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e59083aa-d933-4952-8cf0-eec74f718705
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: HU²_148MBs0GPTX广播机房
   port: 443
-  server: 219.76.135.98
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: f4b4a6365558ea2e
+  server: 89.169.128.105
+  servername: yandex.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00c01f55-e31a-41cd-872b-938cda90afc3
+- client-fingerprint: chrome
+  name: DE¹-US⁰_1430MBsTKDX广播机房
+  network: ws
+  port: 443
+  server: 194.9.6.3
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  name: DE¹-US⁰_1555MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 88.218.78.167
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/36.0.1985.125 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: DE¹-US⁰_1628MBs5GPTDX广播机房
+  network: ws
+  port: 443
+  server: 45.84.138.237
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/57.0.2987.133 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: US¹_645MBs5GPTGMNFDX原生机房
+  network: ws
+  port: 2096
+  server: 25.129.199.238
+  servername: sni.jpmj.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: /?ed=2560
+- name: IN²_182MBsGPTGMYTXHistory广播机房
+  password: M7v%w11Se*
+  port: 443
+  server: hyfuuf6.wsone.icu
   skip-cert-verify: true
-  sni: t.me%25252Fripaojiedian
+  sni: hyfuuf6.wsone.icu
   tls: true
   type: trojan
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: US²_315MBsX
+  network: ws
+  port: 2083
+  server: 172.64.155.209
+  servername: hgtrojan.zabc.net
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: e6395c20-4571-4b34-d6b1-55a5d36e49ea
+  ws-opts:
+    headers:
+      HOST: hgtrojan.zabc.net
+    path: /e6395c20
 - client-fingerprint: chrome
-  name: US¹-SG⁰_526MBsGPTYTTKNFDX原生机房
+  encryption: none
+  name: NL¹-US⁰_547MBs5GPTDX广播机房
+  network: ws
+  port: 443
+  server: 5.39.217.217
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: FR¹-US⁰_246MBsGPTDX广播机房
+  network: ws
+  port: 8443
+  server: 46.8.224.150
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- name: NL²_605MBs6GPTX
+  password: ''
+  port: 1080
+  server: 77.105.140.250
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  name: US¹-SG⁰_518MBsGPTGMYTTKNFDXSucceed原生机房
+  network: ws
+  port: 2053
+  server: singapore.com
+  servername: snippet.danfeng21.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng21.ndjp.net
+    path: /danfeng?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  name: DE¹-US⁰_1757MBsDX广播机房
+  network: ws
+  port: 443
+  server: 88.218.78.34
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.76 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: TW²_183MBsGPTGMYTDXSucceed
+  password: mrwdfNTD8M79LCukCieldrqZWqs=
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: CH²_123MBsGPTDXSucceed广播机房
+  port: 443
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  server: 138.124.79.9
+  servername: sun6-21.userapi.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
+- name: _5_3DE13原生疑似家宽高风险 黑名单08MBs28MBsXHistory
+  port: 1080
+  server: 193.233.254.8
+  tls: false
+  type: socks5
+  username: T2dAMTkzLjIzMy4yNTQuODo%3D
+- name: NL¹-US⁰_618MBsGPTDX广播机房
+  network: ws
+  port: 8443
+  server: 81.200.154.2
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  name: DE¹-US⁰_1871MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 152.228.135.5
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: DE²_118MBs0GPTX广播商宽
+  port: 443
+  reality-opts:
+    public-key: --Hfd0J48lUn9F6lHE3NJn8M-MdjeWTQDWMtJshhYAk
+    short-id: deadbeefcafebabe
+  server: 185.241.195.45
+  servername: ads.x5.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 46254027-2890-4224-9c7b-4bfede00175b
+- name: _6_5942301271801080-0117MBs15MBsXHistory
+  password: ''
+  port: 1080
+  server: 94.230.127.180
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- name: DE¹-US⁰_1952MBs5GPTDX广播机房
+  network: ws
+  port: 443
+  server: 89.169.13.207
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- country: 🇭🇰HK
+  name: HK²_3161MBs0YT-CNNFDX原生住宅
+  password: BxceQaOe
+  port: 443
+  server: 218.250.156.130
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: FI¹-US⁰_153MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 94.237.114.211
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: US²_448MBsGPTXHistory
+  password: ''
+  port: 1080
+  server: 192.241.156.17
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  name: US¹_767MBs5GPTGMNFDXHistory原生机房
+  network: ws
+  port: 2096
+  server: 25.129.198.238
+  servername: sni.jpmj.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.jpmj.dev
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+- alterId: 0
+  cipher: auto
+  country: 🇬🇧 GB
+  http-opts: {}
+  name: US²_555MBs22GPTNFX
+  network: tcp
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  encryption: none
+  name: GB¹-US⁰_710MBs0GPTDX广播机房
+  network: ws
+  port: 443
+  server: 167.99.80.91
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: DE¹-US⁰_2057MBsGPTDX广播机房
+  network: ws
+  port: 443
+  server: 92.42.96.223
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: US¹-SG⁰_666MBsGPTYTNFDXHistory原生机房
   network: ws
   port: 2053
   server: 104.17.71.206
@@ -846,345 +1305,116 @@ proxies:
   ws-opts:
     headers:
       Host: snippet.sheilabelinda.ndjp.net
-    path: /danfeng?ed=2560
-- name: SG²_8103MBsGPTX
-  password: ''
-  port: 10852
-  server: 213.35.110.67
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- alterId: 0
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: US²_740MBs0GPTGMYTDX
-  network: tcp
-  port: 23916
-  server: vm1.as7akp.cn
-  servername: vm1.as7akp.cn
-  skip-cert-verify: true
-  type: vmess
-  uuid: 72aaf68b-fca5-48fa-9ba3-b0a6fb9990d2
-- encryption: none
-  name: GB²_163MBs0GPTDXSucceed广播机房
-  network: ws
-  port: 8080
-  server: digitalocean.com
-  type: vless
-  udp: true
-  uuid: a460ed1b-e063-496c-9057-784547c0c81c
-  ws-opts:
-    headers:
-      Host: dildodod.decoreland.ir.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/34.0.1847.131 Safari/537.36
-    path: /
-  xudp: true
-- name: KR²_2100MBs10GPTGMYTDXHistory
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-- alpn:
-  - http/1.1
-  client-fingerprint: android
-  encryption: none
-  name: DE²_566MBs6GPTX广播机房
+    path: /danfeng
+- client-fingerprint: chrome
+  name: HK¹-SG⁰_583MBs5GPTYTDXHistory
   network: ws
   port: 2053
-  server: ipw.ygdfw.com
-  servername: vdv2.domconflolometi9978.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2463aca1-4e1c-4bee-bb82-7a5aa5a80ad2
-  ws-opts:
-    headers:
-      Host: vdv2.domconflolometi9978.org
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: IT²_148MBs31GPTDX广播机房
-  network: tcp
-  port: 51101
-  reality-opts:
-    public-key: _CjW0Khlrr5z5oc9Oy6-w2ZEanz-zMBktVn5EOX9oTM
-    short-id: 4ffc99daad0f261f
-  server: 90.156.217.130
-  servername: m.vk.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 08d6280b-90c8-41e1-a809-3132cfb706f5
-  xudp: true
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: HK²_6122MBs1YT-CNDX
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50001
-  server: lh.cac.cab
-  type: ss
-- name: _5_3DE53原生疑似家宽高风险 黑名单21MBs26MBsXHistory
-  port: 1080
-  server: 193.233.254.7
-  tls: false
-  type: socks5
-  username: VDJkQU1Ua3pMakl6TXk0eU5UUXVOenBBTVRrekxqSXpNeTR5TlRRdU56b0AxOTMuMjMzLjI1NC43OkAxOTMuMjMzLjI1NC43Og%3D%3D
-- name: CA²_250MBsGPTXSucceed
-  password: ''
-  port: 1080
-  server: 143.110.217.153
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: FI²_248MBs0GPTX广播机房
-  network: tcp
-  port: 8443
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: ''
-  server: fl-2.bot-iphone.ru
-  servername: www.samsung.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9c42819a-67a6-4742-9c6d-64900ba62160
-  xudp: true
-- cipher: aes-128-gcm
-  country: 🏁ZZ
-  name: TW²_5164MBs0GPTGMYTNFDX
-  password: 96223d40-0fe8-4eda-9aaa-25daba4aecd4
-  port: 50013
-  server: lh2.cac.cab
-  type: ss
-- client-fingerprint: chrome
-  name: US¹_564MBsGPTGMYTTKNFDX原生机房
-  network: ws
-  port: 2096
-  server: 185.170.166.138
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-- encryption: none
-  name: CA²_369MBs32GPTYTX广播机房
-  network: ws
-  port: 80
-  server: 172.66.128.71
-  type: vless
-  udp: true
-  uuid: 6abc2840-25fd-4dd7-b1aa-0892fe98f2d9
-  ws-opts:
-    headers:
-      Host: MySterIOUS-chECk94Bl5oXQ6C.eCoTOUriSs.cO.uK.
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /?ed
-  xudp: true
-- name: NL²_658MBsGPTXSucceed
-  password: ''
-  port: 1080
-  server: 104.248.197.67
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: US²_857MBs7GPTNFXSucceed广播机房
-  network: tcp
-  port: 5443
-  reality-opts:
-    public-key: fN0jSTqScsS-N3lRjtdgMoKsm3y2IJB9-z84Ewg_p2M
-    short-id: 7c41e6ab7c162a95
-  server: 185.247.185.6
-  servername: sun6-22.userapi.com:443
-  tls: true
-  type: vless
-  udp: true
-  uuid: cd0aba07-3b28-48a2-8cbb-49be72420089
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: AL²_158MBs42GPTDX广播商宽
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: su3dq3BDLDkX-jIjq3GyVUXwqzD7CNVYzKtOcO4HQ24
-    short-id: 9f6a51680da312f6
-  server: 78.159.131.76
-  servername: al.cdn.stun.su
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6416708c-eaa5-4ec5-b652-a2db2feab875
-  xudp: true
-- client-fingerprint: chrome
-  name: US¹_668MBsGMYTNFDXHistory原生机房
-  network: ws
-  port: 2096
-  server: 103.116.7.138
-  servername: sni.111000.indevs.in
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: sni.111000.indevs.in
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-- name: NL²_713MBs40GPTX
-  password: ''
-  port: 18080
-  server: 213.111.146.36
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- name: NL²_856MBsGPTXHistory
-  password: ''
-  port: 1080
-  server: 161.35.82.57
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- client-fingerprint: chrome
-  delay: 1001
-  name: HK¹_1174MBs5YTDXSucceed
-  network: ws
-  port: 443
-  server: mobile.twitter.now.cc
-  servername: 5465765525.ccfly.tech
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4c642cae-1a6d-4e51-a1c3-fa5892437aa3
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: 5465765525.ccfly.tech
-    max-early-data: 2048
-    path: /
-- client-fingerprint: chrome
-  name: US¹-SG⁰_609MBsGMYTNFDXSucceed原生机房
-  network: ws
-  port: 2053
-  server: 1357900.xyz
-  servername: snippet.danfeng.gleeze.com
-  skip-cert-verify: false
+  server: v3.dabache.top
+  servername: snippet.fgfw.ccwu.cc
   tls: true
   type: vless
   udp: true
   uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
   ws-opts:
     headers:
-      Host: snippet.danfeng.gleeze.com
+      Host: snippet.fgfw.ccwu.cc
     path: /danfeng
-- cipher: aes-256-cfb
-  name: kr4b3apuddincat07Telegram
-  password: qwerREWQ@@
-  port: 29707
-  server: 221.139.79.20
-  type: ss
-- name: xx192dpuddincat07Telegram
-  password: 63b21d86-a49c-4936-a634-0b5af3e30433
+- name: SE¹-US⁰_147MBsGPTX
+  network: ws
   port: 443
-  server: tuntro006.instconn.com
-  skip-cert-verify: true
-  sni: torontorm1.686911.xyz
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: tr461cpuddincat07Telegram
-  password: Ul0rGyAAed5HRDpvFqr2C0
-  port: 37096
-  server: 62.133.63.169
-  type: ss
-- cipher: aes-256-cfb
-  name: krb642puddincat07Telegram
-  password: qwerREWQ@@
-  port: 25879
-  server: 168.126.234.233
-  type: ss
-- name: xx39a3puddincat07Telegram
-  password: 63b21d86-a49c-4936-a634-0b5af3e30433
-  port: 443
-  server: tuntro010.instconn.com
-  skip-cert-verify: true
-  sni: frankfurtrm2.686911.xyz
-  type: trojan
-- alterId: 0
-  name: pt7522puddincat07Telegram
-  password: wp9IsiY82uQhcmgNC1eoBM
-  port: 12420
-  server: 80.173.231.254
-  skip-cert-verify: true
-  sni: www.semanticstaplegun.click
+  server: 95.182.115.127
+  servername: sni.111000.indevs.in
+  skip-cert-verify: false
   tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: HK¹-SG⁰_697MBs5GPTYTDXHistory
+  network: ws
+  port: 2053
+  server: vip1.kaixincloud.top
+  servername: snippet.danfeng21.ndjp.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng21.ndjp.net
+    path: /danfeng
+- client-fingerprint: chrome
+  encryption: none
+  name: GB¹-SG⁰_217MBsGPTDXHistory广播机房
+  network: ws
+  port: 2053
+  server: convera.com
+  servername: snippet.danfeng.de5.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2a396c3-f40e-4dee-bdbb-b1201f12dc1c
+  ws-opts:
+    headers:
+      Host: snippet.danfeng.de5.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
+    path: /danfeng
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: xx9bd9puddincat07Telegram
+  password: kaQH3hGdcP80XEDI
+  port: 443
+  server: admin.c2.havij.co
+  type: ss
+- name: fr8bf5puddincat07Telegram
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 135.125.232.253
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: xx1e66puddincat07Telegram
-  password: 23sUrwRcTBEAvxLS6VM6Aay57KQbws1upDAxr7Btf4hXu4gaUQW4BPbComjJjStM2JqJLDwVkteXL8V33k8eWkZR4UB8intz
-  port: 43669
-  server: portal.ninemakeda.cfd
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: /?ed=2560
+- cipher: rc4-md5
+  name: caef6fpuddincat07Telegram
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 137.184.174.93
   type: ss
 - cipher: aes-256-cfb
-  name: kr107bpuddincat07Telegram
-  password: qwerREWQ@@
-  port: 58449
-  server: 222.112.15.140
+  name: pta318puddincat07Telegram
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: sga3f4puddincat07Telegram
-  password: G!yBwPWH3Vao
-  port: 805
-  server: 81.90.189.152
+- cipher: aes-256-cfb
+  name: md0b84puddincat07Telegram
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
   type: ss
-- name: us68adpuddincat07Telegram
-  password: 5041df4c-b3ae-481d-adf9-79b39f4810f2
-  port: 2083
-  server: 172.67.148.211
-  skip-cert-verify: true
-  sni: taqboostan.zagros.top
-  type: trojan
-  udp: true
 - cipher: aes-128-gcm
-  name: usae59puddincat07Telegram
-  password: 83XvX4Vo%*3a
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: sommd.site
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
+  name: us0946puddincat07Telegram
+  password: shadowsocks
   port: 443
-  server: 172.67.12.88
+  server: 156.146.38.169
   type: ss
-  udp: true
+- cipher: aes-256-cfb
+  name: ieb163puddincat07Telegram
+  password: amazonskr05
+  port: 443
+  server: 34.245.190.123
+  type: ss
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -1192,212 +1422,212 @@ proxy-groups:
   - ♻️ 自动选择
   - ♻️ 负载均衡
   - 🌍 全球直连
-  - NL²_174MBsGPTX广播住宅拨号
-  - JP²_108MBs0GPTX
-  - US¹_175MBsGMYTNFDX原生机房
-  - JP²_2152MBs0GPTGMYTNFDX
-  - US²_153MBsGPTXSucceed
-  - GB¹-SG⁰_153MBsGPTDXSucceed广播机房
-  - CH²_136MBs0GPTYT-RUDXSucceed广播机房
-  - US²_295MBs0GPTGMYTTKNFDX广播机房
-  - SG²_1126MBsX
-  - NL²_245MBs17GPTXHistory
-  - FR²_114MBsGPTDXHistory原生机房
-  - SG²_279MBsGPTYTDX
-  - RU²_156MBsYTXSucceed原生机房
-  - HK²_180MBs1YTNFDXHistory
-  - JP²_393MBs0GPTYT-RUXHistory
-  - HK²_206MBs0YTNFXHistory
-  - DE¹-US⁰_139MBsDXHistory广播机房
-  - _1_419323325491080-0125MBs30MBsXHistory
-  - VN²_166MBsGPTGMYTX
-  - DE²_164MBs0GPTDX原生商宽
-  - JP²_4130MBs0GPTGMYTNFDXSucceed
-  - NL²_356MBs17GPTX
-  - TW²_1154MBs0GPTGMYTNFDXSucceed
-  - TW²_245MBsGPTGMYTNFDXSucceed
-  - US¹-KR⁰_119MBsGPTGMYTTKNFDXSucceed原生机房
-  - SG²_3154MBs0GPTGMYTNFDXSucceed
-  - KR²_111MBs4GPTGMXHistory
-  - US²_381MBs0GPTGMYTTKNFDXSucceed广播机房
-  - SG²_4128MBsX
-  - SG²_5132MBs0GPTGMYTNFDX
-  - TW²_3151MBs0GPTGMYTNFDXSucceed
-  - US¹_3150MBsGPTYT-HKDX
-  - NL²_461MBs0GPTXHistory原生商宽
-  - DE²_264MBs0GPTDXHistory原生商宽
-  - US¹-SG⁰_163MBsGPTGMYTTKNFDXHistory原生机房
-  - AE²_150MBsGPTX广播机房
-  - DE¹-US⁰_243MBsDXHistory广播机房
-  - LT²_159MBs42GPTX广播商宽
-  - DE¹-US⁰_369MBsTKDX广播机房
-  - FR¹-US⁰_164MBs5GPTDX广播机房
-  - DE²_332MBsGPTX
-  - FR²_274MBs42GPTXHistory原生机房
-  - US²_437MBs0GPTXSucceed原生机房
-  - FI²_117MBs0GPTDX原生机房
-  - US¹_466MBsGMYTTKNFDX原生机房
-  - TW²_495MBsGPTGMYTX
-  - SG²_6160MBs0GPTGMYTNFDX
-  - FR²_356MBs42GPTYT-RUX广播商宽
-  - SG²_793MBs0GPTGMYTNFDX
-  - HK²_390MBs0YT-CNNFDX
-  - _2_3DE13原生疑似家宽高风险 黑名单08MBs30MBsXHistory
-  - JP²_598MBs33GPTGMX
-  - DE²_444MBs49GPTXHistory广播机房
-  - US¹-SG⁰_239MBsGPTYTTKNFDXHistory原生机房
-  - JP²_691MBs0GPTGMYTNFDXSucceed
-  - HK¹-SG⁰_1161MBs5GPTYTNFDX
-  - _3JoinTelegramFarah_VPN-63264MBsX
-  - ES²_115MBs26GPTXHistory广播机房
-  - US²_567MBs41GPTYTNFXHistory原生机房
-  - _4HK²_110MBs13MBsXHistory
-  - DE¹-US⁰_456MBsGPTDX广播机房
-  - US¹-SG⁰_408MBsGPTGMYTNFDXSucceed原生机房
-  - US²_697MBs0GPTGMYTTKNFDXSucceed广播机房
-  - FR²_454MBs1GPTNFX广播机房
-  - FR²_526MBs0GPTXSucceed
-  - CA²_179MBs32GPTYTX
-  - HK²_443MBs0DXHistory
-  - US¹-SG⁰_526MBsGPTYTTKNFDX原生机房
-  - SG²_8103MBsGPTX
-  - US²_740MBs0GPTGMYTDX
-  - GB²_163MBs0GPTDXSucceed广播机房
-  - KR²_2100MBs10GPTGMYTDXHistory
-  - DE²_566MBs6GPTX广播机房
-  - IT²_148MBs31GPTDX广播机房
-  - HK²_6122MBs1YT-CNDX
-  - _5_3DE53原生疑似家宽高风险 黑名单21MBs26MBsXHistory
-  - CA²_250MBsGPTXSucceed
-  - FI²_248MBs0GPTX广播机房
-  - TW²_5164MBs0GPTGMYTNFDX
-  - US¹_564MBsGPTGMYTTKNFDX原生机房
-  - CA²_369MBs32GPTYTX广播机房
-  - NL²_658MBsGPTXSucceed
-  - US²_857MBs7GPTNFXSucceed广播机房
-  - AL²_158MBs42GPTDX广播商宽
-  - US¹_668MBsGMYTNFDXHistory原生机房
-  - NL²_713MBs40GPTX
-  - NL²_856MBsGPTXHistory
-  - HK¹_1174MBs5YTDXSucceed
-  - US¹-SG⁰_609MBsGMYTNFDXSucceed原生机房
-  - kr4b3apuddincat07Telegram
-  - xx192dpuddincat07Telegram
-  - tr461cpuddincat07Telegram
-  - krb642puddincat07Telegram
-  - xx39a3puddincat07Telegram
-  - pt7522puddincat07Telegram
-  - xx1e66puddincat07Telegram
-  - kr107bpuddincat07Telegram
-  - sga3f4puddincat07Telegram
-  - us68adpuddincat07Telegram
-  - usae59puddincat07Telegram
+  - PL²_139MBs20GPTX广播机房
+  - US¹-SG⁰_131MBs5GPTYTTKNFDXSucceed原生机房
+  - FI²_117MBs9GPTXSucceed广播机房
+  - HK¹-SG⁰_126MBs5GPTYTDXSucceed
+  - DE¹-US⁰_168MBsGPTTKNFDXSucceed广播机房
+  - NL¹-US⁰_159MBsGPTDX广播机房
+  - US¹_131MBsGPTGMYTNFDXHistory原生机房
+  - FR¹-US⁰_141MBsGPTDX广播机房
+  - US¹_244MBs5GPTGMYTTKNFDXHistory原生机房
+  - US¹_339MBsGPTGMYTTKNFDX
+  - GB¹-US⁰_161MBs0GPTTKDX广播机房
+  - DE¹-US⁰_249MBs5GPTDXHistory广播机房
+  - HK¹-US⁰_145MBsGPTYTDXSucceed广播机房
+  - JP²_164MBs32GPTXSucceed
+  - NL²_155MBs57GPTYTTKNFXHistory原生机房
+  - GB¹-US⁰_246MBs5GPTDX广播机房
+  - DE¹-US⁰_369MBsGPTDX广播机房
+  - GB²_158MBsGPTNFXHistory广播机房
+  - US¹-SG⁰_235MBs5GPTYTTKNFDXSucceed原生机房
+  - GB²_245MBs10GPTXHistory广播机房
+  - US¹_440MBsGPTGMYTTKNFDX原生机房
+  - DE¹-US⁰_446MBsGPTDX广播机房
+  - DE¹-US⁰_514MBs5GPTDX广播机房
+  - DE¹-US⁰_657MBs5GPTDX广播机房
+  - _1_2_3DE144原生疑似家宽高风险 黑名单23MBs32MBsHistory30MBsXSuc
+  - CA²_138MBs32GPTYT-USXSucceed广播机房
+  - HK²_1110MBs1YTDXSucceed原生住宅
+  - NL²_205MBsGPTXHistory广播住宅拨号
+  - DE¹-US⁰_750MBs5GPTDX广播机房
+  - NL¹-US⁰_239MBsGPTDX广播机房
+  - NL²_354MBs6GPTX广播机房
+  - NL¹-US⁰_333MBs5GPTDX广播机房
+  - HK¹-SG⁰_363MBsGPTYTNFDX广播机房
+  - GB¹-SG⁰_159MBsGPTDXHistory广播机房
+  - _2_419323325491080-0125MBs30MBsXHistory
+  - PL²_252MBs7GPTXHistory广播商宽
+  - _3FR²_367MBs-USHistory原生机房67MBsXSucceed
+  - HK¹-SG⁰_437MBs5GPTYTDXSucceed
+  - US¹-SG⁰_376MBs5GPTYTTKNFDXSucceed原生机房
+  - DE¹-US⁰_855MBsGPTDXHistory广播机房
+  - NL¹-US⁰_461MBs5GPTDX广播机房
+  - GB¹-US⁰_365MBsGPTDX广播机房
+  - NL²_468MBs0GPTXHistory
+  - DE¹-US⁰_949MBsGPTDX广播机房
+  - DE¹-US⁰_1017MBsGPTDX广播机房
+  - TR²_133MBsGPTXHistory广播机房
+  - KR²_110MBs4GPTGMXHistory
+  - DE¹-US⁰_1155MBsGPTDX广播机房
+  - HK¹-US⁰_267MBs5GPTYTNFDXSucceed原生机房
+  - US¹-SG⁰_440MBsGPTGMYTNFDXHistory原生机房
+  - DE¹-US⁰_1253MBsGPTDX广播机房
+  - NL²_538MBsGPTXHistory广播住宅拨号
+  - US¹_571MBs5GPTYTDXSucceed原生机房
+  - US²_141MBs0GPTX
+  - GB²_349MBs10GPTXSucceed广播机房
+  - GB¹-US⁰_463MBs0GPTTKDX广播机房
+  - GB¹-US⁰_553MBsDX广播机房
+  - GB¹-US⁰_666MBs5GPTTKNFDX广播机房
+  - US²_241MBs0GPTXHistory广播机房
+  - DE¹-US⁰_1306MBsGPTDX广播机房
+  - FR²_165MBs42GPTTKX原生机房
+  - HU²_148MBs0GPTX广播机房
+  - DE¹-US⁰_1430MBsTKDX广播机房
+  - DE¹-US⁰_1555MBsGPTDX广播机房
+  - DE¹-US⁰_1628MBs5GPTDX广播机房
+  - US¹_645MBs5GPTGMNFDX原生机房
+  - IN²_182MBsGPTGMYTXHistory广播机房
+  - US²_315MBsX
+  - NL¹-US⁰_547MBs5GPTDX广播机房
+  - FR¹-US⁰_246MBsGPTDX广播机房
+  - NL²_605MBs6GPTX
+  - US¹-SG⁰_518MBsGPTGMYTTKNFDXSucceed原生机房
+  - DE¹-US⁰_1757MBsDX广播机房
+  - TW²_183MBsGPTGMYTDXSucceed
+  - CH²_123MBsGPTDXSucceed广播机房
+  - _5_3DE13原生疑似家宽高风险 黑名单08MBs28MBsXHistory
+  - NL¹-US⁰_618MBsGPTDX广播机房
+  - DE¹-US⁰_1871MBsGPTDX广播机房
+  - DE²_118MBs0GPTX广播商宽
+  - _6_5942301271801080-0117MBs15MBsXHistory
+  - DE¹-US⁰_1952MBs5GPTDX广播机房
+  - HK²_3161MBs0YT-CNNFDX原生住宅
+  - FI¹-US⁰_153MBsGPTDX广播机房
+  - US²_448MBsGPTXHistory
+  - US¹_767MBs5GPTGMNFDXHistory原生机房
+  - US²_555MBs22GPTNFX
+  - GB¹-US⁰_710MBs0GPTDX广播机房
+  - DE¹-US⁰_2057MBsGPTDX广播机房
+  - US¹-SG⁰_666MBsGPTYTNFDXHistory原生机房
+  - HK¹-SG⁰_583MBs5GPTYTDXHistory
+  - SE¹-US⁰_147MBsGPTX
+  - HK¹-SG⁰_697MBs5GPTYTDXHistory
+  - GB¹-SG⁰_217MBsGPTDXHistory广播机房
+  - xx9bd9puddincat07Telegram
+  - fr8bf5puddincat07Telegram
+  - caef6fpuddincat07Telegram
+  - pta318puddincat07Telegram
+  - md0b84puddincat07Telegram
+  - us0946puddincat07Telegram
+  - ieb163puddincat07Telegram
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - NL²_174MBsGPTX广播住宅拨号
-  - JP²_108MBs0GPTX
-  - US¹_175MBsGMYTNFDX原生机房
-  - JP²_2152MBs0GPTGMYTNFDX
-  - US²_153MBsGPTXSucceed
-  - GB¹-SG⁰_153MBsGPTDXSucceed广播机房
-  - CH²_136MBs0GPTYT-RUDXSucceed广播机房
-  - US²_295MBs0GPTGMYTTKNFDX广播机房
-  - SG²_1126MBsX
-  - NL²_245MBs17GPTXHistory
-  - FR²_114MBsGPTDXHistory原生机房
-  - SG²_279MBsGPTYTDX
-  - RU²_156MBsYTXSucceed原生机房
-  - HK²_180MBs1YTNFDXHistory
-  - JP²_393MBs0GPTYT-RUXHistory
-  - HK²_206MBs0YTNFXHistory
-  - DE¹-US⁰_139MBsDXHistory广播机房
-  - _1_419323325491080-0125MBs30MBsXHistory
-  - VN²_166MBsGPTGMYTX
-  - DE²_164MBs0GPTDX原生商宽
-  - JP²_4130MBs0GPTGMYTNFDXSucceed
-  - NL²_356MBs17GPTX
-  - TW²_1154MBs0GPTGMYTNFDXSucceed
-  - TW²_245MBsGPTGMYTNFDXSucceed
-  - US¹-KR⁰_119MBsGPTGMYTTKNFDXSucceed原生机房
-  - SG²_3154MBs0GPTGMYTNFDXSucceed
-  - KR²_111MBs4GPTGMXHistory
-  - US²_381MBs0GPTGMYTTKNFDXSucceed广播机房
-  - SG²_4128MBsX
-  - SG²_5132MBs0GPTGMYTNFDX
-  - TW²_3151MBs0GPTGMYTNFDXSucceed
-  - US¹_3150MBsGPTYT-HKDX
-  - NL²_461MBs0GPTXHistory原生商宽
-  - DE²_264MBs0GPTDXHistory原生商宽
-  - US¹-SG⁰_163MBsGPTGMYTTKNFDXHistory原生机房
-  - AE²_150MBsGPTX广播机房
-  - DE¹-US⁰_243MBsDXHistory广播机房
-  - LT²_159MBs42GPTX广播商宽
-  - DE¹-US⁰_369MBsTKDX广播机房
-  - FR¹-US⁰_164MBs5GPTDX广播机房
-  - DE²_332MBsGPTX
-  - FR²_274MBs42GPTXHistory原生机房
-  - US²_437MBs0GPTXSucceed原生机房
-  - FI²_117MBs0GPTDX原生机房
-  - US¹_466MBsGMYTTKNFDX原生机房
-  - TW²_495MBsGPTGMYTX
-  - SG²_6160MBs0GPTGMYTNFDX
-  - FR²_356MBs42GPTYT-RUX广播商宽
-  - SG²_793MBs0GPTGMYTNFDX
-  - HK²_390MBs0YT-CNNFDX
-  - _2_3DE13原生疑似家宽高风险 黑名单08MBs30MBsXHistory
-  - JP²_598MBs33GPTGMX
-  - DE²_444MBs49GPTXHistory广播机房
-  - US¹-SG⁰_239MBsGPTYTTKNFDXHistory原生机房
-  - JP²_691MBs0GPTGMYTNFDXSucceed
-  - HK¹-SG⁰_1161MBs5GPTYTNFDX
-  - _3JoinTelegramFarah_VPN-63264MBsX
-  - ES²_115MBs26GPTXHistory广播机房
-  - US²_567MBs41GPTYTNFXHistory原生机房
-  - _4HK²_110MBs13MBsXHistory
-  - DE¹-US⁰_456MBsGPTDX广播机房
-  - US¹-SG⁰_408MBsGPTGMYTNFDXSucceed原生机房
-  - US²_697MBs0GPTGMYTTKNFDXSucceed广播机房
-  - FR²_454MBs1GPTNFX广播机房
-  - FR²_526MBs0GPTXSucceed
-  - CA²_179MBs32GPTYTX
-  - HK²_443MBs0DXHistory
-  - US¹-SG⁰_526MBsGPTYTTKNFDX原生机房
-  - SG²_8103MBsGPTX
-  - US²_740MBs0GPTGMYTDX
-  - GB²_163MBs0GPTDXSucceed广播机房
-  - KR²_2100MBs10GPTGMYTDXHistory
-  - DE²_566MBs6GPTX广播机房
-  - IT²_148MBs31GPTDX广播机房
-  - HK²_6122MBs1YT-CNDX
-  - _5_3DE53原生疑似家宽高风险 黑名单21MBs26MBsXHistory
-  - CA²_250MBsGPTXSucceed
-  - FI²_248MBs0GPTX广播机房
-  - TW²_5164MBs0GPTGMYTNFDX
-  - US¹_564MBsGPTGMYTTKNFDX原生机房
-  - CA²_369MBs32GPTYTX广播机房
-  - NL²_658MBsGPTXSucceed
-  - US²_857MBs7GPTNFXSucceed广播机房
-  - AL²_158MBs42GPTDX广播商宽
-  - US¹_668MBsGMYTNFDXHistory原生机房
-  - NL²_713MBs40GPTX
-  - NL²_856MBsGPTXHistory
-  - HK¹_1174MBs5YTDXSucceed
-  - US¹-SG⁰_609MBsGMYTNFDXSucceed原生机房
-  - kr4b3apuddincat07Telegram
-  - xx192dpuddincat07Telegram
-  - tr461cpuddincat07Telegram
-  - krb642puddincat07Telegram
-  - xx39a3puddincat07Telegram
-  - pt7522puddincat07Telegram
-  - xx1e66puddincat07Telegram
-  - kr107bpuddincat07Telegram
-  - sga3f4puddincat07Telegram
-  - us68adpuddincat07Telegram
-  - usae59puddincat07Telegram
+  - PL²_139MBs20GPTX广播机房
+  - US¹-SG⁰_131MBs5GPTYTTKNFDXSucceed原生机房
+  - FI²_117MBs9GPTXSucceed广播机房
+  - HK¹-SG⁰_126MBs5GPTYTDXSucceed
+  - DE¹-US⁰_168MBsGPTTKNFDXSucceed广播机房
+  - NL¹-US⁰_159MBsGPTDX广播机房
+  - US¹_131MBsGPTGMYTNFDXHistory原生机房
+  - FR¹-US⁰_141MBsGPTDX广播机房
+  - US¹_244MBs5GPTGMYTTKNFDXHistory原生机房
+  - US¹_339MBsGPTGMYTTKNFDX
+  - GB¹-US⁰_161MBs0GPTTKDX广播机房
+  - DE¹-US⁰_249MBs5GPTDXHistory广播机房
+  - HK¹-US⁰_145MBsGPTYTDXSucceed广播机房
+  - JP²_164MBs32GPTXSucceed
+  - NL²_155MBs57GPTYTTKNFXHistory原生机房
+  - GB¹-US⁰_246MBs5GPTDX广播机房
+  - DE¹-US⁰_369MBsGPTDX广播机房
+  - GB²_158MBsGPTNFXHistory广播机房
+  - US¹-SG⁰_235MBs5GPTYTTKNFDXSucceed原生机房
+  - GB²_245MBs10GPTXHistory广播机房
+  - US¹_440MBsGPTGMYTTKNFDX原生机房
+  - DE¹-US⁰_446MBsGPTDX广播机房
+  - DE¹-US⁰_514MBs5GPTDX广播机房
+  - DE¹-US⁰_657MBs5GPTDX广播机房
+  - _1_2_3DE144原生疑似家宽高风险 黑名单23MBs32MBsHistory30MBsXSuc
+  - CA²_138MBs32GPTYT-USXSucceed广播机房
+  - HK²_1110MBs1YTDXSucceed原生住宅
+  - NL²_205MBsGPTXHistory广播住宅拨号
+  - DE¹-US⁰_750MBs5GPTDX广播机房
+  - NL¹-US⁰_239MBsGPTDX广播机房
+  - NL²_354MBs6GPTX广播机房
+  - NL¹-US⁰_333MBs5GPTDX广播机房
+  - HK¹-SG⁰_363MBsGPTYTNFDX广播机房
+  - GB¹-SG⁰_159MBsGPTDXHistory广播机房
+  - _2_419323325491080-0125MBs30MBsXHistory
+  - PL²_252MBs7GPTXHistory广播商宽
+  - _3FR²_367MBs-USHistory原生机房67MBsXSucceed
+  - HK¹-SG⁰_437MBs5GPTYTDXSucceed
+  - US¹-SG⁰_376MBs5GPTYTTKNFDXSucceed原生机房
+  - DE¹-US⁰_855MBsGPTDXHistory广播机房
+  - NL¹-US⁰_461MBs5GPTDX广播机房
+  - GB¹-US⁰_365MBsGPTDX广播机房
+  - NL²_468MBs0GPTXHistory
+  - DE¹-US⁰_949MBsGPTDX广播机房
+  - DE¹-US⁰_1017MBsGPTDX广播机房
+  - TR²_133MBsGPTXHistory广播机房
+  - KR²_110MBs4GPTGMXHistory
+  - DE¹-US⁰_1155MBsGPTDX广播机房
+  - HK¹-US⁰_267MBs5GPTYTNFDXSucceed原生机房
+  - US¹-SG⁰_440MBsGPTGMYTNFDXHistory原生机房
+  - DE¹-US⁰_1253MBsGPTDX广播机房
+  - NL²_538MBsGPTXHistory广播住宅拨号
+  - US¹_571MBs5GPTYTDXSucceed原生机房
+  - US²_141MBs0GPTX
+  - GB²_349MBs10GPTXSucceed广播机房
+  - GB¹-US⁰_463MBs0GPTTKDX广播机房
+  - GB¹-US⁰_553MBsDX广播机房
+  - GB¹-US⁰_666MBs5GPTTKNFDX广播机房
+  - US²_241MBs0GPTXHistory广播机房
+  - DE¹-US⁰_1306MBsGPTDX广播机房
+  - FR²_165MBs42GPTTKX原生机房
+  - HU²_148MBs0GPTX广播机房
+  - DE¹-US⁰_1430MBsTKDX广播机房
+  - DE¹-US⁰_1555MBsGPTDX广播机房
+  - DE¹-US⁰_1628MBs5GPTDX广播机房
+  - US¹_645MBs5GPTGMNFDX原生机房
+  - IN²_182MBsGPTGMYTXHistory广播机房
+  - US²_315MBsX
+  - NL¹-US⁰_547MBs5GPTDX广播机房
+  - FR¹-US⁰_246MBsGPTDX广播机房
+  - NL²_605MBs6GPTX
+  - US¹-SG⁰_518MBsGPTGMYTTKNFDXSucceed原生机房
+  - DE¹-US⁰_1757MBsDX广播机房
+  - TW²_183MBsGPTGMYTDXSucceed
+  - CH²_123MBsGPTDXSucceed广播机房
+  - _5_3DE13原生疑似家宽高风险 黑名单08MBs28MBsXHistory
+  - NL¹-US⁰_618MBsGPTDX广播机房
+  - DE¹-US⁰_1871MBsGPTDX广播机房
+  - DE²_118MBs0GPTX广播商宽
+  - _6_5942301271801080-0117MBs15MBsXHistory
+  - DE¹-US⁰_1952MBs5GPTDX广播机房
+  - HK²_3161MBs0YT-CNNFDX原生住宅
+  - FI¹-US⁰_153MBsGPTDX广播机房
+  - US²_448MBsGPTXHistory
+  - US¹_767MBs5GPTGMNFDXHistory原生机房
+  - US²_555MBs22GPTNFX
+  - GB¹-US⁰_710MBs0GPTDX广播机房
+  - DE¹-US⁰_2057MBsGPTDX广播机房
+  - US¹-SG⁰_666MBsGPTYTNFDXHistory原生机房
+  - HK¹-SG⁰_583MBs5GPTYTDXHistory
+  - SE¹-US⁰_147MBsGPTX
+  - HK¹-SG⁰_697MBs5GPTYTDXHistory
+  - GB¹-SG⁰_217MBsGPTDXHistory广播机房
+  - xx9bd9puddincat07Telegram
+  - fr8bf5puddincat07Telegram
+  - caef6fpuddincat07Telegram
+  - pta318puddincat07Telegram
+  - md0b84puddincat07Telegram
+  - us0946puddincat07Telegram
+  - ieb163puddincat07Telegram
 - name: ♻️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -1414,46 +1644,46 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - NL²_174MBsGPTX广播住宅拨号
-  - JP²_108MBs0GPTX
-  - US¹_175MBsGMYTNFDX原生机房
-  - JP²_2152MBs0GPTGMYTNFDX
-  - US²_153MBsGPTXSucceed
-  - GB¹-SG⁰_153MBsGPTDXSucceed广播机房
-  - CH²_136MBs0GPTYT-RUDXSucceed广播机房
-  - US²_295MBs0GPTGMYTTKNFDX广播机房
-  - SG²_1126MBsX
-  - NL²_245MBs17GPTXHistory
+  - PL²_139MBs20GPTX广播机房
+  - US¹-SG⁰_131MBs5GPTYTTKNFDXSucceed原生机房
+  - FI²_117MBs9GPTXSucceed广播机房
+  - HK¹-SG⁰_126MBs5GPTYTDXSucceed
+  - DE¹-US⁰_168MBsGPTTKNFDXSucceed广播机房
+  - NL¹-US⁰_159MBsGPTDX广播机房
+  - US¹_131MBsGPTGMYTNFDXHistory原生机房
+  - FR¹-US⁰_141MBsGPTDX广播机房
+  - US¹_244MBs5GPTGMYTTKNFDXHistory原生机房
+  - US¹_339MBsGPTGMYTTKNFDX
 - name: 🎥 Netflix
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - NL²_174MBsGPTX广播住宅拨号
-  - JP²_108MBs0GPTX
-  - US¹_175MBsGMYTNFDX原生机房
-  - JP²_2152MBs0GPTGMYTNFDX
-  - US²_153MBsGPTXSucceed
-  - GB¹-SG⁰_153MBsGPTDXSucceed广播机房
-  - CH²_136MBs0GPTYT-RUDXSucceed广播机房
-  - US²_295MBs0GPTGMYTTKNFDX广播机房
-  - SG²_1126MBsX
-  - NL²_245MBs17GPTXHistory
+  - PL²_139MBs20GPTX广播机房
+  - US¹-SG⁰_131MBs5GPTYTTKNFDXSucceed原生机房
+  - FI²_117MBs9GPTXSucceed广播机房
+  - HK¹-SG⁰_126MBs5GPTYTDXSucceed
+  - DE¹-US⁰_168MBsGPTTKNFDXSucceed广播机房
+  - NL¹-US⁰_159MBsGPTDX广播机房
+  - US¹_131MBsGPTGMYTNFDXHistory原生机房
+  - FR¹-US⁰_141MBsGPTDX广播机房
+  - US¹_244MBs5GPTGMYTTKNFDXHistory原生机房
+  - US¹_339MBsGPTGMYTTKNFDX
 - name: 📱 Telegram
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - NL²_174MBsGPTX广播住宅拨号
-  - JP²_108MBs0GPTX
-  - US¹_175MBsGMYTNFDX原生机房
-  - JP²_2152MBs0GPTGMYTNFDX
-  - US²_153MBsGPTXSucceed
-  - GB¹-SG⁰_153MBsGPTDXSucceed广播机房
-  - CH²_136MBs0GPTYT-RUDXSucceed广播机房
-  - US²_295MBs0GPTGMYTTKNFDX广播机房
-  - SG²_1126MBsX
-  - NL²_245MBs17GPTXHistory
+  - PL²_139MBs20GPTX广播机房
+  - US¹-SG⁰_131MBs5GPTYTTKNFDXSucceed原生机房
+  - FI²_117MBs9GPTXSucceed广播机房
+  - HK¹-SG⁰_126MBs5GPTYTDXSucceed
+  - DE¹-US⁰_168MBsGPTTKNFDXSucceed广播机房
+  - NL¹-US⁰_159MBsGPTDX广播机房
+  - US¹_131MBsGPTGMYTNFDXHistory原生机房
+  - FR¹-US⁰_141MBsGPTDX广播机房
+  - US¹_244MBs5GPTGMYTTKNFDXHistory原生机房
+  - US¹_339MBsGPTGMYTTKNFDX
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
