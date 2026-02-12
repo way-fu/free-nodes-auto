@@ -42,6 +42,7 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git pull origin main --rebase --autostash
+        # 强制上传
         git add output/
 
         # 如果暂存区没有改动则退出
