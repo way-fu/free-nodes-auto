@@ -26,343 +26,275 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- country: 🇭🇰HK
-  name: JP²_109MBsGPTGMYTDXSucceed广播机房
-  password: a8f3baf4-0694-4f73-bebc-9e7f3ea01b95
-  port: 30003
-  server: jp10.jsyjiedian8.com
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: FR²_106MBsGPTXHistory
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
+    short-id: 4fa44664f6a566d3
+  server: fran.scroogethebest.com
+  servername: fran.scroogethebest.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  xudp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: JP²_115MBs8GPTX
+  network: tcp
+  port: 20001
+  reality-opts:
+    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
+    short-id: 4b070735
+  server: 42.2.28.64
+  servername: buylite.music.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: SG²_106MBsGPTX原生商宽
+  port: 443
+  reality-opts:
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 4daa022e84f8edf2
+  server: de.cdn.stun.su
+  servername: de.cdn.stun.su
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+- cipher: aes-128-gcm
+  name: us21aepuddincat07Telegram
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: xx72f8puddincat07Telegram
+  password: kaQH3hGdcP80XEDI
+  port: 443
+  server: admin.c2.havij.co
   skip-cert-verify: true
-  sni: jsygouer.weixin-baidu-qq.com
+  tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: xxd89fpuddincat07Telegram
+  password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  port: 18140
+  server: ldu.izenny.com
+  type: ss
+- alterId: 0
+  name: twe773puddincat07Telegram
+  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
+  port: 31102
+  server: 220.130.58.136
+  skip-cert-verify: true
+  sni: green2.cdntencentmusic.com
   tls: true
   type: trojan
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  name: IN²_123MBsGPTXSucceed广播机房
-  password: 0db758b4-e2ea-4716-bc9f-089bf6a1a30b
-  port: 50012
-  server: zz.9966663.xyz
-  skip-cert-verify: true
-  type: anytls
   udp: true
 - alterId: 0
-  cipher: auto
-  country: 🇺🇸US
-  h2-opts: {}
-  http-opts: {}
-  name: DE²_106MBsXSucceed广播机房
-  network: ws
-  port: 8080
-  server: tgju.org
-  servername: nasnet-571296497.iranpress.co
+  cipher: chacha20-ietf-poly1305
+  name: ruc3capuddincat07Telegram
+  password: awYDSj3KrIKEQ3RrpRCKDqVMX
+  port: 41056
+  server: 176.123.168.79
   skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-cfb
+  name: ptb9eepuddincat07Telegram
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: nlf05cpuddincat07Telegram
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 193.29.139.157
+  type: ss
+- alterId: 32
+  cipher: auto
+  client-fingerprint: chrome
+  name: xx8166puddincat07Telegram
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: nasnet
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
   ws-opts:
     headers:
-      HOST: nasnet-571296497.iranpress.co
-    path: /nasnet/cdn
-- alterId: 2
-  cipher: auto
-  country: 🏁 ZZ
-  http-opts: {}
-  name: US²_123MBsXHistory
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    path: /
-- alterId: 2
-  cipher: auto
-  country: 🇭🇰HK
-  h2-opts: {}
-  http-opts: {}
-  name: US²_223MBs35GPTYT-CNNFXHistory
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: TW²_105MBs0XHistory
-  password: ''
-  port: 1080
-  server: 141.11.42.163
-  skip-cert-verify: true
-  type: socks5
-  username: ''
-- delay: 1247
-  name: HK²_108MBsX
-  password: BxceQaOe
+      host: vc.fly.dev
+    path: /vc
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: xx3175puddincat07Telegram
+  password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
-  server: 203.198.123.162
+  server: tinkered-pennies-puppies.freesocks.work
   skip-cert-verify: true
-  sni: 203.198.123.162
   tls: true
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: gb0eb7puddincat07Telegram
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.210
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: gb3495puddincat07Telegram
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+- cipher: aes-256-cfb
+  name: lvba16puddincat07Telegram
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.217.232
+  type: ss
+  udp: true
+- name: xx9c6epuddincat07Telegram
+  password: d0774966-fb63-4aca-9478-16c3f32be220
+  port: 443
+  server: jp.mjt000.com
+  skip-cert-verify: true
+  sni: jp.mjt000.com
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  country: 🇨🇳CN
-  h2-opts: {}
-  http-opts: {}
-  name: US²_317MBsGPTXSucceed
-  network: tcp
-  port: 30846
-  server: v46.hdacd.com
-  servername: v46.hdacd.com
-  skip-cert-verify: true
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: chacha20-ietf-poly1305
-  name: gb2812puddincat07Telegram
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.82
-  type: ss
-- cipher: aes-256-cfb
-  name: se53a3puddincat07Telegram
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 121.127.46.147
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: in4e84puddincat07Telegram
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 134.209.147.198
-  type: ss
-- cipher: aes-256-cfb
-  name: pl05a0puddincat07Telegram
-  password: GA9KzeEgvfxNrgmM
-  port: 9019
-  server: 217.30.10.18
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: usd3a3puddincat07Telegram
-  password: KixLvKzwjekG00rm
-  port: 5500
-  server: 23.157.40.6
-  type: ss
-  udp: true
-- name: sgdb08puddincat07Telegram
-  password: txEolrwX7i
+- name: sg0e6epuddincat07Telegram
+  password: yR7hP9aw5L
   port: 443
-  server: 157.245.148.244
+  server: 134.209.105.33
   skip-cert-verify: true
   sni: aka.ms
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: defe60puddincat07Telegram
-  password: jhblmJdHApr5afBcB1rtSt
-  port: 20888
-  server: 136.244.81.170
-  type: ss
-  udp: true
-- name: ir9565puddincat07Telegram
-  password: 15cNx34bm8
+  name: usbe73puddincat07Telegram
+  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
   port: 443
-  server: 188.121.117.32
-  skip-cert-verify: true
-  sni: iranlir.speedtrade.top
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: kr1051puddincat07Telegram
-  password: qwerREWQ@@
-  port: 42978
-  server: 221.150.109.81
+  server: 23.95.75.146
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: ru521apuddincat07Telegram
-  password: zErfOQDf3lOXZ24DK9EcAL
-  port: 16991
-  server: 5.42.86.33
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: usfeeapuddincat07Telegram
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: any.ktsfd.shop
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 172.67.124.123
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: ca073cpuddincat07Telegram
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 79.127.233.170
-  type: ss
-- cipher: aes-256-cfb
-  name: am823epuddincat07Telegram
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 146.185.248.22
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: fr1c17puddincat07Telegram
-  password: qXvO7zYU7KeaB0Md7DQLow
+  name: gbb97bpuddincat07Telegram
+  password: 8z9R4FiU9Ttgpl6it_pJPw
   port: 1080
-  server: 51.195.119.47
+  server: 104.248.169.207
   type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: us3f0bpuddincat07Telegram
-  password: faBAoD54k87UJG7
-  port: 2375
-  server: 38.121.43.65
+  name: use2b0puddincat07Telegram
+  password: WNbauCJh3j
+  port: 48959
+  server: 107.172.87.131
   type: ss
   udp: true
-- name: xx4f28puddincat07Telegram
-  password: ebd1c3e8-a136-49a5-a76c-88c4bf0a23aa
-  port: 30502
-  server: fr01.freeflyingcloud.xyz
-  skip-cert-verify: true
-  sni: fr01.freeflyingcloud.xyz
-  type: trojan
-  udp: true
-- name: xx43fapuddincat07Telegram
-  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
-  port: 443
-  server: chjs.lydurlclub.top
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: xxd0f5puddincat07Telegram
-  password: qwerREWQ@@
-  port: 49032
-  server: p221.panda001.net
+- cipher: chacha20-ietf-poly1305
+  name: xx15d9puddincat07Telegram
+  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
+  port: 36030
+  server: 3u1s01.a3b5wy.xyz
   type: ss
   udp: true
-- name: se4c14puddincat07Telegram
+- cipher: chacha20-ietf-poly1305
+  name: fi7b8dpuddincat07Telegram
+  password: hnRXsWFscwBEAvGnqQQoU2
+  port: 25091
+  server: 94.142.138.56
+  type: ss
+  udp: true
+- name: usfac5puddincat07Telegram
   password: wkmY1R4EcP
   port: 443
-  server: 70.34.205.1
+  server: 45.77.167.12
   skip-cert-verify: true
-  sni: myket.ir
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: kr94efpuddincat07Telegram
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 141.164.45.187
-  type: ss
-- cipher: aes-256-cfb
-  name: sibd77puddincat07Telegram
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.244.150
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: xxcd72puddincat07Telegram
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  port: 36027
-  server: 8t6w02.a3b5wy.xyz
-  type: ss
-  udp: true
-- name: us2032puddincat07Telegram
-  password: 71409d3e488548e8bb076d229778f008
-  port: 443
-  server: 104.17.147.2
-  skip-cert-verify: true
-  sni: jobscareerfortoday.com
+  sni: z-v2-003319.kailib.com
   type: trojan
   udp: true
 - cipher: aes-256-cfb
-  name: us2a87puddincat07Telegram
+  name: us29cfpuddincat07Telegram
   password: 9d6cceaa373bf2c8acb22e60b6a58be6
   port: 443
   server: 45.33.88.190
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: ieb7aapuddincat07Telegram
-  password: R5vcCFayGJ8ZwKMSUfdyfF
-  port: 28612
-  server: 52.169.202.174
+- cipher: aes-256-gcm
+  name: us0bfdpuddincat07Telegram
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 38.75.136.33
   type: ss
   udp: true
-- name: xx428bpuddincat07Telegram
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  port: 36841
-  server: 3d6e01.a3b5wy.xyz
+- name: us6f10puddincat07Telegram
+  password: 656bcdfe-ae09-4170-a36e-1685ee10b26f
+  port: 2083
+  server: 104.26.3.186
   skip-cert-verify: true
-  sni: de01.abpilot.xyz
+  sni: freeinternetforeveryone.segaro.tech
   type: trojan
   udp: true
-- cipher: rc4-md5
-  name: cn2ebapuddincat07Telegram
-  password: dbEcUJ
-  port: 24603
-  server: 211.99.97.19
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: xxeebdpuddincat07Telegram
-  password: 835d21b0-5322-4a77-8aff-4aff633642b0
-  port: 60004
-  server: 5.forlive.live
-  type: ss
-  udp: true
-- name: xx629apuddincat07Telegram
-  password: 54acbfdc-34ec-3d72-8182-3b437e4747eb
-  port: 520
-  server: taiwjing.kuli888.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: nlff1apuddincat07Telegram
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: nl95c8puddincat07Telegram
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 193.29.139.157
-  type: ss
-- cipher: aes-256-cfb
-  name: nlacddpuddincat07Telegram
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.23.63
-  type: ss
-- name: DE_dc40f_0001
-  server: de.cdn.stun.su
-  port: 443
-  type: vless
-  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
-  servername: de.cdn.stun.su
-  reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: 4daa022e84f8edf2
+  name: xx3815puddincat07Telegram
+  network: ws
+  port: 80
+  server: hkt.gotochinatown.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      host: hkt.gotochinatown.net
+    path: /
+- cipher: aes-128-gcm
+  name: us47e4puddincat07Telegram
+  password: Yc2CtrIz8L
+  port: 16899
+  server: 172.233.164.254
+  type: ss
   udp: true
-- name: HK_dc40f_0002
+- cipher: aes-256-gcm
+  name: ca6ad9puddincat07Telegram
+  password: g5MeD6Ft3CWlJId
+  port: 5004
+  server: 198.57.27.218
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: gbc3f6puddincat07Telegram
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: tr1c77puddincat07Telegram
+  password: a8H2xE6f0ubGLeSvZrfQIWRDKE1LgY
+  port: 8881
+  server: 94.131.108.133
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: xx5449puddincat07Telegram
+  password: Bog0ELmMM9DSxDdQ
+  port: 443
+  server: fast_2ray_telchannelll2.fast2rayy.eu.org
+  type: ss
+  udp: true
+- name: HK_65761_0002
   server: 42.2.28.64
   port: 1314
   type: vless
@@ -376,7 +308,7 @@ proxies:
     public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
     short-id: 4b070735
   udp: true
-- name: IN_dc40f_0003
+- name: IN_65761_0003
   server: 144.24.97.225
   port: 443
   type: vless
@@ -390,7 +322,7 @@ proxies:
     public-key: h6jFhmMYpmiEmm4sxrBLBSxtgsdM5k5EUvrv1bKNFGU
     short-id: 8894620bd4b91f71
   udp: true
-- name: JP_dc40f_0004
+- name: JP_65761_0004
   server: 38.207.130.145
   port: 48816
   type: vless
@@ -404,13 +336,13 @@ proxies:
     public-key: fk4uHkIWXJ5MbcsFASbAhKlC5gV9m-XovXftmIDSuxo
     short-id: 21280d81
   udp: true
-- name: KR_dc40f_0005
+- name: KR_65761_0005
   server: 121.169.46.116
   port: 1090
   type: socks5
   username: Og%3D%3D
   udp: true
-- name: RU_dc40f_0007
+- name: RU_65761_0007
   server: meow-msc.nethcloud.top
   port: 8443
   type: vless
@@ -423,7 +355,7 @@ proxies:
     public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
     short-id: 8bd29483ded126b4
   udp: true
-- name: RU_dc40f_0008
+- name: RU_65761_0008
   server: 158.160.223.36
   port: 8443
   type: vless
@@ -437,7 +369,7 @@ proxies:
     public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
     short-id: 48fccabc158a4c22
   udp: true
-- name: RU_dc40f_0009
+- name: RU_65761_0009
   server: 89.169.128.105
   port: 8443
   type: vless
@@ -451,7 +383,7 @@ proxies:
     public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
     short-id: f4b4a6365558ea2e
   udp: true
-- name: RU_dc40f_0010
+- name: RU_65761_0010
   server: 158.160.105.121
   port: 443
   type: vless
@@ -465,7 +397,7 @@ proxies:
     public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
     short-id: 8f222b3475800821
   udp: true
-- name: RU_dc40f_0011
+- name: RU_65761_0011
   server: 45.139.26.213
   port: 443
   type: vless
@@ -479,7 +411,7 @@ proxies:
     public-key: tYFlc_8tzrwDisZbxlHj06rw_YE154TVYeEBuwOQZHE
     short-id: 8a6605e7
   udp: true
-- name: US_dc40f_0013
+- name: US_65761_0013
   server: 203.10.96.138
   port: 443
   type: vless
@@ -493,7 +425,7 @@ proxies:
     public-key: VFG2L-3i30fQZg3wd0DF6dEGdaT27S-PKpuYu7Hp8xU
     short-id: fd26d49a
   udp: true
-- name: US_dc40f_0014
+- name: US_65761_0014
   server: 64.188.64.59
   port: 443
   type: vless
@@ -506,7 +438,7 @@ proxies:
     public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k
     short-id: efd29b2d25
   udp: true
-- name: US_dc40f_0015
+- name: US_65761_0015
   server: pl2.jugsenkeys4pays.su
   port: 443
   type: vless
@@ -526,118 +458,100 @@ proxy-groups:
   - ♻️ 自动选择
   - ♻️ 负载均衡
   - 🌍 全球直连
-  - JP²_109MBsGPTGMYTDXSucceed广播机房
-  - IN²_123MBsGPTXSucceed广播机房
-  - DE²_106MBsXSucceed广播机房
-  - US²_123MBsXHistory
-  - US²_223MBs35GPTYT-CNNFXHistory
-  - TW²_105MBs0XHistory
-  - HK²_108MBsX
-  - US²_317MBsGPTXSucceed
-  - gb2812puddincat07Telegram
-  - se53a3puddincat07Telegram
-  - in4e84puddincat07Telegram
-  - pl05a0puddincat07Telegram
-  - usd3a3puddincat07Telegram
-  - sgdb08puddincat07Telegram
-  - defe60puddincat07Telegram
-  - ir9565puddincat07Telegram
-  - kr1051puddincat07Telegram
-  - ru521apuddincat07Telegram
-  - usfeeapuddincat07Telegram
-  - ca073cpuddincat07Telegram
-  - am823epuddincat07Telegram
-  - fr1c17puddincat07Telegram
-  - us3f0bpuddincat07Telegram
-  - xx4f28puddincat07Telegram
-  - xx43fapuddincat07Telegram
-  - xxd0f5puddincat07Telegram
-  - se4c14puddincat07Telegram
-  - kr94efpuddincat07Telegram
-  - sibd77puddincat07Telegram
-  - xxcd72puddincat07Telegram
-  - us2032puddincat07Telegram
-  - us2a87puddincat07Telegram
-  - ieb7aapuddincat07Telegram
-  - xx428bpuddincat07Telegram
-  - cn2ebapuddincat07Telegram
-  - xxeebdpuddincat07Telegram
-  - xx629apuddincat07Telegram
-  - nlff1apuddincat07Telegram
-  - nl95c8puddincat07Telegram
-  - nlacddpuddincat07Telegram
-  - DE_dc40f_0001
-  - HK_dc40f_0002
-  - IN_dc40f_0003
-  - JP_dc40f_0004
-  - KR_dc40f_0005
-  - RU_dc40f_0007
-  - RU_dc40f_0008
-  - RU_dc40f_0009
-  - RU_dc40f_0010
-  - RU_dc40f_0011
-  - US_dc40f_0013
-  - US_dc40f_0014
-  - US_dc40f_0015
+  - FR²_106MBsGPTXHistory
+  - JP²_115MBs8GPTX
+  - SG²_106MBsGPTX原生商宽
+  - us21aepuddincat07Telegram
+  - xx72f8puddincat07Telegram
+  - xxd89fpuddincat07Telegram
+  - twe773puddincat07Telegram
+  - ruc3capuddincat07Telegram
+  - ptb9eepuddincat07Telegram
+  - nlf05cpuddincat07Telegram
+  - xx8166puddincat07Telegram
+  - xx3175puddincat07Telegram
+  - gb0eb7puddincat07Telegram
+  - gb3495puddincat07Telegram
+  - lvba16puddincat07Telegram
+  - xx9c6epuddincat07Telegram
+  - sg0e6epuddincat07Telegram
+  - usbe73puddincat07Telegram
+  - gbb97bpuddincat07Telegram
+  - use2b0puddincat07Telegram
+  - xx15d9puddincat07Telegram
+  - fi7b8dpuddincat07Telegram
+  - usfac5puddincat07Telegram
+  - us29cfpuddincat07Telegram
+  - us0bfdpuddincat07Telegram
+  - us6f10puddincat07Telegram
+  - xx3815puddincat07Telegram
+  - us47e4puddincat07Telegram
+  - ca6ad9puddincat07Telegram
+  - gbc3f6puddincat07Telegram
+  - tr1c77puddincat07Telegram
+  - xx5449puddincat07Telegram
+  - HK_65761_0002
+  - IN_65761_0003
+  - JP_65761_0004
+  - KR_65761_0005
+  - RU_65761_0007
+  - RU_65761_0008
+  - RU_65761_0009
+  - RU_65761_0010
+  - RU_65761_0011
+  - US_65761_0013
+  - US_65761_0014
+  - US_65761_0015
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - JP²_109MBsGPTGMYTDXSucceed广播机房
-  - IN²_123MBsGPTXSucceed广播机房
-  - DE²_106MBsXSucceed广播机房
-  - US²_123MBsXHistory
-  - US²_223MBs35GPTYT-CNNFXHistory
-  - TW²_105MBs0XHistory
-  - HK²_108MBsX
-  - US²_317MBsGPTXSucceed
-  - gb2812puddincat07Telegram
-  - se53a3puddincat07Telegram
-  - in4e84puddincat07Telegram
-  - pl05a0puddincat07Telegram
-  - usd3a3puddincat07Telegram
-  - sgdb08puddincat07Telegram
-  - defe60puddincat07Telegram
-  - ir9565puddincat07Telegram
-  - kr1051puddincat07Telegram
-  - ru521apuddincat07Telegram
-  - usfeeapuddincat07Telegram
-  - ca073cpuddincat07Telegram
-  - am823epuddincat07Telegram
-  - fr1c17puddincat07Telegram
-  - us3f0bpuddincat07Telegram
-  - xx4f28puddincat07Telegram
-  - xx43fapuddincat07Telegram
-  - xxd0f5puddincat07Telegram
-  - se4c14puddincat07Telegram
-  - kr94efpuddincat07Telegram
-  - sibd77puddincat07Telegram
-  - xxcd72puddincat07Telegram
-  - us2032puddincat07Telegram
-  - us2a87puddincat07Telegram
-  - ieb7aapuddincat07Telegram
-  - xx428bpuddincat07Telegram
-  - cn2ebapuddincat07Telegram
-  - xxeebdpuddincat07Telegram
-  - xx629apuddincat07Telegram
-  - nlff1apuddincat07Telegram
-  - nl95c8puddincat07Telegram
-  - nlacddpuddincat07Telegram
-  - DE_dc40f_0001
-  - HK_dc40f_0002
-  - IN_dc40f_0003
-  - JP_dc40f_0004
-  - KR_dc40f_0005
-  - RU_dc40f_0007
-  - RU_dc40f_0008
-  - RU_dc40f_0009
-  - RU_dc40f_0010
-  - RU_dc40f_0011
-  - US_dc40f_0013
-  - US_dc40f_0014
-  - US_dc40f_0015
+  - FR²_106MBsGPTXHistory
+  - JP²_115MBs8GPTX
+  - SG²_106MBsGPTX原生商宽
+  - us21aepuddincat07Telegram
+  - xx72f8puddincat07Telegram
+  - xxd89fpuddincat07Telegram
+  - twe773puddincat07Telegram
+  - ruc3capuddincat07Telegram
+  - ptb9eepuddincat07Telegram
+  - nlf05cpuddincat07Telegram
+  - xx8166puddincat07Telegram
+  - xx3175puddincat07Telegram
+  - gb0eb7puddincat07Telegram
+  - gb3495puddincat07Telegram
+  - lvba16puddincat07Telegram
+  - xx9c6epuddincat07Telegram
+  - sg0e6epuddincat07Telegram
+  - usbe73puddincat07Telegram
+  - gbb97bpuddincat07Telegram
+  - use2b0puddincat07Telegram
+  - xx15d9puddincat07Telegram
+  - fi7b8dpuddincat07Telegram
+  - usfac5puddincat07Telegram
+  - us29cfpuddincat07Telegram
+  - us0bfdpuddincat07Telegram
+  - us6f10puddincat07Telegram
+  - xx3815puddincat07Telegram
+  - us47e4puddincat07Telegram
+  - ca6ad9puddincat07Telegram
+  - gbc3f6puddincat07Telegram
+  - tr1c77puddincat07Telegram
+  - xx5449puddincat07Telegram
+  - HK_65761_0002
+  - IN_65761_0003
+  - JP_65761_0004
+  - KR_65761_0005
+  - RU_65761_0007
+  - RU_65761_0008
+  - RU_65761_0009
+  - RU_65761_0010
+  - RU_65761_0011
+  - US_65761_0013
+  - US_65761_0014
+  - US_65761_0015
 - name: ♻️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -654,46 +568,46 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - JP²_109MBsGPTGMYTDXSucceed广播机房
-  - IN²_123MBsGPTXSucceed广播机房
-  - DE²_106MBsXSucceed广播机房
-  - US²_123MBsXHistory
-  - US²_223MBs35GPTYT-CNNFXHistory
-  - TW²_105MBs0XHistory
-  - HK²_108MBsX
-  - US²_317MBsGPTXSucceed
-  - gb2812puddincat07Telegram
-  - se53a3puddincat07Telegram
+  - FR²_106MBsGPTXHistory
+  - JP²_115MBs8GPTX
+  - SG²_106MBsGPTX原生商宽
+  - us21aepuddincat07Telegram
+  - xx72f8puddincat07Telegram
+  - xxd89fpuddincat07Telegram
+  - twe773puddincat07Telegram
+  - ruc3capuddincat07Telegram
+  - ptb9eepuddincat07Telegram
+  - nlf05cpuddincat07Telegram
 - name: 🎥 Netflix
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - JP²_109MBsGPTGMYTDXSucceed广播机房
-  - IN²_123MBsGPTXSucceed广播机房
-  - DE²_106MBsXSucceed广播机房
-  - US²_123MBsXHistory
-  - US²_223MBs35GPTYT-CNNFXHistory
-  - TW²_105MBs0XHistory
-  - HK²_108MBsX
-  - US²_317MBsGPTXSucceed
-  - gb2812puddincat07Telegram
-  - se53a3puddincat07Telegram
+  - FR²_106MBsGPTXHistory
+  - JP²_115MBs8GPTX
+  - SG²_106MBsGPTX原生商宽
+  - us21aepuddincat07Telegram
+  - xx72f8puddincat07Telegram
+  - xxd89fpuddincat07Telegram
+  - twe773puddincat07Telegram
+  - ruc3capuddincat07Telegram
+  - ptb9eepuddincat07Telegram
+  - nlf05cpuddincat07Telegram
 - name: 📱 Telegram
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - JP²_109MBsGPTGMYTDXSucceed广播机房
-  - IN²_123MBsGPTXSucceed广播机房
-  - DE²_106MBsXSucceed广播机房
-  - US²_123MBsXHistory
-  - US²_223MBs35GPTYT-CNNFXHistory
-  - TW²_105MBs0XHistory
-  - HK²_108MBsX
-  - US²_317MBsGPTXSucceed
-  - gb2812puddincat07Telegram
-  - se53a3puddincat07Telegram
+  - FR²_106MBsGPTXHistory
+  - JP²_115MBs8GPTX
+  - SG²_106MBsGPTX原生商宽
+  - us21aepuddincat07Telegram
+  - xx72f8puddincat07Telegram
+  - xxd89fpuddincat07Telegram
+  - twe773puddincat07Telegram
+  - ruc3capuddincat07Telegram
+  - ptb9eepuddincat07Telegram
+  - nlf05cpuddincat07Telegram
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
