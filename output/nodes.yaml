@@ -26,275 +26,1297 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: TR²_153MBsGPTX广播商宽
+  password: E12yZBPC7y8SnmkSYjf0Wl
+  port: 61377
+  server: 62.133.63.167
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
-  name: FR²_106MBsGPTXHistory
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_150MBs0GPTX广播机房
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+    short-id: 1929ef620e9b34f5
+  server: 158.160.105.121
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3b983168-3a7e-408f-b5e8-ef0dcda95446
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: HU²_135MBs0GPTX广播机房
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: f4b4a6365558ea2e
+  server: 89.169.128.105
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: afffbafe-881f-4a06-bc22-d1a49121ba36
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: CH²_162MBs42GPTYT-USNFDXSucceed广播机房
+  network: tcp
+  port: 3130
+  reality-opts:
+    public-key: dQYahYS6055ghu03hkvNxv9geHCJHqASFVbXs3v1jDw
+    short-id: e99768d076c05ab2
+  server: ir.grbr.private-link.lornanet.ir
+  servername: rEfErSion.Com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 427f826f-6510-b8f8-2848-6b4e6b9325ac
+  xudp: true
+- http-opts:
+    headers: {}
+    path:
+    - /
+  name: DE²_131MBs0GPTXHistory广播机房
+  network: tcp
+  port: 2086
+  server: a11.api-tel.ir
+  type: vless
+  udp: true
+  uuid: 0696d558-118e-4613-8262-59fe272cac59
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🇨🇳 CN
+  name: VN²_119MBsGPTGMYT-USXSucceed原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.8
+  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_234MBs0GPTXSucceed广播机房
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+    short-id: 8f222b3475800821
+  server: 176.123.164.110
+  servername: rbc.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871fdc77-e6df-460d-ace3-b38ab82fb487
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_346MBs0GPTX广播机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+    short-id: 8f222b3475800821
+  server: 158.160.105.121
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3b983168-3a7e-408f-b5e8-ef0dcda95446
+  xudp: true
+- alpn:
+  - h2
+  client-fingerprint: random
+  encryption: none
+  name: DE²_285MBs5GPTYT-USX原生机房
+  network: ws
+  port: 2053
+  server: www.speedtest.net
+  servername: dl.immerchauffage.ir.
+  tls: true
+  type: vless
+  udp: true
+  uuid: Golestan-vpn2
+  ws-opts:
+    headers:
+      Host: dl.immerchauffage.ir.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?ed=2048
+  xudp: true
+- client-fingerprint: chrome
+  name: JP²_109MBs0XHistory
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
+  server: 154.31.114.125
+  servername: navi.bankrate.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 35f2f529-968d-4727-b57a-bcc39a3fd2ae
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: VN²_210MBsGPTXSucceed原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.22
+  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: DE¹_156MBs100GPTDXHistory
+  network: tcp
+  port: 443
+  server: 20.79.160.49
+  servername: jina-207916049-direct.yektanet.co
+  tls: true
+  type: vless
+  udp: true
+  uuid: jina
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_151MBsX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: a76ea384b29a4f79
+  server: 95.163.211.13
+  servername: max.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cacb8f2-37d0-4bed-a41c-1d3f246a3ffd
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_264MBsYTXHistory原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 7IOtSp0-n2_uNS5nMO9ywZbn2HibMRGy0KbLad3szXc
+    short-id: b8cf9578640a9edf
+  server: 185.39.206.226
+  servername: eh.vk.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 07cd9dbe-21ac-4871-817d-c772687e4b7c
+  xudp: true
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  delay: 1154
+  name: US²_154MBsXHistory
+  network: tcp
+  port: 30846
+  server: v46.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: chacha20-ietf-poly1305
+  country: 🇷🇺RU
+  name: RU²_310MBsYTX原生机房
+  password: hgMI6Wzzubcowo0Zviw61A
+  port: 36219
+  server: 89.169.45.184
+  type: ss
+- encryption: none
+  name: NL²_170MBsXHistory
+  network: ws
+  port: 80
+  server: 104.18.32.47
+  type: vless
+  udp: true
+  uuid: e31085f9-7f55-4a7d-b00e-ce94149477cb
+  ws-opts:
+    headers:
+      Host: PrICKLy-AdverTisEMEnt6OaD5Z64MK.onEEaT.cO.
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: /?ed
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_463MBs6GPTNFXSucceed广播商宽
+  network: tcp
+  port: 443
+  server: 144.31.2.20
+  servername: plcdn18.suio.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+  xudp: true
+- country: 🇺🇸 US
+  name: _1 US_33947MBsX
+  password: d30ab83dbde4480082048fb315bedebd
+  port: 443
+  server: 38.180.141.48
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇨🇳 CN
+  name: VN²_331MBsGPTGMXHistory原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.38
+  type: ss
+- name: NL²_257MBsGPTXSucceed
+  password: ''
+  port: 1080
+  server: 104.248.203.234
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  name: US²_226MBs0YTTKNFDXHistory原生商宽
+  network: tcp
+  password: 347ca311-8fc2-499c-8fe1-bd0ecb50f1b3
+  port: 43642
+  server: 5.34.222.4
+  skip-cert-verify: true
+  sni: iepl.usq1.cat.bilibili.com
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: US²_325MBs17GPTYT-AEXSucceed广播商宽
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+    short-id: 41a0b29e95aaea87
+  server: ae.cdn.stun.su
+  servername: ae.cdn.stun.su
+  tls: true
+  type: vless
+  udp: true
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: FR²_165MBs44GPTXHistory原生机房
+  network: ws
+  port: 443
+  server: 194.76.18.25
+  servername: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+  tls: true
+  type: vless
+  udp: true
+  uuid: e65a5cbc-5663-4f7d-ad7d-800e86ba487d
+  ws-opts:
+    headers:
+      Host: rAyAn-cOnFiG-fr-1.pArSa.dPdNs.oRg
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /ws
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: DE²_356MBs5GPTNFDXHistory广播机房
+  network: tcp
+  port: 443
+  server: 20.218.137.249
+  servername: jina-20218137249-direct.yektanet.co
+  tls: true
+  type: vless
+  udp: true
+  uuid: jina
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_412MBsGPTX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 4b523a98e1bbd15b
+  server: 51.250.0.147
+  servername: api-maps.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 01896982-f9df-4bd5-8f32-914253db2e61
+  xudp: true
+- name: DE²_438MBs24GPTXHistory
+  password: ''
+  port: 1080
+  server: 217.154.207.198
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: TR²_238MBsGPTX
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04
+    short-id: c6ef72e4635d15a5
+  server: 89.169.162.214
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6e432520-30e8-4465-8433-408ec9eb31d4
+  xudp: true
+- cipher: aes-256-gcm
+  country: 🇬🇧GB
+  name: FR²_258MBs56GPTTKNFX原生机房
+  password: 0grLqKvDT37qyj54d9QxRo1SKIQNazCpxpECt7sHIq4=
+  port: 8443
+  server: 51.195.203.247
+  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_554MBsGPTX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 4a3ad88ff867a295
+  server: 51.250.4.119
+  servername: api-maps.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cacb8f2-37d0-4bed-a41c-1d3f246a3ffd
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: FI²_145MBs20GPTYT-RUDXSucceed广播商宽
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: sD1iqg83KrKItMvNo2ZwDO95VEWUtgPOJVC3wkIKOGw
+    short-id: c2dff04e461775a6
+  server: s2.plansv.tech
+  servername: s2.plansv.tech
+  tls: true
+  type: vless
+  udp: true
+  uuid: e5ef4914-5a87-46c1-a62b-0b8dfb3dbcb8
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: RU²_660MBsGPTX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: c8597fb67d55d9c4
+  server: 51.250.86.102
+  servername: api-maps.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cacb8f2-37d0-4bed-a41c-1d3f246a3ffd
+  xudp: true
+- name: HK²_108MBs1YT-CNDXHistory原生住宅
+  password: <password>
+  port: 8443
+  server: 8875d66c-t9zts0-trhks8-1c9em.hkt.cdnhuawei.com
+  tls: true
+  type: http
+  username: 336501b6-51d2-11ee-a993-f23c9164ca5d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_762MBsX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: u0F-nCZA6l-VwJifa3S2-uD3P-Q6vaARIvkQYnoCAnk
+    short-id: 0b4511d5e6db11a2
+  server: msk-1.ummavpn.com
+  servername: msk-1.ummavpn.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 69dac49c-06ee-4d59-8a81-32515fcda263
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: GB²_155MBs1GPTXHistory广播商宽
+  password: kaQH3hGdcP80XEDI
+  port: 443
+  server: admin.c2.havij.co
+  type: ss
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: DE¹_244MBs5GPTDXHistory广播机房
+  network: tcp
+  port: 443
+  server: 20.79.162.37
+  servername: jina-207916237-direct.yektanet.co
+  tls: true
+  type: vless
+  udp: true
+  uuid: jina
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_636MBs0GPTX广播机房
+  network: tcp
+  port: 51102
+  reality-opts:
+    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+    short-id: 8f222b3475800821
+  server: 158.160.105.121
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2d2f781-4550-4c29-8911-bcda62a0d571
+  xudp: true
+- alterId: 0.0
+  cipher: auto
+  name: JP²_3113MBs0GPTGMYTNFDXSucceed原生机房
+  network: ws
+  port: 12883
+  server: gtm1.ktmwan.net
+  servername: baidu.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3ac9d436-f213-421d-9644-a94686ee9fba
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: DE²_549MBs0GPTTKNFXSucceed广播机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: 9c2378562188c3cb
+  server: 144.31.85.153
+  servername: germany.denditop.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: b39aca97-e9f2-4a94-b87f-8748299846cd
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_806MBsGPTX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 7426b0c03ef009dc
+  server: 51.250.83.255
+  servername: api-maps.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cacb8f2-37d0-4bed-a41c-1d3f246a3ffd
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: RU²_953MBsYTX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ICOdUjV4l0pQKechbg5GIDyo0mvDH373CR1dcWxXCXg
+    short-id: 7baebcace7b4d3a6
+  server: yandex.plansv.tech
+  servername: yandex.plansv.tech
+  tls: true
+  type: vless
+  udp: true
+  uuid: e5ef4914-5a87-46c1-a62b-0b8dfb3dbcb8
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_1041MBsXHistory原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: tYFlc_8tzrwDisZbxlHj06rw_YE154TVYeEBuwOQZHE
+    short-id: 8a6605e7
+  server: 45.139.26.213
+  servername: www.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8ff544c5-303c-46f4-80fe-8e8e166fd981
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: VN²_407MBsGPTYTXSucceed原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.119
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: SE²_130MBs17GPTYT-USX原生机房
+  password: ZweuXavjovuhzt1AF0d6qx
+  port: 53908
+  server: 46.246.97.140
+  type: ss
+  udp: true
+- name: SG²_1137MBs42GPTGMYTNFXHistory广播机房
+  password: 5edb4d21-6cc1-4d46-8823-9a0e14d83455
+  port: 4449
+  server: 4-ndsrzkgg.mix.dexiansheng.com
+  tls: true
+  type: http
+  username: walless
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: VN²_505MBsGPTXHistory原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.140
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: VN²_622MBsGPTGMYT-USXHistory原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.218
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: VN²_708MBsGPTXSucceed原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.233
+  type: ss
+- name: TW²_193MBsGPTGMYTNFDXSucceed原生住宅
+  password: mrwdfNTD8M79LCukCieldrqZWqs=
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: US²_414MBs0GPTXSucceed原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: a0utGrRVTHL53cH4poHif9aPJNNQ10nhiMSdx8n1kGk
+    short-id: 5a2d4f49
+  server: 104.167.197.27
+  servername: azure.microsoft.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5f8c9a4-916d-45c3-aad3-cd3ed706c5dd
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_859MBs6NFXHistory广播商宽
+  network: tcp
+  port: 443
+  server: 144.31.4.36
+  servername: plcdn13.suio.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+  xudp: true
+- name: HK²_224MBs0XHistory
+  password: ''
+  port: 5555
+  server: 27.124.9.8
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: DE²_663MBs5GPTXSucceed原生机房
+  network: ws
+  port: 8443
+  server: dll.avaaaal.ir
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 725f5fcd-721d-40a0-ba6b-3c7477633110
+  ws-opts:
+    headers:
+      Host: cdge.avaaaal.ir
+    path: /
+  xudp: true
+- name: US²_543MBsGPTXHistory
+  password: ''
+  port: 1080
+  server: 192.241.156.17
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_1065MBs17GPTNFXSucceed广播商宽
   network: tcp
   port: 443
   reality-opts:
     public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
     short-id: 4fa44664f6a566d3
-  server: fran.scroogethebest.com
-  servername: fran.scroogethebest.com
+  server: 144.31.3.35
+  servername: poland.scroogethebest.com
   tls: true
   type: vless
   udp: true
   uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
   xudp: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: JP²_115MBs8GPTX
+- client-fingerprint: chrome
+  encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: FR²_358MBs42GPTYT-RUDXHistory广播商宽
   network: tcp
-  port: 20001
+  port: 52042
   reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: 4b070735
-  server: 42.2.28.64
-  servername: buylite.music.apple.com
+    public-key: Z23_1wSIy1CNUEB7YEJwPZzCEsMTmzTNGe_h5bzEMHY
+    short-id: 8e8dcb9a67bf43f1
+  server: 185.156.72.124
+  servername: yandex.ru
   tls: true
   type: vless
   udp: true
-  uuid: 04793d5b-1b79-49fc-b5f9-2e8ce0e3ebc6
+  uuid: f557eadb-1715-4c0b-aaae-f9b9577d827d
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇮🇷IR
+  name: AU²_158MBsYT-RUNFX原生机房
+  password: zjjqxLqjDGFYESR36fj2sjnHBgEv98po
+  port: 1080
+  server: 82.97.242.53
+  type: ss
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: VN²_822MBsGPTGMXHistory原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.202
+  type: ss
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: SG²_106MBsGPTX原生商宽
+  name: US²_639MBs17GPTGMXSucceed广播商宽
+  network: tcp
   port: 443
   reality-opts:
-    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
-    short-id: 4daa022e84f8edf2
-  server: de.cdn.stun.su
-  servername: de.cdn.stun.su
-  skip-cert-verify: false
+    public-key: xJIswEHrphk8LCn-DyJxw4uypPkouxPgNsfiyjRU-3w
+    short-id: 41a0b29e95aaea87
+  server: 144.31.128.129
+  servername: ae.cdn.stun.su
   tls: true
   type: vless
   udp: true
   uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
-- cipher: aes-128-gcm
-  name: us21aepuddincat07Telegram
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.236
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: xx72f8puddincat07Telegram
-  password: kaQH3hGdcP80XEDI
-  port: 443
-  server: admin.c2.havij.co
+  xudp: true
+- name: NL²_339MBsGPTXSucceed
+  password: ''
+  port: 1080
+  server: 104.248.197.67
   skip-cert-verify: true
-  tls: true
+  type: socks5
+  username: ''
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: VN²_919MBsGPTXSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.209
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: xxd89fpuddincat07Telegram
+  name: IN²_111MBsXHistory
   password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
-  port: 18140
+  port: 34411
   server: ldu.izenny.com
   type: ss
-- alterId: 0
-  name: twe773puddincat07Telegram
-  password: 4250b3bb-d1ae-4e77-bf71-4069e0d2c383
-  port: 31102
-  server: 220.130.58.136
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
+  udp: true
+- name: TW¹_155MBsGPTGMYTDXSucceed广播机房
+  network: ws
+  password: 5a2c16f9
+  port: 43
+  server: 220.128.110.108
+  sni: 5c.hhhhh.eu.org
   tls: true
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: 5c.hhhhh.eu.org
+    path: /220.128.110.108:43
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: AT²_115MBs10GPTDXSucceed广播商宽
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4
+    short-id: 9c2378562188c3cb
+  server: 152.53.46.3
+  servername: au1.scroogethebest.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: PL²_1132MBsGPTX广播机房
+  network: tcp
+  port: 51102
+  reality-opts:
+    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
+    short-id: 887c0d72e771a934
+  server: 158.160.221.132
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871fdc77-e6df-460d-ace3-b38ab82fb487
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: VN²_1020MBsGPTGMXSucceed原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.60
+  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: FR²_460MBs42GPTYT-RUXHistory广播商宽
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI
+    short-id: ''
+  server: fr.atlanta-internet.ru
+  servername: pingless.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 669be00c-67b4-4b87-b08f-311c45abced2
+  xudp: true
+- alterId: 2
+  cipher: auto
+  country: 🇭🇰HK
+  h2-opts: {}
+  http-opts: {}
+  name: DE²_710MBsGPTXHistory
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  servername: v33.hdacd.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: MD²_116MBs0GPTXHistory广播机房
+  port: 443
+  reality-opts:
+    public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
+    short-id: b5e0cd9ca194c0a5
+  server: 185.234.57.207
+  servername: teamdocs.su
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: AE²_134MBsGPTX原生商宽
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: qzm3WJz3wvusnMdBDNbj-XboJZWGqClcXOOcM-LexkQ
+    short-id: e164b85aec8a7422
+  server: 91.132.51.160
+  servername: www.refersion.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fed05faf-401f-3412-b658-5c96f3095dd0
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: VN²_1110MBsGPTGMYTXHistory原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.226
+  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: ES²_142MBs0GPTXSucceed广播机房
+  network: tcp
+  port: 8443
+  reality-opts:
+    public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+    short-id: 28047c78b3f5ee2c
+  server: 158.160.223.36
+  servername: yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 829ce713-8748-4049-ba76-be56e60bc449
+  xudp: true
+- country: 🇫🇷FR
+  name: FR²_561MBs1GPTTKX广播机房
+  password: telegram-id-directvpn
+  port: 22223
+  server: 13.39.52.135
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_1217MBsGPTX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 048fe5c8be4bb687
+  server: 51.250.87.167
+  servername: ads.x5.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cacb8f2-37d0-4bed-a41c-1d3f246a3ffd
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: VN²_1213MBsGPTGMYT-USXSucceed原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.41
+  type: ss
+- name: IN²_285MBsGPTGMXHistory
+  password: ''
+  port: 1080
+  server: 139.59.24.173
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: FI²_263MBs0GPTYT-CNDXHistory广播商宽
+  port: 8443
+  reality-opts:
+    public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
+    short-id: 58c512b4422e2517
+  server: 78.153.139.68
+  servername: images.apple.com
+  tls: true
+  type: vless
+  uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
+- name: NL²_466MBs0GPTXHistory
+  password: ''
+  port: 1080
+  server: 93.183.124.28
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: '360'
+  encryption: none
+  name: NL²_566MBs7GPTYT-USX原生住宅
+  network: ws
+  port: 2083
+  server: fox20.wizard2shop.com
+  servername: wiz10.wizard2shop.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 85b31034-3862-4496-b108-ebb05985ac05
+  ws-opts:
+    headers:
+      Host: wiz10.wizard2shop.org
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- encryption: mlkem768x25519plus.native.0rtt.jg1YgNFyOMWZTDGBfLaD0TC9StfclQx_yyck7YOSry8
+  grpc-opts:
+    grpc-service-name: grpc
+  name: FI²_361MBs6GPTYT-DETKNFXHistory广播机房
+  network: grpc
+  port: 34224
+  server: 65.109.229.174
+  type: vless
+  udp: true
+  uuid: 32609032-c9d6-487c-a1fd-0e4b09661e1d
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: HU²_206MBs0GPTX广播机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: 8ba12e75110b7a9c
+  server: 84.23.52.70
+  servername: m.vk.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: afffbafe-881f-4a06-bc22-d1a49121ba36
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: PL²_1256MBs17GPTTKNFXHistory广播商宽
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: rpczbNzhaYC127W18DsTNJgVHeaKwdFAsmpzZhc31AM
+    short-id: ''
+  server: pl-modx.webedg.net
+  servername: pl-modx.webedg.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3bf002f8-b951-4dd5-b372-8d46ccd5f24b
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: MD²_236MBs0GPTX广播机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: 1he5EyHxI595x0mNkFNxOebUOQZGVGIy_c92bn1qO2o
+    short-id: ac31827454d7f693
+  server: 94.103.15.110
+  servername: cdnjs.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0c57c801-c2e2-4af0-8dd5-05e0d080a5e8
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: VN²_1321MBsGPTGMXSucceed原生机房
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.149
+  type: ss
+- encryption: none
+  name: DE¹_365MBs5GPTX广播机房
+  network: ws
+  port: 2082
+  server: cdnjs.com
+  type: vless
+  udp: true
+  uuid: 48ce9313-4913-4100-eedf-bccf3f956dec
+  ws-opts:
+    headers:
+      Host: kh23h5k47xoocggw85cwt1mkdzi9vad4zoe2kfk.mahdi383ir.website
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /@mahdi_383ir
+  xudp: true
+- name: SG²_261MBs0GPTGMYT-CNXHistory原生机房
+  password: 5edb4d21-6cc1-4d46-8823-9a0e14d83455
+  port: 4446
+  server: 4-nqvrfftt.mix.dexiansheng.com
+  tls: true
+  type: http
+  username: walless
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: AT²_220MBs23GPTTKNFDXSucceed广播机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 8dc4fccb2bcfc99d
+  server: at.jojack.ru
+  servername: at.jojack.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: RU²_1555MBsGPTX原生机房
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: f85b0cdd7d20c84c
+  server: 81.200.151.79
+  servername: m.vk.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7cacb8f2-37d0-4bed-a41c-1d3f246a3ffd
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇧LB
+  name: US²_747MBs0GPTX原生机房
+  password: zjjqxLqjDGFYESR36fj2sjnHBgEv98po
+  port: 1080
+  server: 104.167.198.112
+  type: ss
+- name: VN²_1419MBsGPTX
+  password: ''
+  port: 1081
+  server: 42.115.72.200
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- cipher: aes-256-cfb
+  country: 🇨🇳 CN
+  name: VN²_1522MBsGPTXSucceed
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.133
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: TR²_356MBsGPTYT-RUDX广播商宽
+  password: ixfXBq6dfMQQFiEz6PBcTy
+  port: 18685
+  server: 62.60.233.220
+  type: ss
+  udp: true
+- name: IN²_385MBsGPTGMYTXSucceed
+  password: ''
+  port: 1080
+  server: 64.227.131.240
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: chrome
+  name: US¹-CA⁰_162MBsGPTYTDX原生机房
+  network: ws
+  port: 2096
+  server: 62.72.166.138
+  servername: sni.111000.indevs.in
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: sni.111000.indevs.in
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/55.0.2883.87 Safari/537.36
+    path: /
+  xudp: true
+- name: xx6eb6puddincat07Telegram
+  network: tcp
+  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+  port: 3462
+  server: a12.taipeicitygovernment.org.ua
+  skip-cert-verify: true
+  sni: 45.32.28.232
+  type: trojan
+- cipher: rc4-md5
+  name: sgf229puddincat07Telegram
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: ruc3capuddincat07Telegram
-  password: awYDSj3KrIKEQ3RrpRCKDqVMX
-  port: 41056
-  server: 176.123.168.79
+  name: xx428cpuddincat07Telegram
+  password: c6d61cd1-d3dc-405e-afb2-d67815f4e4da
+  port: 18140
+  server: ldu.izenny.com
   skip-cert-verify: true
   tls: true
   type: ss
 - cipher: aes-256-cfb
-  name: ptb9eepuddincat07Telegram
+  name: pt000epuddincat07Telegram
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: nlf05cpuddincat07Telegram
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 193.29.139.157
-  type: ss
-- alterId: 32
-  cipher: auto
-  client-fingerprint: chrome
-  name: xx8166puddincat07Telegram
-  network: ws
+- name: DE_7f53e_0001
+  server: de.cdn.stun.su
   port: 443
-  server: vc.fly.dev
-  skip-cert-verify: true
+  type: vless
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  flow: xtls-rprx-vision
   tls: true
-  type: vmess
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  ws-opts:
-    headers:
-      host: vc.fly.dev
-    path: /vc
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: xx3175puddincat07Telegram
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: gb0eb7puddincat07Telegram
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.210
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: gb3495puddincat07Telegram
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.202
-  type: ss
-- cipher: aes-256-cfb
-  name: lvba16puddincat07Telegram
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 46.183.217.232
-  type: ss
-  udp: true
-- name: xx9c6epuddincat07Telegram
-  password: d0774966-fb63-4aca-9478-16c3f32be220
-  port: 443
-  server: jp.mjt000.com
-  skip-cert-verify: true
-  sni: jp.mjt000.com
-  type: trojan
-  udp: true
-- name: sg0e6epuddincat07Telegram
-  password: yR7hP9aw5L
-  port: 443
-  server: 134.209.105.33
-  skip-cert-verify: true
-  sni: aka.ms
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: usbe73puddincat07Telegram
-  password: NDRySIABARbErNIVsCNVkyYAHiBzhveT
-  port: 443
-  server: 23.95.75.146
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: gbb97bpuddincat07Telegram
-  password: 8z9R4FiU9Ttgpl6it_pJPw
-  port: 1080
-  server: 104.248.169.207
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: use2b0puddincat07Telegram
-  password: WNbauCJh3j
-  port: 48959
-  server: 107.172.87.131
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: xx15d9puddincat07Telegram
-  password: 3016be06-2f91-4b8f-9e6a-bd55f2c55610
-  port: 36030
-  server: 3u1s01.a3b5wy.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: fi7b8dpuddincat07Telegram
-  password: hnRXsWFscwBEAvGnqQQoU2
-  port: 25091
-  server: 94.142.138.56
-  type: ss
-  udp: true
-- name: usfac5puddincat07Telegram
-  password: wkmY1R4EcP
-  port: 443
-  server: 45.77.167.12
-  skip-cert-verify: true
-  sni: z-v2-003319.kailib.com
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: us29cfpuddincat07Telegram
-  password: 9d6cceaa373bf2c8acb22e60b6a58be6
-  port: 443
-  server: 45.33.88.190
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: us0bfdpuddincat07Telegram
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 38.75.136.33
-  type: ss
-  udp: true
-- name: us6f10puddincat07Telegram
-  password: 656bcdfe-ae09-4170-a36e-1685ee10b26f
-  port: 2083
-  server: 104.26.3.186
-  skip-cert-verify: true
-  sni: freeinternetforeveryone.segaro.tech
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
+  skip-cert-verify: false
   client-fingerprint: chrome
-  name: xx3815puddincat07Telegram
-  network: ws
-  port: 80
-  server: hkt.gotochinatown.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      host: hkt.gotochinatown.net
-    path: /
-- cipher: aes-128-gcm
-  name: us47e4puddincat07Telegram
-  password: Yc2CtrIz8L
-  port: 16899
-  server: 172.233.164.254
-  type: ss
+  servername: de.cdn.stun.su
+  reality-opts:
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 4daa022e84f8edf2
   udp: true
-- cipher: aes-256-gcm
-  name: ca6ad9puddincat07Telegram
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 198.57.27.218
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: gbc3f6puddincat07Telegram
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: tr1c77puddincat07Telegram
-  password: a8H2xE6f0ubGLeSvZrfQIWRDKE1LgY
-  port: 8881
-  server: 94.131.108.133
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: xx5449puddincat07Telegram
-  password: Bog0ELmMM9DSxDdQ
-  port: 443
-  server: fast_2ray_telchannelll2.fast2rayy.eu.org
-  type: ss
-  udp: true
-- name: HK_65761_0002
+- name: HK_7f53e_0002
   server: 42.2.28.64
   port: 1314
   type: vless
@@ -308,149 +1330,6 @@ proxies:
     public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
     short-id: 4b070735
   udp: true
-- name: IN_65761_0003
-  server: 144.24.97.225
-  port: 443
-  type: vless
-  uuid: 1834316d-2b59-4239-970d-c764218bcdf2
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: osxapps.itunes.apple.com
-  reality-opts:
-    public-key: h6jFhmMYpmiEmm4sxrBLBSxtgsdM5k5EUvrv1bKNFGU
-    short-id: 8894620bd4b91f71
-  udp: true
-- name: JP_65761_0004
-  server: 38.207.130.145
-  port: 48816
-  type: vless
-  uuid: 570d1a03-6acf-40ca-819e-1049906235d9
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: true
-  client-fingerprint: random
-  servername: www.python.org
-  reality-opts:
-    public-key: fk4uHkIWXJ5MbcsFASbAhKlC5gV9m-XovXftmIDSuxo
-    short-id: 21280d81
-  udp: true
-- name: KR_65761_0005
-  server: 121.169.46.116
-  port: 1090
-  type: socks5
-  username: Og%3D%3D
-  udp: true
-- name: RU_65761_0007
-  server: meow-msc.nethcloud.top
-  port: 8443
-  type: vless
-  uuid: bf9931be-a7fd-46b3-9919-b858299e9f65
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: wikihow.com
-  reality-opts:
-    public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
-    short-id: 8bd29483ded126b4
-  udp: true
-- name: RU_65761_0008
-  server: 158.160.223.36
-  port: 8443
-  type: vless
-  uuid: 11e41a32-6672-48a0-b9cb-c8694242ecff
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: yandex.ru
-  reality-opts:
-    public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
-    short-id: 48fccabc158a4c22
-  udp: true
-- name: RU_65761_0009
-  server: 89.169.128.105
-  port: 8443
-  type: vless
-  uuid: 3c5c4ccc-b502-42cb-8c42-cfa714db4767
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: yandex.ru
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: f4b4a6365558ea2e
-  udp: true
-- name: RU_65761_0010
-  server: 158.160.105.121
-  port: 443
-  type: vless
-  uuid: e8accc46-c511-42fb-919b-9283799a88a1
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: yandex.ru
-  reality-opts:
-    public-key: Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc
-    short-id: 8f222b3475800821
-  udp: true
-- name: RU_65761_0011
-  server: 45.139.26.213
-  port: 443
-  type: vless
-  uuid: 8ff544c5-303c-46f4-80fe-8e8e166fd981
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.yandex.ru
-  reality-opts:
-    public-key: tYFlc_8tzrwDisZbxlHj06rw_YE154TVYeEBuwOQZHE
-    short-id: 8a6605e7
-  udp: true
-- name: US_65761_0013
-  server: 203.10.96.138
-  port: 443
-  type: vless
-  uuid: c6977f74-e620-4748-a2d3-4351a588c659
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: ios
-  servername: cdn-dynmedia-1.microsoft.com
-  reality-opts:
-    public-key: VFG2L-3i30fQZg3wd0DF6dEGdaT27S-PKpuYu7Hp8xU
-    short-id: fd26d49a
-  udp: true
-- name: US_65761_0014
-  server: 64.188.64.59
-  port: 443
-  type: vless
-  uuid: 12cb9911-a48d-4147-85cc-68dd678e94c6
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: yandex.ru
-  reality-opts:
-    public-key: iv8v94q9qxkMw5WSUc0obloyLVFNTsfyy9Y3FaGlj1k
-    short-id: efd29b2d25
-  udp: true
-- name: US_65761_0015
-  server: pl2.jugsenkeys4pays.su
-  port: 443
-  type: vless
-  uuid: b183589d-5e32-4141-a39a-6cb747964c67
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pl2.jugsenkeys4pays.su
-  reality-opts:
-    public-key: C7H4Nh55F4B8iHaVHWY6VK562RI6p_t8H7lrX_O8SnQ
-  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -458,100 +1337,212 @@ proxy-groups:
   - ♻️ 自动选择
   - ♻️ 负载均衡
   - 🌍 全球直连
-  - FR²_106MBsGPTXHistory
-  - JP²_115MBs8GPTX
-  - SG²_106MBsGPTX原生商宽
-  - us21aepuddincat07Telegram
-  - xx72f8puddincat07Telegram
-  - xxd89fpuddincat07Telegram
-  - twe773puddincat07Telegram
-  - ruc3capuddincat07Telegram
-  - ptb9eepuddincat07Telegram
-  - nlf05cpuddincat07Telegram
-  - xx8166puddincat07Telegram
-  - xx3175puddincat07Telegram
-  - gb0eb7puddincat07Telegram
-  - gb3495puddincat07Telegram
-  - lvba16puddincat07Telegram
-  - xx9c6epuddincat07Telegram
-  - sg0e6epuddincat07Telegram
-  - usbe73puddincat07Telegram
-  - gbb97bpuddincat07Telegram
-  - use2b0puddincat07Telegram
-  - xx15d9puddincat07Telegram
-  - fi7b8dpuddincat07Telegram
-  - usfac5puddincat07Telegram
-  - us29cfpuddincat07Telegram
-  - us0bfdpuddincat07Telegram
-  - us6f10puddincat07Telegram
-  - xx3815puddincat07Telegram
-  - us47e4puddincat07Telegram
-  - ca6ad9puddincat07Telegram
-  - gbc3f6puddincat07Telegram
-  - tr1c77puddincat07Telegram
-  - xx5449puddincat07Telegram
-  - HK_65761_0002
-  - IN_65761_0003
-  - JP_65761_0004
-  - KR_65761_0005
-  - RU_65761_0007
-  - RU_65761_0008
-  - RU_65761_0009
-  - RU_65761_0010
-  - RU_65761_0011
-  - US_65761_0013
-  - US_65761_0014
-  - US_65761_0015
+  - TR²_153MBsGPTX广播商宽
+  - PL²_150MBs0GPTX广播机房
+  - HU²_135MBs0GPTX广播机房
+  - CH²_162MBs42GPTYT-USNFDXSucceed广播机房
+  - DE²_131MBs0GPTXHistory广播机房
+  - VN²_119MBsGPTGMYT-USXSucceed原生机房
+  - PL²_234MBs0GPTXSucceed广播机房
+  - PL²_346MBs0GPTX广播机房
+  - DE²_285MBs5GPTYT-USX原生机房
+  - JP²_109MBs0XHistory
+  - VN²_210MBsGPTXSucceed原生机房
+  - DE¹_156MBs100GPTDXHistory
+  - RU²_151MBsX原生机房
+  - RU²_264MBsYTXHistory原生机房
+  - US²_154MBsXHistory
+  - RU²_310MBsYTX原生机房
+  - NL²_170MBsXHistory
+  - PL²_463MBs6GPTNFXSucceed广播商宽
+  - _1 US_33947MBsX
+  - VN²_331MBsGPTGMXHistory原生机房
+  - NL²_257MBsGPTXSucceed
+  - US²_226MBs0YTTKNFDXHistory原生商宽
+  - US²_325MBs17GPTYT-AEXSucceed广播商宽
+  - FR²_165MBs44GPTXHistory原生机房
+  - DE²_356MBs5GPTNFDXHistory广播机房
+  - RU²_412MBsGPTX原生机房
+  - DE²_438MBs24GPTXHistory
+  - TR²_238MBsGPTX
+  - FR²_258MBs56GPTTKNFX原生机房
+  - RU²_554MBsGPTX原生机房
+  - FI²_145MBs20GPTYT-RUDXSucceed广播商宽
+  - RU²_660MBsGPTX原生机房
+  - HK²_108MBs1YT-CNDXHistory原生住宅
+  - RU²_762MBsX原生机房
+  - GB²_155MBs1GPTXHistory广播商宽
+  - DE¹_244MBs5GPTDXHistory广播机房
+  - PL²_636MBs0GPTX广播机房
+  - JP²_3113MBs0GPTGMYTNFDXSucceed原生机房
+  - DE²_549MBs0GPTTKNFXSucceed广播机房
+  - RU²_806MBsGPTX原生机房
+  - RU²_953MBsYTX原生机房
+  - RU²_1041MBsXHistory原生机房
+  - VN²_407MBsGPTYTXSucceed原生机房
+  - SE²_130MBs17GPTYT-USX原生机房
+  - SG²_1137MBs42GPTGMYTNFXHistory广播机房
+  - VN²_505MBsGPTXHistory原生机房
+  - VN²_622MBsGPTGMYT-USXHistory原生机房
+  - VN²_708MBsGPTXSucceed原生机房
+  - TW²_193MBsGPTGMYTNFDXSucceed原生住宅
+  - US²_414MBs0GPTXSucceed原生机房
+  - PL²_859MBs6NFXHistory广播商宽
+  - HK²_224MBs0XHistory
+  - DE²_663MBs5GPTXSucceed原生机房
+  - US²_543MBsGPTXHistory
+  - PL²_1065MBs17GPTNFXSucceed广播商宽
+  - FR²_358MBs42GPTYT-RUDXHistory广播商宽
+  - AU²_158MBsYT-RUNFX原生机房
+  - VN²_822MBsGPTGMXHistory原生机房
+  - US²_639MBs17GPTGMXSucceed广播商宽
+  - NL²_339MBsGPTXSucceed
+  - VN²_919MBsGPTXSucceed
+  - IN²_111MBsXHistory
+  - TW¹_155MBsGPTGMYTDXSucceed广播机房
+  - AT²_115MBs10GPTDXSucceed广播商宽
+  - PL²_1132MBsGPTX广播机房
+  - VN²_1020MBsGPTGMXSucceed原生机房
+  - FR²_460MBs42GPTYT-RUXHistory广播商宽
+  - DE²_710MBsGPTXHistory
+  - MD²_116MBs0GPTXHistory广播机房
+  - AE²_134MBsGPTX原生商宽
+  - VN²_1110MBsGPTGMYTXHistory原生机房
+  - ES²_142MBs0GPTXSucceed广播机房
+  - FR²_561MBs1GPTTKX广播机房
+  - RU²_1217MBsGPTX原生机房
+  - VN²_1213MBsGPTGMYT-USXSucceed原生机房
+  - IN²_285MBsGPTGMXHistory
+  - FI²_263MBs0GPTYT-CNDXHistory广播商宽
+  - NL²_466MBs0GPTXHistory
+  - NL²_566MBs7GPTYT-USX原生住宅
+  - FI²_361MBs6GPTYT-DETKNFXHistory广播机房
+  - HU²_206MBs0GPTX广播机房
+  - PL²_1256MBs17GPTTKNFXHistory广播商宽
+  - MD²_236MBs0GPTX广播机房
+  - VN²_1321MBsGPTGMXSucceed原生机房
+  - DE¹_365MBs5GPTX广播机房
+  - SG²_261MBs0GPTGMYT-CNXHistory原生机房
+  - AT²_220MBs23GPTTKNFDXSucceed广播机房
+  - RU²_1555MBsGPTX原生机房
+  - US²_747MBs0GPTX原生机房
+  - VN²_1419MBsGPTX
+  - VN²_1522MBsGPTXSucceed
+  - TR²_356MBsGPTYT-RUDX广播商宽
+  - IN²_385MBsGPTGMYTXSucceed
+  - US¹-CA⁰_162MBsGPTYTDX原生机房
+  - xx6eb6puddincat07Telegram
+  - sgf229puddincat07Telegram
+  - xx428cpuddincat07Telegram
+  - pt000epuddincat07Telegram
+  - DE_7f53e_0001
+  - HK_7f53e_0002
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies: &id001
-  - FR²_106MBsGPTXHistory
-  - JP²_115MBs8GPTX
-  - SG²_106MBsGPTX原生商宽
-  - us21aepuddincat07Telegram
-  - xx72f8puddincat07Telegram
-  - xxd89fpuddincat07Telegram
-  - twe773puddincat07Telegram
-  - ruc3capuddincat07Telegram
-  - ptb9eepuddincat07Telegram
-  - nlf05cpuddincat07Telegram
-  - xx8166puddincat07Telegram
-  - xx3175puddincat07Telegram
-  - gb0eb7puddincat07Telegram
-  - gb3495puddincat07Telegram
-  - lvba16puddincat07Telegram
-  - xx9c6epuddincat07Telegram
-  - sg0e6epuddincat07Telegram
-  - usbe73puddincat07Telegram
-  - gbb97bpuddincat07Telegram
-  - use2b0puddincat07Telegram
-  - xx15d9puddincat07Telegram
-  - fi7b8dpuddincat07Telegram
-  - usfac5puddincat07Telegram
-  - us29cfpuddincat07Telegram
-  - us0bfdpuddincat07Telegram
-  - us6f10puddincat07Telegram
-  - xx3815puddincat07Telegram
-  - us47e4puddincat07Telegram
-  - ca6ad9puddincat07Telegram
-  - gbc3f6puddincat07Telegram
-  - tr1c77puddincat07Telegram
-  - xx5449puddincat07Telegram
-  - HK_65761_0002
-  - IN_65761_0003
-  - JP_65761_0004
-  - KR_65761_0005
-  - RU_65761_0007
-  - RU_65761_0008
-  - RU_65761_0009
-  - RU_65761_0010
-  - RU_65761_0011
-  - US_65761_0013
-  - US_65761_0014
-  - US_65761_0015
+  - TR²_153MBsGPTX广播商宽
+  - PL²_150MBs0GPTX广播机房
+  - HU²_135MBs0GPTX广播机房
+  - CH²_162MBs42GPTYT-USNFDXSucceed广播机房
+  - DE²_131MBs0GPTXHistory广播机房
+  - VN²_119MBsGPTGMYT-USXSucceed原生机房
+  - PL²_234MBs0GPTXSucceed广播机房
+  - PL²_346MBs0GPTX广播机房
+  - DE²_285MBs5GPTYT-USX原生机房
+  - JP²_109MBs0XHistory
+  - VN²_210MBsGPTXSucceed原生机房
+  - DE¹_156MBs100GPTDXHistory
+  - RU²_151MBsX原生机房
+  - RU²_264MBsYTXHistory原生机房
+  - US²_154MBsXHistory
+  - RU²_310MBsYTX原生机房
+  - NL²_170MBsXHistory
+  - PL²_463MBs6GPTNFXSucceed广播商宽
+  - _1 US_33947MBsX
+  - VN²_331MBsGPTGMXHistory原生机房
+  - NL²_257MBsGPTXSucceed
+  - US²_226MBs0YTTKNFDXHistory原生商宽
+  - US²_325MBs17GPTYT-AEXSucceed广播商宽
+  - FR²_165MBs44GPTXHistory原生机房
+  - DE²_356MBs5GPTNFDXHistory广播机房
+  - RU²_412MBsGPTX原生机房
+  - DE²_438MBs24GPTXHistory
+  - TR²_238MBsGPTX
+  - FR²_258MBs56GPTTKNFX原生机房
+  - RU²_554MBsGPTX原生机房
+  - FI²_145MBs20GPTYT-RUDXSucceed广播商宽
+  - RU²_660MBsGPTX原生机房
+  - HK²_108MBs1YT-CNDXHistory原生住宅
+  - RU²_762MBsX原生机房
+  - GB²_155MBs1GPTXHistory广播商宽
+  - DE¹_244MBs5GPTDXHistory广播机房
+  - PL²_636MBs0GPTX广播机房
+  - JP²_3113MBs0GPTGMYTNFDXSucceed原生机房
+  - DE²_549MBs0GPTTKNFXSucceed广播机房
+  - RU²_806MBsGPTX原生机房
+  - RU²_953MBsYTX原生机房
+  - RU²_1041MBsXHistory原生机房
+  - VN²_407MBsGPTYTXSucceed原生机房
+  - SE²_130MBs17GPTYT-USX原生机房
+  - SG²_1137MBs42GPTGMYTNFXHistory广播机房
+  - VN²_505MBsGPTXHistory原生机房
+  - VN²_622MBsGPTGMYT-USXHistory原生机房
+  - VN²_708MBsGPTXSucceed原生机房
+  - TW²_193MBsGPTGMYTNFDXSucceed原生住宅
+  - US²_414MBs0GPTXSucceed原生机房
+  - PL²_859MBs6NFXHistory广播商宽
+  - HK²_224MBs0XHistory
+  - DE²_663MBs5GPTXSucceed原生机房
+  - US²_543MBsGPTXHistory
+  - PL²_1065MBs17GPTNFXSucceed广播商宽
+  - FR²_358MBs42GPTYT-RUDXHistory广播商宽
+  - AU²_158MBsYT-RUNFX原生机房
+  - VN²_822MBsGPTGMXHistory原生机房
+  - US²_639MBs17GPTGMXSucceed广播商宽
+  - NL²_339MBsGPTXSucceed
+  - VN²_919MBsGPTXSucceed
+  - IN²_111MBsXHistory
+  - TW¹_155MBsGPTGMYTDXSucceed广播机房
+  - AT²_115MBs10GPTDXSucceed广播商宽
+  - PL²_1132MBsGPTX广播机房
+  - VN²_1020MBsGPTGMXSucceed原生机房
+  - FR²_460MBs42GPTYT-RUXHistory广播商宽
+  - DE²_710MBsGPTXHistory
+  - MD²_116MBs0GPTXHistory广播机房
+  - AE²_134MBsGPTX原生商宽
+  - VN²_1110MBsGPTGMYTXHistory原生机房
+  - ES²_142MBs0GPTXSucceed广播机房
+  - FR²_561MBs1GPTTKX广播机房
+  - RU²_1217MBsGPTX原生机房
+  - VN²_1213MBsGPTGMYT-USXSucceed原生机房
+  - IN²_285MBsGPTGMXHistory
+  - FI²_263MBs0GPTYT-CNDXHistory广播商宽
+  - NL²_466MBs0GPTXHistory
+  - NL²_566MBs7GPTYT-USX原生住宅
+  - FI²_361MBs6GPTYT-DETKNFXHistory广播机房
+  - HU²_206MBs0GPTX广播机房
+  - PL²_1256MBs17GPTTKNFXHistory广播商宽
+  - MD²_236MBs0GPTX广播机房
+  - VN²_1321MBsGPTGMXSucceed原生机房
+  - DE¹_365MBs5GPTX广播机房
+  - SG²_261MBs0GPTGMYT-CNXHistory原生机房
+  - AT²_220MBs23GPTTKNFDXSucceed广播机房
+  - RU²_1555MBsGPTX原生机房
+  - US²_747MBs0GPTX原生机房
+  - VN²_1419MBsGPTX
+  - VN²_1522MBsGPTXSucceed
+  - TR²_356MBsGPTYT-RUDX广播商宽
+  - IN²_385MBsGPTGMYTXSucceed
+  - US¹-CA⁰_162MBsGPTYTDX原生机房
+  - xx6eb6puddincat07Telegram
+  - sgf229puddincat07Telegram
+  - xx428cpuddincat07Telegram
+  - pt000epuddincat07Telegram
+  - DE_7f53e_0001
+  - HK_7f53e_0002
 - name: ♻️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
@@ -568,46 +1559,46 @@ proxy-groups:
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - FR²_106MBsGPTXHistory
-  - JP²_115MBs8GPTX
-  - SG²_106MBsGPTX原生商宽
-  - us21aepuddincat07Telegram
-  - xx72f8puddincat07Telegram
-  - xxd89fpuddincat07Telegram
-  - twe773puddincat07Telegram
-  - ruc3capuddincat07Telegram
-  - ptb9eepuddincat07Telegram
-  - nlf05cpuddincat07Telegram
+  - TR²_153MBsGPTX广播商宽
+  - PL²_150MBs0GPTX广播机房
+  - HU²_135MBs0GPTX广播机房
+  - CH²_162MBs42GPTYT-USNFDXSucceed广播机房
+  - DE²_131MBs0GPTXHistory广播机房
+  - VN²_119MBsGPTGMYT-USXSucceed原生机房
+  - PL²_234MBs0GPTXSucceed广播机房
+  - PL²_346MBs0GPTX广播机房
+  - DE²_285MBs5GPTYT-USX原生机房
+  - JP²_109MBs0XHistory
 - name: 🎥 Netflix
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - FR²_106MBsGPTXHistory
-  - JP²_115MBs8GPTX
-  - SG²_106MBsGPTX原生商宽
-  - us21aepuddincat07Telegram
-  - xx72f8puddincat07Telegram
-  - xxd89fpuddincat07Telegram
-  - twe773puddincat07Telegram
-  - ruc3capuddincat07Telegram
-  - ptb9eepuddincat07Telegram
-  - nlf05cpuddincat07Telegram
+  - TR²_153MBsGPTX广播商宽
+  - PL²_150MBs0GPTX广播机房
+  - HU²_135MBs0GPTX广播机房
+  - CH²_162MBs42GPTYT-USNFDXSucceed广播机房
+  - DE²_131MBs0GPTXHistory广播机房
+  - VN²_119MBsGPTGMYT-USXSucceed原生机房
+  - PL²_234MBs0GPTXSucceed广播机房
+  - PL²_346MBs0GPTX广播机房
+  - DE²_285MBs5GPTYT-USX原生机房
+  - JP²_109MBs0XHistory
 - name: 📱 Telegram
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
-  - FR²_106MBsGPTXHistory
-  - JP²_115MBs8GPTX
-  - SG²_106MBsGPTX原生商宽
-  - us21aepuddincat07Telegram
-  - xx72f8puddincat07Telegram
-  - xxd89fpuddincat07Telegram
-  - twe773puddincat07Telegram
-  - ruc3capuddincat07Telegram
-  - ptb9eepuddincat07Telegram
-  - nlf05cpuddincat07Telegram
+  - TR²_153MBsGPTX广播商宽
+  - PL²_150MBs0GPTX广播机房
+  - HU²_135MBs0GPTX广播机房
+  - CH²_162MBs42GPTYT-USNFDXSucceed广播机房
+  - DE²_131MBs0GPTXHistory广播机房
+  - VN²_119MBsGPTGMYT-USXSucceed原生机房
+  - PL²_234MBs0GPTXSucceed广播机房
+  - PL²_346MBs0GPTX广播机房
+  - DE²_285MBs5GPTYT-USX原生机房
+  - JP²_109MBs0XHistory
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
