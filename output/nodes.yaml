@@ -98,27 +98,45 @@ proxies:
   server: 103.186.155.16
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: xx6da5puddincat07Telegram
+  name: xx4342puddincat07Telegram
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg0011499tl.cybervena.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: gbbabdpuddincat07Telegram
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.208
+  type: ss
+- cipher: aes-256-gcm
+  name: ru4db5puddincat07Telegram
+  password: c5fcdf7829112cb4
+  port: 10974
+  server: 45.140.169.225
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: xx37b6puddincat07Telegram
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg001286ek2.cybervena.com
   type: ss
 - cipher: none
-  name: xx1f4bpuddincat07Telegram
+  name: hk01c9puddincat07Telegram
   password: 3e96ef7d-8637-42c2-ac73-75182196e755
   plugin: v2ray-plugin
   plugin-opts:
     host: mfvpn.fuchen.indevs.in
     mode: websocket
     mux: false
-    path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+    path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
     tls: true
   port: 443
-  server: store.ubi.com
+  server: 47.57.182.141
   type: ss
   udp: true
 - cipher: none
-  name: cf9a6bpuddincat07Telegram
+  name: cfd169puddincat07Telegram
   password: 3e96ef7d-8637-42c2-ac73-75182196e755
   plugin: v2ray-plugin
   plugin-opts:
@@ -131,343 +149,252 @@ proxies:
   server: 199.181.197.38
   type: ss
   udp: true
-- alterId: 0
-  name: hkc388puddincat07Telegram
-  password: BxceQaOe
+- cipher: none
+  name: us7e15puddincat07Telegram
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ylnhh.us.ci
+    mode: websocket
+    mux: false
+    path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560
+    tls: true
   port: 443
-  server: 58.152.25.253
-  skip-cert-verify: true
-  sni: ''
-  tls: true
-  type: trojan
+  server: 198.12.144.16
+  type: ss
+  udp: true
+- cipher: none
+  name: xxe005puddincat07Telegram
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: mfvpn.fuchen.indevs.in
+    mode: websocket
+    mux: false
+    path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+    tls: true
+  port: 443
+  server: store.ubi.com
+  type: ss
   udp: true
 - alterId: 0
   cipher: chacha20-ietf-poly1305
-  name: xx339fpuddincat07Telegram
+  name: gb58d2puddincat07Telegram
+  password: e777513e-9df5-4dc3-bc84-74e564345a81
+  port: 13012
+  server: 85.211.196.119
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: xxf02epuddincat07Telegram
   password: e777513e-9df5-4dc3-bc84-74e564345a81
   port: 13012
   server: usgpt.slianrk.com
   skip-cert-verify: true
   tls: true
   type: ss
-- cipher: aes-128-gcm
-  name: usd837puddincat07Telegram
-  password: shadowsocks
-  port: 443
-  server: 173.244.56.6
-  type: ss
-- cipher: aes-128-gcm
-  name: gb30c5puddincat07Telegram
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.178
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: ca9826puddincat07Telegram
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.154.204.7
-  type: ss
-- cipher: aes-256-gcm
-  name: kr9f43puddincat07Telegram
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 141.164.45.187
-  type: ss
-- cipher: chacha20-ietf
-  name: hk6ff4puddincat07Telegram
-  password: asd123456
-  port: 8388
-  server: 103.149.182.79
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: xx6044puddincat07Telegram
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  port: 55988
-  server: mx2.drawnrisha.one
-  type: ss
-- name: cf6900puddincat07Telegram
-  password: 8380da47-5632-4b0a-8047-b0939f797112
-  port: 2087
-  server: 162.251.82.187
-  skip-cert-verify: true
-  sni: ritel.havafaza.shop
-  type: trojan
-  udp: true
-- cipher: aes-256-gcm
-  name: us081epuddincat07Telegram
-  password: g5MeD6Ft3CWlJId
-  port: 5004
-  server: 38.68.135.138
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: tr66a2puddincat07Telegram
-  password: U6qnYRhfyDmn8sgn
-  port: 9041
-  server: 45.89.52.66
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: use45cpuddincat07Telegram
-  password: 86039b71-ba82-4ca8-838e-87086ae666de
-  port: 10011
-  server: 107.175.87.207
-  type: ss
-- cipher: aes-128-gcm
-  name: hkb0f3puddincat07Telegram
-  password: a-wym4ovY4Yw
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: ''
-    mode: websocket
-    mux: false
-    path: ''
-    skip-cert-verify: true
-    tls: false
-  port: 443
-  server: 1.65.223.223
-  type: ss
-  udp: true
-- name: CN_a71ee_0001
-  server: planb.mojcn.com
-  port: 16622
-  type: vmess
-  uuid: 9c57c421-1d87-475b-8ec1-5595a304b19d
-  alterId: 0
+- alterId: 2
   cipher: auto
-  tls: false
+  name: xxf30epuddincat07Telegram
+  port: 30807
+  server: v10.hdacd.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 6a52001e3651ccdc8ef7740494916ad2.mobgslb.tbcache.com
-  udp: true
-- name: GB_a71ee_0002
-  server: 138.124.186.202
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: chacha20-ietf-poly1305
+  name: xx4831puddincat07Telegram
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: nl3237puddincat07Telegram
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.189
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: gb1cadpuddincat07Telegram
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.184
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: nlf7b2puddincat07Telegram
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 193.29.139.179
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: gb7e70puddincat07Telegram
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.82
+  type: ss
+- name: DE_92c20_0001
+  server: 45.77.66.142
   port: 443
   type: vless
-  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: www.fh-aachen.de
+  servername: www.zalando.de
   reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+    public-key: Ic2uiGhkBgJUsY0CZUBqa1y22V_BO7F4S93Zgk_ir2c
+    short-id: 0c1553316a645758
   udp: true
-- name: HK_a71ee_0003
-  server: 222.167.202.21
-  port: 7443
+- name: DK_92c20_0002
+  server: 159.195.82.187
+  port: 9443
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  skip-cert-verify: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.21:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-  udp: true
-- name: HK_a71ee_0004
-  server: 222.167.202.23
-  port: 7443
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  skip-cert-verify: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.23:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-  udp: true
-- name: HK_a71ee_0005
-  server: 222.167.202.10
-  port: 7443
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.10:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: yahoo.com
+  reality-opts:
+    public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
+    short-id: 2344766a270a6298
   udp: true
-- name: HK_a71ee_0006
-  server: 222.167.202.14
-  port: 7443
+- name: GB_92c20_0003
+  server: ssr2.762988.xyz
+  port: 33336
+  type: ssr
+  cipher: chacha20-ietf
+  password: dongtaiwang.com
+  protocol: auth_chain_a
+  obfs: tls1.2_ticket_auth
+  protocol-param: ''
+  obfs-param: ''
+  udp: true
+- name: HK_92c20_0004
+  server: 47.242.64.181
+  port: 443
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.14:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: cms.suse.net
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
   udp: true
-- name: HK_a71ee_0007
-  server: 222.167.202.16
-  port: 7443
+- name: HK_92c20_0005
+  server: 8.218.121.213
+  port: 443
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  skip-cert-verify: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.16:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-  udp: true
-- name: HK_a71ee_0008
-  server: 222.167.202.47
-  port: 7443
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.47:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: siteintercept.qualtrics.com
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
   udp: true
-- name: HK_a71ee_0009
-  server: 222.167.202.6
-  port: 7443
+- name: HK_92c20_0006
+  server: 8.217.49.16
+  port: 443
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  skip-cert-verify: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.6:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-  udp: true
-- name: HK_a71ee_0010
-  server: 222.167.202.15
-  port: 7443
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.15:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: wwwimages2.adobe.com
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
   udp: true
-- name: HK_a71ee_0011
-  server: 222.167.202.22
-  port: 7443
+- name: IT_92c20_0007
+  server: bl3-mwscloud.onnstreaming.ru
+  port: 443
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.22:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: bl3-mwscloud.onnstreaming.ru
+  reality-opts:
+    public-key: 5yAKDAAQ6mDjzplTCDL0D7xBiAmgRxWBOcTQuy5XAB8
+    short-id: 353df31b921e9884
   udp: true
-- name: HK_a71ee_0012
-  server: 222.167.202.50
-  port: 7443
+- name: JP_92c20_0008
+  server: 176.97.73.155
+  port: 443
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 0b277abf-e0d6-44d8-85c6-f6c7afc0aec5
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.50:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: navi.bankrate.com
+  reality-opts:
+    public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
+    short-id: 2da72ce6
   udp: true
-- name: HK_a71ee_0013
-  server: 222.167.202.52
-  port: 7443
+- name: KR_92c20_0010
+  server: 210.178.81.61
+  port: 10000
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: s3vz.user-service.chinav.indevs.in
   network: ws
   ws-opts:
-    path: /222.167.202.52:7443
+    path: /danfeng
     headers:
-      Host: 2026.hhhhh.eu.org
+      Host: s3vz.user-service.chinav.indevs.in
   udp: true
-- name: HK_a71ee_0014
-  server: 222.167.202.45
-  port: 7443
+- name: KR_92c20_0011
+  server: 222.97.154.26
+  port: 37810
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: s3vz.user-service.chinav.indevs.in
   network: ws
   ws-opts:
-    path: /222.167.202.45:7443
+    path: /danfeng
     headers:
-      Host: 2026.hhhhh.eu.org
+      Host: s3vz.user-service.chinav.indevs.in
   udp: true
-- name: HK_a71ee_0015
-  server: 222.167.202.36
-  port: 7443
+- name: KR_92c20_0012
+  server: 59.11.151.238
+  port: 12000
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: s3vz.user-service.chinav.indevs.in
   network: ws
   ws-opts:
-    path: /222.167.202.36:7443
+    path: /danfeng
     headers:
-      Host: 2026.hhhhh.eu.org
+      Host: s3vz.user-service.chinav.indevs.in
   udp: true
-- name: HK_a71ee_0016
-  server: 222.167.202.2
-  port: 7443
+- name: NL_92c20_0013
+  server: 109.120.150.239
+  port: 4411
   type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: d8a5cbdb-7058-4506-b1a8-6768472c7ed5
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.2:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
+  client-fingerprint: chrome
+  servername: files.moscownews24.ru
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   udp: true
-- name: HK_a71ee_0017
-  server: 222.167.202.32
-  port: 7443
-  type: vless
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  skip-cert-verify: false
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.32:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-  udp: true
-- name: RO_a71ee_0018
+- name: RO_92c20_0015
   server: 91.199.50.37
   port: 443
   type: vless
@@ -481,35 +408,60 @@ proxies:
     public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
     short-id: c906f73d3ba8211f
   udp: true
-- name: RU_a71ee_0019
-  server: 89.169.8.223
-  port: 443
-  type: ss
-  cipher: none
-  password: 79960b0b-7d31-4263-8915-6511b0e137a8
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: woshinidie-et3.pages.dev
-    path: /79960b0b-7d31-4263-8915-6511b0e137a8/?ed=2560
-    tls: true
-    mux: false
-  udp: true
-- name: SC_a71ee_0020
-  server: direct.illusion-vpn.ru
-  port: 52000
+- name: RU_92c20_0016
+  server: 77.223.120.222
+  port: 4530
   type: vless
-  uuid: bf263367-bb63-4663-b4a1-34946107a72e
+  uuid: fb99f4f0-181d-4117-be22-df9856fbbc06
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: ozon.ru
+  servername: files.moscownews24.ru
   reality-opts:
-    public-key: dUMRGt4pHvNO-YjS6lWsEZhoiHe6DH1Dw92nqVAx_T0
-    short-id: f1002d6b
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   udp: true
-- name: TR_a71ee_0021
+- name: RU_92c20_0017
+  server: 85.239.39.49
+  port: 4343
+  type: vless
+  uuid: fb99f4f0-181d-4117-be22-df9856fbbc06
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: files.moscownews24.ru
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  udp: true
+- name: SC_92c20_0018
+  server: 195.66.27.165
+  port: 7443
+  type: vless
+  uuid: caa3af29-3b04-4099-9772-c64a1b7cca34
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: chat.deepseek.com
+  reality-opts:
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: be0ce047
+  udp: true
+- name: SE_92c20_0019
+  server: 89.22.236.81
+  port: 4466
+  type: vless
+  uuid: fb99f4f0-181d-4117-be22-df9856fbbc06
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: files.moscownews24.ru
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  udp: true
+- name: TR_92c20_0020
   server: 188.132.184.148
   port: 8443
   type: vless
@@ -523,32 +475,103 @@ proxies:
     public-key: 7gzxsxnqwoh1HEfp02BQpEmMaIFHqz4RL8h68hZqsjc
     short-id: 6ea3daaac3d6bede
   udp: true
-- name: US_a71ee_0022
-  server: 198.12.144.16
+- name: US_92c20_0021
+  server: nld.pink-world.ru
   port: 443
-  type: ss
-  cipher: none
-  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: ylnhh.us.ci
-    path: /14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560
-    tls: true
-    mux: false
+  type: vless
+  uuid: c5bbdac7-6ff5-4762-87bf-870f55a03581
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: nld.pink-world.ru
+  reality-opts:
+    public-key: tB6tQr-pmLTdMM8DVOb9KsS27lDkAjjelbdu_Gp1SR0
+    short-id: f27d8b541b5f48bf
   udp: true
-- name: US_a71ee_0023
-  server: 54.46.72.234
-  port: 8025
-  type: trojan
-  password: trojan
-  sni: jflsjlaf.pages.dev
-  skip-cert-verify: true
+- name: US_92c20_0024
+  server: 144.31.127.61
+  port: 443
+  type: vless
+  uuid: d5f95f47-9399-49c6-a76b-aa6b289609ba
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: gateway.icloud.com
+  reality-opts:
+    public-key: -ZIDWF9CykNoZYNpO6Vi7BdDyZl_hJUYxuIRmPnuxBk
+    short-id: c6118398
+  udp: true
+- name: US_92c20_0025
+  server: 165.140.241.29
+  port: 443
+  type: vless
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: snzeys.edge-node-a1.fgfw.qzz.io
+  alpn:
+  - http/1.1
   network: ws
   ws-opts:
-    path: /
+    path: /danfeng?ed=2560
     headers:
-      Host: jflsjlaf.pages.dev
+      Host: snzeys.edge-node-a1.fgfw.qzz.io
+  udp: true
+- name: US_92c20_0026
+  server: 72.56.35.163
+  port: 4454
+  type: vless
+  uuid: fb99f4f0-181d-4117-be22-df9856fbbc06
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: files.moscownews24.ru
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  udp: true
+- name: US_92c20_0027
+  server: 72.56.35.203
+  port: 4495
+  type: vless
+  uuid: fb99f4f0-181d-4117-be22-df9856fbbc06
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: files.moscownews24.ru
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  udp: true
+- name: US_92c20_0028
+  server: st-2.globalcache.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: st-2.globalcache.onnstreaming.ru
+  reality-opts:
+    public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
+    short-id: aa69f619e4414362
+  udp: true
+- name: US_92c20_0029
+  server: 72.56.39.76
+  port: 4510
+  type: vless
+  uuid: fb99f4f0-181d-4117-be22-df9856fbbc06
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: files.moscownews24.ru
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   udp: true
 proxy-groups:
 - name: 🚀 节点选择
@@ -567,45 +590,47 @@ proxy-groups:
   - VN²_508MBsGPTGMYTXSucceed原生机房
   - VN²_605MBsGPTYTXHistory
   - SG²_124MBsXHistory
-  - xx6da5puddincat07Telegram
-  - xx1f4bpuddincat07Telegram
-  - cf9a6bpuddincat07Telegram
-  - hkc388puddincat07Telegram
-  - xx339fpuddincat07Telegram
-  - usd837puddincat07Telegram
-  - gb30c5puddincat07Telegram
-  - ca9826puddincat07Telegram
-  - kr9f43puddincat07Telegram
-  - hk6ff4puddincat07Telegram
-  - xx6044puddincat07Telegram
-  - cf6900puddincat07Telegram
-  - us081epuddincat07Telegram
-  - tr66a2puddincat07Telegram
-  - use45cpuddincat07Telegram
-  - hkb0f3puddincat07Telegram
-  - CN_a71ee_0001
-  - GB_a71ee_0002
-  - HK_a71ee_0003
-  - HK_a71ee_0004
-  - HK_a71ee_0005
-  - HK_a71ee_0006
-  - HK_a71ee_0007
-  - HK_a71ee_0008
-  - HK_a71ee_0009
-  - HK_a71ee_0010
-  - HK_a71ee_0011
-  - HK_a71ee_0012
-  - HK_a71ee_0013
-  - HK_a71ee_0014
-  - HK_a71ee_0015
-  - HK_a71ee_0016
-  - HK_a71ee_0017
-  - RO_a71ee_0018
-  - RU_a71ee_0019
-  - SC_a71ee_0020
-  - TR_a71ee_0021
-  - US_a71ee_0022
-  - US_a71ee_0023
+  - xx4342puddincat07Telegram
+  - gbbabdpuddincat07Telegram
+  - ru4db5puddincat07Telegram
+  - xx37b6puddincat07Telegram
+  - hk01c9puddincat07Telegram
+  - cfd169puddincat07Telegram
+  - us7e15puddincat07Telegram
+  - xxe005puddincat07Telegram
+  - gb58d2puddincat07Telegram
+  - xxf02epuddincat07Telegram
+  - xxf30epuddincat07Telegram
+  - xx4831puddincat07Telegram
+  - nl3237puddincat07Telegram
+  - gb1cadpuddincat07Telegram
+  - nlf7b2puddincat07Telegram
+  - gb7e70puddincat07Telegram
+  - DE_92c20_0001
+  - DK_92c20_0002
+  - GB_92c20_0003
+  - HK_92c20_0004
+  - HK_92c20_0005
+  - HK_92c20_0006
+  - IT_92c20_0007
+  - JP_92c20_0008
+  - KR_92c20_0010
+  - KR_92c20_0011
+  - KR_92c20_0012
+  - NL_92c20_0013
+  - RO_92c20_0015
+  - RU_92c20_0016
+  - RU_92c20_0017
+  - SC_92c20_0018
+  - SE_92c20_0019
+  - TR_92c20_0020
+  - US_92c20_0021
+  - US_92c20_0024
+  - US_92c20_0025
+  - US_92c20_0026
+  - US_92c20_0027
+  - US_92c20_0028
+  - US_92c20_0029
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -622,45 +647,47 @@ proxy-groups:
   - VN²_508MBsGPTGMYTXSucceed原生机房
   - VN²_605MBsGPTYTXHistory
   - SG²_124MBsXHistory
-  - xx6da5puddincat07Telegram
-  - xx1f4bpuddincat07Telegram
-  - cf9a6bpuddincat07Telegram
-  - hkc388puddincat07Telegram
-  - xx339fpuddincat07Telegram
-  - usd837puddincat07Telegram
-  - gb30c5puddincat07Telegram
-  - ca9826puddincat07Telegram
-  - kr9f43puddincat07Telegram
-  - hk6ff4puddincat07Telegram
-  - xx6044puddincat07Telegram
-  - cf6900puddincat07Telegram
-  - us081epuddincat07Telegram
-  - tr66a2puddincat07Telegram
-  - use45cpuddincat07Telegram
-  - hkb0f3puddincat07Telegram
-  - CN_a71ee_0001
-  - GB_a71ee_0002
-  - HK_a71ee_0003
-  - HK_a71ee_0004
-  - HK_a71ee_0005
-  - HK_a71ee_0006
-  - HK_a71ee_0007
-  - HK_a71ee_0008
-  - HK_a71ee_0009
-  - HK_a71ee_0010
-  - HK_a71ee_0011
-  - HK_a71ee_0012
-  - HK_a71ee_0013
-  - HK_a71ee_0014
-  - HK_a71ee_0015
-  - HK_a71ee_0016
-  - HK_a71ee_0017
-  - RO_a71ee_0018
-  - RU_a71ee_0019
-  - SC_a71ee_0020
-  - TR_a71ee_0021
-  - US_a71ee_0022
-  - US_a71ee_0023
+  - xx4342puddincat07Telegram
+  - gbbabdpuddincat07Telegram
+  - ru4db5puddincat07Telegram
+  - xx37b6puddincat07Telegram
+  - hk01c9puddincat07Telegram
+  - cfd169puddincat07Telegram
+  - us7e15puddincat07Telegram
+  - xxe005puddincat07Telegram
+  - gb58d2puddincat07Telegram
+  - xxf02epuddincat07Telegram
+  - xxf30epuddincat07Telegram
+  - xx4831puddincat07Telegram
+  - nl3237puddincat07Telegram
+  - gb1cadpuddincat07Telegram
+  - nlf7b2puddincat07Telegram
+  - gb7e70puddincat07Telegram
+  - DE_92c20_0001
+  - DK_92c20_0002
+  - GB_92c20_0003
+  - HK_92c20_0004
+  - HK_92c20_0005
+  - HK_92c20_0006
+  - IT_92c20_0007
+  - JP_92c20_0008
+  - KR_92c20_0010
+  - KR_92c20_0011
+  - KR_92c20_0012
+  - NL_92c20_0013
+  - RO_92c20_0015
+  - RU_92c20_0016
+  - RU_92c20_0017
+  - SC_92c20_0018
+  - SE_92c20_0019
+  - TR_92c20_0020
+  - US_92c20_0021
+  - US_92c20_0024
+  - US_92c20_0025
+  - US_92c20_0026
+  - US_92c20_0027
+  - US_92c20_0028
+  - US_92c20_0029
 - name: ♻️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
