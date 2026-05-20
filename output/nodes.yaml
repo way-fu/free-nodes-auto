@@ -97,257 +97,199 @@ proxies:
   port: 38388
   server: 103.186.155.16
   type: ss
-- alterId: 0
-  name: hk3eb5puddincat07Telegram
-  password: BxceQaOe
-  port: 5823
-  server: 16.163.127.160
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- name: xx3298puddincat07Telegram
-  password: abb011d5-2749-4fba-9a66-0eb7b1b14d1e
-  port: 37043
-  server: lt-sin.ltdns.top
-  skip-cert-verify: true
-  sni: www.ithome.com
-  tls: true
-  type: trojan
-- name: us76efpuddincat07Telegram
-  password: a3f617e4-448f-4d95-b56f-99026dfbe699
-  port: 51243
-  server: 23.169.184.190
-  skip-cert-verify: true
-  sni: 23.169.184.190
-  tls: true
-  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: xx2d2dpuddincat07Telegram
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: xxb1f4puddincat07Telegram
+  name: xxeed0puddincat07Telegram
   password: XUMTygEM1jVYIvysXKqA5T
   port: 443
   server: hackney-latest-strike.freesocks.work
   type: ss
-- cipher: aes-256-cfb
-  name: us9987puddincat07Telegram
-  password: amazonskr05
-  port: 443
-  server: 3.137.174.85
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: us357fpuddincat07Telegram
+  name: xxf3a1puddincat07Telegram
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- name: jp3976puddincat07Telegram
+  network: tcp
+  password: BxceQaOe
+  port: 44079
+  server: 52.195.173.99
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: us83d1puddincat07Telegram
   password: gqkUCvmeOTghYJXF1YIuk5
   port: 443
   server: 71.19.148.74
   type: ss
-- name: jp8a59puddincat07Telegram
+- name: xx1888puddincat07Telegram
   network: ws
-  password: '162534'
+  password: 062cfabd-2224-4a36-9f24-e816d0f57e6c
   port: 443
-  server: 138.2.31.37
-  skip-cert-verify: true
-  sni: cchh2.pages.dev
+  server: xn--b6gac.eu.org
+  sni: proxy.luoxi.xin
   tls: true
   type: trojan
   ws-opts:
-    headers:
-      Host: cchh2.pages.dev
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: chc749puddincat07Telegram
-  network: ws
-  password: '162534'
-  port: 443
-  server: 138.124.111.115
-  skip-cert-verify: true
-  sni: cchh2.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cchh2.pages.dev
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: sg8030puddincat07Telegram
-  network: ws
-  password: '162534'
-  port: 443
-  server: 139.59.127.117
-  skip-cert-verify: true
-  sni: cchh2.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cchh2.pages.dev
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: aef67fpuddincat07Telegram
-  network: ws
-  password: '162534'
-  port: 8443
-  server: 217.60.248.94
-  skip-cert-verify: true
-  sni: cchh2.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cchh2.pages.dev
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: jpe116puddincat07Telegram
-  network: ws
-  password: '162534'
-  port: 443
-  server: 198.13.37.176
-  skip-cert-verify: true
-  sni: cchh2.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cchh2.pages.dev
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- alterId: 0
-  name: hk3813puddincat07Telegram
-  password: BxceQaOe
-  port: 44386
-  server: 43.198.240.167
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- name: hk9bbcpuddincat07Telegram
-  network: ws
-  password: '162534'
-  port: 443
-  server: 46.8.226.108
-  sni: cchh2.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cchh2.pages.dev
-    path: /?ed=2560
-- name: sg3c9cpuddincat07Telegram
-  network: ws
-  password: '162534'
-  port: 443
-  server: 134.209.103.4
-  skip-cert-verify: true
-  sni: cchh2.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: cchh2.pages.dev
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-- name: AE_7c0da_0001
-  server: 31.57.56.193
-  port: 51523
+    path: /?ed=2048
+- cipher: aes-256-cfb
+  name: vnad80puddincat07Telegram
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.227
+  skip-cert-verify: false
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: R2MPY2rqL2Gf3Lb1sP5n5fdEkUJ1d-wp
+  udp: false
+- cipher: aes-256-cfb
+  name: vn8cf0puddincat07Telegram
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.244
+  type: ss
+- cipher: aes-256-cfb
+  name: vn68e2puddincat07Telegram
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.81
+  type: ss
+- cipher: aes-256-cfb
+  name: vn2ea3puddincat07Telegram
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.145
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: none
+  name: kr46f4puddincat07Telegram
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: woshinidie-et3.pages.dev
+    mode: websocket
+    mux: false
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+  port: 30047
+  server: 211.194.210.183
+  type: ss
   udp: true
-- name: BE_7c0da_0002
-  server: 150.251.147.97
+- name: cz6322puddincat07Telegram
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 95.85.245.152
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: fia9depuddincat07Telegram
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 185.239.142.215
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: us92abpuddincat07Telegram
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 193.23.201.26
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: sg3b40puddincat07Telegram
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 139.59.239.116
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: fi0a4bpuddincat07Telegram
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 84.19.3.83
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+- name: CZ_a6cbc_0001
+  server: 194.58.41.60
   port: 8443
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 26e4d8b5-ee98-4a8d-88c9-7f81b7be3379
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.army
+  client-fingerprint: ios
+  servername: eh.vk.com
+  reality-opts:
+    public-key: GzQr6fDhigtRAr0n2Y7Nk3snhdytYyOvaYo9zYe1Xn4
+    short-id: b3a1cc510a2001c6
   udp: true
-- name: CH_7c0da_0004
-  server: 138.124.32.78
+- name: DE_a6cbc_0002
+  server: 185.216.177.197
   port: 443
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: ES_a6cbc_0003
+  server: 5.188.181.201
+  port: 9014
+  type: ss
+  cipher: aes-256-cfb
+  password: KnJGad3FqTvjqbaX
+  udp: true
+- name: FR_a6cbc_0004
+  server: fr.gryaz-vpn.com
+  port: 20567
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 40bf709c-4353-4552-ba26-406d2bf7821d
+  flow: xtls-rprx-vision
   tls: true
-  skip-cert-verify: true
+  skip-cert-verify: false
   client-fingerprint: chrome
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
+  servername: cloudflare.com
+  reality-opts:
+    public-key: 1WOtQYIQ-3sJtbrhSA1LW6gAnO-wG0Z5aCnlL_zoiXQ
+    short-id: b82d7208fe23
   udp: true
-- name: DE_7c0da_0006
-  server: 217.144.190.230
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-  udp: true
-- name: DE_7c0da_0007
-  server: 31.56.7.90
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: true
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-  udp: true
-- name: DE_7c0da_0008
-  server: 89.169.55.120
-  port: 4443
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  tls: true
-  skip-cert-verify: false
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: nn9jdg-k7yewrrk.acg.xx.kg
-  udp: true
-- name: DE_7c0da_0009
-  server: 193.23.219.205
-  port: 8443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-  udp: true
-- name: GB_7c0da_0010
-  server: 82.38.31.208
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  udp: true
-- name: GB_7c0da_0011
+- name: GB_a6cbc_0005
   server: 82.198.246.9
   port: 180
   type: vmess
@@ -357,21 +299,14 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_7c0da_0012
-  server: 82.38.31.89
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: GB_7c0da_0014
-  server: 82.38.31.89
+- name: GB_a6cbc_0006
+  server: 82.38.31.35
   port: 8080
   type: ss
   cipher: chacha20-ietf-poly1305
   password: oZIoA69Q8yhcQV8ka3Pa3A
   udp: true
-- name: GB_7c0da_0015
+- name: GB_a6cbc_0007
   server: 82.198.246.214
   port: 180
   type: vmess
@@ -379,16 +314,9 @@ proxies:
   alterId: 0
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
   udp: true
-- name: GB_7c0da_0016
-  server: 82.38.31.99
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  udp: true
-- name: GB_7c0da_0017
+- name: GB_a6cbc_0008
   server: 82.198.246.37
   port: 180
   type: vmess
@@ -398,16 +326,19 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: GB_7c0da_0019
-  server: 82.38.31.35
-  port: 8080
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: GB_a6cbc_0009
+  server: 82.198.246.233
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
   udp: true
-- name: GB_7c0da_0020
-  server: v6.hdacd.com
-  port: 30806
+- name: GB_a6cbc_0011
+  server: v24.hdacd.com
+  port: 30824
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
@@ -415,11 +346,185 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: HK_7c0da_0021
-  server: 154.37.223.19
-  port: 56972
+- name: HK_a6cbc_0012
+  server: 83.229.126.127
+  port: 32237
+  type: vless
+  uuid: 73bcd72f-9545-4cb8-8daf-7d004501880d
+  tls: true
+  skip-cert-verify: true
+  servername: dcsrzh.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: dcsrzh.ccwu.cc
+  udp: true
+- name: JP_a6cbc_0014
+  server: sgvless.yydzx.xyz
+  port: 16874
+  type: vless
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: sgvless.yydzx.xyz
+  udp: true
+- name: JP_a6cbc_0015
+  server: sgvless.yydzx.xyz
+  port: 16460
+  type: vless
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: sgvless.yydzx.xyz
+  udp: true
+- name: JP_a6cbc_0016
+  server: sgvless.yydzx.xyz
+  port: 16433
+  type: vless
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: sgvless.yydzx.xyz
+  udp: true
+- name: JP_a6cbc_0017
+  server: aws-link14.liangxin1.xyz
+  port: 25485
+  type: vless
+  uuid: f869b946-ef42-4d86-8d07-3623ad6cc37e
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: ios
+  servername: www.apple.com.cn
+  reality-opts:
+    public-key: VOFSjjWT0wIH3Q0ntyEZd8WwksrIAb5gPt_3PBnEASg
+    short-id: 9c5b8c53
+  udp: true
+- name: JP_a6cbc_0018
+  server: aws-link13.liangxin1.xyz
+  port: 36574
+  type: vless
+  uuid: f869b946-ef42-4d86-8d07-3623ad6cc37e
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: safari
+  servername: www.apple.com.cn
+  reality-opts:
+    public-key: sDG-KQk1BF7V83-xnmrWDouXxpPd_ZSxKcHrJJzbols
+    short-id: 32a3650d
+  udp: true
+- name: KR_a6cbc_0020
+  server: 220.124.181.77
+  port: 18081
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: KR_a6cbc_0022
+  server: 210.99.72.52
+  port: 29090
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: KR_a6cbc_0023
+  server: 118.36.233.194
+  port: 18000
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: KR_a6cbc_0024
+  server: 222.113.253.35
+  port: 14147
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: RO_a6cbc_0025
+  server: 87.120.93.69
+  port: 443
+  type: vless
+  uuid: 2001daf3-5c56-4bef-8ea6-8dd0493c5a4c
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.deepl.com
+  reality-opts:
+    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+  udp: true
+- name: SC_a6cbc_0026
+  server: srv163.towersflowerss.com
+  port: 443
+  type: vless
+  uuid: f1233103-f7a8-42f1-b003-26c6dd391229
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: SG_a6cbc_0027
+  server: aws-link30.liangxin1.xyz
+  port: 23568
+  type: vless
+  uuid: f869b946-ef42-4d86-8d07-3623ad6cc37e
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: safari
+  servername: www.lamer.com.hk
+  reality-opts:
+    public-key: EjcM-ENrpWY8iIL82qJtQrZgRs4KlVqhdisqLAXonUY
+    short-id: 55d046dc
+  udp: true
+- name: TW_a6cbc_0028
+  server: tvhinet.lajichang.xyz
+  port: 2096
+  type: trojan
+  password: e5c22f63-e473-496a-beff-fdc5655008c1
+  sni: bing.com
+  skip-cert-verify: true
+  udp: true
+- name: TW_a6cbc_0030
+  server: 103.127.243.54
+  port: 53229
   type: vmess
-  uuid: ae225455-5e8c-491d-d931-c06ac56f4aee
+  uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
   alterId: 0
   cipher: auto
   tls: false
@@ -428,130 +533,105 @@ proxies:
   http-opts:
     method: GET
     path:
-    - /
+    - /ABCDE
   udp: true
-- name: IE_7c0da_0022
-  server: 78.17.76.197
-  port: 47644
+- name: US_a6cbc_0031
+  server: 216.23.108.4
+  port: 55315
   type: vless
-  uuid: 9a21263b-1af0-41ec-9d3a-2afda61606dc
+  uuid: 9c5d1bf0-d58b-4001-9e7c-0c1fa314068c
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.nvidia.com
+  client-fingerprint: ios
+  servername: download.windowsupdate.com
   reality-opts:
-    public-key: ks2xxgXE4JO2nYBdbxliHfvy5OEd6zdjE9UWNXJy4m4
-    short-id: bec61d2ccb
+    public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
+    short-id: 4bcbc85d
   udp: true
-- name: IR_7c0da_0023
-  server: 151.242.69.201
-  port: 443
+- name: US_a6cbc_0032
+  server: usvless.yydzx.xyz
+  port: 17275
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: true
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: IR_7c0da_0024
-  server: 151.242.69.214
-  port: 2053
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: IR_7c0da_0025
-  server: 151.242.69.72
-  port: 8443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: IR_7c0da_0027
-  server: 62.60.152.64
-  port: 448
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  tls: true
-  skip-cert-verify: false
-  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
-  udp: true
-- name: JP_7c0da_0028
-  server: 54.95.184.62
-  port: 443
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: JP_7c0da_0029
-  server: 8.211.174.145
-  port: 31772
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  tls: true
-  skip-cert-verify: false
-  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
-  udp: true
-- name: JP_7c0da_0030
-  server: 193.32.151.49
-  port: 21219
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  tls: true
-  skip-cert-verify: false
-  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
-  udp: true
-- name: KR_7c0da_0031
-  server: 49.128.202.132
-  port: 52771
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: vfn-6o8h-kht7rpd.zipgd3vx91o.ddns-ip.net
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristifp=chrome
-    headers:
-      Host: vfn-6o8h-kht7rpd.zipgd3vx91o.ddns-ip.net
+  servername: usvless.yydzx.xyz
   udp: true
-- name: KR_7c0da_0032
-  server: 175.196.178.94
-  port: 11310
+- name: US_a6cbc_0033
+  server: usvless.yydzx.xyz
+  port: 17965
+  type: vless
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: usvless.yydzx.xyz
+  udp: true
+- name: US_a6cbc_0034
+  server: usvless.yydzx.xyz
+  port: 17594
+  type: vless
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: usvless.yydzx.xyz
+  udp: true
+- name: US_a6cbc_0035
+  server: usvless.yydzx.xyz
+  port: 17833
+  type: vless
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: usvless.yydzx.xyz
+  udp: true
+- name: US_a6cbc_0036
+  server: usvless.yydzx.xyz
+  port: 17440
+  type: vless
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: usvless.yydzx.xyz
+  udp: true
+- name: US_a6cbc_0037
+  server: pl194.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl194.mechvpn.online
+  udp: true
+- name: US_a6cbc_0038
+  server: 216.23.108.4
+  port: 55306
+  type: vless
+  uuid: 9c5d1bf0-d58b-4001-9e7c-0c1fa314068c
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: ios
+  servername: download.windowsupdate.com
+  reality-opts:
+    public-key: 7BS-JUFgYVaWrwwyDSiVq_YDoG36w8cRd4U8HvEg-F0
+    short-id: 4bcbc85d
+  udp: true
+- name: US_a6cbc_0039
+  server: 68.64.182.39
+  port: 443
   type: ss
   cipher: none
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
@@ -563,578 +643,37 @@ proxies:
     tls: true
     mux: false
   udp: true
-- name: KR_7c0da_0033
-  server: 165.246.171.218
-  port: 10891
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  tls: true
-  skip-cert-verify: false
-  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
-  udp: true
-- name: KR_7c0da_0035
-  server: 59.11.151.238
-  port: 12000
-  type: ss
-  cipher: none
-  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-  plugin: v2ray-plugin
-  plugin-opts:
-    mode: websocket
-    host: woshinidie-et3.pages.dev
-    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
-    tls: true
-    mux: false
-  udp: true
-- name: LB_7c0da_0036
-  server: 77.110.96.142
+- name: US_a6cbc_0040
+  server: ct.877774.xyz
   port: 443
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-  udp: true
-- name: MD_7c0da_0037
-  server: 185.235.241.14
-  port: 4443
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  tls: true
-  skip-cert-verify: false
-  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
-  udp: true
-- name: NL_7c0da_0038
-  server: 46.8.229.26
-  port: 2053
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: NL_7c0da_0039
-  server: 46.8.229.26
-  port: 8443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: NL_7c0da_0040
-  server: 46.8.229.218
-  port: 2053
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: NL_7c0da_0042
-  server: 194.147.33.251
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: PL_7c0da_0044
-  server: 217.30.10.70
-  port: 9093
-  type: ss
-  cipher: aes-256-cfb
-  password: wfLC2y7rzZyCmuyt
-  udp: true
-- name: RU_7c0da_0045
-  server: 85.92.108.39
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: d2f54466-0055-4a25-a3b3-b54a5107f980
   tls: true
   skip-cert-verify: true
-  client-fingerprint: chrome
-  servername: sni.111000.v6.army
+  client-fingerprint: random
+  servername: do-sfo3.862400.xyz
   network: ws
   ws-opts:
-    path: /
+    path: /announcement?ed=2048
     headers:
-      Host: sni.111000.v6.army
+      Host: do-sfo3.862400.xyz
   udp: true
-- name: RU_7c0da_0046
-  server: 45.139.77.52
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: RU_7c0da_0047
-  server: 5.129.233.22
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: SE_7c0da_0048
-  server: 109.120.157.29
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-  udp: true
-- name: SG_7c0da_0049
-  server: 83.147.254.4
-  port: 36089
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  tls: true
-  skip-cert-verify: false
-  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
-  udp: true
-- name: US_7c0da_0050
-  server: www.shopify.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0051
-  server: www.fbi.gov
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0052
-  server: www.temu.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0053
-  server: 154.17.237.73
-  port: 37811
-  type: vless
-  uuid: 00000000-0000-4000-8000-000000000000
-  tls: true
-  skip-cert-verify: false
-  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
-  udp: true
-- name: US_7c0da_0054
-  server: support.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0055
-  server: 88.210.36.107
-  port: 2377
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    mode: tls
-    host: feb7fa9:154948
-    tls: false
-  udp: true
-- name: US_7c0da_0056
-  server: blog.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0057
-  server: cloudflare-dns.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0058
-  server: 72.56.62.253
-  port: 22231
-  type: vless
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: r1.mizulina.top
-  udp: true
-- name: US_7c0da_0059
-  server: www.whatismyip.net
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0060
-  server: 144.31.157.163
-  port: 443
-  type: vless
-  uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.deepl.com
-  reality-opts:
-    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-    short-id: 0123456789abcdef
-  udp: true
-- name: US_7c0da_0061
-  server: www.npmjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0062
-  server: developers.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0063
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0064
-  server: www.epicgames.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0065
-  server: 144.31.5.23
-  port: 9443
-  type: vless
-  uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: yahoo.com
-  reality-opts:
-    public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
-    short-id: 2344766a270a6298
-  udp: true
-- name: US_7c0da_0066
-  server: cf.090227.xyz
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0067
-  server: 144.31.237.162
-  port: 2053
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: US_7c0da_0068
-  server: cdnjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
-  udp: true
-- name: US_7c0da_0070
-  server: 130.49.176.227
-  port: 8443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.army
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.army
-  udp: true
-- name: VN_7c0da_0071
-  server: 103.186.155.5
+- name: VN_a6cbc_0042
+  server: 103.186.154.31
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_7c0da_0072
-  server: 103.186.155.84
+- name: VN_a6cbc_0043
+  server: 103.186.155.9
   port: 38388
   type: ss
   cipher: aes-256-cfb
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   udp: true
-- name: VN_7c0da_0073
-  server: 103.186.155.8
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0074
-  server: 103.186.154.19
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0075
-  server: 103.186.154.192
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0077
-  server: 103.186.154.55
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0078
-  server: 103.186.155.233
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0079
-  server: 103.186.154.244
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0080
-  server: 103.186.155.154
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0081
-  server: 103.186.155.21
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0082
-  server: 103.186.154.247
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0083
-  server: 103.186.154.182
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0084
-  server: 103.186.154.16
-  port: 38388
-  type: ss
-  cipher: aes-256-cfb
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  udp: true
-- name: VN_7c0da_0085
-  server: 103.186.155.226
+- name: VN_a6cbc_0045
+  server: 103.186.155.183
   port: 38388
   type: ss
   cipher: aes-256-cfb
@@ -1157,96 +696,59 @@ proxy-groups:
   - VN²_508MBsGPTGMYTXSucceed原生机房
   - VN²_605MBsGPTYTXHistory
   - SG²_124MBsXHistory
-  - hk3eb5puddincat07Telegram
-  - xx3298puddincat07Telegram
-  - us76efpuddincat07Telegram
-  - xx2d2dpuddincat07Telegram
-  - xxb1f4puddincat07Telegram
-  - us9987puddincat07Telegram
-  - us357fpuddincat07Telegram
-  - jp8a59puddincat07Telegram
-  - chc749puddincat07Telegram
-  - sg8030puddincat07Telegram
-  - aef67fpuddincat07Telegram
-  - jpe116puddincat07Telegram
-  - hk3813puddincat07Telegram
-  - hk9bbcpuddincat07Telegram
-  - sg3c9cpuddincat07Telegram
-  - AE_7c0da_0001
-  - BE_7c0da_0002
-  - CH_7c0da_0004
-  - DE_7c0da_0006
-  - DE_7c0da_0007
-  - DE_7c0da_0008
-  - DE_7c0da_0009
-  - GB_7c0da_0010
-  - GB_7c0da_0011
-  - GB_7c0da_0012
-  - GB_7c0da_0014
-  - GB_7c0da_0015
-  - GB_7c0da_0016
-  - GB_7c0da_0017
-  - GB_7c0da_0019
-  - GB_7c0da_0020
-  - HK_7c0da_0021
-  - IE_7c0da_0022
-  - IR_7c0da_0023
-  - IR_7c0da_0024
-  - IR_7c0da_0025
-  - IR_7c0da_0027
-  - JP_7c0da_0028
-  - JP_7c0da_0029
-  - JP_7c0da_0030
-  - KR_7c0da_0031
-  - KR_7c0da_0032
-  - KR_7c0da_0033
-  - KR_7c0da_0035
-  - LB_7c0da_0036
-  - MD_7c0da_0037
-  - NL_7c0da_0038
-  - NL_7c0da_0039
-  - NL_7c0da_0040
-  - NL_7c0da_0042
-  - PL_7c0da_0044
-  - RU_7c0da_0045
-  - RU_7c0da_0046
-  - RU_7c0da_0047
-  - SE_7c0da_0048
-  - SG_7c0da_0049
-  - US_7c0da_0050
-  - US_7c0da_0051
-  - US_7c0da_0052
-  - US_7c0da_0053
-  - US_7c0da_0054
-  - US_7c0da_0055
-  - US_7c0da_0056
-  - US_7c0da_0057
-  - US_7c0da_0058
-  - US_7c0da_0059
-  - US_7c0da_0060
-  - US_7c0da_0061
-  - US_7c0da_0062
-  - US_7c0da_0063
-  - US_7c0da_0064
-  - US_7c0da_0065
-  - US_7c0da_0066
-  - US_7c0da_0067
-  - US_7c0da_0068
-  - US_7c0da_0070
-  - VN_7c0da_0071
-  - VN_7c0da_0072
-  - VN_7c0da_0073
-  - VN_7c0da_0074
-  - VN_7c0da_0075
-  - VN_7c0da_0077
-  - VN_7c0da_0078
-  - VN_7c0da_0079
-  - VN_7c0da_0080
-  - VN_7c0da_0081
-  - VN_7c0da_0082
-  - VN_7c0da_0083
-  - VN_7c0da_0084
-  - VN_7c0da_0085
+  - xxeed0puddincat07Telegram
+  - xxf3a1puddincat07Telegram
+  - jp3976puddincat07Telegram
+  - us83d1puddincat07Telegram
+  - xx1888puddincat07Telegram
+  - vnad80puddincat07Telegram
+  - vn8cf0puddincat07Telegram
+  - vn68e2puddincat07Telegram
+  - vn2ea3puddincat07Telegram
+  - kr46f4puddincat07Telegram
+  - cz6322puddincat07Telegram
+  - fia9depuddincat07Telegram
+  - us92abpuddincat07Telegram
+  - sg3b40puddincat07Telegram
+  - fi0a4bpuddincat07Telegram
+  - CZ_a6cbc_0001
+  - DE_a6cbc_0002
+  - ES_a6cbc_0003
+  - FR_a6cbc_0004
+  - GB_a6cbc_0005
+  - GB_a6cbc_0006
+  - GB_a6cbc_0007
+  - GB_a6cbc_0008
+  - GB_a6cbc_0009
+  - GB_a6cbc_0011
+  - HK_a6cbc_0012
+  - JP_a6cbc_0014
+  - JP_a6cbc_0015
+  - JP_a6cbc_0016
+  - JP_a6cbc_0017
+  - JP_a6cbc_0018
+  - KR_a6cbc_0020
+  - KR_a6cbc_0022
+  - KR_a6cbc_0023
+  - KR_a6cbc_0024
+  - RO_a6cbc_0025
+  - SC_a6cbc_0026
+  - SG_a6cbc_0027
+  - TW_a6cbc_0028
+  - TW_a6cbc_0030
+  - US_a6cbc_0031
+  - US_a6cbc_0032
+  - US_a6cbc_0033
+  - US_a6cbc_0034
+  - US_a6cbc_0035
+  - US_a6cbc_0036
+  - US_a6cbc_0037
+  - US_a6cbc_0038
+  - US_a6cbc_0039
+  - US_a6cbc_0040
+  - VN_a6cbc_0042
+  - VN_a6cbc_0043
+  - VN_a6cbc_0045
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1263,96 +765,59 @@ proxy-groups:
   - VN²_508MBsGPTGMYTXSucceed原生机房
   - VN²_605MBsGPTYTXHistory
   - SG²_124MBsXHistory
-  - hk3eb5puddincat07Telegram
-  - xx3298puddincat07Telegram
-  - us76efpuddincat07Telegram
-  - xx2d2dpuddincat07Telegram
-  - xxb1f4puddincat07Telegram
-  - us9987puddincat07Telegram
-  - us357fpuddincat07Telegram
-  - jp8a59puddincat07Telegram
-  - chc749puddincat07Telegram
-  - sg8030puddincat07Telegram
-  - aef67fpuddincat07Telegram
-  - jpe116puddincat07Telegram
-  - hk3813puddincat07Telegram
-  - hk9bbcpuddincat07Telegram
-  - sg3c9cpuddincat07Telegram
-  - AE_7c0da_0001
-  - BE_7c0da_0002
-  - CH_7c0da_0004
-  - DE_7c0da_0006
-  - DE_7c0da_0007
-  - DE_7c0da_0008
-  - DE_7c0da_0009
-  - GB_7c0da_0010
-  - GB_7c0da_0011
-  - GB_7c0da_0012
-  - GB_7c0da_0014
-  - GB_7c0da_0015
-  - GB_7c0da_0016
-  - GB_7c0da_0017
-  - GB_7c0da_0019
-  - GB_7c0da_0020
-  - HK_7c0da_0021
-  - IE_7c0da_0022
-  - IR_7c0da_0023
-  - IR_7c0da_0024
-  - IR_7c0da_0025
-  - IR_7c0da_0027
-  - JP_7c0da_0028
-  - JP_7c0da_0029
-  - JP_7c0da_0030
-  - KR_7c0da_0031
-  - KR_7c0da_0032
-  - KR_7c0da_0033
-  - KR_7c0da_0035
-  - LB_7c0da_0036
-  - MD_7c0da_0037
-  - NL_7c0da_0038
-  - NL_7c0da_0039
-  - NL_7c0da_0040
-  - NL_7c0da_0042
-  - PL_7c0da_0044
-  - RU_7c0da_0045
-  - RU_7c0da_0046
-  - RU_7c0da_0047
-  - SE_7c0da_0048
-  - SG_7c0da_0049
-  - US_7c0da_0050
-  - US_7c0da_0051
-  - US_7c0da_0052
-  - US_7c0da_0053
-  - US_7c0da_0054
-  - US_7c0da_0055
-  - US_7c0da_0056
-  - US_7c0da_0057
-  - US_7c0da_0058
-  - US_7c0da_0059
-  - US_7c0da_0060
-  - US_7c0da_0061
-  - US_7c0da_0062
-  - US_7c0da_0063
-  - US_7c0da_0064
-  - US_7c0da_0065
-  - US_7c0da_0066
-  - US_7c0da_0067
-  - US_7c0da_0068
-  - US_7c0da_0070
-  - VN_7c0da_0071
-  - VN_7c0da_0072
-  - VN_7c0da_0073
-  - VN_7c0da_0074
-  - VN_7c0da_0075
-  - VN_7c0da_0077
-  - VN_7c0da_0078
-  - VN_7c0da_0079
-  - VN_7c0da_0080
-  - VN_7c0da_0081
-  - VN_7c0da_0082
-  - VN_7c0da_0083
-  - VN_7c0da_0084
-  - VN_7c0da_0085
+  - xxeed0puddincat07Telegram
+  - xxf3a1puddincat07Telegram
+  - jp3976puddincat07Telegram
+  - us83d1puddincat07Telegram
+  - xx1888puddincat07Telegram
+  - vnad80puddincat07Telegram
+  - vn8cf0puddincat07Telegram
+  - vn68e2puddincat07Telegram
+  - vn2ea3puddincat07Telegram
+  - kr46f4puddincat07Telegram
+  - cz6322puddincat07Telegram
+  - fia9depuddincat07Telegram
+  - us92abpuddincat07Telegram
+  - sg3b40puddincat07Telegram
+  - fi0a4bpuddincat07Telegram
+  - CZ_a6cbc_0001
+  - DE_a6cbc_0002
+  - ES_a6cbc_0003
+  - FR_a6cbc_0004
+  - GB_a6cbc_0005
+  - GB_a6cbc_0006
+  - GB_a6cbc_0007
+  - GB_a6cbc_0008
+  - GB_a6cbc_0009
+  - GB_a6cbc_0011
+  - HK_a6cbc_0012
+  - JP_a6cbc_0014
+  - JP_a6cbc_0015
+  - JP_a6cbc_0016
+  - JP_a6cbc_0017
+  - JP_a6cbc_0018
+  - KR_a6cbc_0020
+  - KR_a6cbc_0022
+  - KR_a6cbc_0023
+  - KR_a6cbc_0024
+  - RO_a6cbc_0025
+  - SC_a6cbc_0026
+  - SG_a6cbc_0027
+  - TW_a6cbc_0028
+  - TW_a6cbc_0030
+  - US_a6cbc_0031
+  - US_a6cbc_0032
+  - US_a6cbc_0033
+  - US_a6cbc_0034
+  - US_a6cbc_0035
+  - US_a6cbc_0036
+  - US_a6cbc_0037
+  - US_a6cbc_0038
+  - US_a6cbc_0039
+  - US_a6cbc_0040
+  - VN_a6cbc_0042
+  - VN_a6cbc_0043
+  - VN_a6cbc_0045
 - name: ♻️ 负载均衡
   type: load-balance
   strategy: consistent-hashing
