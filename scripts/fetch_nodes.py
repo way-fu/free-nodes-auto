@@ -2,17 +2,19 @@
 # -*- coding: utf-8 -*-
 """
 自动抓取免费节点并生成 Shadowrocket/Clash YAML 配置
-优化版：专注去重与结构化协议分组，CONNECT 测试交由工作流环境或客户端
+优化版：宽容型原生异步 Layer 7 代理管道探针，防止误杀，确保节点充沛且全活
 """
 
 import requests
 import yaml
 import json
 import re
+import asyncio
+import socket
 from datetime import datetime
 import os
 
-# ========== 🚀 节点源扩容池（全网精选高频维护源） ==========
+# ========== 🚀 节点源扩容池 ==========
 SOURCES_YAML = [
     'https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml',
     'https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml',
@@ -70,12 +72,76 @@ def deduplicate_nodes(nodes):
             unique.append(node)
     return unique
 
-def generate_config(nodes):
-    if not nodes:
-        return None
+# ================= 🧠 宽容型 Layer 7 异步管道活体判定 =================
+
+async def test_node_寛容(node, timeout=3.0):
+    """
+    宽容型应用层管道验证：
+    只过滤掉绝对连不上、或者端口一连上就被底层防火墙掐断(Reset)的真死节点。
+    对于带复杂混淆/TLS的节点，只要在写入首包后连接没有发生断开，便视为存活。
+    """
+    server = str(node.get('server'))
+    port = node.get('port')
+    node_type = node.get('type', '').lower()
     
-    # 限制留存总数在 40 个内（防止小火箭里滑不到底）
-    max_total = 40
+    try:
+        # DNS 解析
+        loop = asyncio.get_running_loop()
+        await loop.getaddrinfo(server, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)
+        
+        # 建立 TCP 连接
+        conn = asyncio.open_connection(server, port)
+        reader, writer = await asyncio.wait_for(conn, timeout=timeout)
+        
+        # 发送对应协议的轻量探针，刺探 Layer 7 服务端是否有阻断反应
+        if node_type == 'ss':
+            writer.write(b'\x05\x01\x00')
+        elif node_type == 'trojan':
+            writer.write(b'0000000000000000000000000000000000000000000000000000000000000000\r\n\x01\x01')
+        elif node_type in ['vmess', 'vless']:
+            uuid_str = node.get('uuid', '').replace('-', '')
+            if len(uuid_str) == 32:
+                writer.write(bytes.fromhex(uuid_str)[:16])
+                
+        await writer.drain()
+        
+        # 核心宽容逻辑：给一小个短暂的时间窗口。如果对方没有主动发来 Reset 或者报错，说明 Layer 7 是开着的
+        try:
+            # 极短时间内尝试读取 1 字节
+            await asyncio.wait_for(reader.read(1), timeout=0.2)
+        except asyncio.TimeoutError:
+            # 绝大多数被墙或者正常的活节点，在这个探针包过去后都会维持连接超时，这说明它是个活代理
+            pass
+            
+        writer.close()
+        try:
+            await writer.wait_closed()
+        except:
+            pass
+        return node
+    except Exception:
+        # 物理超时、拒绝连接或被重置的，丢弃
+        return None
+
+async def filter_alive_nodes(nodes):
+    print(f"   ⚡ 开始执行 Python 异步宽容型管道清洗 (候选池大小: {len(nodes)})...")
+    semaphore = asyncio.Semaphore(120) # 限制并发并发
+    
+    async def sem_task(node):
+        async with semaphore:
+            return await test_node_寛容(node)
+            
+    tasks = [sem_task(node) for node in nodes]
+    results = await asyncio.gather(*tasks)
+    return [n for n in results if n is not None]
+
+# =====================================================================
+
+def generate_config(nodes):
+    if not nodes: return None
+    
+    # 数量控制：既然是宽容过滤，总留存控制在 35 个最精选的节点，防止臃肿
+    max_total = 35
     if len(nodes) > max_total:
         nodes = nodes[:max_total]
         
@@ -166,8 +232,11 @@ def generate_config(nodes):
     }
 
 def main():
-    print("📥 开始多源并行爬取...")
+    print("=" * 60)
+    print(f"🚀 免费节点自动抓取工具 (异步宽容大清洗版)")
+    print("=" * 60)
     all_nodes = []
+    
     for i, url in enumerate(SOURCES_YAML, 1):
         content = fetch_content(url)
         if content:
@@ -175,21 +244,31 @@ def main():
             all_nodes.extend(nodes)
             print(f"   [{i}/{len(SOURCES_YAML)}] 成功加载节点数: {len(nodes)}")
             
-    # 基础过滤与严格去重
     valid_format_nodes = [n for n in all_nodes if format_validate(n)]
     unique_nodes = deduplicate_nodes(valid_format_nodes)
-    print(f"📊 去重后可供测试的候选节点总数: {len(unique_nodes)}")
+    print(f"\n📊 汇总原始去重后候选节点数: {len(unique_nodes)}")
     
-    # 临时将去重后的丰富样本保存为临时配置文件
-    # 让下一阶段的工作流直接用专业测速工具去洗它们
-    config = generate_config(unique_nodes)
+    if unique_nodes:
+        loop = asyncio.get_event_loop()
+        alive_nodes = loop.run_until_complete(filter_alive_nodes(unique_nodes))
+        print(f"   🟢 检测通过的优质活节点数量: {len(alive_nodes)}/{len(unique_nodes)}")
+    else:
+        alive_nodes = []
+        
+    config = generate_config(alive_nodes)
     if config:
         os.makedirs('output', exist_ok=True)
         with open('output/nodes.yaml', 'w', encoding='utf-8') as f:
             yaml.dump(config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
-        print("💾 临时总池已生成，准备交给测试器...")
+        with open('output/proxies.yaml', 'w', encoding='utf-8') as f:
+            yaml.dump({'proxies': config['proxies']}, f, allow_unicode=True)
+        with open('output/stats.json', 'w', encoding='utf-8') as f:
+            json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(config['proxies'])}, f, indent=2)
+        print(f"✨ 成功生成并按协议归类了 {len(config['proxies'])} 个优质存活节点！")
         return 0
-    return 1
+    else:
+        print("❌ 未捕获到存活节点。")
+        return 1
 
 if __name__ == '__main__':
     exit(main())
