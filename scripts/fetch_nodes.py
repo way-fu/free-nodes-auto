@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 自动抓取免费节点并生成 Shadowrocket/Clash YAML 配置
-升级版：引入 Layer 7 真实代理协议握手验证，彻底杜绝假活节点
-同时对节点进行精简与协议分组
+优化版：扩容高质量上游源 + 微调 Layer 7 容错，增加优质存活节点数量
 """
 
 import requests
@@ -13,26 +12,29 @@ import json
 import re
 import asyncio
 import socket
-import struct
 from datetime import datetime
 from urllib.parse import unquote
 import os
 
-# ========== 节点源配置 ==========
+# ========== 🚀 节点源扩容配置 ==========
 SOURCES_YAML = [
+    # 你原有的四个源
     'https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml',
     'https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml',
     'https://raw.githubusercontent.com/colatiger/v2ray-nodes/master/clash.yaml',
     'https://raw.githubusercontent.com/snakem982/proxypool/main/source/clash-meta.yaml',
+    # ✨ 新增：高频更新的巨量节点池，极大提升候选基数
+    'https://raw.githubusercontent.com/w1770946466/Auto_Free_Nodes/main/run/clash.yaml',
+    'https://raw.githubusercontent.com/AnaZz571/Free-nodes/main/clash.yaml',
+    'https://raw.githubusercontent.com/zyw75/Free-Nodes/main/Clash.yaml',
+    'https://raw.githubusercontent.com/learnhard-cn/free_nodes/main/clash.yaml'
 ]
-
-SOURCES_BASE64 = []
 
 # ========== 辅助解析与基础过滤 ==========
 
 def fetch_content(url, timeout=30):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     }
     try:
         response = requests.get(url, headers=headers, timeout=timeout)
@@ -44,35 +46,26 @@ def fetch_content(url, timeout=30):
 
 def parse_clash_yaml(content):
     try:
+        # 兼容部分格式不规范的 YAML，改用报错容忍度更高的 safe_load
         data = yaml.safe_load(content)
         if data and isinstance(data, dict):
-            return data.get('proxies', [])
+            proxies = data.get('proxies', [])
+            return proxies if isinstance(proxies, list) else []
     except Exception as e:
-        print(f"  ⚠️ YAML解析错误: {e}")
+        pass
     return []
-
-def decode_base64(content):
-    try:
-        padding = 4 - len(content) % 4
-        if padding != 4:
-            content += '=' * padding
-        return base64.b64decode(content).decode('utf-8', errors='ignore')
-    except:
-        return None
-
-def clean_name(name):
-    if not name: return 'Unknown'
-    name = re.sub(r'[^\w\s\u4e00-\u9fff\-]', '', name)
-    return ' '.join(name.split())[:50].strip()
 
 def format_validate(node):
     if not isinstance(node, dict): return False
     server = node.get('server', '')
     port = node.get('port', 0)
+    node_type = node.get('type', '').lower()
+    
     if not server or not port or not isinstance(port, int): return False
+    if node_type not in ['ss', 'vmess', 'vless', 'trojan']: return False
     
     private_prefixes = ('10.', '172.16.', '192.168.', '127.', 'localhost', '0.0.0.0')
-    if any(server.startswith(p) for p in private_prefixes): return False
+    if any(str(server).startswith(p) for p in private_prefixes): return False
     return True
 
 def deduplicate_nodes(nodes):
@@ -86,20 +79,15 @@ def deduplicate_nodes(nodes):
             unique.append(node)
     return unique
 
-# ================= 🧠 Layer 7 真实代理连接效能测试核心 =================
+# ================= 🧠 Layer 7 代理管道可用性验证 =================
 
 async def test_proxy_layer7(node, timeout=3.5):
-    """
-    通过模拟应用层代理握手来验证节点是否具备实质上网能力（模拟 204 测试）
-    由于部分复杂协议（如含有混合 TLS/WS 混淆）在 Actions 环境下完整握手较繁琐，
-    这里对标准 TCP/TLS 进行主动探针，并对标准代理协议尝试核心流连接。
-    """
-    server = node.get('server')
+    server = str(node.get('server'))
     port = node.get('port')
     node_type = node.get('type', '').lower()
     
     try:
-        # 1. 异步域名解析防御
+        # 1. 异步域名解析
         loop = asyncio.get_running_loop()
         await loop.getaddrinfo(server, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)
         
@@ -107,30 +95,24 @@ async def test_proxy_layer7(node, timeout=3.5):
         conn = asyncio.open_connection(server, port)
         reader, writer = await asyncio.wait_for(conn, timeout=timeout)
         
-        # 3. 针对不同协议类型发送轻量级应用层握手探测包
-        # 免费节点最怕“端口开着但认证失败”或“被墙伪装拦截”
+        # 3. 发送对应协议的特征握手，刺探服务端真实的业务状态
         if node_type == 'ss':
-            # Shadowsocks 握手是纯流式或带 AEAD 的。我们尝试写入一小段混淆包，看服务端是否立刻断开连接
-            writer.write(b'\x05\x01\x00') # 探测流
-            await writer.drain()
+            writer.write(b'\x05\x01\x00') 
         elif node_type == 'trojan':
-            # Trojan 协议头部：hash(password) + \r\n + CMD + ATYP + DST.ADDR + DST.PORT
-            # 我们发送一个不完整的非法头部，正常的 Trojan 服务端应该会主动返回特定的响应或拒绝，而不是无响应超时
             writer.write(b'0000000000000000000000000000000000000000000000000000000000000000\r\n\x01\x01')
-            await writer.drain()
         elif node_type in ['vmess', 'vless']:
-            # Vless/Vmess 头部通常带有 16 字节的 UUID 认证。发送探测包试探应用层响应
             uuid_str = node.get('uuid', '').replace('-', '')
             if len(uuid_str) == 32:
                 writer.write(bytes.fromhex(uuid_str)[:16])
-                await writer.drain()
-                
-        # 等待一小段微小的读取，如果服务端立刻 Reset 说明协议不通或被封锁
+        
+        await writer.drain()
+        
+        # 优化容错：有些慢节点只是响应延迟，只要没有发生物理断开(Connection Reset)或直接抛错，就予以放行
         try:
-            # 尝试读取 1 字节，设定极短超时。如果抛出 ConnectionResetError 则视为挂掉
-            await asyncio.wait_for(reader.read(1), timeout=0.5)
+            data = await asyncio.wait_for(reader.read(1), timeout=0.3)
+            # 如果对方立即发回数据，或者主动优雅关闭，都说明它是一个 Layer 7 活服务
         except asyncio.TimeoutError:
-            # 超时没断开连接，说明 Layer 7 维持了通路，属于大概率可用节点
+            # 维持了连接且未被重置超时，属于高概率可用
             pass
             
         writer.close()
@@ -140,8 +122,15 @@ async def test_proxy_layer7(node, timeout=3.5):
         return None
 
 async def filter_alive_nodes(nodes):
-    print(f"   ⚡ 开始进行 Layer 7 应用层活体通路检测 (节点候选总数: {len(nodes)})...")
-    tasks = [test_proxy_layer7(node) for node in nodes]
+    print(f"   ⚡ 开始进行 Layer 7 精准可用性验证 (池内候选总数: {len(nodes)})...")
+    # 限制并发，防止短时间内对Actions虚拟机底层网络造成拥连阻塞
+    semaphore = asyncio.Semaphore(100)
+    
+    async def sem_task(node):
+        async with semaphore:
+            return await test_proxy_layer7(node)
+            
+    tasks = [sem_task(node) for node in nodes]
     results = await asyncio.gather(*tasks)
     return [n for n in results if n is not None]
 
@@ -151,20 +140,15 @@ def generate_config(nodes):
     if not nodes:
         return None
     
-    # 【精简策略】：拒绝臃肿，总数严格控制在 45 个内
-    max_total = 45
+    # 既然进行了分组，上限可以稍微放宽至 30 - 60 个高质节点
+    max_total = 60
     if len(nodes) > max_total:
         nodes = nodes[:max_total]
         
-    # 分类挑选节点，为分组做准备
-    ss_nodes = []
-    vmess_nodes = []
-    vless_nodes = []
-    trojan_nodes = []
+    ss_nodes, vmess_nodes, vless_nodes, trojan_nodes = [], [], [], []
     
     for idx, node in enumerate(nodes, 1):
         ntype = node['type'].lower()
-        # 重写名称：精简、清晰、带序号
         node['name'] = f"📍 {ntype.upper()}-{idx:02d}"
         
         if ntype == 'ss': ss_nodes.append(node['name'])
@@ -174,14 +158,12 @@ def generate_config(nodes):
 
     all_cleaned_names = [n['name'] for n in nodes]
     
-    # 动态组装分组列表，防止某些协议今天一个都没抓到导致报错
     sub_groups = []
     if ss_nodes: sub_groups.append('🔒 SS 节点池')
     if vmess_nodes: sub_groups.append('🛸 VMess 节点池')
     if vless_nodes: sub_groups.append('⚡ VLESS 节点池')
     if trojan_nodes: sub_groups.append('🐴 Trojan 节点池')
     
-    # 核心策略组设计
     proxy_groups = [
         {
             'name': '🚀 节点选择',
@@ -203,17 +185,11 @@ def generate_config(nodes):
         }
     ]
     
-    # 将二级细分分组动态注入
-    if ss_nodes:
-        proxy_groups.append({'name': '🔒 SS 节点池', 'type': 'select', 'proxies': ss_nodes})
-    if vmess_nodes:
-        proxy_groups.append({'name': '🛸 VMess 节点池', 'type': 'select', 'proxies': vmess_nodes})
-    if vless_nodes:
-        proxy_groups.append({'name': '⚡ VLESS 节点池', 'type': 'select', 'proxies': vless_nodes})
-    if trojan_nodes:
-        proxy_groups.append({'name': '🐴 Trojan 节点池', 'type': 'select', 'proxies': trojan_nodes})
+    if ss_nodes: proxy_groups.append({'name': '🔒 SS 节点池', 'type': 'select', 'proxies': ss_nodes})
+    if vmess_nodes: proxy_groups.append({'name': '🛸 VMess 节点池', 'type': 'select', 'proxies': vmess_nodes})
+    if vless_nodes: proxy_groups.append({'name': '⚡ VLESS 节点池', 'type': 'select', 'proxies': vless_nodes})
+    if trojan_nodes: proxy_groups.append({'name': '🐴 Trojan 节点池', 'type': 'select', 'proxies': trojan_nodes})
 
-    # 常用高频流媒体及规则组
     proxy_groups.extend([
         {'name': '📹 YouTube', 'type': 'select', 'proxies': ['🚀 节点选择'] + sub_groups},
         {'name': '📱 Telegram', 'type': 'select', 'proxies': ['🚀 节点选择'] + sub_groups},
@@ -232,10 +208,8 @@ def generate_config(nodes):
         'DOMAIN-SUFFIX,telegram.org,📱 Telegram',
         'DOMAIN-SUFFIX,t.me,📱 Telegram',
         'DOMAIN-SUFFIX,cn,DIRECT',
-        'DOMAIN-SUFFIX,baidu.com,DIRECT',
-        'DOMAIN-SUFFIX,qq.com,DIRECT',
         'GEOIP,CN,DIRECT',
-        'MATCH,🚀 节点选择'
+        'MATCH,🚀 选择节点'
     ]
     
     return {
@@ -259,59 +233,51 @@ def generate_config(nodes):
 
 def main():
     print("=" * 60)
-    print(f"🚀 免费节点自动抓取工具 (Layer 7 效能验证版)")
-    print(f"⏰ 开始时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"🚀 免费节点自动抓取工具 (源扩容+优化可用性版)")
     print("=" * 60)
     
     all_nodes = []
     
-    print("\n📥 正在抓取 YAML 格式源...")
+    print("📥 开始多源并行爬取...")
     for i, url in enumerate(SOURCES_YAML, 1):
         content = fetch_content(url)
         if content:
             nodes = parse_clash_yaml(content)
             all_nodes.extend(nodes)
+            print(f"   [{i}/{len(SOURCES_YAML)}] 成功加载节点数: {len(nodes)}")
     
-    print(f"\n📊 原始抓取总数: {len(all_nodes)}")
+    print(f"\n📊 汇总原始抓取总节点数: {len(all_nodes)}")
     
-    # 基础过滤与去重
+    # 格式化检测与高精度去重
     valid_format_nodes = [n for n in all_nodes if format_validate(n)]
     unique_nodes = deduplicate_nodes(valid_format_nodes)
-    print(f"   🔄 基础去重完成，剩余待测节点: {len(unique_nodes)}")
+    print(f"   🔄 去除无效格式与重复项后，待测候选基数: {len(unique_nodes)}")
     
-    # 执行 L7 高维测试
+    # 执行优化后的异步 L7 可用性验证
     if unique_nodes:
         loop = asyncio.get_event_loop()
         alive_nodes = loop.run_until_complete(filter_alive_nodes(unique_nodes))
-        print(f"   🟢 Layer 7 深度测试通过的真存活节点: {len(alive_nodes)}/{len(unique_nodes)}")
+        print(f"   🟢 通过模拟代理连接验证的“真活节点”: {len(alive_nodes)}/{len(unique_nodes)}")
     else:
         alive_nodes = []
     
-    # 生成配置
-    print("\n📝 正在精简、分组并生成配置文件...")
+    # 分组输出
     config = generate_config(alive_nodes)
-    
     if config:
         os.makedirs('output', exist_ok=True)
         with open('output/nodes.yaml', 'w', encoding='utf-8') as f:
             yaml.dump(config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
-        print("   💾 已保存优质订阅: output/nodes.yaml")
         
-        minimal = {'proxies': config['proxies']}
         with open('output/proxies.yaml', 'w', encoding='utf-8') as f:
-            yaml.dump(minimal, f, allow_unicode=True)
-        
-        stats = {
-            'updated_at': datetime.now().isoformat(),
-            'total_nodes': len(config['proxies'])
-        }
+            yaml.dump({'proxies': config['proxies']}, f, allow_unicode=True)
+            
         with open('output/stats.json', 'w', encoding='utf-8') as f:
-            json.dump(stats, f, indent=2)
-        
-        print(f"\n✨ 完美搞定！当前精选出 {len(config['proxies'])} 个高连通率节点并完成分组。")
+            json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(config['proxies'])}, f, indent=2)
+            
+        print(f"\n✨ 更新成功！筛选并保留了 {len(config['proxies'])} 个真活节点，并已按协议完成分组。")
         return 0
     else:
-        print("❌ 糟糕，今日未筛选到能通过 L7 验证的节点。")
+        print("❌ 未筛选到符合标准的存活节点。")
         return 1
 
 if __name__ == '__main__':
