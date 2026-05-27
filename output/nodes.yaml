@@ -19,136 +19,52 @@ proxies:
   name: 📍 SS-01
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
-  server: r3mrcg0011499tl.cybervena.com
+  server: r3mrcg007117fb8.cybervena.com
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-02
-  password: qTa6L03BFhHoyA3psL9xpV
-  port: 443
-  server: 185.207.136.67
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-03
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: nbmrcg0034686rw.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-04
-  password: Fh0TVw64B57wDPoJ2VLsog
-  port: 443
-  server: 5.230.184.171
-  type: ss
-  udp: true
-- name: 📍 TROJAN-05
-  network: ws
-  password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  port: 18080
-  server: 175.192.103.88
-  sni: vpn.rnmcnm.com
-  tls: true
-  type: trojan
-  ws-opts:
-    path: /trojan
 - cipher: aes-256-cfb
-  name: 📍 SS-06
+  name: 📍 SS-02
   password: qwerREWQ@@
   port: 41632
   server: 112.213.102.188
   type: ss
-- cipher: none
-  name: 📍 SS-07
-  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: woshinidie-et3.pages.dev
-    mode: websocket
-    mux: false
-    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
-    tls: true
-  port: 18081
-  server: 220.124.181.77
+- name: 📍 TROJAN-03
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: 211.76.176.98
+  sni: yazhou10.dynu.net
+  tls: true
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-04
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.186
   type: ss
-  udp: true
-- name: 📍 TROJAN-08
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 89.167.100.106
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 📍 TROJAN-09
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 194.59.5.253
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 📍 TROJAN-10
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 84.19.3.83
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 📍 TROJAN-11
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 8443
-  server: 95.85.245.152
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 📍 TROJAN-12
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 95.81.113.186
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 📍 TROJAN-13
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 91.211.114.208
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-- name: 📍 VLESS-14
+- cipher: aes-256-gcm
+  name: 📍 SS-05
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 141.164.45.187
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-06
+  password: yKVMoB3AwiTEznpnoq2FYR
+  port: 28687
+  server: 193.47.60.186
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-07
+  password: eLPlIVuRZ6UJyapVDeT++l7fYC0uowXJFlb9qhntAd4=
+  port: 37425
+  server: 154.18.239.126
+  type: ss
+- cipher: aes-256-gcm
+  name: 📍 SS-08
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 213.202.208.199
+  type: ss
+- name: 📍 VLESS-09
   server: ger04.myxasecure.space
   port: 443
   type: vless
@@ -162,7 +78,7 @@ proxies:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
     short-id: d67ec5a8fc40ebea
   udp: true
-- name: 📍 SS-15
+- name: 📍 SS-10
   server: 185.216.177.197
   port: 443
   type: ss
@@ -176,7 +92,14 @@ proxies:
     tls: true
     mux: false
   udp: true
-- name: 📍 VMESS-16
+- name: 📍 SS-11
+  server: 5.230.184.171
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Fh0TVw64B57wDPoJ2VLsog
+  udp: true
+- name: 📍 VMESS-12
   server: 82.198.246.214
   port: 180
   type: vmess
@@ -186,7 +109,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 📍 VLESS-17
+- name: 📍 VLESS-13
   server: 194.238.57.104
   port: 443
   type: vless
@@ -200,7 +123,7 @@ proxies:
     public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
     short-id: 5d
   udp: true
-- name: 📍 VLESS-18
+- name: 📍 VLESS-14
   server: 148.253.211.237
   port: 443
   type: vless
@@ -214,7 +137,7 @@ proxies:
     public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
     short-id: bdac121c7debdaba
   udp: true
-- name: 📍 VLESS-19
+- name: 📍 VLESS-15
   server: 89.124.64.249
   port: 443
   type: vless
@@ -228,7 +151,7 @@ proxies:
     public-key: 2cdGHEGP5A3WdXhrCSZEdNtMe80thM6o2mhzre3sMhY
     short-id: 94d59abc6f
   udp: true
-- name: 📍 SS-20
+- name: 📍 SS-16
   server: 222.113.253.35
   port: 14147
   type: ss
@@ -242,7 +165,7 @@ proxies:
     tls: true
     mux: false
   udp: true
-- name: 📍 SS-21
+- name: 📍 SS-17
   server: 218.150.34.228
   port: 10912
   type: ss
@@ -256,7 +179,21 @@ proxies:
     tls: true
     mux: false
   udp: true
-- name: 📍 VLESS-22
+- name: 📍 SS-18
+  server: 220.124.181.77
+  port: 18081
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: 📍 VLESS-19
   server: serv-ne-3.whit3.net
   port: 10444
   type: vless
@@ -270,7 +207,7 @@ proxies:
     public-key: praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4
     short-id: 378086fbdb7c61cd
   udp: true
-- name: 📍 VLESS-23
+- name: 📍 VLESS-20
   server: 87.120.93.69
   port: 443
   type: vless
@@ -283,7 +220,7 @@ proxies:
   reality-opts:
     public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
   udp: true
-- name: 📍 VLESS-24
+- name: 📍 VLESS-21
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -294,7 +231,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: 📍 VLESS-25
+- name: 📍 VLESS-22
   server: 85.234.114.53
   port: 443
   type: vless
@@ -305,7 +242,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: 📍 VLESS-26
+- name: 📍 VLESS-23
   server: 193.163.203.76
   port: 50556
   type: vless
@@ -319,7 +256,7 @@ proxies:
     public-key: tqZ-C6M7YzjR_sJ-V3OgU3tLUAv-KnJ9BQfIYfnVOHo
     short-id: 23a3dee422d0cd1c
   udp: true
-- name: 📍 VLESS-27
+- name: 📍 VLESS-24
   server: 193.163.203.76
   port: 50573
   type: vless
@@ -333,7 +270,7 @@ proxies:
     public-key: NcouT_UbeS3uAcbckd8QXzoTFpiFdlglgHOnhwy76Cg
     short-id: 7b873acc934a727d
   udp: true
-- name: 📍 VLESS-28
+- name: 📍 VLESS-25
   server: 193.163.203.76
   port: 50592
   type: vless
@@ -347,7 +284,7 @@ proxies:
     public-key: kATzSBDyNkm6Ee7p8Ad8iPD5CrJmkJ5n1T-l-LCRmXQ
     short-id: b7ca855a4763a7ac
   udp: true
-- name: 📍 VLESS-29
+- name: 📍 VLESS-26
   server: 193.163.203.76
   port: 50547
   type: vless
@@ -361,7 +298,7 @@ proxies:
     public-key: ZAqXfcXRYWRBjEYJQInYWkFSKTSbd7NXg66D7MUZ2wg
     short-id: 03d0fa9716a73af2
   udp: true
-- name: 📍 SS-30
+- name: 📍 SS-27
   server: 18.143.76.130
   port: 443
   type: ss
@@ -375,7 +312,7 @@ proxies:
     tls: true
     mux: false
   udp: true
-- name: 📍 VMESS-31
+- name: 📍 VMESS-28
   server: 103.127.243.54
   port: 53229
   type: vmess
@@ -390,14 +327,14 @@ proxies:
     path:
     - /ABCDE
   udp: true
-- name: 📍 SS-32
-  server: r3mrcg0011499tl.cybervena.com
-  port: 50099
+- name: 📍 SS-29
+  server: 185.207.136.67
+  port: 443
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+  password: qTa6L03BFhHoyA3psL9xpV
   udp: true
-- name: 📍 VLESS-33
+- name: 📍 VLESS-30
   server: 144.31.30.131
   port: 8443
   type: vless
@@ -410,14 +347,14 @@ proxies:
     public-key: -5-QemzFc7ddcsXFtVEn1ciZmhkdxjnBPmhnqYPJEzM
     short-id: 18730e64df45
   udp: true
-- name: 📍 SS-34
+- name: 📍 SS-31
   server: 13.218.172.80
   port: 443
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
   udp: true
-- name: 📍 SS-35
+- name: 📍 SS-32
   server: 100.27.193.207
   port: 443
   type: ss
@@ -442,39 +379,36 @@ proxy-groups:
   proxies:
   - 📍 SS-01
   - 📍 SS-02
-  - 📍 SS-03
+  - 📍 TROJAN-03
   - 📍 SS-04
-  - 📍 TROJAN-05
+  - 📍 SS-05
   - 📍 SS-06
   - 📍 SS-07
-  - 📍 TROJAN-08
-  - 📍 TROJAN-09
-  - 📍 TROJAN-10
-  - 📍 TROJAN-11
-  - 📍 TROJAN-12
-  - 📍 TROJAN-13
+  - 📍 SS-08
+  - 📍 VLESS-09
+  - 📍 SS-10
+  - 📍 SS-11
+  - 📍 VMESS-12
+  - 📍 VLESS-13
   - 📍 VLESS-14
-  - 📍 SS-15
-  - 📍 VMESS-16
-  - 📍 VLESS-17
-  - 📍 VLESS-18
+  - 📍 VLESS-15
+  - 📍 SS-16
+  - 📍 SS-17
+  - 📍 SS-18
   - 📍 VLESS-19
-  - 📍 SS-20
-  - 📍 SS-21
+  - 📍 VLESS-20
+  - 📍 VLESS-21
   - 📍 VLESS-22
   - 📍 VLESS-23
   - 📍 VLESS-24
   - 📍 VLESS-25
   - 📍 VLESS-26
-  - 📍 VLESS-27
-  - 📍 VLESS-28
-  - 📍 VLESS-29
-  - 📍 SS-30
-  - 📍 VMESS-31
+  - 📍 SS-27
+  - 📍 VMESS-28
+  - 📍 SS-29
+  - 📍 VLESS-30
+  - 📍 SS-31
   - 📍 SS-32
-  - 📍 VLESS-33
-  - 📍 SS-34
-  - 📍 SS-35
 - name: 🌍 全球直连
   type: select
   proxies:
@@ -485,48 +419,45 @@ proxy-groups:
   proxies:
   - 📍 SS-01
   - 📍 SS-02
-  - 📍 SS-03
   - 📍 SS-04
+  - 📍 SS-05
   - 📍 SS-06
   - 📍 SS-07
-  - 📍 SS-15
-  - 📍 SS-20
-  - 📍 SS-21
-  - 📍 SS-30
+  - 📍 SS-08
+  - 📍 SS-10
+  - 📍 SS-11
+  - 📍 SS-16
+  - 📍 SS-17
+  - 📍 SS-18
+  - 📍 SS-27
+  - 📍 SS-29
+  - 📍 SS-31
   - 📍 SS-32
-  - 📍 SS-34
-  - 📍 SS-35
 - name: 🛸 VMess 节点池
   type: select
   proxies:
-  - 📍 VMESS-16
-  - 📍 VMESS-31
+  - 📍 VMESS-12
+  - 📍 VMESS-28
 - name: ⚡ VLESS 节点池
   type: select
   proxies:
+  - 📍 VLESS-09
+  - 📍 VLESS-13
   - 📍 VLESS-14
-  - 📍 VLESS-17
-  - 📍 VLESS-18
+  - 📍 VLESS-15
   - 📍 VLESS-19
+  - 📍 VLESS-20
+  - 📍 VLESS-21
   - 📍 VLESS-22
   - 📍 VLESS-23
   - 📍 VLESS-24
   - 📍 VLESS-25
   - 📍 VLESS-26
-  - 📍 VLESS-27
-  - 📍 VLESS-28
-  - 📍 VLESS-29
-  - 📍 VLESS-33
+  - 📍 VLESS-30
 - name: 🐴 Trojan 节点池
   type: select
   proxies:
-  - 📍 TROJAN-05
-  - 📍 TROJAN-08
-  - 📍 TROJAN-09
-  - 📍 TROJAN-10
-  - 📍 TROJAN-11
-  - 📍 TROJAN-12
-  - 📍 TROJAN-13
+  - 📍 TROJAN-03
 - name: 📹 YouTube
   type: select
   proxies:
@@ -561,4 +492,4 @@ rules:
 - DOMAIN-SUFFIX,t.me,📱 Telegram
 - DOMAIN-SUFFIX,cn,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,🚀 选择节点
+- MATCH,🚀 节点选择
