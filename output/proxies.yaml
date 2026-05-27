@@ -9,6 +9,7 @@ proxies:
   name: 📍 SS-02
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
+<<<<<<< Updated upstream
   server: r3mrcg0011499tl.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -18,9 +19,20 @@ proxies:
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg007117fb8.cybervena.com
+=======
+  server: r3mrcg007117fb8.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
+  name: 📍 SS-03
+  password: qTa6L03BFhHoyA3psL9xpV
+  port: 443
+  server: 185.207.136.67
+>>>>>>> Stashed changes
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 📍 SS-04
+<<<<<<< Updated upstream
   password: qTa6L03BFhHoyA3psL9xpV
   port: 443
   server: 185.207.136.67
@@ -82,6 +94,14 @@ proxies:
   udp: true
 - name: 📍 TROJAN-06
 >>>>>>> Stashed changes
+=======
+  password: Fh0TVw64B57wDPoJ2VLsog
+  port: 443
+  server: 5.230.184.171
+  type: ss
+  udp: true
+- name: 📍 TROJAN-05
+>>>>>>> Stashed changes
   network: ws
   password: 433e785b-2077-47f7-a43d-985f63dd18d1
   port: 18080
@@ -94,12 +114,16 @@ proxies:
 - cipher: aes-256-cfb
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 SS-08
 =======
   name: 📍 SS-07
 >>>>>>> Stashed changes
 =======
   name: 📍 SS-07
+>>>>>>> Stashed changes
+=======
+  name: 📍 SS-06
 >>>>>>> Stashed changes
   password: qwerREWQ@@
   port: 41632
@@ -108,12 +132,16 @@ proxies:
 - cipher: none
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 SS-09
 =======
   name: 📍 SS-08
 >>>>>>> Stashed changes
 =======
   name: 📍 SS-08
+>>>>>>> Stashed changes
+=======
+  name: 📍 SS-07
 >>>>>>> Stashed changes
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
@@ -129,12 +157,16 @@ proxies:
   udp: true
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 TROJAN-10
 =======
 - name: 📍 TROJAN-09
 >>>>>>> Stashed changes
 =======
 - name: 📍 TROJAN-09
+>>>>>>> Stashed changes
+=======
+- name: 📍 TROJAN-08
 >>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -150,12 +182,16 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 TROJAN-11
 =======
 - name: 📍 TROJAN-10
 >>>>>>> Stashed changes
 =======
 - name: 📍 TROJAN-10
+>>>>>>> Stashed changes
+=======
+- name: 📍 TROJAN-09
 >>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -171,12 +207,16 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 TROJAN-12
 =======
 - name: 📍 TROJAN-11
 >>>>>>> Stashed changes
 =======
 - name: 📍 TROJAN-11
+>>>>>>> Stashed changes
+=======
+- name: 📍 TROJAN-10
 >>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -191,12 +231,16 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 TROJAN-13
 =======
 - name: 📍 TROJAN-12
 >>>>>>> Stashed changes
 =======
 - name: 📍 TROJAN-12
+>>>>>>> Stashed changes
+=======
+- name: 📍 TROJAN-11
 >>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -212,12 +256,16 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 TROJAN-14
 =======
 - name: 📍 TROJAN-13
 >>>>>>> Stashed changes
 =======
 - name: 📍 TROJAN-13
+>>>>>>> Stashed changes
+=======
+- name: 📍 TROJAN-12
 >>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -233,12 +281,16 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 TROJAN-15
 =======
 - name: 📍 TROJAN-14
 >>>>>>> Stashed changes
 =======
 - name: 📍 TROJAN-14
+>>>>>>> Stashed changes
+=======
+- name: 📍 TROJAN-13
 >>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -254,12 +306,16 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 TROJAN-16
 =======
 - name: 📍 TROJAN-15
 >>>>>>> Stashed changes
 =======
 - name: 📍 TROJAN-15
+>>>>>>> Stashed changes
+=======
+- name: 📍 TROJAN-14
 >>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
@@ -277,12 +333,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-17
 =======
   name: 📍 VLESS-16
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-16
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-15
 >>>>>>> Stashed changes
   port: 443
   reality-opts:
@@ -297,12 +357,16 @@ proxies:
   uuid: 5381a1bb-479a-412a-9d99-08ccbc008828
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 HTTP-18
 =======
 - name: 📍 HTTP-17
 >>>>>>> Stashed changes
 =======
 - name: 📍 HTTP-17
+>>>>>>> Stashed changes
+=======
+- name: 📍 HTTP-16
 >>>>>>> Stashed changes
   password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
   port: 31233
@@ -313,12 +377,16 @@ proxies:
   username: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 HTTP-19
 =======
 - name: 📍 HTTP-18
 >>>>>>> Stashed changes
 =======
 - name: 📍 HTTP-18
+>>>>>>> Stashed changes
+=======
+- name: 📍 HTTP-17
 >>>>>>> Stashed changes
   password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
   port: 32233
@@ -330,12 +398,16 @@ proxies:
 - cipher: none
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 SS-20
 =======
   name: 📍 SS-19
 >>>>>>> Stashed changes
 =======
   name: 📍 SS-19
+>>>>>>> Stashed changes
+=======
+  name: 📍 SS-18
 >>>>>>> Stashed changes
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
@@ -353,12 +425,16 @@ proxies:
   cipher: aes-128-gcm
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VMESS-21
 =======
   name: 📍 VMESS-20
 >>>>>>> Stashed changes
 =======
   name: 📍 VMESS-20
+>>>>>>> Stashed changes
+=======
+  name: 📍 VMESS-19
 >>>>>>> Stashed changes
   port: 180
   server: 82.198.246.214
@@ -371,12 +447,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-22
 =======
   name: 📍 VLESS-21
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-21
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-20
 >>>>>>> Stashed changes
   port: 443
   reality-opts:
@@ -393,12 +473,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-23
 =======
   name: 📍 VLESS-22
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-22
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-21
 >>>>>>> Stashed changes
   port: 443
   reality-opts:
@@ -415,12 +499,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-24
 =======
   name: 📍 VLESS-23
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-23
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-22
 >>>>>>> Stashed changes
   port: 443
   reality-opts:
@@ -435,12 +523,16 @@ proxies:
   uuid: 530c8050-f4c1-4050-940b-5688e09c7c68
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 HTTP-25
 =======
 - name: 📍 HTTP-24
 >>>>>>> Stashed changes
 =======
 - name: 📍 HTTP-24
+>>>>>>> Stashed changes
+=======
+- name: 📍 HTTP-23
 >>>>>>> Stashed changes
   password: test.+
   port: 30446
@@ -453,12 +545,16 @@ proxies:
 - cipher: none
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 SS-26
 =======
   name: 📍 SS-25
 >>>>>>> Stashed changes
 =======
   name: 📍 SS-25
+>>>>>>> Stashed changes
+=======
+  name: 📍 SS-24
 >>>>>>> Stashed changes
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
@@ -475,12 +571,16 @@ proxies:
 - cipher: none
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 SS-27
 =======
   name: 📍 SS-26
 >>>>>>> Stashed changes
 =======
   name: 📍 SS-26
+>>>>>>> Stashed changes
+=======
+  name: 📍 SS-25
 >>>>>>> Stashed changes
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
@@ -498,12 +598,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-28
 =======
   name: 📍 VLESS-27
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-27
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-26
 >>>>>>> Stashed changes
   port: 10444
   reality-opts:
@@ -518,12 +622,16 @@ proxies:
   uuid: 49f3fec2-1a21-481e-ae65-7c32ae262582
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 - name: 📍 HTTP-29
 =======
 - name: 📍 HTTP-28
 >>>>>>> Stashed changes
 =======
 - name: 📍 HTTP-28
+>>>>>>> Stashed changes
+=======
+- name: 📍 HTTP-27
 >>>>>>> Stashed changes
   port: 9002
   server: 84.239.14.158
@@ -535,12 +643,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-30
 =======
   name: 📍 VLESS-29
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-29
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-28
 >>>>>>> Stashed changes
   port: 443
   reality-opts:
@@ -556,12 +668,16 @@ proxies:
   flow: xtls-rprx-vision-udp443
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-31
 =======
   name: 📍 VLESS-30
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-30
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-29
 >>>>>>> Stashed changes
   port: 22231
   server: r1.mizulina.top
@@ -575,12 +691,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-32
 =======
   name: 📍 VLESS-31
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-31
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-30
 >>>>>>> Stashed changes
   port: 443
   server: 85.234.114.53
@@ -594,12 +714,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-33
 =======
   name: 📍 VLESS-32
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-32
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-31
 >>>>>>> Stashed changes
   port: 50556
   reality-opts:
@@ -616,12 +740,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-34
 =======
   name: 📍 VLESS-33
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-33
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-32
 >>>>>>> Stashed changes
   port: 50573
   reality-opts:
@@ -638,12 +766,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-35
 =======
   name: 📍 VLESS-34
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-34
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-33
 >>>>>>> Stashed changes
   port: 50592
   reality-opts:
@@ -660,12 +792,16 @@ proxies:
   flow: xtls-rprx-vision
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VLESS-36
 =======
   name: 📍 VLESS-35
 >>>>>>> Stashed changes
 =======
   name: 📍 VLESS-35
+>>>>>>> Stashed changes
+=======
+  name: 📍 VLESS-34
 >>>>>>> Stashed changes
   port: 50547
   reality-opts:
@@ -681,12 +817,16 @@ proxies:
 - cipher: none
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 SS-37
 =======
   name: 📍 SS-36
 >>>>>>> Stashed changes
 =======
   name: 📍 SS-36
+>>>>>>> Stashed changes
+=======
+  name: 📍 SS-35
 >>>>>>> Stashed changes
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
@@ -708,12 +848,16 @@ proxies:
     - /ABCDE
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 VMESS-38
 =======
   name: 📍 VMESS-37
 >>>>>>> Stashed changes
 =======
   name: 📍 VMESS-37
+>>>>>>> Stashed changes
+=======
+  name: 📍 VMESS-36
 >>>>>>> Stashed changes
   network: http
   port: 53229
@@ -723,6 +867,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
+<<<<<<< Updated upstream
 - cipher: chacha20-ietf-poly1305
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
@@ -748,6 +893,10 @@ proxies:
 =======
   name: 📍 VLESS-39
 >>>>>>> Stashed changes
+=======
+- client-fingerprint: chrome
+  name: 📍 VLESS-37
+>>>>>>> Stashed changes
   port: 8443
   reality-opts:
     public-key: -5-QemzFc7ddcsXFtVEn1ciZmhkdxjnBPmhnqYPJEzM
@@ -762,12 +911,16 @@ proxies:
 - cipher: aes-256-cfb
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 SS-41
 =======
   name: 📍 SS-40
 >>>>>>> Stashed changes
 =======
   name: 📍 SS-40
+>>>>>>> Stashed changes
+=======
+  name: 📍 SS-38
 >>>>>>> Stashed changes
   password: amazonskr05
   port: 443
@@ -777,12 +930,16 @@ proxies:
 - cipher: aes-256-cfb
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   name: 📍 SS-42
 =======
   name: 📍 SS-41
 >>>>>>> Stashed changes
 =======
   name: 📍 SS-41
+>>>>>>> Stashed changes
+=======
+  name: 📍 SS-39
 >>>>>>> Stashed changes
   password: amazonskr05
   port: 443
