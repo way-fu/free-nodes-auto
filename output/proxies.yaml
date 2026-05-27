@@ -1,107 +1,31 @@
 proxies:
-- name: 📍 SOCKS5-01
-  port: 1090
-  server: 121.169.46.116
-  tls: false
-  type: socks5
-  username: T2clM0QlM0Q6
 - cipher: chacha20-ietf-poly1305
-  name: 📍 SS-02
+  name: 📍 SS-01
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
-<<<<<<< Updated upstream
   server: r3mrcg0011499tl.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 📍 SS-03
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg007117fb8.cybervena.com
-=======
-  server: r3mrcg007117fb8.cybervena.com
+  name: 📍 SS-02
+  password: qTa6L03BFhHoyA3psL9xpV
+  port: 443
+  server: 185.207.136.67
   type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-03
-  password: qTa6L03BFhHoyA3psL9xpV
-  port: 443
-  server: 185.207.136.67
->>>>>>> Stashed changes
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-04
-<<<<<<< Updated upstream
-  password: qTa6L03BFhHoyA3psL9xpV
-  port: 443
-  server: 185.207.136.67
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-05
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: nbmrcg0034686rw.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 📍 SS-06
-  password: Fh0TVw64B57wDPoJ2VLsog
-  port: 443
-  server: 5.230.184.171
-  type: ss
-  udp: true
-- name: 📍 TROJAN-07
-=======
-  password: qTa6L03BFhHoyA3psL9xpV
-  port: 443
-  server: 185.207.136.67
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 📍 SS-04
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: nbmrcg0034686rw.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-05
-  password: Fh0TVw64B57wDPoJ2VLsog
-  port: 443
-  server: 5.230.184.171
-  type: ss
-  udp: true
-- name: 📍 TROJAN-06
->>>>>>> Stashed changes
-=======
-  password: qTa6L03BFhHoyA3psL9xpV
-  port: 443
-  server: 185.207.136.67
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-04
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: nbmrcg0034686rw.cybervena.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-05
-  password: Fh0TVw64B57wDPoJ2VLsog
-  port: 443
-  server: 5.230.184.171
-  type: ss
-  udp: true
-- name: 📍 TROJAN-06
->>>>>>> Stashed changes
-=======
   password: Fh0TVw64B57wDPoJ2VLsog
   port: 443
   server: 5.230.184.171
   type: ss
   udp: true
 - name: 📍 TROJAN-05
->>>>>>> Stashed changes
   network: ws
   password: 433e785b-2077-47f7-a43d-985f63dd18d1
   port: 18080
@@ -112,37 +36,13 @@ proxies:
   ws-opts:
     path: /trojan
 - cipher: aes-256-cfb
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-08
-=======
-  name: 📍 SS-07
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-07
->>>>>>> Stashed changes
-=======
   name: 📍 SS-06
->>>>>>> Stashed changes
   password: qwerREWQ@@
   port: 41632
   server: 112.213.102.188
   type: ss
 - cipher: none
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-09
-=======
-  name: 📍 SS-08
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-08
->>>>>>> Stashed changes
-=======
   name: 📍 SS-07
->>>>>>> Stashed changes
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
   plugin-opts:
@@ -155,19 +55,7 @@ proxies:
   server: 220.124.181.77
   type: ss
   udp: true
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 TROJAN-10
-=======
-- name: 📍 TROJAN-09
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-09
->>>>>>> Stashed changes
-=======
 - name: 📍 TROJAN-08
->>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -180,44 +68,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 TROJAN-11
-=======
-- name: 📍 TROJAN-10
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-10
->>>>>>> Stashed changes
-=======
 - name: 📍 TROJAN-09
->>>>>>> Stashed changes
-  network: ws
-  password: 8r<[9'l6hAO#8ZQi
-  port: 443
-  server: 64.188.93.200
-  skip-cert-verify: true
-  sni: Koma-YT.PAGeS.Dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: Koma-YT.PAGeS.Dev
-    path: /trTelegram🇨🇳 @WangCai2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 TROJAN-12
-=======
-- name: 📍 TROJAN-11
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-11
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-10
->>>>>>> Stashed changes
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -229,19 +80,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 TROJAN-13
-=======
-- name: 📍 TROJAN-12
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-12
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-11
->>>>>>> Stashed changes
+- name: 📍 TROJAN-10
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -254,19 +93,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 TROJAN-14
-=======
-- name: 📍 TROJAN-13
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-13
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-12
->>>>>>> Stashed changes
+- name: 📍 TROJAN-11
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 8443
@@ -279,19 +106,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 TROJAN-15
-=======
-- name: 📍 TROJAN-14
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-14
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-13
->>>>>>> Stashed changes
+- name: 📍 TROJAN-12
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -304,19 +119,7 @@ proxies:
     headers:
       Host: Koma-YT.PAGeS.Dev
     path: /trTelegram🇨🇳 @WangCai2
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 TROJAN-16
-=======
-- name: 📍 TROJAN-15
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-15
->>>>>>> Stashed changes
-=======
-- name: 📍 TROJAN-14
->>>>>>> Stashed changes
+- name: 📍 TROJAN-13
   network: ws
   password: 8r<[9'l6hAO#8ZQi
   port: 443
@@ -331,19 +134,7 @@ proxies:
     path: /trTelegram🇨🇳 @WangCai2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-17
-=======
-  name: 📍 VLESS-16
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-16
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-15
->>>>>>> Stashed changes
+  name: 📍 VLESS-14
   port: 443
   reality-opts:
     public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
@@ -355,60 +146,8 @@ proxies:
   type: vless
   udp: true
   uuid: 5381a1bb-479a-412a-9d99-08ccbc008828
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 HTTP-18
-=======
-- name: 📍 HTTP-17
->>>>>>> Stashed changes
-=======
-- name: 📍 HTTP-17
->>>>>>> Stashed changes
-=======
-- name: 📍 HTTP-16
->>>>>>> Stashed changes
-  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-  port: 31233
-  server: d6c86ce5-t9zts0-tfi5fd-1imi4.my.oshuawei.com
-  tls: true
-  type: http
-  udp: true
-  username: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 HTTP-19
-=======
-- name: 📍 HTTP-18
->>>>>>> Stashed changes
-=======
-- name: 📍 HTTP-18
->>>>>>> Stashed changes
-=======
-- name: 📍 HTTP-17
->>>>>>> Stashed changes
-  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
-  port: 32233
-  server: 3d6a7222-t9zts0-tfi5fd-1imi4.id.oshuawei.com
-  tls: true
-  type: http
-  udp: true
-  username: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
 - cipher: none
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-20
-=======
-  name: 📍 SS-19
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-19
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-18
->>>>>>> Stashed changes
+  name: 📍 SS-15
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
   plugin-opts:
@@ -423,19 +162,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: aes-128-gcm
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VMESS-21
-=======
-  name: 📍 VMESS-20
->>>>>>> Stashed changes
-=======
-  name: 📍 VMESS-20
->>>>>>> Stashed changes
-=======
-  name: 📍 VMESS-19
->>>>>>> Stashed changes
+  name: 📍 VMESS-16
   port: 180
   server: 82.198.246.214
   skip-cert-verify: false
@@ -445,19 +172,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-22
-=======
-  name: 📍 VLESS-21
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-21
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-20
->>>>>>> Stashed changes
+  name: 📍 VLESS-17
   port: 443
   reality-opts:
     public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
@@ -471,19 +186,7 @@ proxies:
   uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-23
-=======
-  name: 📍 VLESS-22
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-22
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-21
->>>>>>> Stashed changes
+  name: 📍 VLESS-18
   port: 443
   reality-opts:
     public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
@@ -497,19 +200,7 @@ proxies:
   uuid: 980231fb-4372-5c81-b696-20aa34d33af0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-24
-=======
-  name: 📍 VLESS-23
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-23
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-22
->>>>>>> Stashed changes
+  name: 📍 VLESS-19
   port: 443
   reality-opts:
     public-key: 2cdGHEGP5A3WdXhrCSZEdNtMe80thM6o2mhzre3sMhY
@@ -521,41 +212,8 @@ proxies:
   type: vless
   udp: true
   uuid: 530c8050-f4c1-4050-940b-5688e09c7c68
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 HTTP-25
-=======
-- name: 📍 HTTP-24
->>>>>>> Stashed changes
-=======
-- name: 📍 HTTP-24
->>>>>>> Stashed changes
-=======
-- name: 📍 HTTP-23
->>>>>>> Stashed changes
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
 - cipher: none
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-26
-=======
-  name: 📍 SS-25
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-25
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-24
->>>>>>> Stashed changes
+  name: 📍 SS-20
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
   plugin-opts:
@@ -569,19 +227,7 @@ proxies:
   type: ss
   udp: true
 - cipher: none
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-27
-=======
-  name: 📍 SS-26
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-26
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-25
->>>>>>> Stashed changes
+  name: 📍 SS-21
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
   plugin-opts:
@@ -596,19 +242,7 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-28
-=======
-  name: 📍 VLESS-27
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-27
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-26
->>>>>>> Stashed changes
+  name: 📍 VLESS-22
   port: 10444
   reality-opts:
     public-key: praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4
@@ -620,40 +254,9 @@ proxies:
   type: vless
   udp: true
   uuid: 49f3fec2-1a21-481e-ae65-7c32ae262582
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- name: 📍 HTTP-29
-=======
-- name: 📍 HTTP-28
->>>>>>> Stashed changes
-=======
-- name: 📍 HTTP-28
->>>>>>> Stashed changes
-=======
-- name: 📍 HTTP-27
->>>>>>> Stashed changes
-  port: 9002
-  server: 84.239.14.158
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-30
-=======
-  name: 📍 VLESS-29
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-29
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-28
->>>>>>> Stashed changes
+  name: 📍 VLESS-23
   port: 443
   reality-opts:
     public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
@@ -666,19 +269,7 @@ proxies:
   uuid: 2001daf3-5c56-4bef-8ea6-8dd0493c5a4c
 - client-fingerprint: edge
   flow: xtls-rprx-vision-udp443
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-31
-=======
-  name: 📍 VLESS-30
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-30
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-29
->>>>>>> Stashed changes
+  name: 📍 VLESS-24
   port: 22231
   server: r1.mizulina.top
   servername: r1.mizulina.top
@@ -689,19 +280,7 @@ proxies:
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-32
-=======
-  name: 📍 VLESS-31
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-31
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-30
->>>>>>> Stashed changes
+  name: 📍 VLESS-25
   port: 443
   server: 85.234.114.53
   servername: r1.mizulina.top
@@ -712,19 +291,7 @@ proxies:
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-33
-=======
-  name: 📍 VLESS-32
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-32
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-31
->>>>>>> Stashed changes
+  name: 📍 VLESS-26
   port: 50556
   reality-opts:
     public-key: tqZ-C6M7YzjR_sJ-V3OgU3tLUAv-KnJ9BQfIYfnVOHo
@@ -738,19 +305,7 @@ proxies:
   uuid: 44fcf3b7-7baf-4b73-9f50-9f47967f7b29
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-34
-=======
-  name: 📍 VLESS-33
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-33
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-32
->>>>>>> Stashed changes
+  name: 📍 VLESS-27
   port: 50573
   reality-opts:
     public-key: NcouT_UbeS3uAcbckd8QXzoTFpiFdlglgHOnhwy76Cg
@@ -764,19 +319,7 @@ proxies:
   uuid: d18a0f18-d5bd-43c1-bc08-e208473f30d8
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-35
-=======
-  name: 📍 VLESS-34
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-34
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-33
->>>>>>> Stashed changes
+  name: 📍 VLESS-28
   port: 50592
   reality-opts:
     public-key: kATzSBDyNkm6Ee7p8Ad8iPD5CrJmkJ5n1T-l-LCRmXQ
@@ -790,19 +333,7 @@ proxies:
   uuid: 439f353b-b52f-4355-93d8-26e0567d5308
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-36
-=======
-  name: 📍 VLESS-35
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-35
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-34
->>>>>>> Stashed changes
+  name: 📍 VLESS-29
   port: 50547
   reality-opts:
     public-key: ZAqXfcXRYWRBjEYJQInYWkFSKTSbd7NXg66D7MUZ2wg
@@ -815,19 +346,7 @@ proxies:
   udp: true
   uuid: c5563e04-daff-4fea-a8ce-8741ad0bc2cf
 - cipher: none
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-37
-=======
-  name: 📍 SS-36
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-36
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-35
->>>>>>> Stashed changes
+  name: 📍 SS-30
   password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
   plugin: v2ray-plugin
   plugin-opts:
@@ -846,19 +365,7 @@ proxies:
     method: GET
     path:
     - /ABCDE
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VMESS-38
-=======
-  name: 📍 VMESS-37
->>>>>>> Stashed changes
-=======
-  name: 📍 VMESS-37
->>>>>>> Stashed changes
-=======
-  name: 📍 VMESS-36
->>>>>>> Stashed changes
+  name: 📍 VMESS-31
   network: http
   port: 53229
   server: 103.127.243.54
@@ -867,36 +374,15 @@ proxies:
   type: vmess
   udp: true
   uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
-<<<<<<< Updated upstream
 - cipher: chacha20-ietf-poly1305
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-39
-=======
-  name: 📍 SS-38
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-38
->>>>>>> Stashed changes
+  name: 📍 SS-32
   password: a9a0d092-6f0e-4701-81ee-454643d6d506
   port: 50099
   server: r3mrcg0011499tl.cybervena.com
   type: ss
   udp: true
 - client-fingerprint: chrome
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 VLESS-40
-=======
-  name: 📍 VLESS-39
->>>>>>> Stashed changes
-=======
-  name: 📍 VLESS-39
->>>>>>> Stashed changes
-=======
-- client-fingerprint: chrome
-  name: 📍 VLESS-37
->>>>>>> Stashed changes
+  name: 📍 VLESS-33
   port: 8443
   reality-opts:
     public-key: -5-QemzFc7ddcsXFtVEn1ciZmhkdxjnBPmhnqYPJEzM
@@ -909,38 +395,14 @@ proxies:
   udp: true
   uuid: 301a4309-0f4d-42bf-a057-7d60c7a73259
 - cipher: aes-256-cfb
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-41
-=======
-  name: 📍 SS-40
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-40
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-38
->>>>>>> Stashed changes
+  name: 📍 SS-34
   password: amazonskr05
   port: 443
   server: 13.218.172.80
   type: ss
   udp: true
 - cipher: aes-256-cfb
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  name: 📍 SS-42
-=======
-  name: 📍 SS-41
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-41
->>>>>>> Stashed changes
-=======
-  name: 📍 SS-39
->>>>>>> Stashed changes
+  name: 📍 SS-35
   password: amazonskr05
   port: 443
   server: 100.27.193.207
