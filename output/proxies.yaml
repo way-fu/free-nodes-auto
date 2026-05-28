@@ -1,218 +1,166 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-01
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  port: 443
-  server: tinkered-pennies-puppies.freesocks.work
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-02
-  password: AQGAAMQLZoxMT4EUxNPuFwKImsAviZTHTEMmHFlRrDKJpMnS
-  port: 31348
-  server: 89.185.84.34
-  type: ss
-- cipher: aes-256-cfb
-  name: 📍 SS-03
-  password: amazonskr05
-  port: 443
-  server: 35.183.96.211
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-04
   password: XUMTygEM1jVYIvysXKqA5T
   port: 443
   server: hackney-latest-strike.freesocks.work
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 📍 SS-05
+  name: 📍 SS-02
   password: gqkUCvmeOTghYJXF1YIuk5
   port: 443
   server: 71.19.148.74
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-06
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg007117fb8.cybervena.com
-  type: ss
 - cipher: aes-256-cfb
-  name: 📍 SS-07
-  password: amazonskr05
-  port: 443
-  server: 35.183.129.131
-  type: ss
-- cipher: aes-256-cfb
-  name: 📍 SS-08
+  name: 📍 SS-03
   password: amazonskr05
   port: 443
   server: 13.218.172.80
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-09
-  password: hfSE3thwAQqvSIac5xLpUD
-  port: 53292
-  server: 45.83.130.97
-  type: ss
-  udp: true
-- name: 📍 TROJAN-10
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: 211.76.176.98
-  sni: yazhou10.dynu.net
-  tls: true
-  type: trojan
 - cipher: aes-256-cfb
-  name: 📍 SS-11
+  name: 📍 SS-04
   password: amazonskr05
   port: 443
   server: 15.157.68.13
   type: ss
-- name: 📍 TROJAN-12
+- cipher: aes-256-cfb
+  name: 📍 SS-05
+  password: amazonskr05
+  port: 443
+  server: 35.183.129.131
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 📍 SS-06
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: 📍 TROJAN-07
   password: gcuCpQfaiVeDBdWG
   port: 19128
   server: jpbgp.netvigor.cc
+  skip-cert-verify: true
   sni: yazhou10.dynu.net
   tls: true
   type: trojan
-- name: 📍 TROJAN-13
-  password: d30ab83dbde4480082048fb315bedebd
-  port: 443
-  server: 5.180.78.22
+  udp: true
+- alterId: 0
+  name: 📍 TROJAN-08
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: 211.76.176.98
   skip-cert-verify: true
-  sni: 5.180.78.22
+  sni: yazhou10.dynu.net
   tls: true
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-09
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.149
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-10
+  password: W74XFALLLuw6m5IA
+  port: 443
+  server: series-a1.samanehha.co
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 📍 SS-11
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+- cipher: aes-256-cfb
+  name: 📍 SS-12
+  password: amazonskr05
+  port: 443
+  server: 35.183.96.211
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-13
+  password: mzeMYBJYp4Bo7nA1qYLvv7QG73igtAA85nt4pr8A9ntx2qhDfYgRtiJ7iH7VrcneQKNmtvpbsvvFKPaUATYELi18iH56Ttr4
+  port: 56594
+  server: download.riferoser.icu
+  type: ss
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
   name: 📍 VLESS-14
   port: 8443
   reality-opts:
-    public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
-    short-id: 478dc6
-  server: 178.215.238.148
-  servername: eh.vk.com
+    public-key: A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM
+    short-id: 92d0c4089b6c1da3
+  server: 95.85.228.146
+  servername: io.ozone.ru
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-15
+  uuid: a67e3045-626c-42c9-8cc0-a5afa6b18b05
+- cipher: aes-256-cfb
+  name: 📍 SS-15
+  password: amazonskr05
   port: 443
-  reality-opts:
-    public-key: NPt7NbrWjFl5Uq8xIuolxDDJFTzj5x5jwmiSTRPuuD8
-  server: ddfs.ummapeople.online
-  servername: ddfs.ummapeople.online
-  skip-cert-verify: false
-  tls: true
-  type: vless
+  server: 18.195.213.130
+  type: ss
   udp: true
-  uuid: ac195240-6005-412b-9829-1e56e5d5c52a
 - cipher: aes-256-cfb
   name: 📍 SS-16
   password: amazonskr05
   port: 443
-  server: 15.222.60.36
+  server: 3.71.109.196
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 📍 VMESS-17
-  port: 9002
-  server: world.t.51guangtaobao.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: aes-256-cfb
+  name: 📍 SS-17
+  password: S7KwUu7yBy58S3Ga
+  port: 9042
+  server: 5.188.181.201
+  type: ss
   udp: true
-  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-- alterId: 0
-  cipher: auto
-  name: 📍 VMESS-18
-  port: 6012
-  server: world.t.51guangtaobao.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-18
+  port: 443
+  reality-opts:
+    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
+    short-id: bdac121c7debdaba
+  server: swe-8t.freeonline.pro
+  servername: www.microsoft.com
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  tls: true
+  type: vless
   udp: true
-  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
 - alterId: 0
   cipher: auto
   name: 📍 VMESS-19
-  port: 2504
-  server: world.t.51guangtaobao.com
+  port: 180
+  server: 82.198.246.250
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
   name: 📍 VMESS-20
-  port: 9020
-  server: world.t.51guangtaobao.com
+  port: 180
+  server: 82.198.246.214
   skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-- alterId: 0
-  cipher: auto
-  name: 📍 VMESS-21
-  port: 6009
-  server: world.t.51guangtaobao.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-22
-  port: 25642
-  reality-opts:
-    public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
-    short-id: 693b25e06841ac7f
-  server: cdn.jp2.cocoduck.org
-  servername: www.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4dd69f91-190c-413d-88c7-2f1675a98d85
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-23
-  port: 45072
-  reality-opts:
-    public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
-    short-id: 693b25e06841ac7f
-  server: cdn.ph1.cocoduck.org
-  servername: www.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4dd69f91-190c-413d-88c7-2f1675a98d85
-- cipher: aes-256-cfb
-  name: 📍 SS-24
-  password: amazonskr05
-  port: 443
-  server: 18.195.95.15
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  name: 📍 VLESS-25
-  port: 8443
-  server: cdg-1.fromblancwithlove.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: aes-128-gcm
-  name: 📍 VMESS-26
+  name: 📍 VMESS-21
   port: 180
   server: 82.198.246.37
   skip-cert-verify: false
@@ -220,44 +168,23 @@ proxies:
   type: vmess
   udp: true
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: random
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 📍 VLESS-27
+  name: 📍 VLESS-22
   port: 443
   reality-opts:
-    public-key: MBkIKCORF_f5gqwnugFO7K4HUR8HAKPUuYVIarrQNU0
-    short-id: bfc5
-  server: 31.76.120.162
-  servername: www.sony.com
+    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
+    short-id: bdac121c7debdaba
+  server: 148.253.211.237
+  servername: www.microsoft.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 05e9d254-8ea8-4097-9450-d4aefc44bd7e
-- client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - www.sony.com
-    method: GET
-    path:
-    - /
-  name: 📍 VLESS-28
-  network: http
-  port: 443
-  reality-opts:
-    public-key: JVvNP8J16POftTcKdIPtpeX6mHLqq44jFisU1ftAuEo
-    short-id: 2c
-  server: 85.234.65.21
-  servername: www.sony.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8711e97a-63cc-47f5-b1ab-b9280b82ac2e
+  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 📍 VLESS-29
+  name: 📍 VLESS-23
   port: 443
   reality-opts:
     public-key: Aak3FEVpJGzxzVz4wWkNpFA9dANDnvQg15X4eYNr_hw
@@ -269,52 +196,73 @@ proxies:
   type: vless
   udp: true
   uuid: 729d3d1e-ee1a-4c42-84bc-2ff331518221
-- name: 📍 TROJAN-30
-  network: ws
-  password: 433e785b-2077-47f7-a43d-985f63dd18d1
-  port: 18000
-  server: 121.154.96.50
-  skip-cert-verify: false
-  sni: vpn.rnmcnm.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: vpn.rnmcnm.com
-    path: /trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 📍 VLESS-31
-  port: 10444
+  name: 📍 VLESS-24
+  port: 443
   reality-opts:
-    public-key: praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4
-    short-id: 378086fbdb7c61cd
-  server: serv-ne-3.whit3.net
-  servername: serv-ne-3.whit3.net
+    public-key: Aak3FEVpJGzxzVz4wWkNpFA9dANDnvQg15X4eYNr_hw
+    short-id: 6ba8f65dee6e
+  server: 2.26.160.79
+  servername: www.nvidia.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 49f3fec2-1a21-481e-ae65-7c32ae262582
-- name: 📍 VLESS-32
-  port: 8443
-  server: 195.181.173.199
-  servername: ams1.fromblancwithlove.com
+  uuid: 729d3d1e-ee1a-4c42-84bc-2ff331518221
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-25
+  port: 443
+  reality-opts:
+    public-key: ivgTfLR13A6xBsicIA28OPoav2tXlsstTTmGuETfnSk
+    short-id: 6d6f13013d3e1d0c
+  server: g1.steptofreedom.one
+  servername: g1.steptofreedom.one
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-33
-  password: CJmTCCx7Ltud
-  port: 8388
-  server: 108.181.126.122
-  type: ss
+  uuid: 279828c6-13f2-439c-9a4e-ea7d4f470fa4
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-26
+  port: 443
+  reality-opts:
+    public-key: qdp5Q3QZ7JhMnOaETGJjsRJe8m30P7np9xnu75-6xSE
+    short-id: 0da3ca76067a5e3c
+  server: 198.105.115.65
+  servername: germany2.chickenkiller.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
+  uuid: d78c12c4-6927-40b8-8550-ed9be00334da
+- client-fingerprint: qq
+  flow: xtls-rprx-vision-udp443
+  name: 📍 VLESS-27
+  port: 443
+  server: 87.120.93.243
+  servername: sub.sbrf-cdn342.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+- client-fingerprint: edge
+  flow: xtls-rprx-vision-udp443
+  name: 📍 VLESS-28
+  port: 22231
+  server: r1.mizulina.top
+  servername: r1.mizulina.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 📍 VLESS-34
+  name: 📍 VLESS-29
   port: 443
   server: 85.234.114.53
   servername: r1.mizulina.top
@@ -325,7 +273,7 @@ proxies:
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 📍 VLESS-35
+  name: 📍 VLESS-30
   port: 22231
   server: 85.234.114.53
   servername: r1.mizulina.top
@@ -334,3 +282,66 @@ proxies:
   type: vless
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+- name: 📍 TROJAN-31
+  network: ws
+  password: mitivpn
+  port: 443
+  server: 45.130.125.76
+  skip-cert-verify: true
+  sni: www.app-cloud.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.app-cloud.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 📍 VMESS-32
+  port: 6001
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-33
+  port: 54495
+  reality-opts:
+    public-key: 50IjQtR9zJG_3pXrbQDalYy_D4c7C_A8EEwVx0EfOjM
+    short-id: 5e8c37215982
+  server: 89.117.94.111
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2042c7c4-f0c8-48ec-926b-65112b064e2c
+- name: 📍 TROJAN-34
+  network: ws
+  password: mitivpn
+  port: 443
+  server: 104.18.20.213
+  skip-cert-verify: false
+  sni: www.app-cloud.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.app-cloud.ir
+    path: /?ed=2048
+- name: 📍 TROJAN-35
+  network: ws
+  password: mitivpn
+  port: 443
+  server: 14.102.228.76
+  skip-cert-verify: true
+  sni: www.app-cloud.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.app-cloud.ir
+    path: /?ed=2048
