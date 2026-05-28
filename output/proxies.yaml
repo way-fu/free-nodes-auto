@@ -1,185 +1,290 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-01
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-02
+  password: AQGAAMQLZoxMT4EUxNPuFwKImsAviZTHTEMmHFlRrDKJpMnS
+  port: 31348
+  server: 89.185.84.34
+  type: ss
+- cipher: aes-256-cfb
+  name: 📍 SS-03
+  password: amazonskr05
+  port: 443
+  server: 35.183.96.211
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-04
+  password: XUMTygEM1jVYIvysXKqA5T
+  port: 443
+  server: hackney-latest-strike.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-05
+  password: gqkUCvmeOTghYJXF1YIuk5
+  port: 443
+  server: 71.19.148.74
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-06
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
   server: r3mrcg007117fb8.cybervena.com
   type: ss
 - cipher: aes-256-cfb
-  name: 📍 SS-02
-  password: qwerREWQ@@
-  port: 41632
-  server: 112.213.102.188
+  name: 📍 SS-07
+  password: amazonskr05
+  port: 443
+  server: 35.183.129.131
   type: ss
-- name: 📍 TROJAN-03
+- cipher: aes-256-cfb
+  name: 📍 SS-08
+  password: amazonskr05
+  port: 443
+  server: 13.218.172.80
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-09
+  password: hfSE3thwAQqvSIac5xLpUD
+  port: 53292
+  server: 45.83.130.97
+  type: ss
+  udp: true
+- name: 📍 TROJAN-10
   password: gcuCpQfaiVeDBdWG
   port: 19128
   server: 211.76.176.98
   sni: yazhou10.dynu.net
   tls: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-04
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.186
-  type: ss
-- cipher: aes-256-gcm
-  name: 📍 SS-05
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 141.164.45.187
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-06
-  password: yKVMoB3AwiTEznpnoq2FYR
-  port: 28687
-  server: 193.47.60.186
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-07
-  password: eLPlIVuRZ6UJyapVDeT++l7fYC0uowXJFlb9qhntAd4=
-  port: 37425
-  server: 154.18.239.126
-  type: ss
-- cipher: aes-256-gcm
-  name: 📍 SS-08
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 213.202.208.199
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-09
-  port: 443
-  reality-opts:
-    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-    short-id: d67ec5a8fc40ebea
-  server: ger04.myxasecure.space
-  servername: ger04.myxasecure.space
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5381a1bb-479a-412a-9d99-08ccbc008828
-- cipher: none
-  name: 📍 SS-10
-  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: woshinidie-et3.pages.dev
-    mode: websocket
-    mux: false
-    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
-    tls: true
-  port: 443
-  server: 185.216.177.197
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-cfb
   name: 📍 SS-11
-  password: Fh0TVw64B57wDPoJ2VLsog
+  password: amazonskr05
   port: 443
-  server: 5.230.184.171
+  server: 15.157.68.13
   type: ss
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: 📍 VMESS-12
-  port: 180
-  server: 82.198.246.214
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-13
-  port: 443
-  reality-opts:
-    public-key: 56RJlIcxwncUs5m9QSfd3waHxm6vJFBKso5IkMSsyCA
-    short-id: 5d
-  server: 194.238.57.104
-  servername: www.icloud.com
-  skip-cert-verify: false
+- name: 📍 TROJAN-12
+  password: gcuCpQfaiVeDBdWG
+  port: 19128
+  server: jpbgp.netvigor.cc
+  sni: yazhou10.dynu.net
   tls: true
-  type: vless
-  udp: true
-  uuid: 8046e3a1-83a7-4155-86e4-374153fe66f3
+  type: trojan
+- name: 📍 TROJAN-13
+  password: d30ab83dbde4480082048fb315bedebd
+  port: 443
+  server: 5.180.78.22
+  skip-cert-verify: true
+  sni: 5.180.78.22
+  tls: true
+  type: trojan
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: 📍 VLESS-14
-  port: 443
+  port: 8443
   reality-opts:
-    public-key: 978-Yxgtd3AWTVfiXEQqCstdwrT1qgsgleGPIRGQDl8
-    short-id: bdac121c7debdaba
-  server: 148.253.211.237
-  servername: www.microsoft.com
+    public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
+    short-id: 478dc6
+  server: 178.215.238.148
+  servername: eh.vk.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 980231fb-4372-5c81-b696-20aa34d33af0
+  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 📍 VLESS-15
   port: 443
   reality-opts:
-    public-key: 2cdGHEGP5A3WdXhrCSZEdNtMe80thM6o2mhzre3sMhY
-    short-id: 94d59abc6f
-  server: 89.124.64.249
-  servername: apple.com
+    public-key: NPt7NbrWjFl5Uq8xIuolxDDJFTzj5x5jwmiSTRPuuD8
+  server: ddfs.ummapeople.online
+  servername: ddfs.ummapeople.online
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 530c8050-f4c1-4050-940b-5688e09c7c68
-- cipher: none
+  uuid: ac195240-6005-412b-9829-1e56e5d5c52a
+- cipher: aes-256-cfb
   name: 📍 SS-16
-  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: woshinidie-et3.pages.dev
-    mode: websocket
-    mux: false
-    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
-    tls: true
-  port: 14147
-  server: 222.113.253.35
+  password: amazonskr05
+  port: 443
+  server: 15.222.60.36
   type: ss
   udp: true
-- cipher: none
-  name: 📍 SS-17
-  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: woshinidie-et3.pages.dev
-    mode: websocket
-    mux: false
-    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
-    tls: true
-  port: 10912
-  server: 218.150.34.228
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 📍 VMESS-17
+  port: 9002
+  server: world.t.51guangtaobao.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: none
-  name: 📍 SS-18
-  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: woshinidie-et3.pages.dev
-    mode: websocket
-    mux: false
-    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
-    tls: true
-  port: 18081
-  server: 220.124.181.77
-  type: ss
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+- alterId: 0
+  cipher: auto
+  name: 📍 VMESS-18
+  port: 6012
+  server: world.t.51guangtaobao.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+- alterId: 0
+  cipher: auto
+  name: 📍 VMESS-19
+  port: 2504
+  server: world.t.51guangtaobao.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+- alterId: 0
+  cipher: auto
+  name: 📍 VMESS-20
+  port: 9020
+  server: world.t.51guangtaobao.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+- alterId: 0
+  cipher: auto
+  name: 📍 VMESS-21
+  port: 6009
+  server: world.t.51guangtaobao.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 📍 VLESS-19
+  name: 📍 VLESS-22
+  port: 25642
+  reality-opts:
+    public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+    short-id: 693b25e06841ac7f
+  server: cdn.jp2.cocoduck.org
+  servername: www.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4dd69f91-190c-413d-88c7-2f1675a98d85
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-23
+  port: 45072
+  reality-opts:
+    public-key: VoA8WXthSh6CroV4pHK7V6L5gYUw8MHTo2kIVknTXSE
+    short-id: 693b25e06841ac7f
+  server: cdn.ph1.cocoduck.org
+  servername: www.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4dd69f91-190c-413d-88c7-2f1675a98d85
+- cipher: aes-256-cfb
+  name: 📍 SS-24
+  password: amazonskr05
+  port: 443
+  server: 18.195.95.15
+  type: ss
+  udp: true
+- alpn:
+  - h2
+  name: 📍 VLESS-25
+  port: 8443
+  server: cdg-1.fromblancwithlove.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55f7d143-a594-4a91-b030-f227039f85ef
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 📍 VMESS-26
+  port: 180
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-27
+  port: 443
+  reality-opts:
+    public-key: MBkIKCORF_f5gqwnugFO7K4HUR8HAKPUuYVIarrQNU0
+    short-id: bfc5
+  server: 31.76.120.162
+  servername: www.sony.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 05e9d254-8ea8-4097-9450-d4aefc44bd7e
+- client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - www.sony.com
+    method: GET
+    path:
+    - /
+  name: 📍 VLESS-28
+  network: http
+  port: 443
+  reality-opts:
+    public-key: JVvNP8J16POftTcKdIPtpeX6mHLqq44jFisU1ftAuEo
+    short-id: 2c
+  server: 85.234.65.21
+  servername: www.sony.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8711e97a-63cc-47f5-b1ab-b9280b82ac2e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-29
+  port: 443
+  reality-opts:
+    public-key: Aak3FEVpJGzxzVz4wWkNpFA9dANDnvQg15X4eYNr_hw
+    short-id: 6ba8f65dee6e
+  server: cz.krevetkavpn.ru
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 729d3d1e-ee1a-4c42-84bc-2ff331518221
+- name: 📍 TROJAN-30
+  network: ws
+  password: 433e785b-2077-47f7-a43d-985f63dd18d1
+  port: 18000
+  server: 121.154.96.50
+  skip-cert-verify: false
+  sni: vpn.rnmcnm.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vpn.rnmcnm.com
+    path: /trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-31
   port: 10444
   reality-opts:
     public-key: praGYag8YPbz_rcd_Pa6Fqsi_IiQtO3e1AosYBcu6h4
@@ -191,33 +296,25 @@ proxies:
   type: vless
   udp: true
   uuid: 49f3fec2-1a21-481e-ae65-7c32ae262582
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-20
-  port: 443
-  reality-opts:
-    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-  server: 87.120.93.69
-  servername: www.deepl.com
+- name: 📍 VLESS-32
+  port: 8443
+  server: 195.181.173.199
+  servername: ams1.fromblancwithlove.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 2001daf3-5c56-4bef-8ea6-8dd0493c5a4c
-- client-fingerprint: edge
-  flow: xtls-rprx-vision-udp443
-  name: 📍 VLESS-21
-  port: 22231
-  server: r1.mizulina.top
-  servername: r1.mizulina.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-33
+  password: CJmTCCx7Ltud
+  port: 8388
+  server: 108.181.126.122
+  type: ss
   udp: true
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 📍 VLESS-22
+  name: 📍 VLESS-34
   port: 443
   server: 85.234.114.53
   servername: r1.mizulina.top
@@ -226,122 +323,14 @@ proxies:
   type: vless
   udp: true
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-- client-fingerprint: chrome
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 📍 VLESS-23
-  port: 50556
-  reality-opts:
-    public-key: tqZ-C6M7YzjR_sJ-V3OgU3tLUAv-KnJ9BQfIYfnVOHo
-    short-id: 23a3dee422d0cd1c
-  server: 193.163.203.76
-  servername: api-maps.yandex.ru
+  name: 📍 VLESS-35
+  port: 22231
+  server: 85.234.114.53
+  servername: r1.mizulina.top
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 44fcf3b7-7baf-4b73-9f50-9f47967f7b29
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-24
-  port: 50573
-  reality-opts:
-    public-key: NcouT_UbeS3uAcbckd8QXzoTFpiFdlglgHOnhwy76Cg
-    short-id: 7b873acc934a727d
-  server: 193.163.203.76
-  servername: api-maps.yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d18a0f18-d5bd-43c1-bc08-e208473f30d8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-25
-  port: 50592
-  reality-opts:
-    public-key: kATzSBDyNkm6Ee7p8Ad8iPD5CrJmkJ5n1T-l-LCRmXQ
-    short-id: b7ca855a4763a7ac
-  server: 193.163.203.76
-  servername: api-maps.yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 439f353b-b52f-4355-93d8-26e0567d5308
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 📍 VLESS-26
-  port: 50547
-  reality-opts:
-    public-key: ZAqXfcXRYWRBjEYJQInYWkFSKTSbd7NXg66D7MUZ2wg
-    short-id: 03d0fa9716a73af2
-  server: 193.163.203.76
-  servername: kinopoisk.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c5563e04-daff-4fea-a8ce-8741ad0bc2cf
-- cipher: none
-  name: 📍 SS-27
-  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: woshinidie-et3.pages.dev
-    mode: websocket
-    mux: false
-    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
-    tls: true
-  port: 443
-  server: 18.143.76.130
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /ABCDE
-  name: 📍 VMESS-28
-  network: http
-  port: 53229
-  server: 103.127.243.54
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-29
-  password: qTa6L03BFhHoyA3psL9xpV
-  port: 443
-  server: 185.207.136.67
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 📍 VLESS-30
-  port: 8443
-  reality-opts:
-    public-key: -5-QemzFc7ddcsXFtVEn1ciZmhkdxjnBPmhnqYPJEzM
-    short-id: 18730e64df45
-  server: 144.31.30.131
-  servername: eh.vk.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 301a4309-0f4d-42bf-a057-7d60c7a73259
-- cipher: aes-256-cfb
-  name: 📍 SS-31
-  password: amazonskr05
-  port: 443
-  server: 13.218.172.80
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 📍 SS-32
-  password: amazonskr05
-  port: 443
-  server: 100.27.193.207
-  type: ss
-  udp: true
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
