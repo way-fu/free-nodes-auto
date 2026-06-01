@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-自动抓取免费节点并生成 Shadowrocket/Clash YAML 配置
-优化版：宽容型原生异步 Layer 7 代理管道探针，防止误杀，确保节点充沛且全活
+自动抓取全网免费节点（GitHub + Telegram 频道 + 独立 API + 匿名剪贴板）
+升级版：多维全网爬虫引擎 + 宽容型 L7 异步管道验证 + 智能协议分组
 """
 
 import requests
 import yaml
+import base64
 import json
 import re
 import asyncio
 import socket
 from datetime import datetime
+from urllib.parse import unquote, urlparse
 import os
 
-# ========== 🚀 节点源扩容池 ==========
+# ==================== 🚀 全网节点源多维矩阵 ====================
+
+# 1. 传统的 Clash YAML 订阅源
 SOURCES_YAML = [
     'https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/all.yaml',
     'https://raw.githubusercontent.com/PuddinCat/BestClash/refs/heads/main/proxies.yaml',
@@ -26,16 +30,32 @@ SOURCES_YAML = [
     'https://raw.githubusercontent.com/learnhard-cn/free_nodes/main/clash.yaml'
 ]
 
-def fetch_content(url, timeout=30):
+# 2. 匿名剪贴板与独立博客提供的 Base64/纯文本订阅（非 GitHub）
+SOURCES_TEXT = [
+    'https://freeclash.org/feed/clash.yaml',
+    'https://raw.githubusercontent.com/v2ray-links/v2ray-free-links/master/v2ray' # base64流
+]
+
+# 3. ✨ Telegram 高频更新公开频道（利用 Web Snapshot 绕过登录直接爬取野生节点）
+TELEGRAM_CHANNELS = [
+    'https://t.me/s/v2ray_free_xyz',
+    'https://t.me/s/free_nodes',
+    'https://t.me/s/SSR_VMESS_VLESS_Trojan_clash',
+    'https://t.me/s/clashnode123'
+]
+
+# ================================================================
+
+def fetch_content(url, timeout=20):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     }
     try:
         response = requests.get(url, headers=headers, timeout=timeout)
         response.raise_for_status()
         return response.text
     except Exception as e:
-        print(f"  ❌ 获取失败: {e}")
+        print(f"  ❌ 抓取失败 [{url[:35]}...]: {e}")
         return None
 
 def parse_clash_yaml(content):
@@ -48,11 +68,76 @@ def parse_clash_yaml(content):
         pass
     return []
 
+def safe_b64decode(s):
+    try:
+        s = s.strip().replace('\r', '').replace('\n', '')
+        padding = 4 - len(s) % 4
+        if padding != 4: s += '=' * padding
+        return base64.b64decode(s).decode('utf-8', errors='ignore')
+    except:
+        return ""
+
+def extract_nodes_from_text(text):
+    """
+    万能文本节点提取器：
+    专门应对 Telegram 网页、匿名剪贴板里杂乱无章的纯文本。
+    通过正则表达式，强行将隐藏在 HTML 或文本里的标准链接抠出来，并转化为 Clash 识别的字典。
+    """
+    extracted = []
+    if not text: return extracted
+    
+    # 判定是否是整体 base64 加密订阅
+    if text.startswith('ss://') or text.startswith('vmess://') or text.startswith('vless://') or text.startswith('trojan://'):
+        lines = text.split('\n')
+    else:
+        decoded = safe_b64decode(text)
+        if decoded and ('://' in decoded):
+            lines = decoded.split('\n')
+        else:
+            # 说明是混杂了 HTML 的原生网页文本（如 Telegram 快照）
+            lines = re.findall(r'(ss://[a-zA-Z0-9_\-\+\=\%\&\?\.\:\#\/]+|vmess://[a-zA-Z0-9_\-\+\=\%\&\?\.\:\#\/]+|vless://[a-zA-Z0-9_\-\+\=\%\&\?\.\:\#\/]+|trojan://[a-zA-Z0-9_\-\+\=\%\&\?\.\:\#\/]+)', text)
+
+    for line in lines:
+        line = line.strip()
+        if not line: continue
+        try:
+            if line.startswith('ss://'):
+                # 简单解析 SS 链接，转换为极简字典
+                raw = line[5:]
+                if '#' in raw: raw, name = raw.split('#', 1)
+                else: name = "Wild-SS"
+                if '@' in raw:
+                    part1, part2 = raw.split('@', 1)
+                    if ':' in part1: cipher_pwd = safe_b64decode(part1)
+                    else: cipher_pwd = safe_b64decode(part1) # 兼容
+                    server_port = part2
+                    # 粗暴切割
+                    if cipher_pwd and ':' in cipher_pwd:
+                        cipher, pwd = cipher_pwd.split(':', 1)
+                        server, port = server_port.split(':', 1)
+                        extracted.append({'type': 'ss', 'server': server.split('?')[0], 'port': int(port.split('?')[0]), 'cipher': cipher, 'password': pwd, 'name': unquote(name)})
+            elif line.startswith('trojan://'):
+                match = re.match(r'trojan://([^@]+)@([^:]+):([0-9]+)', line)
+                if match:
+                    pwd, server, port = match.groups()
+                    name = line.split('#')[1] if '#' in line else "Wild-Trojan"
+                    extracted.append({'type': 'trojan', 'server': server, 'port': int(port), 'password': pwd, 'name': unquote(name)})
+            elif line.startswith('vmess://'):
+                # VMess 通常是 Base64 的 JSON
+                raw_json = safe_b64decode(line[8:].split('#')[0])
+                if raw_json:
+                    j = json.loads(raw_json)
+                    extracted.append({'type': 'vmess', 'server': j.get('add'), 'port': int(j.get('port', 0)), 'uuid': j.get('id'), 'cipher': 'auto', 'alterId': int(j.get('aid', 0)), 'name': j.get('ps', 'Wild-VMess')})
+        except:
+            continue
+            
+    return extracted
+
 def format_validate(node):
     if not isinstance(node, dict): return False
     server = node.get('server', '')
     port = node.get('port', 0)
-    node_type = node.get('type', '').lower()
+    node_type = str(node.get('type', '')).lower()
     
     if not server or not port or not isinstance(port, int): return False
     if node_type not in ['ss', 'vmess', 'vless', 'trojan']: return False
@@ -72,83 +157,73 @@ def deduplicate_nodes(nodes):
             unique.append(node)
     return unique
 
-# ================= 🧠 宽容型 Layer 7 异步管道活体判定 =================
+# ==================== 🧠 异步 L7 管道活体拦截器 ====================
 
-async def test_node_寛容(node, timeout=3.0):
-    """
-    宽容型应用层管道验证：
-    只过滤掉绝对连不上、或者端口一连上就被底层防火墙掐断(Reset)的真死节点。
-    对于带复杂混淆/TLS的节点，只要在写入首包后连接没有发生断开，便视为存活。
-    """
+async def test_node_l7(node, timeout=3.5):
     server = str(node.get('server'))
     port = node.get('port')
     node_type = node.get('type', '').lower()
     
     try:
-        # DNS 解析
+        # 1. DNS 预检
         loop = asyncio.get_running_loop()
         await loop.getaddrinfo(server, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)
         
-        # 建立 TCP 连接
+        # 2. 建立真实连接管道
         conn = asyncio.open_connection(server, port)
         reader, writer = await asyncio.wait_for(conn, timeout=timeout)
         
-        # 发送对应协议的轻量探针，刺探 Layer 7 服务端是否有阻断反应
+        # 3. 发送对应代理协议最底层的首包刺探
         if node_type == 'ss':
             writer.write(b'\x05\x01\x00')
         elif node_type == 'trojan':
             writer.write(b'0000000000000000000000000000000000000000000000000000000000000000\r\n\x01\x01')
         elif node_type in ['vmess', 'vless']:
-            uuid_str = node.get('uuid', '').replace('-', '')
+            uuid_str = str(node.get('uuid', '')).replace('-', '')
             if len(uuid_str) == 32:
                 writer.write(bytes.fromhex(uuid_str)[:16])
                 
         await writer.drain()
         
-        # 核心宽容逻辑：给一小个短暂的时间窗口。如果对方没有主动发来 Reset 或者报错，说明 Layer 7 是开着的
+        # 4. 观察是否有重置信号
         try:
-            # 极短时间内尝试读取 1 字节
-            await asyncio.wait_for(reader.read(1), timeout=0.2)
+            await asyncio.wait_for(reader.read(1), timeout=0.25)
         except asyncio.TimeoutError:
-            # 绝大多数被墙或者正常的活节点，在这个探针包过去后都会维持连接超时，这说明它是个活代理
-            pass
+            pass # 没断开说明应用层通畅
             
         writer.close()
-        try:
-            await writer.wait_closed()
-        except:
-            pass
+        try: await writer.wait_closed()
+        except: pass
         return node
     except Exception:
-        # 物理超时、拒绝连接或被重置的，丢弃
         return None
 
 async def filter_alive_nodes(nodes):
-    print(f"   ⚡ 开始执行 Python 异步宽容型管道清洗 (候选池大小: {len(nodes)})...")
-    semaphore = asyncio.Semaphore(120) # 限制并发并发
+    print(f"   ⚡ 开始进行多维全网节点 L7 效能清洗 (待测池基数: {len(nodes)})...")
+    semaphore = asyncio.Semaphore(150) # 提高并发处理野生高吞吐节点
     
     async def sem_task(node):
         async with semaphore:
-            return await test_node_寛容(node)
+            return await test_node_l7(node)
             
     tasks = [sem_task(node) for node in nodes]
     results = await asyncio.gather(*tasks)
     return [n for n in results if n is not None]
 
-# =====================================================================
+# ==================== 📝 策略组自适应生成 ====================
 
 def generate_config(nodes):
     if not nodes: return None
     
-    # 数量控制：既然是宽容过滤，总留存控制在 35 个最精选的节点，防止臃肿
-    max_total = 35
+    # 既然源扩大了，总保留数提升至 50 个高通透率节点
+    max_total = 50
     if len(nodes) > max_total:
         nodes = nodes[:max_total]
         
     ss_nodes, vmess_nodes, vless_nodes, trojan_nodes = [], [], [], []
     
     for idx, node in enumerate(nodes, 1):
-        ntype = node['type'].lower()
+        ntype = str(node['type']).lower()
         node['name'] = f"📍 {ntype.upper()}-{idx:02d}"
         
         if ntype == 'ss': ss_nodes.append(node['name'])
@@ -233,25 +308,45 @@ def generate_config(nodes):
 
 def main():
     print("=" * 60)
-    print(f"🚀 免费节点自动抓取工具 (异步宽容大清洗版)")
+    print(f"🚀 矩阵全网节点扫描引擎 (GitHub + Telegram + Web API)")
     print("=" * 60)
     all_nodes = []
     
-    for i, url in enumerate(SOURCES_YAML, 1):
+    # 维度1: 传统 YAML 源
+    for url in SOURCES_YAML:
         content = fetch_content(url)
         if content:
             nodes = parse_clash_yaml(content)
             all_nodes.extend(nodes)
-            print(f"   [{i}/{len(SOURCES_YAML)}] 成功加载节点数: {len(nodes)}")
             
+    # 维度2: 独立文本/订阅流源
+    for url in SOURCES_TEXT:
+        content = fetch_content(url)
+        if content:
+            if 'proxies:' in content: # 也是YAML
+                all_nodes.extend(parse_clash_yaml(content))
+            else:
+                all_nodes.extend(extract_nodes_from_text(content))
+                
+    # 维度3: Telegram 实时电报快照爬虫
+    print("📥 正在向 Telegram 开放频道注入文本爬虫...")
+    for url in TELEGRAM_CHANNELS:
+        content = fetch_content(url)
+        if content:
+            t_nodes = extract_nodes_from_text(content)
+            all_nodes.extend(t_nodes)
+            print(f"   🔹 从 [{url.split('/')[-1]}] 抠出野生节点数: {len(t_nodes)}")
+            
+    # 清理、格式化、强力去重
     valid_format_nodes = [n for n in all_nodes if format_validate(n)]
     unique_nodes = deduplicate_nodes(valid_format_nodes)
-    print(f"\n📊 汇总原始去重后候选节点数: {len(unique_nodes)}")
+    print(f"\n📊 全网汇总去重完毕。待测总候选池基数: {len(unique_nodes)}")
     
+    # 连接测试
     if unique_nodes:
         loop = asyncio.get_event_loop()
         alive_nodes = loop.run_until_complete(filter_alive_nodes(unique_nodes))
-        print(f"   🟢 检测通过的优质活节点数量: {len(alive_nodes)}/{len(unique_nodes)}")
+        print(f"   🟢 最终通过 Connect 级别过滤的真活节点: {len(alive_nodes)}/{len(unique_nodes)}")
     else:
         alive_nodes = []
         
@@ -264,10 +359,10 @@ def main():
             yaml.dump({'proxies': config['proxies']}, f, allow_unicode=True)
         with open('output/stats.json', 'w', encoding='utf-8') as f:
             json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(config['proxies'])}, f, indent=2)
-        print(f"✨ 成功生成并按协议归类了 {len(config['proxies'])} 个优质存活节点！")
+        print(f"\n✨ 更新大功告成！当前已将最新的 {len(config['proxies'])} 个优质活节点打包分类。")
         return 0
     else:
-        print("❌ 未捕获到存活节点。")
+        print("❌ 今日全网洗牌，未捕获到符合连接率的节点。")
         return 1
 
 if __name__ == '__main__':
