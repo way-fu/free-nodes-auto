@@ -64,31 +64,33 @@ proxies:
   port: 38388
   server: 103.186.155.16
   type: ss
-- cipher: aes-256-cfb
+- cipher: chacha20-ietf-poly1305
   name: 📍 SS-08
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  port: 443
+  server: tinkered-pennies-puppies.freesocks.work
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-09
+  password: CULuHB2PKuvK6yEN
+  port: 443
+  server: 40.123.244.72
+  type: ss
+- cipher: aes-256-cfb
+  name: 📍 SS-10
   password: amazonskr05
   port: 443
   server: 52.60.99.199
   skip-cert-verify: false
   type: ss
   udp: false
-- cipher: aes-256-cfb
-  name: 📍 SS-09
-  password: qwerREWQ@@
-  port: 55104
-  server: 221.150.109.20
-  skip-cert-verify: false
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-11
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: nbmrcg0034686rw.cybervena.com
   type: ss
-  udp: false
-- cipher: aes-256-cfb
-  name: 📍 SS-10
-  password: amazonskr05
-  port: 443
-  server: 3.96.152.83
-  skip-cert-verify: false
-  type: ss
-  udp: false
-- name: 📍 TROJAN-11
+- name: 📍 TROJAN-12
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
   server: 90081bb25c.node.tro.cac.cab
@@ -97,83 +99,65 @@ proxies:
   tls: false
   type: trojan
   udp: true
-- name: 📍 TROJAN-12
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: 211.76.176.98
-  skip-cert-verify: false
-  sni: yazhou10.dynu.net
-  type: trojan
 - alterId: 0
-  name: 📍 TROJAN-13
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: 211.76.176.97
+  cipher: chacha20-ietf-poly1305
+  name: 📍 SS-13
+  password: XUMTygEM1jVYIvysXKqA5T
+  port: 443
+  server: hackney-latest-strike.freesocks.work
   skip-cert-verify: true
-  sni: yazhou10.dynu.net
   tls: true
-  type: trojan
-  udp: true
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-14
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  port: 16233
-  server: 102.133.165.160
-  type: ss
-- alterId: 0
-  name: 📍 TROJAN-15
-  password: gcuCpQfaiVeDBdWG
-  port: 19128
-  server: jpbgp.netvigor.cc
-  skip-cert-verify: true
-  sni: yazhou10.dynu.net
-  tls: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-16
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg001286ek2.cybervena.com
-  type: ss
-- cipher: aes-256-cfb
-  name: 📍 SS-17
-  password: qwerREWQ@@
-  port: 41632
-  server: 185.189.160.105
-  type: ss
-- name: 📍 TROJAN-18
-  password: lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m
-  port: 443
-  server: 130.94.104.210
-  skip-cert-verify: false
-  sni: www.cdn-structure.click
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-19
   password: gqkUCvmeOTghYJXF1YIuk5
   port: 443
   server: 71.19.148.74
   type: ss
-- cipher: rc4-md5
-  name: 📍 SS-20
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.61.37
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-15
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: 50099
+  server: r3mrcg001286ek2.cybervena.com
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 📍 SS-21
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.188
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-22
+  name: 📍 SS-16
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 45.158.171.70
+  server: 193.29.139.235
   type: ss
-- name: 📍 VMESS-23
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-17
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.204
+  type: ss
+- name: 📍 TROJAN-18
+  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
+  port: 443
+  server: 172.235.63.252
+  skip-cert-verify: false
+  sni: 172.235.63.252
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 📍 SS-19
+  password: 1hhrqrokj3ag
+  port: 8388
+  server: 209.46.102.22
+  type: ss
+- cipher: aes-256-cfb
+  name: 📍 SS-20
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+- cipher: rc4-md5
+  name: 📍 SS-21
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 137.184.174.93
+  type: ss
+- name: 📍 VMESS-22
   server: board-04.ddnskunlun.com
   port: 11973
   type: vmess
@@ -183,7 +167,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 📍 VMESS-24
+- name: 📍 VMESS-23
   server: board-02.ddnskunlun.com
   port: 11885
   type: vmess
@@ -193,7 +177,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 📍 TROJAN-25
+- name: 📍 TROJAN-24
   server: de-1.hysteria.ltd
   port: 9443
   type: trojan
@@ -201,7 +185,7 @@ proxies:
   sni: de-1.hysteria.ltd
   skip-cert-verify: false
   udp: true
-- name: 📍 VMESS-26
+- name: 📍 VMESS-25
   server: 82.198.246.250
   port: 180
   type: vmess
@@ -211,7 +195,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: 📍 VLESS-27
+- name: 📍 VLESS-26
   server: 31.76.113.30
   port: 443
   type: vless
@@ -225,7 +209,7 @@ proxies:
     public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
     short-id: 7a3f9e2b1c8d4f6a
   udp: true
-- name: 📍 VLESS-28
+- name: 📍 VLESS-27
   server: 31.76.113.26
   port: 443
   type: vless
@@ -239,7 +223,7 @@ proxies:
     public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
     short-id: 7a3f9e2b1c8d4f6a
   udp: true
-- name: 📍 VLESS-29
+- name: 📍 VLESS-28
   server: 31.76.113.91
   port: 443
   type: vless
@@ -253,7 +237,7 @@ proxies:
     public-key: zPi2L9vrl2hkaCTT3lZTzBna-qz6JrteRjDz1i-DsxY
     short-id: 7a3f9e2b1c8d4f6a
   udp: true
-- name: 📍 VLESS-30
+- name: 📍 VLESS-29
   server: 142.248.151.249
   port: 17512
   type: vless
@@ -268,7 +252,7 @@ proxies:
     headers:
       Host: qi4rysu2u-e8j2zzhk.bsld.de5.net
   udp: true
-- name: 📍 VLESS-31
+- name: 📍 VLESS-30
   server: r1.mizulina.top
   port: 22231
   type: vless
@@ -279,7 +263,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: 📍 VLESS-32
+- name: 📍 VLESS-31
   server: 85.234.114.53
   port: 443
   type: vless
@@ -290,7 +274,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: 📍 VLESS-33
+- name: 📍 VLESS-32
   server: 85.234.114.53
   port: 22231
   type: vless
@@ -301,7 +285,7 @@ proxies:
   client-fingerprint: edge
   servername: r1.mizulina.top
   udp: true
-- name: 📍 VLESS-34
+- name: 📍 VLESS-33
   server: 213.108.2.130
   port: 443
   type: vless
@@ -315,7 +299,7 @@ proxies:
     public-key: c9eCHF41FReFLIdarpg8M5edw4_E133EJBzrvYS02Ck
     short-id: cd9a5f0edff48da4
   udp: true
-- name: 📍 VLESS-35
+- name: 📍 VLESS-34
   server: 31.207.5.73
   port: 443
   type: vless
@@ -328,7 +312,7 @@ proxies:
     public-key: HlxgAXuwwby0lujjT2LKBPF0udWK4SVjtMPyKtiNdEw
     short-id: 232cd9a21e42
   udp: true
-- name: 📍 VLESS-36
+- name: 📍 VLESS-35
   server: nld02.helpbot.click
   port: 443
   type: vless
@@ -369,22 +353,22 @@ proxy-groups:
   - 📍 SS-08
   - 📍 SS-09
   - 📍 SS-10
-  - 📍 TROJAN-11
+  - 📍 SS-11
   - 📍 TROJAN-12
-  - 📍 TROJAN-13
+  - 📍 SS-13
   - 📍 SS-14
-  - 📍 TROJAN-15
+  - 📍 SS-15
   - 📍 SS-16
   - 📍 SS-17
   - 📍 TROJAN-18
   - 📍 SS-19
   - 📍 SS-20
   - 📍 SS-21
-  - 📍 SS-22
+  - 📍 VMESS-22
   - 📍 VMESS-23
-  - 📍 VMESS-24
-  - 📍 TROJAN-25
-  - 📍 VMESS-26
+  - 📍 TROJAN-24
+  - 📍 VMESS-25
+  - 📍 VLESS-26
   - 📍 VLESS-27
   - 📍 VLESS-28
   - 📍 VLESS-29
@@ -394,7 +378,6 @@ proxy-groups:
   - 📍 VLESS-33
   - 📍 VLESS-34
   - 📍 VLESS-35
-  - 📍 VLESS-36
 - name: 🌍 全球直连
   type: select
   proxies:
@@ -413,22 +396,25 @@ proxy-groups:
   - 📍 SS-08
   - 📍 SS-09
   - 📍 SS-10
+  - 📍 SS-11
+  - 📍 SS-13
   - 📍 SS-14
+  - 📍 SS-15
   - 📍 SS-16
   - 📍 SS-17
   - 📍 SS-19
   - 📍 SS-20
   - 📍 SS-21
-  - 📍 SS-22
 - name: 🛸 VMess 节点池
   type: select
   proxies:
+  - 📍 VMESS-22
   - 📍 VMESS-23
-  - 📍 VMESS-24
-  - 📍 VMESS-26
+  - 📍 VMESS-25
 - name: ⚡ VLESS 节点池
   type: select
   proxies:
+  - 📍 VLESS-26
   - 📍 VLESS-27
   - 📍 VLESS-28
   - 📍 VLESS-29
@@ -438,16 +424,12 @@ proxy-groups:
   - 📍 VLESS-33
   - 📍 VLESS-34
   - 📍 VLESS-35
-  - 📍 VLESS-36
 - name: 🐴 Trojan 节点池
   type: select
   proxies:
-  - 📍 TROJAN-11
   - 📍 TROJAN-12
-  - 📍 TROJAN-13
-  - 📍 TROJAN-15
   - 📍 TROJAN-18
-  - 📍 TROJAN-25
+  - 📍 TROJAN-24
 - name: 📹 YouTube
   type: select
   proxies:
