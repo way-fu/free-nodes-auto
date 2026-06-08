@@ -21,6 +21,7 @@ SOURCES_YAML = [
     'https://cdn.jsdelivr.net/gh/V2rayShare/V2rayShare@master/clash.yaml',
     'https://cdn.jsdelivr.net/gh/baipiao-pool/baipiao@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/w1770946466/Auto_Free_Nodes@main/run/clash.yaml',
+    'https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/history.yaml',
     # 保留两个直接源作为双备份机制
     'https://v2rayshare.github.io/v2rayshare/clash.yaml',
     'https://raw.githubusercontent.com/w1770946466/Auto_Free_Nodes/main/run/clash.yaml'
