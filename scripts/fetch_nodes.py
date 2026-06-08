@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-自动抓取全网免费节点（全面更换高质量活性源 + 小火箭完美自适应优化）
+自动抓取全网高活性免费节点（全面整合大厂清洗后的源）
+完全交付客户端小火箭本地测速，保障绝对的零误杀与高吞吐量
 """
 
 import requests
@@ -10,7 +11,8 @@ import json
 import os
 from datetime import datetime
 
-# ==================== 🚀 全新更换：全网最高质量活性订阅矩阵 ====================
+# ==================== 🚀 质量最高的全网免翻墙大池矩阵 ====================
+# 这里直接接管你脚本中原有的节点源位置
 SOURCES_YAML = [
     'https://raw.githubusercontent.com/goer998/Free-nodes/main/clash.yaml',
     'https://raw.githubusercontent.com/learnhard-cn/free_nodes/main/clash.yaml',
@@ -43,7 +45,6 @@ def parse_clash_yaml(content):
     return []
 
 def format_validate_and_sanitize(node):
-    """严格校验格式，补齐小火箭必备的 UDP 属性，剔除残缺节点"""
     if not isinstance(node, dict): return None
     server = node.get('server', '')
     port = node.get('port', 0)
@@ -52,16 +53,14 @@ def format_validate_and_sanitize(node):
     if not server or not port or not isinstance(port, int): return None
     if node_type not in ['ss', 'vmess', 'vless', 'trojan']: return None
     
-    # 核心凭证缺失校验（防止空配置误入）
+    # 凭证校验
     if node_type == 'ss' and not node.get('password'): return None
     if node_type in ['vmess', 'vless'] and not node.get('uuid'): return None
     if node_type == 'trojan' and not node.get('password'): return None
     
-    # 过滤内网及本地伪装段
     private_prefixes = ('10.', '172.16.', '192.168.', '127.', 'localhost', '0.0.0.0')
     if any(str(server).startswith(p) for p in private_prefixes): return None
     
-    # ✨ 补齐关键属性：开启 UDP 分流，适应手机端日常网络切换
     node['udp'] = True
     return node
 
@@ -79,7 +78,6 @@ def deduplicate_nodes(nodes):
 def generate_config(nodes):
     if not nodes: return None
     
-    # 提升上限至 150 个，确保小火箭本地测速能洗出至少 30+ 绿延迟活节点
     max_total = 150
     if len(nodes) > max_total:
         nodes = nodes[:max_total]
@@ -88,7 +86,6 @@ def generate_config(nodes):
     
     for idx, node in enumerate(nodes, 1):
         ntype = str(node['type']).lower()
-        # 优化节点命名，小火箭列表更清爽且便于排序
         node['name'] = f"📍 {ntype.upper()}-{idx:03d}"
         
         if ntype == 'ss': ss_nodes.append(node['name'])
@@ -113,7 +110,7 @@ def generate_config(nodes):
             'name': '♻️ 自动选择',
             'type': 'url-test',
             'url': 'http://cp.cloudflare.com/generate_204',
-            'interval': 150, # 缩短测试间隔，小火箭切换死节点更快
+            'interval': 150,
             'tolerance': 60,
             'proxies': all_names
         },
@@ -171,9 +168,10 @@ def generate_config(nodes):
     }
 
 def main():
-    print("📥 开始调度高活性独立白嫖机场/节点矩阵...")
+    print("📥 开始调度最新高活性节点源...")
     all_nodes = []
     
+    # 显式循环读取 SOURCES_YAML
     for url in SOURCES_YAML:
         content = fetch_content(url)
         if content:
@@ -182,10 +180,10 @@ def main():
                 sanitized = format_validate_and_sanitize(p)
                 if sanitized:
                     all_nodes.append(sanitized)
-            print(f"   ➕ 成功读取源 [{url[30:55]}...] 清洗后留存数: {len(all_nodes)}")
+            print(f"   ➕ 成功读取源 [{url[38:60]}...] 当前汇总总数: {len(all_nodes)}")
             
     unique_nodes = deduplicate_nodes(all_nodes)
-    print(f"\n📊 强力去重完毕。生成的小火箭备弹池总数: {len(unique_nodes)}")
+    print(f"\n📊 去重清洗完毕。交付小火箭的总备弹池规模: {len(unique_nodes)}")
     
     config = generate_config(unique_nodes)
     if config:
@@ -196,10 +194,10 @@ def main():
             yaml.dump({'proxies': config['proxies']}, f, allow_unicode=True)
         with open('output/stats.json', 'w', encoding='utf-8') as f:
             json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(config['proxies'])}, f, indent=2)
-        print(f"✨ 同步成功！已将 {len(config['proxies'])} 个全网热活节点整理完毕。")
+        print(f"✨ 写入成功！共有 {len(config['proxies'])} 个全网热活节点。")
         return 0
     else:
-        print("❌ 本轮未捕获到可用结构节点。")
+        print("❌ 未成功捕获到任何有效节点。")
         return 1
 
 if __name__ == '__main__':
