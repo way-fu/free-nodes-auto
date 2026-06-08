@@ -2,7 +2,7 @@ name: Update Free Nodes Every Week
 
 on:
   schedule:
-    - cron: '0 2 * * 3'
+    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:
