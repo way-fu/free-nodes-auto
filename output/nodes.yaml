@@ -64,33 +64,43 @@ proxies:
   port: 38388
   server: 103.186.155.16
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
   name: 📍 SS-08
   password: hbGrpfvNrJsUmKmPbR3iY2
   port: 443
   server: tinkered-pennies-puppies.freesocks.work
+  skip-cert-verify: true
+  tls: true
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-09
-  password: CULuHB2PKuvK6yEN
+  password: gqkUCvmeOTghYJXF1YIuk5
   port: 443
-  server: 40.123.244.72
+  server: 71.19.148.74
   type: ss
-- cipher: aes-256-cfb
-  name: 📍 SS-10
-  password: amazonskr05
-  port: 443
-  server: 52.60.99.199
-  skip-cert-verify: false
-  type: ss
-  udp: false
 - cipher: chacha20-ietf-poly1305
-  name: 📍 SS-11
+  name: 📍 SS-10
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
   port: 50099
-  server: nbmrcg0034686rw.cybervena.com
+  server: r3mrcg001286ek2.cybervena.com
   type: ss
-- name: 📍 TROJAN-12
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: 📍 SS-11
+  password: XUMTygEM1jVYIvysXKqA5T
+  port: 443
+  server: hackney-latest-strike.freesocks.work
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- cipher: aes-256-gcm
+  name: 📍 SS-12
+  password: s9IKALwvJMvY
+  port: 8388
+  server: 212.192.15.248
+  type: ss
+- name: 📍 TROJAN-13
   password: 4f4d1167-ef14-4304-9bce-0740472503ef
   port: 45619
   server: 90081bb25c.node.tro.cac.cab
@@ -99,32 +109,23 @@ proxies:
   tls: false
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 📍 SS-13
-  password: XUMTygEM1jVYIvysXKqA5T
-  port: 443
-  server: hackney-latest-strike.freesocks.work
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-14
-  password: gqkUCvmeOTghYJXF1YIuk5
-  port: 443
-  server: 71.19.148.74
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.149
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-15
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: r3mrcg001286ek2.cybervena.com
+  password: G5p6ww4o67HB
+  port: 8388
+  server: 108.181.0.177
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-16
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 193.29.139.235
+  server: 193.29.139.151
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 📍 SS-17
@@ -132,30 +133,30 @@ proxies:
   port: 8080
   server: 193.29.139.204
   type: ss
-- name: 📍 TROJAN-18
-  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
-  port: 443
-  server: 172.235.63.252
-  skip-cert-verify: false
-  sni: 172.235.63.252
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 📍 SS-19
-  password: 1hhrqrokj3ag
-  port: 8388
-  server: 209.46.102.22
+- cipher: aes-256-cfb
+  name: 📍 SS-18
+  password: qwerREWQ@@
+  port: 10727
+  server: 27.255.82.135
   type: ss
 - cipher: aes-256-cfb
-  name: 📍 SS-20
+  name: 📍 SS-19
   password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.230
+  port: 41632
+  server: 185.189.160.105
   type: ss
-- cipher: rc4-md5
+- name: 📍 TROJAN-20
+  password: s.wRSE4ANZp4=4h.=B_9Qbetw6XUc0V1SV
+  port: 443
+  server: 130.94.107.171
+  skip-cert-verify: false
+  sni: www.logger-guard.click
+  type: trojan
+- cipher: chacha20-ietf-poly1305
   name: 📍 SS-21
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 137.184.174.93
+  password: GyZ5Xo0ht41vYmW3H4
+  port: 816
+  server: 149.28.255.6
   type: ss
 - name: 📍 VMESS-22
   server: board-04.ddnskunlun.com
@@ -354,15 +355,15 @@ proxy-groups:
   - 📍 SS-09
   - 📍 SS-10
   - 📍 SS-11
-  - 📍 TROJAN-12
-  - 📍 SS-13
+  - 📍 SS-12
+  - 📍 TROJAN-13
   - 📍 SS-14
   - 📍 SS-15
   - 📍 SS-16
   - 📍 SS-17
-  - 📍 TROJAN-18
+  - 📍 SS-18
   - 📍 SS-19
-  - 📍 SS-20
+  - 📍 TROJAN-20
   - 📍 SS-21
   - 📍 VMESS-22
   - 📍 VMESS-23
@@ -397,13 +398,13 @@ proxy-groups:
   - 📍 SS-09
   - 📍 SS-10
   - 📍 SS-11
-  - 📍 SS-13
+  - 📍 SS-12
   - 📍 SS-14
   - 📍 SS-15
   - 📍 SS-16
   - 📍 SS-17
+  - 📍 SS-18
   - 📍 SS-19
-  - 📍 SS-20
   - 📍 SS-21
 - name: 🛸 VMess 节点池
   type: select
@@ -427,8 +428,8 @@ proxy-groups:
 - name: 🐴 Trojan 节点池
   type: select
   proxies:
-  - 📍 TROJAN-12
-  - 📍 TROJAN-18
+  - 📍 TROJAN-13
+  - 📍 TROJAN-20
   - 📍 TROJAN-24
 - name: 📹 YouTube
   type: select
