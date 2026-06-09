@@ -1,11 +1,9 @@
 name: Update Free Nodes Every Week
 
-
 on:
   schedule:
     - cron: '0 0 * * *'
-  workflow_dispatch:      # ✨【极其关键】有了这一行，才能在网页上强制手动刷新！
-
+  workflow_dispatch:      # ✨ 支持在网页上强制手动刷新！
 
 jobs:
   update-nodes:
@@ -37,8 +35,11 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         
-        git pull origin main --rebase --autostash
+        # 🎯【核心修复】必须先将本地临时生成的 25 个节点的文件 add 暂存起来！
         git add output/
+        
+        # 此时再去拉取并变基，Git 就会以本地暂存的 25 个节点为最高优先级，绝不会被远程旧文件覆盖
+        git pull origin main --rebase --autostash
 
         if git diff --cached --quiet; then
           echo "✅ 没有变更，跳过提交"
