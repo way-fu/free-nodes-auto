@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 自动抓取免费节点并生成小火箭专属的 Base64 订阅流文件
-彻底解决“只显示1个”的内核解析硬伤，且严格限制在 30 个节点以内
+严格控制在 30 个节点以内，秒测速，彻底解决解析误区
 """
 
 import requests
@@ -13,7 +13,7 @@ import re
 import base64
 from urllib.parse import quote
 
-# ==================== 🚀 高可用加速订阅矩阵 ====================
+# ==================== 🚀 质量最高的全网免翻墙大池矩阵 ====================
 SOURCES_YAML = [
     'https://cdn.jsdelivr.net/gh/goer998/Free-nodes@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/learnhard-cn/free_nodes@main/clash.yaml',
@@ -78,7 +78,7 @@ def deduplicate_nodes(nodes):
     return unique
 
 def convert_to_rocket_link(node, remark):
-    """将 Clash 字典节点对象转换为小火箭原生标准协议字符串"""
+    """转换 Clash 配置为小火箭原生 Base64 节点串"""
     try:
         ntype = str(node['type']).lower()
         server = node['server']
@@ -122,7 +122,7 @@ def convert_to_rocket_link(node, remark):
     return None
 
 def main():
-    print("📥 开始调度最新高活性节点源...")
+    print("📥 开始拉取镜像加速节点源...")
     all_nodes = []
     
     for url in SOURCES_YAML:
@@ -136,42 +136,44 @@ def main():
                     
     unique_nodes = deduplicate_nodes(all_nodes)
     
-    # ✨ 核心优化 1：精简控量。严格限制最终只取前 30 个节点，测速只需几秒钟
-    if len(unique_nodes) > 30:
-        unique_nodes = unique_nodes[:30]
+    # 🎯 核心控制：锁定最大 25 个节点！测速只需 1-2 秒
+    if len(unique_nodes) > 25:
+        unique_nodes = unique_nodes[:25]
         
-    print(f"📊 矩阵精简完毕。最终保留的高留存核心节点数: {len(unique_nodes)}")
+    print(f"📊 洗牌精简完毕。准备写入小火箭的核心节点数: {len(unique_nodes)}")
     
-    # 开始生成标准的本地小火箭链接列表
     raw_links = []
     for idx, node in enumerate(unique_nodes, 1):
         ntype = str(node['type']).lower()
-        remark = f"NODE_{ntype.upper()}_{idx:02d}"
+        remark = f"⚡_{ntype.upper()}_{idx:02d}"
         link = convert_to_rocket_link(node, remark)
         if link:
             raw_links.append(link)
             
     if raw_links:
-        # 将多个节点链接用换行组合，并进行标准的 Base64 编码
         payload = "\n".join(raw_links)
         b64_payload = base64.b64encode(payload.encode('utf-8')).decode('utf-8')
         
         os.makedirs('output', exist_ok=True)
         try:
-            # ✨ 核心优化 2：专门输出给小火箭识别的纯净 Base64 订阅文件
+            # 专门输出给小火箭原生 Subscribe 识别的纯净 Base64 文件
             with open('output/mixed_nodes.txt', 'w', encoding='utf-8') as f:
                 f.write(b64_payload)
+                
+            # 同时保留一个 25 节点的 proxies.yaml 给备用
+            with open('output/proxies.yaml', 'w', encoding='utf-8') as f:
+                yaml.dump({'proxies': unique_nodes}, f, allow_unicode=True)
                 
             with open('output/stats.json', 'w', encoding='utf-8') as f:
                 json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(raw_links)}, f, indent=2)
                 
-            print(f"✨ [SUCCESS] 转换成功！已输出 30 个精简版原生小火箭标准节点流。")
+            print(f"✨ [SUCCESS] 转换成功！已输出 25 个精简版原生小火箭标准节点流。")
             return 0
         except Exception as e:
-            print(f"❌ 写入文件错误: {e}")
+            print(f"❌ 写入失败: {e}")
             return 1
     else:
-        print("⚠️ 未能生成有效链接。")
+        print("⚠️ 未能生成任何有效节点。")
         return 0
 
 if __name__ == '__main__':
