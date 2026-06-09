@@ -1,4 +1,8 @@
 {
-  "updated_at": "2026-06-09T06:14:21.840514",
-  "total_nodes": 120
+  "updated_at": "2026-06-09T14:39:18.027266",
+  "total_nodes": 200,
+  "ss_nodes": 81,
+  "vmess_nodes": 12,
+  "vless_nodes": 92,
+  "trojan_nodes": 15
 }

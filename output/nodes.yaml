@@ -8,12 +8,14 @@ dns:
   default-nameserver:
   - 223.5.5.5
   - 8.8.8.8
+  - 1.1.1.1
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   nameserver:
   - https://doh.pub/dns-query
-  fallback:
   - https://dns.google/dns-query
+  fallback:
+  - https://dns.cloudflare.com/dns-query
 proxies:
 - name: 📍 TROJAN-001
   password: BxceQaOe
@@ -88,8 +90,7 @@ proxies:
   ws-opts:
     headers:
       Host: you.nitronetwork.online
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36
     path: ''
   xudp: true
 - name: 📍 VLESS-007
@@ -130,8 +131,7 @@ proxies:
   ws-opts:
     headers:
       Host: rightel.IRANCEELL.mci.it.www.speedtest.net.zula.ir.focusontrade.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/55.0.2883.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
     path: /?ed=8880
   xudp: true
 - name: 📍 VLESS-010
@@ -189,8 +189,7 @@ proxies:
   ws-opts:
     headers:
       Host: ww3.xaniujp1.qzz.io
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
     path: /
   xudp: true
 - client-fingerprint: chrome
@@ -380,8 +379,7 @@ proxies:
   ws-opts:
     headers:
       Host: visvuev-272526281716252527717252.poshakhowdy.ir.
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7
-        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7 (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
     path: /www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.bunny.net-www.speedtest.net-www.bunny.net-www.speedtest.net
   xudp: true
 - name: 📍 VLESS-029
@@ -488,7 +486,7 @@ proxies:
   server: 103.236.62.154
   skip-cert-verify: false
   type: ss
-  udp: true
+  udp: false
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -623,8 +621,7 @@ proxies:
   ws-opts:
     headers:
       Host: visvuev-272526281716252527717252.poshakhowdy.ir.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.speedtest.net-www.speedtest.net-www.bunny.net-www.bunny.net-www.speedtest.net-www.bunny.net-www.speedtest.net?ed=32143
   xudp: true
 - name: 📍 VLESS-046
@@ -655,8 +652,7 @@ proxies:
   ws-opts:
     headers:
       Host: sni.meibidi.pp.ua
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
@@ -850,8 +846,7 @@ proxies:
   ws-opts:
     headers:
       Host: l.ayovo.netlib.re
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /?ed=2560
   xudp: true
 - client-fingerprint: chrome
@@ -912,8 +907,7 @@ proxies:
   ws-opts:
     headers:
       Host: l.ayovo.netlib.re
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.75 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.75 Safari/537.36
     path: /?ed=2560
   xudp: true
 - cipher: aes-256-cfb
@@ -968,8 +962,7 @@ proxies:
   ws-opts:
     headers:
       Host: l.ayovo.netlib.re
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
     path: /?ed=2560
   xudp: true
 - cipher: aes-256-cfb
@@ -1216,8 +1209,7 @@ proxies:
   ws-opts:
     headers:
       Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /
   xudp: true
 - client-fingerprint: chrome
@@ -1271,8 +1263,7 @@ proxies:
   ws-opts:
     headers:
       Host: l.ayovo.netlib.re
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17
-        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE) AppleWebKit/534.17 (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
     path: /?ed=2560
   xudp: true
 - cipher: aes-256-cfb
@@ -1342,8 +1333,7 @@ proxies:
   ws-opts:
     headers:
       Host: l.ayovo.netlib.re
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/65.0.3325.181 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
     path: /?ed=2560
   xudp: true
 - cipher: aes-256-cfb
@@ -1405,8 +1395,7 @@ proxies:
   ws-opts:
     headers:
       Host: oon.visaups.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
     path: /
   xudp: true
 - name: 📍 VLESS-112
@@ -1463,8 +1452,7 @@ proxies:
   ws-opts:
     headers:
       Host: GfV5t2331T.sMaRtTeChZaAl.InFo
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17
-        (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.17 (KHTML, like Gecko) Chrome/10.0.649.0 Safari/534.17
     path: /
   xudp: true
 - client-fingerprint: chrome
@@ -1522,6 +1510,898 @@ proxies:
   udp: true
   uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
   xudp: true
+- country: 🇫🇷FR
+  name: 📍 TROJAN-121
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 35.180.16.16
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-122
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.51
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-123
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.246
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-124
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.235
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-125
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.194
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-126
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.62
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-127
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.64
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-128
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.46
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 📍 VLESS-129
+  network: ws
+  port: 8443
+  server: 5.10.214.0
+  servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+  ws-opts:
+    headers:
+      Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /
+  xudp: true
+- name: 📍 VLESS-130
+  network: ws
+  port: 2095
+  server: 25.129.199.122
+  servername: ip6-free2.shakhle.ir.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 06d4a2dd-b823-4b6a-843e-c159b6858d91
+  ws-opts:
+    headers:
+      Host: ip6-free2.shakhle.ir.
+    path: /
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-131
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.243
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-132
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.227
+  type: ss
+  udp: true
+- name: 📍 TROJAN-133
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.46.246
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- name: 📍 VLESS-134
+  network: ws
+  port: 443
+  server: 217.142.185.111
+  servername: sni.meibidi.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: sni.meibidi.pp.ua
+    path: /?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 📍 VLESS-135
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: LHcascaxOxugVSALgsYx46nB-vuhT7ANOneu0xb6SzQ
+    short-id: 3b25133dd9e5c23f
+  server: 146.185.208.60
+  servername: max.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7d39c92f-abae-46ff-a669-9e4d1e7e8a62
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-136
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.37
+  type: ss
+  udp: true
+- name: 📍 TROJAN-137
+  password: BxceQaOe
+  port: 4569
+  server: 13.114.104.131
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 📍 VLESS-138
+  network: grpc
+  port: 22955
+  reality-opts:
+    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+    short-id: 6ba85179e30d4fc2
+  server: dfg.octopusss.net
+  servername: one-piece.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 📍 VLESS-139
+  network: grpc
+  port: 22955
+  reality-opts:
+    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+    short-id: 6ba85179e30d4fc2
+  server: 152.53.51.24
+  servername: one-piece.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-140
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.254
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 📍 VMESS-141
+  port: 47081
+  server: oss-4.qqa678.com
+  type: vmess
+  udp: true
+  uuid: ef5a32e2-ec6f-4d8b-b084-9736f912432c
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-142
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.38
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-143
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.105
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 📍 VLESS-144
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 4b523a98e1bbd15b
+  server: 84.252.139.253
+  servername: sun6-21.userapi.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f22c9b63-f93b-4650-80d7-937c5422c471
+  xudp: true
+- country: 🇺🇸US
+  name: 📍 TROJAN-145
+  password: BxceQaOe
+  port: 2595
+  server: 43.206.194.122
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-146
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.4
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-147
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.181
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-148
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.160
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇳🇱 NL
+  name: 📍 SS-149
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁ZZ
+  name: 📍 SS-150
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.203
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  country: 🇭🇰HK
+  name: 📍 SS-151
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🇪🇸 ES
+  name: 📍 SS-152
+  password: JdmRK9gMEqFgs8nP
+  port: 9003
+  server: 5.188.181.201
+  type: ss
+  udp: true
+- name: 📍 TROJAN-153
+  password: M7v%w11Se*
+  port: 443
+  server: hyfuuf6.wsone.icu
+  skip-cert-verify: true
+  sni: hyfuuf6.wsone.icu
+  tls: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇺🇸US
+  name: 📍 SS-154
+  password: l668XHPejoSNNuD66BYzyehaCpZexiF7
+  port: 443
+  server: 45.12.136.170
+  type: ss
+  udp: true
+- country: 🇩🇪DE
+  name: 📍 TROJAN-155
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.120.80.249
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇻LV
+  name: 📍 SS-156
+  password: 8afc633eb63227e9
+  port: 57456
+  server: lv.vpnsparta.pro
+  type: ss
+  udp: true
+- name: 📍 TROJAN-157
+  network: ws
+  password: iwangjie
+  port: 2053
+  server: 141.94.68.216
+  skip-cert-verify: true
+  sni: nodes.830901.xyz
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nodes.830901.xyz
+    path: '%2F'
+  udp: true
+- cipher: aes-256-cfb
+  name: 📍 SS-158
+  password: BwcAUZk8hUFAkDGN
+  port: 9031
+  server: 5.188.181.201
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 📍 VLESS-159
+  network: ws
+  port: 8443
+  server: 5.10.214.5
+  servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+  ws-opts:
+    headers:
+      Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  delay: 2189
+  name: 📍 VLESS-160
+  network: ws
+  port: 2096
+  server: 5.10.214.0
+  servername: TzS7v35LfD.sMaRtTeChZaAl.InFo
+  tls: true
+  type: vless
+  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+  ws-opts:
+    headers:
+      Host: TzS7v35LfD.sMaRtTeChZaAl.InFo
+    path: /
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 📍 VLESS-161
+  network: grpc
+  port: 22955
+  reality-opts:
+    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+    short-id: 6ba85179e30d4fc2
+  server: octopusss5.info
+  servername: one-piece.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  xudp: true
+- country: 🇫🇷FR
+  name: 📍 TROJAN-162
+  password: telegram-id-directvpn
+  port: 22223
+  server: 15.236.223.157
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 📍 VLESS-163
+  network: ws
+  port: 443
+  server: api.dark-coffe.com
+  servername: GfV5t2331T.sMaRtTeChZaAl.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+  ws-opts:
+    headers:
+      Host: GfV5t2331T.sMaRtTeChZaAl.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /
+  xudp: true
+- cipher: aes-256-cfb
+  country: 🇪🇸 ES
+  name: 📍 SS-164
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 5.188.181.201
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  country: 🇳🇱 NL
+  name: 📍 SS-165
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 151.242.251.153
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 📍 SS-166
+  password: ZET59LF6DvCC8KVt
+  port: 9005
+  server: 5.188.181.201
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  country: 🇺🇸US
+  name: 📍 SS-167
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.6
+  type: ss
+  udp: true
+- name: 📍 TROJAN-168
+  network: tcp
+  password: 4843e94d205f3893f588255a591abe94
+  port: 443
+  server: 58.152.18.124
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 📍 VLESS-169
+  network: ws
+  port: 2096
+  server: vip3.kaixincloud.top
+  servername: sni.meibidi.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: sni.meibidi.pp.ua
+    path: /?ed=2560
+- country: 🇩🇪DE
+  name: 📍 TROJAN-170
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 3.120.80.249
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 📍 VLESS-171
+  network: tcp
+  port: 3032
+  reality-opts:
+    public-key: 21V_VkMUD2XRbyRDg7hjpblUAwxHvlLmbarATdhhJQI
+    short-id: ''
+  server: fr.locations-service.com
+  servername: refersion.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e59083aa-d933-4952-8cf0-eec74f718705
+  xudp: true
+- name: 📍 VLESS-172
+  network: ws
+  port: 443
+  server: 83.229.125.144
+  servername: tw25.aniusnippets.qzz.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: tw25.aniusnippets.qzz.io
+    path: /?ed=2560
+- name: 📍 VLESS-173
+  network: ws
+  port: 2096
+  server: 104.17.102.95
+  servername: sni.meibidi.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: sni.meibidi.pp.ua
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  country: 🇱🇹 LT
+  name: 📍 SS-174
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: e7b7ab7:102816
+    mode: tls
+  port: 2377
+  server: 95.174.71.98
+  type: ss
+  udp: true
+- name: 📍 VLESS-175
+  network: ws
+  port: 443
+  server: 68.64.179.170
+  servername: tw25.aniusnippets.qzz.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: tw25.aniusnippets.qzz.io
+    path: /?ed=2560
+- encryption: none
+  name: 📍 VLESS-176
+  network: ws
+  port: 8880
+  server: 141.101.121.94
+  type: vless
+  udp: true
+  uuid: 8a13ed66-d70a-4d32-8052-cbd8e0c5f7f4
+  ws-opts:
+    headers:
+      Host: joss.gvpn2.web.id
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /Free-VPN-CF-Geo-Project/HK
+  xudp: true
+- name: 📍 VLESS-177
+  network: ws
+  port: 443
+  server: 45.76.107.78
+  servername: tw25.aniusnippets.qzz.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: tw25.aniusnippets.qzz.io
+    path: /?ed=2560
+- country: 🇫🇷FR
+  name: 📍 TROJAN-178
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 15.236.223.157
+  skip-cert-verify: true
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  delay: 2452
+  encryption: none
+  name: 📍 VLESS-179
+  network: ws
+  port: 2096
+  server: cf.3666888.xyz
+  servername: sni.meibidi.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sni.meibidi.pp.ua
+    max-early-data: 2560
+    path: /
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-180
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.68
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-181
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.224
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 📍 VLESS-182
+  network: ws
+  port: 2087
+  server: 5.10.214.0
+  servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+  ws-opts:
+    headers:
+      Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /
+  xudp: true
+- name: 📍 VLESS-183
+  network: ws
+  port: 8443
+  server: api.dark-coffe.com
+  servername: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
+  ws-opts:
+    headers:
+      Host: TjLwH7cTdH.sMaRtTeChZaAl.InFo
+    path: /
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-184
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.145
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  delay: 1997
+  name: 📍 VLESS-185
+  network: ws
+  port: 2096
+  server: vip1.kaixincloud.top
+  servername: sni.meibidi.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sni.meibidi.pp.ua
+    max-early-data: 2560
+    path: /
+- client-fingerprint: chrome
+  delay: 536
+  encryption: none
+  name: 📍 VLESS-186
+  network: ws
+  port: 443
+  server: 162.159.45.232
+  servername: l.ayovo.netlib.re
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: l.ayovo.netlib.re
+    max-early-data: 2560
+    path: /
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-187
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.84
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-188
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.12
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-189
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.44
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  delay: 699
+  encryption: none
+  name: 📍 VLESS-190
+  network: ws
+  port: 443
+  server: 104.18.45.223
+  servername: sni.meibidi.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sni.meibidi.pp.ua
+    max-early-data: 2560
+    path: /
+  udp: true
+- client-fingerprint: chrome
+  delay: 532
+  encryption: none
+  name: 📍 VLESS-191
+  network: ws
+  port: 2096
+  server: 172.64.229.220
+  servername: sni.meibidi.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sni.meibidi.pp.ua
+    max-early-data: 2560
+    path: /
+  udp: true
+- alterId: 2
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 📍 VMESS-192
+  network: tcp
+  port: 30833
+  server: v33.hdacd.com
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  udp: true
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 📍 VMESS-193
+  port: 180
+  server: 82.198.246.97
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-194
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.35
+  type: ss
+  udp: true
+- country: 🇩🇪DE
+  name: 📍 TROJAN-195
+  password: telegram-id-directvpn
+  port: 22223
+  server: 3.121.254.171
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  tls: true
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-196
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.242
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-197
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.56
+  type: ss
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 📍 VMESS-198
+  network: tcp
+  port: 43525
+  server: faq1.lieerr222.cn
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e245bc0-219d-4415-8222-398fb091fbd2
+  xudp: true
+- client-fingerprint: chrome
+  delay: 537
+  encryption: none
+  name: 📍 VLESS-199
+  network: ws
+  port: 2096
+  server: saas.sin.fan
+  servername: sni.meibidi.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: sni.meibidi.pp.ua
+    max-early-data: 2560
+    path: /
+  udp: true
+- cipher: aes-256-cfb
+  country: 🏁 ZZ
+  name: 📍 SS-200
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.136
+  type: ss
+  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -1535,8 +2415,8 @@ proxy-groups:
 - name: ♻️ 自动选择
   type: url-test
   url: http://cp.cloudflare.com/generate_204
-  interval: 150
-  tolerance: 60
+  interval: 300
+  tolerance: 100
   proxies:
   - 📍 TROJAN-001
   - 📍 SS-002
@@ -1638,33 +2518,15 @@ proxy-groups:
   - 📍 SS-098
   - 📍 VLESS-099
   - 📍 SS-100
-  - 📍 VLESS-101
-  - 📍 SS-102
-  - 📍 SS-103
-  - 📍 SS-104
-  - 📍 SS-105
-  - 📍 VLESS-106
-  - 📍 SS-107
-  - 📍 SS-108
-  - 📍 VLESS-109
-  - 📍 VLESS-110
-  - 📍 VLESS-111
-  - 📍 VLESS-112
-  - 📍 TROJAN-113
-  - 📍 SS-114
-  - 📍 SS-115
-  - 📍 VLESS-116
-  - 📍 VLESS-117
-  - 📍 SS-118
-  - 📍 VLESS-119
-  - 📍 VLESS-120
 - name: 🌍 全球直连
   type: select
   proxies:
   - DIRECT
   - 🚀 节点选择
 - name: 🔒 SS 节点池
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
   proxies:
   - 📍 SS-002
   - 📍 SS-005
@@ -1709,8 +2571,48 @@ proxy-groups:
   - 📍 SS-114
   - 📍 SS-115
   - 📍 SS-118
+  - 📍 SS-122
+  - 📍 SS-123
+  - 📍 SS-124
+  - 📍 SS-125
+  - 📍 SS-126
+  - 📍 SS-127
+  - 📍 SS-128
+  - 📍 SS-131
+  - 📍 SS-132
+  - 📍 SS-136
+  - 📍 SS-140
+  - 📍 SS-142
+  - 📍 SS-143
+  - 📍 SS-146
+  - 📍 SS-147
+  - 📍 SS-148
+  - 📍 SS-149
+  - 📍 SS-150
+  - 📍 SS-151
+  - 📍 SS-152
+  - 📍 SS-154
+  - 📍 SS-156
+  - 📍 SS-158
+  - 📍 SS-164
+  - 📍 SS-165
+  - 📍 SS-166
+  - 📍 SS-167
+  - 📍 SS-174
+  - 📍 SS-180
+  - 📍 SS-181
+  - 📍 SS-184
+  - 📍 SS-187
+  - 📍 SS-188
+  - 📍 SS-189
+  - 📍 SS-194
+  - 📍 SS-196
+  - 📍 SS-197
+  - 📍 SS-200
 - name: 🛸 VMess 节点池
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
   proxies:
   - 📍 VMESS-041
   - 📍 VMESS-044
@@ -1720,8 +2622,14 @@ proxy-groups:
   - 📍 VMESS-069
   - 📍 VMESS-073
   - 📍 VMESS-085
+  - 📍 VMESS-141
+  - 📍 VMESS-192
+  - 📍 VMESS-193
+  - 📍 VMESS-198
 - name: ⚡ VLESS 节点池
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
   proxies:
   - 📍 VLESS-003
   - 📍 VLESS-004
@@ -1789,12 +2697,52 @@ proxy-groups:
   - 📍 VLESS-117
   - 📍 VLESS-119
   - 📍 VLESS-120
+  - 📍 VLESS-129
+  - 📍 VLESS-130
+  - 📍 VLESS-134
+  - 📍 VLESS-135
+  - 📍 VLESS-138
+  - 📍 VLESS-139
+  - 📍 VLESS-144
+  - 📍 VLESS-159
+  - 📍 VLESS-160
+  - 📍 VLESS-161
+  - 📍 VLESS-163
+  - 📍 VLESS-169
+  - 📍 VLESS-171
+  - 📍 VLESS-172
+  - 📍 VLESS-173
+  - 📍 VLESS-175
+  - 📍 VLESS-176
+  - 📍 VLESS-177
+  - 📍 VLESS-179
+  - 📍 VLESS-182
+  - 📍 VLESS-183
+  - 📍 VLESS-185
+  - 📍 VLESS-186
+  - 📍 VLESS-190
+  - 📍 VLESS-191
+  - 📍 VLESS-199
 - name: 🐴 Trojan 节点池
-  type: select
+  type: url-test
+  url: http://cp.cloudflare.com/generate_204
+  interval: 300
   proxies:
   - 📍 TROJAN-001
   - 📍 TROJAN-062
   - 📍 TROJAN-113
+  - 📍 TROJAN-121
+  - 📍 TROJAN-133
+  - 📍 TROJAN-137
+  - 📍 TROJAN-145
+  - 📍 TROJAN-153
+  - 📍 TROJAN-155
+  - 📍 TROJAN-157
+  - 📍 TROJAN-162
+  - 📍 TROJAN-168
+  - 📍 TROJAN-170
+  - 📍 TROJAN-178
+  - 📍 TROJAN-195
 - name: 📹 YouTube
   type: select
   proxies:
