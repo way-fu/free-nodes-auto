@@ -1,9 +1,11 @@
 name: Update Free Nodes Every Week
 
+
 on:
   schedule:
-    - cron: '0 2 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *'
+  workflow_dispatch:      # ✨【极其关键】有了这一行，才能在网页上强制手动刷新！
+
 
 jobs:
   update-nodes:
