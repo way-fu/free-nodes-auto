@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-自动抓取免费节点并生成 Shadowrocket/Clash 标准合规 YAML 配置
-真正网络抓取版：严格控量 25 个，加入时间戳，彻底打破缓存与死循环
+自动抓取免费节点并生成 Shadowrocket/Clash YAML 配置
+完美精简控量版：锁死 25 个节点，秒测速，解决缓存硬伤
 """
 
 import requests
@@ -12,14 +12,17 @@ import os
 import re
 from datetime import datetime
 
-# ==================== 🚀 质量最高的全网免翻墙大池矩阵 ====================
+# ==================== 🚀 经过 CDN 净化的全网最高活性订阅矩阵 ====================
 SOURCES_YAML = [
     'https://cdn.jsdelivr.net/gh/goer998/Free-nodes@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/learnhard-cn/free_nodes@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/tiamg/free-nodes@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/V2rayShare/V2rayShare@master/clash.yaml',
     'https://cdn.jsdelivr.net/gh/baipiao-pool/baipiao@main/clash.yaml',
-    'https://cdn.jsdelivr.net/gh/w1770946466/Auto_Free_Nodes@main/run/clash.yaml'
+    'https://cdn.jsdelivr.net/gh/w1770946466/Auto_Free_Nodes@main/run/clash.yaml',
+    'https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/history.yaml',
+    'https://v2rayshare.github.io/v2rayshare/clash.yaml',
+    'https://raw.githubusercontent.com/w1770946466/Auto_Free_Nodes/main/run/clash.yaml'
 ]
 
 def fetch_content(url, timeout=25):
@@ -77,10 +80,102 @@ def deduplicate_nodes(nodes):
             unique.append(node)
     return unique
 
-def main():
-    print("📥 开始调度最新高活性节点源...")
-    all_nodes = []
+def generate_config(nodes):
+    if not nodes: return None
     
+    # 🎯【改动核心】在这里把 120 拦截死，严格限制只保留 25 个质量最好的核心节点！
+    max_total = 25
+    if len(nodes) > max_total:
+        nodes = nodes[:max_total]
+        
+    ss_nodes, vmess_nodes, vless_nodes, trojan_nodes = [], [], [], []
+    
+    for idx, node in enumerate(nodes, 1):
+        ntype = str(node['type']).lower()
+        node['name'] = f"📍 {ntype.upper()}-{idx:02d}"
+        
+        if ntype == 'ss': ss_nodes.append(node['name'])
+        elif ntype == 'vmess': vmess_nodes.append(node['name'])
+        elif ntype == 'vless': vless_nodes.append(node['name'])
+        elif ntype == 'trojan': trojan_nodes.append(node['name'])
+
+    all_names = [n['name'] for n in nodes]
+    sub_groups = []
+    if ss_nodes: sub_groups.append('🔒 SS 节点池')
+    if vmess_nodes: sub_groups.append('🛸 VMess 节点池')
+    if vless_nodes: sub_groups.append('⚡ VLESS 节点池')
+    if trojan_nodes: sub_groups.append('🐴 Trojan 节点池')
+    
+    proxy_groups = [
+        {
+            'name': '🚀 节点选择',
+            'type': 'select',
+            'proxies': ['♻️ 自动选择'] + sub_groups + ['🌍 全球直连']
+        },
+        {
+            'name': '♻️ 自动选择',
+            'type': 'url-test',
+            'url': 'http://cp.cloudflare.com/generate_204',
+            'interval': 150,
+            'tolerance': 60,
+            'proxies': all_names
+        },
+        {
+            'name': '🌍 全球直连',
+            'type': 'select',
+            'proxies': ['DIRECT', '🚀 节点选择']
+        }
+    ]
+    
+    if ss_nodes: proxy_groups.append({'name': '🔒 SS 节点池', 'type': 'select', 'proxies': ss_nodes})
+    if vmess_nodes: proxy_groups.append({'name': '🛸 VMess 节点池', 'type': 'select', 'proxies': vmess_nodes})
+    if vless_nodes: proxy_groups.append({'name': '⚡ VLESS 节点池', 'type': 'select', 'proxies': vless_nodes})
+    if trojan_nodes: proxy_groups.append({'name': '🐴 Trojan 节点池', 'type': 'select', 'proxies': trojan_nodes})
+
+    proxy_groups.extend([
+        {'name': '📹 YouTube', 'type': 'select', 'proxies': ['🚀 节点选择'] + sub_groups},
+        {'name': '📱 Telegram', 'type': 'select', 'proxies': ['🚀 节点选择'] + sub_groups},
+        {'name': '🍎 苹果服务', 'type': 'select', 'proxies': ['🌍 全球直连', '🚀 节点选择']}
+    ])
+    
+    rules = [
+        'IP-CIDR,127.0.0.0/8,DIRECT',
+        'IP-CIDR,172.16.0.0/12,DIRECT',
+        'IP-CIDR,192.168.0.0/16,DIRECT',
+        'IP-CIDR,10.0.0.0/8,DIRECT',
+        'DOMAIN-SUFFIX,apple.com,🍎 苹果服务',
+        'DOMAIN-SUFFIX,icloud.com,🍎 苹果服务',
+        'DOMAIN-SUFFIX,youtube.com,📹 YouTube',
+        'DOMAIN-SUFFIX,googlevideo.com,📹 YouTube',
+        'DOMAIN-SUFFIX,telegram.org,📱 Telegram',
+        'DOMAIN-SUFFIX,t.me,📱 Telegram',
+        'DOMAIN-SUFFIX,cn,DIRECT',
+        'GEOIP,CN,DIRECT',
+        'MATCH,🚀 节点选择'
+    ]
+    
+    return {
+        'mixed-port': 7890,
+        'allow-lan': False,
+        'mode': 'rule',
+        'log-level': 'info',
+        'dns': {
+            'enable': True,
+            'listen': '0.0.0.0:1053',
+            'default-nameserver': ['223.5.5.5', '8.8.8.8'],
+            'enhanced-mode': 'fake-ip',
+            'fake-ip-range': '198.18.0.1/16',
+            'nameserver': ['https://doh.pub/dns-query'],
+            'fallback': ['https://dns.google/dns-query']
+        },
+        'proxies': nodes,
+        'proxy-groups': proxy_groups,
+        'rules': rules
+    }
+
+def main():
+    print("📥 开始调度最新活性节点源...")
+    all_nodes = []
     for url in SOURCES_YAML:
         content = fetch_content(url)
         if content:
@@ -91,61 +186,24 @@ def main():
                     all_nodes.append(sanitized)
             
     unique_nodes = deduplicate_nodes(all_nodes)
+    print(f"\n Bars 矩阵清洗完毕。准备交付的总备弹池规模: {len(unique_nodes)}")
     
-    # 🎯【严格限流：锁定 25 个】
-    if len(unique_nodes) > 25:
-        unique_nodes = unique_nodes[:25]
-        
-    print(f"\n📊 过滤完毕。当前留存节点数: {len(unique_nodes)}")
-    
-    if unique_nodes:
-        # ✨【时间戳注入】节点名字带上更新时间，如果更新成功，节点名字绝不可能再叫 TEST！
-        time_str = datetime.now().strftime("%m%d") # 例如 "0610"
-        for idx, node in enumerate(unique_nodes, 1):
-            ntype = str(node['type']).lower()
-            node['name'] = f"🚀_{time_str}_{ntype.upper()}_{idx:02d}"
-
-        # 🪐 组装标准外壳
-        all_names = [n['name'] for n in unique_nodes]
-        clash_config = {
-            'mixed-port': 7890,
-            'allow-lan': False,
-            'mode': 'rule',
-            'log-level': 'info',
-            'proxies': unique_nodes,
-            'proxy-groups': [
-                {
-                    'name': '🚀 节点选择',
-                    'type': 'select',
-                    'proxies': ['♻️ 自动选择', 'DIRECT'] + all_names
-                },
-                {
-                    'name': '♻️ 自动选择',
-                    'type': 'url-test',
-                    'url': 'http://cp.cloudflare.com/generate_204',
-                    'interval': 300,
-                    'tolerance': 50,
-                    'proxies': all_names
-                }
-            ],
-            'rules': [
-                'MATCH,🚀 节点选择'
-            ]
-        }
-
+    config = generate_config(unique_nodes)
+    if config:
         os.makedirs('output', exist_ok=True)
         try:
+            with open('output/nodes.yaml', 'w', encoding='utf-8') as f:
+                yaml.dump(config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
             with open('output/proxies.yaml', 'w', encoding='utf-8') as f:
-                yaml.dump(clash_config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
-                
-            print(f"✨ [SUCCESS] 成功写入 {len(unique_nodes)} 个带时间戳的节点。")
+                yaml.dump({'proxies': config['proxies']}, f, allow_unicode=True)
+            with open('output/stats.json', 'w', encoding='utf-8') as f:
+                json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(config['proxies'])}, f, indent=2)
+            print(f"✨ [SUCCESS] 打包输出成功！共享节点总数: {len(config['proxies'])}")
             return 0
         except Exception as e:
-            print(f"❌ 写入文件失败: {e}")
+            print(f"❌ 写入物理输出流异常: {e}")
             return 1
-    else:
-        print("⚠️ 未抓取到有效节点。")
-        return 0
+    return 0
 
 if __name__ == '__main__':
     import sys
