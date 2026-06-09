@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 自动抓取免费节点并生成 Shadowrocket/Clash 标准合规 YAML 配置
-真正网络抓取版：严格控量 25 个，秒测速，完美全显，绝无 test 节点
+真正网络抓取版：严格控量 25 个，加入时间戳，彻底打破缓存与死循环
 """
 
 import requests
@@ -38,7 +38,6 @@ def parse_clash_yaml(content):
     if not content:
         return []
     try:
-        # 移除可能导致解析失败的控制字符
         sanitized_content = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', content)
         data = yaml.safe_load(sanitized_content)
         if data and isinstance(data, dict):
@@ -79,7 +78,7 @@ def deduplicate_nodes(nodes):
     return unique
 
 def main():
-    print("📥 开始拉取全网高活性代理源...")
+    print("📥 开始调度最新高活性节点源...")
     all_nodes = []
     
     for url in SOURCES_YAML:
@@ -93,20 +92,20 @@ def main():
             
     unique_nodes = deduplicate_nodes(all_nodes)
     
-    # 🎯【核心限流：严格锁死 25 个】
-    # 彻底解决节点过多、手机测速过慢的问题
+    # 🎯【严格限流：锁定 25 个】
     if len(unique_nodes) > 25:
         unique_nodes = unique_nodes[:25]
         
-    print(f"\n📊 过滤洗牌完毕。即将交付给小火箭的真实有效节点数: {len(unique_nodes)}")
+    print(f"\n📊 过滤完毕。当前留存节点数: {len(unique_nodes)}")
     
     if unique_nodes:
-        # 为小火箭重新规范化命名，防止重名导致只剩一个
+        # ✨【时间戳注入】节点名字带上更新时间，如果更新成功，节点名字绝不可能再叫 TEST！
+        time_str = datetime.now().strftime("%m%d") # 例如 "0610"
         for idx, node in enumerate(unique_nodes, 1):
             ntype = str(node['type']).lower()
-            node['name'] = f"{ntype.upper()}_{idx:02d}"
+            node['name'] = f"🚀_{time_str}_{ntype.upper()}_{idx:02d}"
 
-        # 🪐 包装小火箭必须依赖的标准 Clash 骨架外壳
+        # 🪐 组装标准外壳
         all_names = [n['name'] for n in unique_nodes]
         clash_config = {
             'mixed-port': 7890,
@@ -136,20 +135,16 @@ def main():
 
         os.makedirs('output', exist_ok=True)
         try:
-            # 写入覆盖 proxies.yaml
             with open('output/proxies.yaml', 'w', encoding='utf-8') as f:
                 yaml.dump(clash_config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
                 
-            with open('output/stats.json', 'w', encoding='utf-8') as f:
-                json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(unique_nodes)}, f, indent=2)
-                
-            print(f"✨ [SUCCESS] 完美写入 proxies.yaml，当前包含 {len(unique_nodes)} 个真实活节点。")
+            print(f"✨ [SUCCESS] 成功写入 {len(unique_nodes)} 个带时间戳的节点。")
             return 0
         except Exception as e:
             print(f"❌ 写入文件失败: {e}")
             return 1
     else:
-        print("⚠️ 未抓取到任何有效网络节点。")
+        print("⚠️ 未抓取到有效节点。")
         return 0
 
 if __name__ == '__main__':
