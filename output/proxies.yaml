@@ -1,26 +1,325 @@
-mixed-port: 7890
-mode: rule
-log-level: info
 proxies:
-- name: TEST_SS_01
-  type: ss
-  server: 1.1.1.1
-  port: 8388
-  cipher: aes-256-gcm
-  password: testpassword123
+- name: 📍 TROJAN-01
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.219
+  skip-cert-verify: true
+  sni: 🔒+[By+EbraSha]+b2n.ir/v2ray-configs+|+400+
+  tls: true
+  type: trojan
   udp: true
-- name: TEST_SS_02
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 📍 SS-02
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.236
   type: ss
-  server: 8.8.8.8
-  port: 8388
-  cipher: aes-256-gcm
-  password: testpassword456
   udp: true
-proxy-groups:
-- name: 🚀 节点选择
-  type: select
-  proxies:
-  - TEST_SS_01
-  - TEST_SS_02
-rules:
-- MATCH,🚀 节点选择
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: grpc
+  name: 📍 VLESS-03
+  network: grpc
+  port: 22955
+  reality-opts:
+    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+    short-id: 6ba85179e30d4fc2
+  server: 159.195.41.69
+  servername: one-piece.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 📍 VLESS-04
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 158.160.53.57
+  servername: api-maps.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3d29bd40-5f23-4024-aab6-17258cd55a7e
+  xudp: true
+- cipher: aes-256-gcm
+  country: 🇨🇦CA
+  delay: 1288
+  name: 📍 SS-05
+  password: 0690659746980c46
+  port: 20291
+  server: 167.17.179.197
+  type: ss
+  udp: true
+- encryption: none
+  name: 📍 VLESS-06
+  network: ws
+  port: 2052
+  server: 25.25.25.25
+  type: vless
+  udp: true
+  uuid: 2d09b18d-d92f-4790-b519-13505060728d
+  ws-opts:
+    headers:
+      Host: you.nitronetwork.online
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: ''
+  xudp: true
+- name: 📍 VLESS-07
+  network: ws
+  port: 2087
+  server: 25.129.197.138
+  servername: cloudali.sudo-network.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2452c5b1-26b3-4265-a2d8-818f62685f97
+  ws-opts:
+    headers:
+      host: cloudali.sudo-network.xyz
+    path: /graphql
+- client-fingerprint: chrome
+  name: 📍 VLESS-08
+  network: ws
+  port: 80
+  server: 146.75.119.82
+  tls: false
+  type: vless
+  udp: true
+  uuid: 74542945-0d84-4797-a56e-e7f31b84c5be
+  ws-opts:
+    headers:
+      Host: welcomtofreeboarders.com
+    path: /ws/?ed=2048/@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz@AzadMarz/?2048
+- encryption: none
+  name: 📍 VLESS-09
+  network: ws
+  port: 8880
+  server: clean.photoggenic.ir
+  type: vless
+  udp: true
+  uuid: 8e997404-cb62-4fa1-a8c9-c77a32f10153
+  ws-opts:
+    headers:
+      Host: rightel.IRANCEELL.mci.it.www.speedtest.net.zula.ir.focusontrade.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?ed=8880
+  xudp: true
+- name: 📍 VLESS-10
+  network: ws
+  port: 443
+  server: 43.161.222.233
+  servername: sni.meibidi.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: sni.meibidi.pp.ua
+    path: /?ed=2560
+- name: 📍 VLESS-11
+  network: ws
+  port: 443
+  server: 104.17.25.173
+  servername: l.ayovo.netlib.re
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  ws-opts:
+    headers:
+      Host: l.ayovo.netlib.re
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  country: 🇻🇳VN
+  delay: 1607
+  name: 📍 SS-12
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.163
+  type: ss
+  udp: true
+- name: 📍 VLESS-13
+  port: 2053
+  server: 92.60.70.36
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 08c7f096-d057-4d53-82fd-c739d372887b
+- client-fingerprint: chrome
+  name: 📍 VLESS-14
+  network: ws
+  port: 443
+  server: 18.138.251.129
+  tls: true
+  type: vless
+  udp: true
+  uuid: e258977b-e413-4718-a3af-02d75492c349
+  ws-opts:
+    headers:
+      Host: ww3.xaniujp1.qzz.io
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.110 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-15
+  port: 10001
+  reality-opts:
+    public-key: 4jNz4Bw-FZlaX-WtfAdwK0hegY28W_k8AttGd-7hZn4
+    short-id: fb2c6678
+  server: 156.229.161.107
+  servername: www.icloud.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9c79aceb-4649-44ea-9698-b5e9ecf6d6da
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-16
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
+    short-id: c7e42004e5f024be
+  server: 95.174.92.156
+  servername: sun6-21.userapi.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-17
+  port: 443
+  reality-opts:
+    public-key: rmjxUM7tGXK1tCx9DN6LujbEflBHixsg8oTsVrdTrDM
+    short-id: a28842ab2911096b
+  server: kz.fasti.win
+  servername: kz.fasti.win
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+- cipher: aes-256-gcm
+  name: 📍 SS-18
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  port: 36885
+  server: ss.031.node-for-bigairport.win
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 📍 VLESS-19
+  network: tcp
+  port: 443
+  server: 144.31.0.64
+  servername: plcdn1.suio.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+  xudp: true
+- cipher: aes-128-gcm
+  delay: 1679
+  name: 📍 SS-20
+  password: be1c6eab-3d70-4cf0-ae9a-b3175c7dfb47
+  plugin: obfs
+  plugin-opts:
+    host: 9962b9147f2651d984febb6ba061f477.baidu.com
+    mode: http
+  port: 36602
+  server: gd2.bjnet2.com
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 📍 VLESS-21
+  network: tcp
+  port: 587
+  reality-opts:
+    public-key: HnPEhCDTcZnDejsAiidoOSx2-h0EvJMILj4bv3X1mBc
+    short-id: 916e8258c4a01b02
+  server: uae.torprospeed.ir
+  servername: excoino.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 65a1e22c-d37e-4b92-b6ca-1d09dcd1d441
+  xudp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-22
+  port: 8443
+  reality-opts:
+    public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
+    short-id: 58c512b4422e2517
+  server: 78.153.139.68
+  servername: images.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
+- client-fingerprint: chrome
+  encryption: none
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 📍 VLESS-23
+  network: tcp
+  port: 443
+  server: 144.31.90.215
+  servername: ficdn19.suio.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: 02fb468f-21f2-460e-bfa1-ef52ae5e627f
+  xudp: true
+- client-fingerprint: random
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 📍 VLESS-24
+  network: tcp
+  port: 443
+  server: s464.ccgfw.top
+  servername: u730537u6a9ds464.ccgfw.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: e32f9c43-b141-3d58-b879-15c6a402e119
+  xudp: true
+- name: 📍 VLESS-25
+  network: ws
+  port: 8443
+  server: 104.17.102.95
+  servername: sni.meibidi.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: sni.meibidi.pp.ua
+    path: /?ed=2560
