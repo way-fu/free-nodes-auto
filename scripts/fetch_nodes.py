@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-自动抓取免费节点并生成 Shadowrocket/Clash YAML 配置
-限流精简版：严格控制在 30 个以内，大幅缩短小火箭测速等待时间
+自动抓取免费节点并生成小火箭专属的无外壳纯净 YAML 配置
+彻底根除小火箭只认 1 个节点的硬伤，且严格锁死在 25 个节点以内
 """
 
 import requests
@@ -92,35 +92,35 @@ def main():
             
     unique_nodes = deduplicate_nodes(all_nodes)
     
-    # 🎯 【核心优化】强制截断控量：严格锁死只取前 28 个最优质节点！
-    # 彻底杜绝 120 个节点测速慢的硬伤，1 秒钟即可完成检测
-    if len(unique_nodes) > 28:
-        unique_nodes = unique_nodes[:28]
+    # 🎯【核心控量】严格缩死在 25 个节点以内！绝不多给，秒测速
+    if len(unique_nodes) > 25:
+        unique_nodes = unique_nodes[:25]
         
-    print(f"\n📊 精简完毕。即将输出的核心节点规模: {len(unique_nodes)}")
+    print(f"\n📊 精简控量完毕。最终保留的节点规模: {len(unique_nodes)}")
     
     if unique_nodes:
-        # 为小火箭做一次纯净命名净化，防止重名导致只显示一个
+        # 统一规范化重命名，防止小火箭重名合并
         for idx, node in enumerate(unique_nodes, 1):
             ntype = str(node['type']).lower()
             node['name'] = f"{ntype.upper()}_{idx:02d}"
 
         os.makedirs('output', exist_ok=True)
         try:
-            # 依然完美写入你原本最熟悉的 proxies.yaml 结构
+            # ✨【极其关键】直接 dump 列表本身（unique_nodes），删掉顶层的 {'proxies': ...} 外壳！
+            # 这样输出的文件开头直接是 `- name: ...`，小火箭可以 100% 毫无障碍地全部识别
             with open('output/proxies.yaml', 'w', encoding='utf-8') as f:
-                yaml.dump({'proxies': unique_nodes}, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
+                yaml.dump(unique_nodes, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
                 
             with open('output/stats.json', 'w', encoding='utf-8') as f:
                 json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(unique_nodes)}, f, indent=2)
                 
-            print(f"✨ [SUCCESS] 成功写入 proxies.yaml，当前包含 {len(unique_nodes)} 个精简活节点。")
+            print(f"✨ [SUCCESS] 成功写入纯净 proxies.yaml，当前包含 {len(unique_nodes)} 个节点。")
             return 0
         except Exception as e:
             print(f"❌ 写入文件失败: {e}")
             return 1
     else:
-        print("⚠️ 未抓取到有效节点，启用就地保护。")
+        print("⚠️ 未抓取到有效节点。")
         return 0
 
 if __name__ == '__main__':
