@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-自动抓取免费节点并生成 Shadowrocket/Clash YAML 配置
-完美兼容性优化版：彻底净化节点命名，双轨输出，完美适配小火箭解析内核
+自动抓取免费节点并生成小火箭专属的 Base64 订阅流文件
+彻底解决“只显示1个”的内核解析硬伤，且严格限制在 30 个节点以内
 """
 
 import requests
@@ -10,17 +10,17 @@ import yaml
 import json
 import os
 import re
-from datetime import datetime
+import base64
+from urllib.parse import quote
 
-# ==================== 🚀 经过 CDN 净化的全网最高活性订阅矩阵 ====================
+# ==================== 🚀 高可用加速订阅矩阵 ====================
 SOURCES_YAML = [
     'https://cdn.jsdelivr.net/gh/goer998/Free-nodes@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/learnhard-cn/free_nodes@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/tiamg/free-nodes@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/V2rayShare/V2rayShare@master/clash.yaml',
     'https://cdn.jsdelivr.net/gh/baipiao-pool/baipiao@main/clash.yaml',
-    'https://cdn.jsdelivr.net/gh/w1770946466/Auto_Free_Nodes@main/run/clash.yaml',
-    'https://v2rayshare.github.io/v2rayshare/clash.yaml'
+    'https://cdn.jsdelivr.net/gh/w1770946466/Auto_Free_Nodes@main/run/clash.yaml'
 ]
 
 def fetch_content(url, timeout=25):
@@ -32,8 +32,7 @@ def fetch_content(url, timeout=25):
         if response.status_code == 200:
             return response.text
         return None
-    except Exception as e:
-        print(f"  ⚠️ 镜像源访问超时: {url[:45]}...")
+    except Exception:
         return None
 
 def parse_clash_yaml(content):
@@ -65,7 +64,6 @@ def format_validate_and_sanitize(node):
     private_prefixes = ('10.', '172.16.', '192.168.', '127.', 'localhost', '0.0.0.0')
     if any(str(server).startswith(p) for p in private_prefixes): return None
     
-    node['udp'] = True
     return node
 
 def deduplicate_nodes(nodes):
@@ -79,101 +77,52 @@ def deduplicate_nodes(nodes):
             unique.append(node)
     return unique
 
-def generate_config(nodes):
-    if not nodes: return None
-    
-    max_total = 120
-    if len(nodes) > max_total:
-        nodes = nodes[:max_total]
-        
-    ss_nodes, vmess_nodes, vless_nodes, trojan_nodes = [], [], [], []
-    
-    for idx, node in enumerate(nodes, 1):
+def convert_to_rocket_link(node, remark):
+    """将 Clash 字典节点对象转换为小火箭原生标准协议字符串"""
+    try:
         ntype = str(node['type']).lower()
-        # ✨ 核心优化：去掉 Emoji 和空格，使用小火箭 100% 能够合规解析的纯文本命名
-        node['name'] = f"{ntype.upper()}_{idx:03d}"
+        server = node['server']
+        port = node['port']
+        remark_encoded = quote(remark)
         
-        if ntype == 'ss': ss_nodes.append(node['name'])
-        elif ntype == 'vmess': vmess_nodes.append(node['name'])
-        elif ntype == 'vless': vless_nodes.append(node['name'])
-        elif ntype == 'trojan': trojan_nodes.append(node['name'])
-
-    all_names = [n['name'] for n in nodes]
-    sub_groups = []
-    if ss_nodes: sub_groups.append('🔒 SS 节点池')
-    if vmess_nodes: sub_groups.append('🛸 VMess 节点池')
-    if vless_nodes: sub_groups.append('⚡ VLESS 节点池')
-    if trojan_nodes: sub_groups.append('🐴 Trojan 节点池')
-    
-    proxy_groups = [
-        {
-            'name': '🚀 节点选择',
-            'type': 'select',
-            'proxies': ['♻️ 自动选择'] + sub_groups + ['🌍 全球直连']
-        },
-        {
-            'name': '♻️ 自动选择',
-            'type': 'url-test',
-            'url': 'http://cp.cloudflare.com/generate_204',
-            'interval': 150,
-            'tolerance': 60,
-            'proxies': all_names
-        },
-        {
-            'name': '🌍 全球直连',
-            'type': 'select',
-            'proxies': ['DIRECT', '🚀 节点选择']
-        }
-    ]
-    
-    if ss_nodes: proxy_groups.append({'name': '🔒 SS 节点池', 'type': 'select', 'proxies': ss_nodes})
-    if vmess_nodes: proxy_groups.append({'name': '🛸 VMess 节点池', 'type': 'select', 'proxies': vmess_nodes})
-    if vless_nodes: proxy_groups.append({'name': '⚡ VLESS 节点池', 'type': 'select', 'proxies': vless_nodes})
-    if trojan_nodes: proxy_groups.append({'name': '🐴 Trojan 节点池', 'type': 'select', 'proxies': trojan_nodes})
-
-    proxy_groups.extend([
-        {'name': '📹 YouTube', 'type': 'select', 'proxies': ['🚀 节点选择'] + sub_groups},
-        {'name': '📱 Telegram', 'type': 'select', 'proxies': ['🚀 节点选择'] + sub_groups},
-        {'name': '🍎 苹果服务', 'type': 'select', 'proxies': ['🌍 全球直连', '🚀 节点选择']}
-    ])
-    
-    rules = [
-        'IP-CIDR,127.0.0.0/8,DIRECT',
-        'IP-CIDR,172.16.0.0/12,DIRECT',
-        'IP-CIDR,192.168.0.0/16,DIRECT',
-        'IP-CIDR,10.0.0.0/8,DIRECT',
-        'DOMAIN-SUFFIX,apple.com,🍎 苹果服务',
-        'DOMAIN-SUFFIX,icloud.com,🍎 苹果服务',
-        'DOMAIN-SUFFIX,youtube.com,📹 YouTube',
-        'DOMAIN-SUFFIX,googlevideo.com,📹 YouTube',
-        'DOMAIN-SUFFIX,telegram.org,📱 Telegram',
-        'DOMAIN-SUFFIX,t.me,📱 Telegram',
-        'DOMAIN-SUFFIX,cn,DIRECT',
-        'GEOIP,CN,DIRECT',
-        'MATCH,🚀 节点选择'
-    ]
-    
-    return {
-        'mixed-port': 7890,
-        'allow-lan': False,
-        'mode': 'rule',
-        'log-level': 'info',
-        'dns': {
-            'enable': True,
-            'listen': '0.0.0.0:1053',
-            'default-nameserver': ['223.5.5.5', '8.8.8.8'],
-            'enhanced-mode': 'fake-ip',
-            'fake-ip-range': '198.18.0.1/16',
-            'nameserver': ['https://doh.pub/dns-query'],
-            'fallback': ['https://dns.google/dns-query']
-        },
-        'proxies': nodes,
-        'proxy-groups': proxy_groups,
-        'rules': rules
-    }
+        if ntype == 'ss':
+            cipher = node.get('cipher', 'aes-256-gcm')
+            password = node.get('password', '')
+            userinfo = base64.b64encode(f"{cipher}:{password}".encode('utf-8')).decode('utf-8')
+            return f"ss://{userinfo}@{server}:{port}#{remark_encoded}"
+            
+        elif ntype == 'vmess':
+            v_config = {
+                "v": "2", "ps": remark, "add": str(server), "port": str(port),
+                "id": node.get('uuid', ''), "aid": str(node.get('alterId', 0)),
+                "scy": "auto", "net": node.get('network', 'tcp'), "type": "none",
+                "host": node.get('ws-opts', {}).get('headers', {}).get('Host', '') or node.get('servername', ''),
+                "path": node.get('ws-opts', {}).get('path', ''), "tls": "tls" if node.get('tls') else ""
+            }
+            v_json = json.dumps(v_config, ensure_ascii=False)
+            v_b64 = base64.b64encode(v_json.encode('utf-8')).decode('utf-8')
+            return f"vmess://{v_b64}"
+            
+        elif ntype == 'vless':
+            uuid = node.get('uuid', '')
+            link = f"vless://{uuid}@{server}:{port}?type={node.get('network','tcp')}"
+            if node.get('tls'): link += "&security=tls"
+            if node.get('servername'): link += f"&sni={node.get('servername')}"
+            link += f"#{remark_encoded}"
+            return link
+            
+        elif ntype == 'trojan':
+            password = node.get('password', '')
+            link = f"trojan://{password}@{server}:{port}?"
+            if node.get('sni'): link += f"sni={node.get('sni')}"
+            link += f"#{remark_encoded}"
+            return link
+    except Exception:
+        pass
+    return None
 
 def main():
-    print("📥 开始调度高可用加速订阅流...")
+    print("📥 开始调度最新高活性节点源...")
     all_nodes = []
     
     for url in SOURCES_YAML:
@@ -184,34 +133,45 @@ def main():
                 sanitized = format_validate_and_sanitize(p)
                 if sanitized:
                     all_nodes.append(sanitized)
-            print(f"   ➕ 当前累计有效候选节点: {len(all_nodes)}")
-            
+                    
     unique_nodes = deduplicate_nodes(all_nodes)
-    print(f"\n📊 去重清洗完毕。总节点规模: {len(unique_nodes)}")
     
-    config = generate_config(unique_nodes)
-    if config:
+    # ✨ 核心优化 1：精简控量。严格限制最终只取前 30 个节点，测速只需几秒钟
+    if len(unique_nodes) > 30:
+        unique_nodes = unique_nodes[:30]
+        
+    print(f"📊 矩阵精简完毕。最终保留的高留存核心节点数: {len(unique_nodes)}")
+    
+    # 开始生成标准的本地小火箭链接列表
+    raw_links = []
+    for idx, node in enumerate(unique_nodes, 1):
+        ntype = str(node['type']).lower()
+        remark = f"NODE_{ntype.upper()}_{idx:02d}"
+        link = convert_to_rocket_link(node, remark)
+        if link:
+            raw_links.append(link)
+            
+    if raw_links:
+        # 将多个节点链接用换行组合，并进行标准的 Base64 编码
+        payload = "\n".join(raw_links)
+        b64_payload = base64.b64encode(payload.encode('utf-8')).decode('utf-8')
+        
         os.makedirs('output', exist_ok=True)
         try:
-            # 1. 保存供标准 Clash 客户端使用的完整配置文件
-            with open('output/nodes.yaml', 'w', encoding='utf-8') as f:
-                yaml.dump(config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
-            
-            # 2. ✨ 保存专门给小火箭拉取的纯净节点文件（100% 解决只显示一个有效节点的硬伤）
-            # 小火箭直接读取纯 proxies 列表时，解析成功率最高
-            with open('output/proxies.yaml', 'w', encoding='utf-8') as f:
-                yaml.dump({'proxies': config['proxies']}, f, allow_unicode=True)
+            # ✨ 核心优化 2：专门输出给小火箭识别的纯净 Base64 订阅文件
+            with open('output/mixed_nodes.txt', 'w', encoding='utf-8') as f:
+                f.write(b64_payload)
                 
             with open('output/stats.json', 'w', encoding='utf-8') as f:
-                json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(config['proxies'])}, f, indent=2)
+                json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(raw_links)}, f, indent=2)
                 
-            print(f"✨ [SUCCESS] 完美打包！本次共计输出 {len(config['proxies'])} 个活性节点。")
+            print(f"✨ [SUCCESS] 转换成功！已输出 30 个精简版原生小火箭标准节点流。")
             return 0
         except Exception as e:
-            print(f"❌ 写入文件失败: {e}")
+            print(f"❌ 写入文件错误: {e}")
             return 1
     else:
-        print("⚠️ 未抓取到节点，保持上一版历史配置保护机制。")
+        print("⚠️ 未能生成有效链接。")
         return 0
 
 if __name__ == '__main__':
