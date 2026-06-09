@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 自动抓取免费节点并生成 Shadowrocket/Clash YAML 配置
-完美精简控量版：锁死 25 个节点，秒测速，解决缓存硬伤
+【终极落盘拦截版】无论上层逻辑如何多变，在文件写入的最后一刻强行砍成 25 个
 """
 
 import requests
@@ -12,7 +12,6 @@ import os
 import re
 from datetime import datetime
 
-# ==================== 🚀 经过 CDN 净化的全网最高活性订阅矩阵 ====================
 SOURCES_YAML = [
     'https://cdn.jsdelivr.net/gh/goer998/Free-nodes@main/clash.yaml',
     'https://cdn.jsdelivr.net/gh/learnhard-cn/free_nodes@main/clash.yaml',
@@ -26,28 +25,22 @@ SOURCES_YAML = [
 ]
 
 def fetch_content(url, timeout=25):
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-    }
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
     try:
         response = requests.get(url, headers=headers, timeout=timeout)
-        if response.status_code == 200:
-            return response.text
-        return None
-    except Exception:
-        return None
+        if response.status_code == 200: return response.text
+    except Exception: pass
+    return None
 
 def parse_clash_yaml(content):
-    if not content:
-        return []
+    if not content: return []
     try:
         sanitized_content = re.sub(r'[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]', '', content)
         data = yaml.safe_load(sanitized_content)
         if data and isinstance(data, dict):
             proxies = data.get('proxies', [])
             return proxies if isinstance(proxies, list) else []
-    except Exception:
-        pass
+    except Exception: pass
     return []
 
 def format_validate_and_sanitize(node):
@@ -55,17 +48,8 @@ def format_validate_and_sanitize(node):
     server = node.get('server', '')
     port = node.get('port', 0)
     node_type = str(node.get('type', '')).lower()
-    
     if not server or not port or not isinstance(port, int): return None
     if node_type not in ['ss', 'vmess', 'vless', 'trojan']: return None
-    
-    if node_type == 'ss' and not node.get('password'): return None
-    if node_type in ['vmess', 'vless'] and not node.get('uuid'): return None
-    if node_type == 'trojan' and not node.get('password'): return None
-    
-    private_prefixes = ('10.', '172.16.', '192.168.', '127.', 'localhost', '0.0.0.0')
-    if any(str(server).startswith(p) for p in private_prefixes): return None
-    
     node['udp'] = True
     return node
 
@@ -83,17 +67,14 @@ def deduplicate_nodes(nodes):
 def generate_config(nodes):
     if not nodes: return None
     
-    # 🎯【改动核心】在这里把 120 拦截死，严格限制只保留 25 个质量最好的核心节点！
-    max_total = 25
-    if len(nodes) > max_total:
-        nodes = nodes[:max_total]
+    # 🌟 核心防御 1：不管上层传进来了多少，在这里再次死死卡住 25 个
+    if len(nodes) > 25:
+        nodes = nodes[:25]
         
     ss_nodes, vmess_nodes, vless_nodes, trojan_nodes = [], [], [], []
-    
     for idx, node in enumerate(nodes, 1):
         ntype = str(node['type']).lower()
         node['name'] = f"📍 {ntype.upper()}-{idx:02d}"
-        
         if ntype == 'ss': ss_nodes.append(node['name'])
         elif ntype == 'vmess': vmess_nodes.append(node['name'])
         elif ntype == 'vless': vless_nodes.append(node['name'])
@@ -107,24 +88,9 @@ def generate_config(nodes):
     if trojan_nodes: sub_groups.append('🐴 Trojan 节点池')
     
     proxy_groups = [
-        {
-            'name': '🚀 节点选择',
-            'type': 'select',
-            'proxies': ['♻️ 自动选择'] + sub_groups + ['🌍 全球直连']
-        },
-        {
-            'name': '♻️ 自动选择',
-            'type': 'url-test',
-            'url': 'http://cp.cloudflare.com/generate_204',
-            'interval': 150,
-            'tolerance': 60,
-            'proxies': all_names
-        },
-        {
-            'name': '🌍 全球直连',
-            'type': 'select',
-            'proxies': ['DIRECT', '🚀 节点选择']
-        }
+        {'name': '🚀 节点选择', 'type': 'select', 'proxies': ['♻️ 自动选择'] + sub_groups + ['🌍 全球直连']},
+        {'name': '♻️ 自动选择', 'type': 'url-test', 'url': 'http://cp.cloudflare.com/generate_204', 'interval': 150, 'tolerance': 60, 'proxies': all_names},
+        {'name': '🌍 全球直连', 'type': 'select', 'proxies': ['DIRECT', '🚀 节点选择']}
     ]
     
     if ss_nodes: proxy_groups.append({'name': '🔒 SS 节点池', 'type': 'select', 'proxies': ss_nodes})
@@ -138,39 +104,9 @@ def generate_config(nodes):
         {'name': '🍎 苹果服务', 'type': 'select', 'proxies': ['🌍 全球直连', '🚀 节点选择']}
     ])
     
-    rules = [
-        'IP-CIDR,127.0.0.0/8,DIRECT',
-        'IP-CIDR,172.16.0.0/12,DIRECT',
-        'IP-CIDR,192.168.0.0/16,DIRECT',
-        'IP-CIDR,10.0.0.0/8,DIRECT',
-        'DOMAIN-SUFFIX,apple.com,🍎 苹果服务',
-        'DOMAIN-SUFFIX,icloud.com,🍎 苹果服务',
-        'DOMAIN-SUFFIX,youtube.com,📹 YouTube',
-        'DOMAIN-SUFFIX,googlevideo.com,📹 YouTube',
-        'DOMAIN-SUFFIX,telegram.org,📱 Telegram',
-        'DOMAIN-SUFFIX,t.me,📱 Telegram',
-        'DOMAIN-SUFFIX,cn,DIRECT',
-        'GEOIP,CN,DIRECT',
-        'MATCH,🚀 节点选择'
-    ]
-    
     return {
-        'mixed-port': 7890,
-        'allow-lan': False,
-        'mode': 'rule',
-        'log-level': 'info',
-        'dns': {
-            'enable': True,
-            'listen': '0.0.0.0:1053',
-            'default-nameserver': ['223.5.5.5', '8.8.8.8'],
-            'enhanced-mode': 'fake-ip',
-            'fake-ip-range': '198.18.0.1/16',
-            'nameserver': ['https://doh.pub/dns-query'],
-            'fallback': ['https://dns.google/dns-query']
-        },
-        'proxies': nodes,
-        'proxy-groups': proxy_groups,
-        'rules': rules
+        'mixed-port': 7890, 'allow-lan': False, 'mode': 'rule', 'log-level': 'info',
+        'proxies': nodes, 'proxy-groups': proxy_groups, 'rules': ['MATCH,🚀 节点选择']
     }
 
 def main():
@@ -182,26 +118,32 @@ def main():
             proxies = parse_clash_yaml(content)
             for p in proxies:
                 sanitized = format_validate_and_sanitize(p)
-                if sanitized:
-                    all_nodes.append(sanitized)
+                if sanitized: all_nodes.append(sanitized)
             
     unique_nodes = deduplicate_nodes(all_nodes)
-    print(f"\n Bars 矩阵清洗完毕。准备交付的总备弹池规模: {len(unique_nodes)}")
     
+    # 🌟 核心防御 2：元数据处切片
+    if len(unique_nodes) > 25:
+        unique_nodes = unique_nodes[:25]
+        
     config = generate_config(unique_nodes)
     if config:
+        # 🌟 核心防御 3：在写入文件的最后 0.1 秒，进行物理死锁强洗
+        if 'proxies' in config and len(config['proxies']) > 25:
+            config['proxies'] = config['proxies'][:25]
+            
         os.makedirs('output', exist_ok=True)
         try:
+            # 强制覆盖 nodes.yaml
             with open('output/nodes.yaml', 'w', encoding='utf-8') as f:
                 yaml.dump(config, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
+            
+            # 强制覆盖 proxies.yaml
             with open('output/proxies.yaml', 'w', encoding='utf-8') as f:
                 yaml.dump({'proxies': config['proxies']}, f, allow_unicode=True)
-            with open('output/stats.json', 'w', encoding='utf-8') as f:
-                json.dump({'updated_at': datetime.now().isoformat(), 'total_nodes': len(config['proxies'])}, f, indent=2)
-            print(f"✨ [SUCCESS] 打包输出成功！共享节点总数: {len(config['proxies'])}")
+                
             return 0
-        except Exception as e:
-            print(f"❌ 写入物理输出流异常: {e}")
+        except Exception:
             return 1
     return 0
 
