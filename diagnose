@@ -1,0 +1,198 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+诊断脚本：测试网络连接和源可用性
+"""
+
+import requests
+import time
+
+SOURCES = [
+    'https://cdn.jsdelivr.net/gh/goer998/Free-nodes@main/clash.yaml',
+    'https://cdn.jsdelivr.net/gh/learnhard-cn/free_nodes@main/clash.yaml',
+    'https://cdn.jsdelivr.net/gh/tiamg/free-nodes@main/clash.yaml',
+    'https://ghproxy.com/https://raw.githubusercontent.com/goer998/Free-nodes/main/clash.yaml',
+    'https://v2rayshare.github.io/v2rayshare/clash.yaml',
+    'https://raw.fastgit.org/goer998/Free-nodes/main/clash.yaml',
+]
+
+SIMPLE_URLS = [
+    'https://www.google.com',
+    'https://cdn.jsdelivr.net',
+    'https://github.com',
+]
+
+def test_basic_connectivity():
+    """测试基础网络连接"""
+    print("=" * 60)
+    print("🔍 [第一步] 基础网络连接测试")
+    print("=" * 60)
+    
+    for url in SIMPLE_URLS:
+        try:
+            start = time.time()
+            resp = requests.get(url, timeout=10)
+            elapsed = time.time() - start
+            
+            status = "✅" if resp.status_code == 200 else "⚠️"
+            print(f"{status} {url:<40} {resp.status_code} ({elapsed:.2f}s)")
+        except Exception as e:
+            print(f"❌ {url:<40} {str(e)[:40]}")
+    
+    print()
+
+def test_source_availability():
+    """测试源可用性"""
+    print("=" * 60)
+    print("🔍 [第二步] 节点源可用性测试")
+    print("=" * 60)
+    print(f"共测试 {len(SOURCES)} 个源\n")
+    
+    available = 0
+    
+    for idx, url in enumerate(SOURCES, 1):
+        print(f"[{idx}/{len(SOURCES)}] 测试中: {url[:55]}...")
+        
+        try:
+            start = time.time()
+            resp = requests.get(url, timeout=20)
+            elapsed = time.time() - start
+            
+            if resp.status_code == 200:
+                content = resp.text
+                size = len(content)
+                
+                # 检查是否包含代理信息
+                has_proxies = 'proxies:' in content.lower() or 'server:' in content.lower()
+                
+                if has_proxies:
+                    print(f"   ✅ [成功] 状态码 200，大小 {size} bytes，包含代理信息")
+                    available += 1
+                else:
+                    print(f"   ⚠️ [可疑] 状态码 200，但不包含代理数据")
+            else:
+                print(f"   ❌ [失败] 状态码 {resp.status_code}")
+        
+        except requests.Timeout:
+            print(f"   ❌ [超时] 请求超过 20 秒")
+        except Exception as e:
+            print(f"   ❌ [异常] {str(e)[:50]}")
+        
+        print()
+    
+    print("=" * 60)
+    print(f"📊 结果: {available}/{len(SOURCES)} 源可用")
+    print("=" * 60)
+    
+    if available == 0:
+        print("\n⚠️ 注意：没有任何源可用！")
+        print("   可能原因：")
+        print("   1. 网络被限制或被墙")
+        print("   2. 所有源都已失效")
+        print("   3. DNS 解析失败")
+        print("\n建议:")
+        print("   • 尝试使用代理工具运行此脚本")
+        print("   • 检查系统 DNS 设置")
+        print("   • 等待几小时后重试")
+    elif available < len(SOURCES) // 2:
+        print("\n⚠️ 注意：可用源较少，网络环境可能不稳定")
+    else:
+        print("\n✅ 网络环境良好！")
+
+def test_yaml_parsing():
+    """测试 YAML 解析能力"""
+    print("\n" + "=" * 60)
+    print("🔍 [第三步] YAML 解析测试")
+    print("=" * 60)
+    
+    try:
+        import yaml
+        print("✅ PyYAML 库已安装\n")
+        
+        # 测试一个真实源
+        test_url = 'https://cdn.jsdelivr.net/gh/goer998/Free-nodes@main/clash.yaml'
+        print(f"尝试解析第一个源: {test_url[:50]}...")
+        
+        try:
+            resp = requests.get(test_url, timeout=20)
+            if resp.status_code == 200:
+                data = yaml.safe_load(resp.text)
+                
+                if data and isinstance(data, dict):
+                    proxies = data.get('proxies', [])
+                    print(f"✅ YAML 解析成功！包含 {len(proxies)} 个代理")
+                    
+                    if proxies:
+                        print(f"\n   首个代理示例：")
+                        first = proxies[0]
+                        for key in ['name', 'type', 'server', 'port']:
+                            if key in first:
+                                print(f"      {key}: {first[key]}")
+                else:
+                    print("⚠️ YAML 解析成功，但结构异常")
+            else:
+                print(f"❌ 源返回状态码 {resp.status_code}")
+        except yaml.YAMLError as e:
+            print(f"❌ YAML 解析失败: {str(e)[:60]}")
+        except Exception as e:
+            print(f"❌ 异常: {str(e)[:60]}")
+    
+    except ImportError:
+        print("❌ PyYAML 未安装！")
+        print("   运行命令: pip install pyyaml")
+
+def suggest_solutions():
+    """提供解决方案"""
+    print("\n" + "=" * 60)
+    print("💡 [第四步] 建议解决方案")
+    print("=" * 60 + "\n")
+    
+    print("如果上述测试中有失败，尝试以下方法：\n")
+    
+    print("1️⃣  使用代理运行脚本（如果被限流）")
+    print("   # Windows")
+    print("   set HTTP_PROXY=http://127.0.0.1:7890")
+    print("   set HTTPS_PROXY=http://127.0.0.1:7890")
+    print("   python optimized_nodes_crawler.py\n")
+    
+    print("   # Linux/Mac")
+    print("   HTTP_PROXY=http://127.0.0.1:7890 python optimized_nodes_crawler.py\n")
+    
+    print("2️⃣  修改 DNS 为公共 DNS")
+    print("   使用 8.8.8.8 或 1.1.1.1\n")
+    
+    print("3️⃣  增加超时时间（在脚本中）")
+    print("   fetch_content(url, timeout=60, retries=3)\n")
+    
+    print("4️⃣  手动测试单个源")
+    print("   import requests")
+    print("   r = requests.get('源地址', timeout=30)")
+    print("   print(r.status_code)\n")
+    
+    print("5️⃣  使用 VPN/代理工具访问 GitHub")
+    print("   或者等待几小时后重试（可能是暂时限流）\n")
+
+def main():
+    print("\n")
+    print("╔" + "═" * 58 + "╗")
+    print("║" + " 免费节点爬虫 - 诊断工具".center(58) + "║")
+    print("║" + " 用于检测网络和源的可用性".center(58) + "║")
+    print("╚" + "═" * 58 + "╝\n")
+    
+    # 运行所有测试
+    test_basic_connectivity()
+    test_source_availability()
+    test_yaml_parsing()
+    suggest_solutions()
+    
+    print("=" * 60)
+    print("诊断完成！")
+    print("=" * 60)
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\n用户中止")
+    except Exception as e:
+        print(f"\n❌ 诊断过程出错: {e}")
