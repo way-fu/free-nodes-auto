@@ -2,18 +2,6 @@ mixed-port: 7890
 allow-lan: false
 mode: rule
 log-level: info
-dns:
-  enable: true
-  listen: 0.0.0.0:1053
-  default-nameserver:
-  - 223.5.5.5
-  - 8.8.8.8
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  nameserver:
-  - https://doh.pub/dns-query
-  fallback:
-  - https://dns.google/dns-query
 proxies:
 - name: 📍 TROJAN-01
   password: BxceQaOe
@@ -438,16 +426,4 @@ proxy-groups:
   - 🌍 全球直连
   - 🚀 节点选择
 rules:
-- IP-CIDR,127.0.0.0/8,DIRECT
-- IP-CIDR,172.16.0.0/12,DIRECT
-- IP-CIDR,192.168.0.0/16,DIRECT
-- IP-CIDR,10.0.0.0/8,DIRECT
-- DOMAIN-SUFFIX,apple.com,🍎 苹果服务
-- DOMAIN-SUFFIX,icloud.com,🍎 苹果服务
-- DOMAIN-SUFFIX,youtube.com,📹 YouTube
-- DOMAIN-SUFFIX,googlevideo.com,📹 YouTube
-- DOMAIN-SUFFIX,telegram.org,📱 Telegram
-- DOMAIN-SUFFIX,t.me,📱 Telegram
-- DOMAIN-SUFFIX,cn,DIRECT
-- GEOIP,CN,DIRECT
 - MATCH,🚀 节点选择
