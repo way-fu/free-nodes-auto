@@ -1,0 +1,202 @@
+[
+  {
+    "rank": 1,
+    "protocol": "vless",
+    "host": "162.159.41.198",
+    "port": 8443,
+    "latency_ms": 1.45721435546875,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 2,
+    "protocol": "vless",
+    "host": "162.159.42.163",
+    "port": 443,
+    "latency_ms": 1.5301704406738281,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 3,
+    "protocol": "vless",
+    "host": "172.64.153.159",
+    "port": 443,
+    "latency_ms": 1.5916824340820312,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 4,
+    "protocol": "vless",
+    "host": "172.64.52.240",
+    "port": 443,
+    "latency_ms": 1.7497539520263672,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 5,
+    "protocol": "trojan",
+    "host": "104.19.208.184",
+    "port": 443,
+    "latency_ms": 1.886129379272461,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 6,
+    "protocol": "trojan",
+    "host": "104.18.152.143",
+    "port": 443,
+    "latency_ms": 1.8923282623291016,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 7,
+    "protocol": "trojan",
+    "host": "104.16.174.117",
+    "port": 443,
+    "latency_ms": 2.0241737365722656,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 8,
+    "protocol": "vless",
+    "host": "172.64.150.246",
+    "port": 2083,
+    "latency_ms": 2.0287036895751953,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 9,
+    "protocol": "vless",
+    "host": "172.64.151.158",
+    "port": 443,
+    "latency_ms": 2.1431446075439453,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 10,
+    "protocol": "trojan",
+    "host": "www.multiplydose.com",
+    "port": 443,
+    "latency_ms": 36.725759506225586,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 11,
+    "protocol": "vless",
+    "host": "45.131.66.247",
+    "port": 20002,
+    "latency_ms": 90.1482105255127,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 12,
+    "protocol": "vless",
+    "host": "85.234.100.17",
+    "port": 9443,
+    "latency_ms": 90.37423133850098,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 13,
+    "protocol": "trojan",
+    "host": "correct-pony.rooster465.autos",
+    "port": 443,
+    "latency_ms": 95.82304954528809,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 14,
+    "protocol": "vless",
+    "host": "corelink.su",
+    "port": 443,
+    "latency_ms": 138.2162570953369,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 15,
+    "protocol": "trojan",
+    "host": "flexible-pony.rooster465.autos",
+    "port": 443,
+    "latency_ms": 169.65913772583008,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 16,
+    "protocol": "vless",
+    "host": "211.104.99.209",
+    "port": 11019,
+    "latency_ms": 187.5019073486328,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 17,
+    "protocol": "trojan",
+    "host": "premium-weevil.rooster465.autos",
+    "port": 443,
+    "latency_ms": 199.25379753112793,
+    "status": "✅ 可用"
+  },
+  {
+    "rank": 18,
+    "protocol": "ss",
+    "host": null,
+    "port": null,
+    "latency_ms": null,
+    "status": "❌ 解析失败"
+  },
+  {
+    "rank": 19,
+    "protocol": "ss",
+    "host": null,
+    "port": null,
+    "latency_ms": null,
+    "status": "❌ 解析失败"
+  },
+  {
+    "rank": 20,
+    "protocol": "ss",
+    "host": null,
+    "port": null,
+    "latency_ms": null,
+    "status": "❌ 解析失败"
+  },
+  {
+    "rank": 21,
+    "protocol": "ss",
+    "host": null,
+    "port": null,
+    "latency_ms": null,
+    "status": "❌ 解析失败"
+  },
+  {
+    "rank": 22,
+    "protocol": "ss",
+    "host": null,
+    "port": null,
+    "latency_ms": null,
+    "status": "❌ 解析失败"
+  },
+  {
+    "rank": 23,
+    "protocol": "trojan",
+    "host": "95.40.51.248",
+    "port": 6357,
+    "latency_ms": 9999,
+    "status": "❌ 不可达"
+  },
+  {
+    "rank": 24,
+    "protocol": "trojan",
+    "host": "43.198.15.160",
+    "port": 11035,
+    "latency_ms": 9999,
+    "status": "❌ 不可达"
+  },
+  {
+    "rank": 25,
+    "protocol": "trojan",
+    "host": "35.77.80.32",
+    "port": 40138,
+    "latency_ms": 9999,
+    "status": "❌ 不可达"
+  }
+]

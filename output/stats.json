@@ -1,4 +1,18 @@
 {
-  "updated_at": "2026-07-21T01:44:02.998002",
-  "total_nodes": 25
+  "updated_at": "2026-07-21T22:26:07.021569",
+  "total_nodes_collected": 253,
+  "total_nodes_valid": 25,
+  "total_nodes_available": 17,
+  "protocols": {
+    "vmess": 0,
+    "ss": 0,
+    "vless": 10,
+    "trojan": 7
+  },
+  "latency_stats": {
+    "min_ms": 1.45721435546875,
+    "max_ms": 199.25379753112793,
+    "avg_ms": 60.23562655729406
+  },
+  "sources_tried": 5
 }
